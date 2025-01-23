@@ -2,6 +2,8 @@
 
 Essence, a watchface for Garmin devices
 
+![Essence Watchface Screenshot](https://github.com/dev-lessismore/Essence/blob/main/fenix8.png?raw=true)
+
 # Contribution
 
 As I have learned from others, maybe I can help too.
