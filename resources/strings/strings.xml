@@ -1,0 +1,14 @@
+<strings>
+    <string id="AppName">Essence</string>
+
+    <string id="WeatherLabel">weather</string>
+    <string id="CalendarLabel">cal</string>
+    <string id="NotificationLabel">msg</string>
+    <string id="SunEventLabel">sun</string>    
+    <string id="SunEventLabelSunrise">s.rise</string> 
+    <string id="SunEventLabelSunset">s.set</string>       
+    <string id="AltitudeLabel">alt</string>
+    <string id="HeartRateLabel">hr</string>
+    <string id="PressureLabel">bar</string>
+    <string id="BatteryLabel">batt</string>
+</strings>
