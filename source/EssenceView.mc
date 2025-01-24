@@ -193,6 +193,7 @@ class EssenceView extends WatchUi.WatchFace {
     drawData(dc);
     drawDate(dc);
     drawTime(dc);
+    drawIcons(dc);
     View.onUpdate(dc);
 
     drawHRgraph(dc);
