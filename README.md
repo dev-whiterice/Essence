@@ -2,7 +2,7 @@
 
 Essence, a watchface for Garmin devices
 
-![Essence Watchface Screenshot](https://github.com/dev-lessismore/Essence/blob/main/fenix8.png?raw=true)
+![Essence Watchface Screenshot](https://github.com/dev-lessismore/Essence/blob/main/doc/fenix8.png?raw=true)
 
 # Contribution
 
@@ -33,7 +33,7 @@ Available fields:
 
 # FAQs
 
-- What languages ​​are supported?
+- What languages ​​are sUpperorted?
   For the moment English and Italian
 
 # Credits

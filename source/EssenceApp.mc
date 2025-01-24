@@ -3,6 +3,7 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class EssenceApp extends Application.AppBase {
+  var essenceView;
   function initialize() {
     AppBase.initialize();
   }
@@ -15,11 +16,17 @@ class EssenceApp extends Application.AppBase {
 
   // Return the initial view of your application here
   function getInitialView() as [Views] or [Views, InputDelegates] {
+    essenceView = new EssenceView();
     if (Toybox has :Complications) {
-      return [new EssenceView(), new EssenceDelegate()];
+      return [essenceView, new EssenceDelegate()];
     } else {
-      return [new EssenceView()];
+      return [essenceView];
     }
+  }
+
+  function onSettingsChanged() as Void {
+    loadLayout();
+    essenceView.changedLayout();
   }
 }
 

@@ -1,15 +1,34 @@
 <strings>
     <string id="AppName">Essence</string>
 
-    <string id="WeatherLabel">meteo</string>
-    <string id="CalendarLabel">cal</string>
-    <string id="NotificationLabel">msg</string>
-    <string id="SunEventLabel">al/tr</string>    
-    <string id="SunEventLabelSunrise">alba</string> 
-    <string id="SunEventLabelSunset">tram</string>       
-    <string id="AltitudeLabel">alt</string>
-    <string id="HeartRateLabel">hr</string>
-    <string id="PressureLabel">bar</string>
-    <string id="BatteryLabel">batt</string>
+    <string id="FieldTop">Campo superiore</string>
+    <string id="FieldUpperLeft">Campo in alto a sinistra</string>
+    <string id="FieldUpperCenter">Campo in alto centrale</string>
+    <string id="FieldUpperRight">Campo in alto a destra</string>
+    <string id="FieldLowerLeft">Campo in basso a sinistra</string>
+    <string id="FieldLowerRight">Campo in basso a destra</string>
+    <string id="FieldBottom">Campo inferiore</string>
+
+    <string id="ShowGraph">Mostra Grafico</string>
+
+    <string id="Weather">meteo</string>
+    <string id="Calendar">cal</string>
+    <string id="Notifications">msg</string>
+    <string id="SunEvent">al/tr</string>    
+    <string id="SunEventRise">alba</string> 
+    <string id="SunEventSet">tram</string>       
+    <string id="Altimeter">alt</string>
+    <string id="HeartRate">hr</string>
+    <string id="Barometer">bar</string>
+    <string id="Battery">batt</string>
+
+    <string id="WeatherExt">Meteo</string>
+    <string id="CalendarExt">Calendario</string>
+    <string id="NotificationsExt">Notifiche</string>
+    <string id="SunEventExt">Alba e Tramonto</string>    
+    <string id="AltimeterExt">Altimetro</string>
+    <string id="HeartRateExt">Frequenza Cardiaca</string>
+    <string id="BarometerExt">Barometro</string>
+    <string id="BatteryExt">Batteria</string>
 </strings>
 

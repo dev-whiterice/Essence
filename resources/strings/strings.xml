@@ -1,14 +1,33 @@
 <strings>
     <string id="AppName">Essence</string>
 
-    <string id="WeatherLabel">weather</string>
-    <string id="CalendarLabel">cal</string>
-    <string id="NotificationLabel">msg</string>
-    <string id="SunEventLabel">sun</string>    
-    <string id="SunEventLabelSunrise">s.rise</string> 
-    <string id="SunEventLabelSunset">s.set</string>       
-    <string id="AltitudeLabel">alt</string>
-    <string id="HeartRateLabel">hr</string>
-    <string id="PressureLabel">bar</string>
-    <string id="BatteryLabel">batt</string>
+    <string id="FieldTop">Top field</string>
+    <string id="FieldUpperLeft">Upper left field</string>
+    <string id="FieldUpperCenter">Upper center field</string>
+    <string id="FieldUpperRight">Upper right field</string>
+    <string id="FieldLowerLeft">Lower left field</string>
+    <string id="FieldLowerRight">Lower right field</string>
+    <string id="FieldBottom">Bottom field</string>
+    <string id="ShowGraph">Show Graph</string>
+
+
+    <string id="Weather">weather</string>
+    <string id="Calendar">cal</string>
+    <string id="Notifications">msg</string>
+    <string id="SunEvent">sun</string>    
+    <string id="SunEventRise">s.rise</string> 
+    <string id="SunEventSet">s.set</string>       
+    <string id="Altimeter">alt</string>
+    <string id="HeartRate">hr</string>
+    <string id="Barometer">bar</string>
+    <string id="Battery">batt</string>
+
+    <string id="WeatherExt">Weather</string>
+    <string id="CalendarExt">Calendar</string>
+    <string id="NotificationsExt">Notifications</string>
+    <string id="SunEventExt">Sun Event</string>    
+    <string id="AltimeterExt">Altimeter</string>
+    <string id="HeartRateExt">Heart Rate</string>
+    <string id="BarometerExt">Barometer</string>
+    <string id="BatteryExt">Battery</string>
 </strings>

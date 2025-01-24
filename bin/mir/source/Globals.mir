@@ -1,0 +1,150 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 3; @position = 11; ]
+var bboxes;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 4; @position = 11; ]
+var boundingBoxes;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 6; ]
+function checkBoundingBoxes(points) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_6_43_14_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 7 2 ]
+    for @D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_test @D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_incr @D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_init:
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_begin" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_end" ]
+    %i.1 = local;
+    %tmp.1 = 0;
+    lputv %i.1 %tmp.1;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_test:
+    %tmp.3 = lgetv %i.1;
+    %tmp.5 = getv ? :boundingBoxes;
+    %tmp.6 = getv function %tmp.5 :size;
+    %tmp.7 = invoke %tmp.5 %tmp.6();
+    %tmp.8 = lt %tmp.3 %tmp.7;
+    bf %tmp.8 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_49_12_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 8 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_49_12_2_start" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_49_12_2_stop" ]
+    %currentBounds.2 = local;
+    %tmp.10 = getv ? :boundingBoxes;
+    %tmp.12 = lgetv %i.1;
+    %tmp.13 = agetv %tmp.10 %tmp.12;
+    lputv %currentBounds.2 %tmp.13;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 9 4 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_4_11_4_if_stmt:
+    %tmp.14 = self;
+    %tmp.15 = getv function %tmp.14 :checkBoundsForComplication;
+    %tmp.17 = lgetv %points;
+    %tmp.19 = lgetv %currentBounds.2;
+    %tmp.20 = "bounds";
+    %tmp.21 = agetv %tmp.19 %tmp.20;
+    %tmp.22 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.21);
+    bf %tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_4_11_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_4_11_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_69_11_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 10 6 ]
+    %tmp.24 = lgetv %currentBounds.2;
+    %tmp.25 = "complicationId";
+    %tmp.26 = agetv %tmp.24 %tmp.25;
+    ret %tmp.26;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_69_11_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_4_11_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_9_4_11_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_49_12_2_stop:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_incr:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 7 ]
+    %tmp.29 = lgetv %i.1;
+    %tmp.30 = add %tmp.29 1;
+    lputv %i.1 %tmp.30;
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_test;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_7_2_12_2_for_end:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 13 2 ]
+    %tmp.31 = false;
+    ret %tmp.31;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_6_43_14_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 15; ]
+function checkBoundsForComplication(points, boundingBox) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_64_17_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 16 2 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :boxContains;
+    %tmp.4 = lgetv %points;
+    %tmp.6 = lgetv %boundingBox;
+    %tmp.7 = 0;
+    %tmp.8 = agetv %tmp.6 %tmp.7;
+    %tmp.10 = lgetv %boundingBox;
+    %tmp.11 = 1;
+    %tmp.12 = agetv %tmp.10 %tmp.11;
+    %tmp.13 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.8, %tmp.12);
+    ret %tmp.13;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_64_17_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 19; ]
+function boxContains(points, boxMinXY, boxMaxXY) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_19_56_26_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 20 2 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_24_27_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_23_27_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_22_27_begin:
+    %tmp.2 = lgetv %points;
+    %tmp.3 = 0;
+    %tmp.4 = agetv %tmp.2 %tmp.3;
+    %tmp.6 = lgetv %boxMaxXY;
+    %tmp.7 = 0;
+    %tmp.8 = agetv %tmp.6 %tmp.7;
+    %tmp.9 = lte %tmp.4 %tmp.8;
+    %tmp.10 = dup %tmp.9;
+    bf %tmp.10 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_22_4_22_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_22_4_22_27_true:
+    %tmp.12 = lgetv %points;
+    %tmp.13 = 1;
+    %tmp.14 = agetv %tmp.12 %tmp.13;
+    %tmp.16 = lgetv %boxMaxXY;
+    %tmp.17 = 1;
+    %tmp.18 = agetv %tmp.16 %tmp.17;
+    %tmp.19 = lte %tmp.14 %tmp.18;
+    %tmp.20 = and %tmp.9 %tmp.19;
+    push %tmp.20;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_22_4_22_27_end:
+    %tmp.21 = phi [%tmp.10 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_22_27_begin] [%tmp.20 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_22_4_22_27_true] [%tmp.21 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_22_4_22_27_end];
+    %tmp.22 = dup %tmp.21;
+    bf %tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_4_23_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_4_23_27_true:
+    %tmp.24 = lgetv %points;
+    %tmp.25 = 0;
+    %tmp.26 = agetv %tmp.24 %tmp.25;
+    %tmp.28 = lgetv %boxMinXY;
+    %tmp.29 = 0;
+    %tmp.30 = agetv %tmp.28 %tmp.29;
+    %tmp.31 = gte %tmp.26 %tmp.30;
+    %tmp.32 = and %tmp.21 %tmp.31;
+    push %tmp.32;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_4_23_27_end:
+    %tmp.33 = phi [%tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_23_27_begin] [%tmp.32 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_4_23_27_true] [%tmp.33 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_4_23_27_end];
+    %tmp.34 = dup %tmp.33;
+    bf %tmp.34 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_24_4_24_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_24_4_24_27_true:
+    %tmp.36 = lgetv %points;
+    %tmp.37 = 1;
+    %tmp.38 = agetv %tmp.36 %tmp.37;
+    %tmp.40 = lgetv %boxMinXY;
+    %tmp.41 = 1;
+    %tmp.42 = agetv %tmp.40 %tmp.41;
+    %tmp.43 = gte %tmp.38 %tmp.42;
+    %tmp.44 = and %tmp.33 %tmp.43;
+    push %tmp.44;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_24_4_24_27_end:
+    %tmp.45 = phi [%tmp.34 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_4_24_27_begin] [%tmp.44 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_24_4_24_27_true] [%tmp.45 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_24_4_24_27_end];
+    ret %tmp.45;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_19_56_26_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 1; ]
+<init> {
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 3 11 ]
+    %tmp.46 = newa 0;
+    putv self :bboxes %tmp.46;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 4 11 ]
+    %tmp.47 = newa 0;
+    putv self :boundingBoxes %tmp.47;
+}

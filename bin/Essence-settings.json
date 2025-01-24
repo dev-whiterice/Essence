@@ -1,0 +1,352 @@
+{
+  "settings" : [ {
+    "key" : "FieldTop",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "FieldTop",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldUpperLeft",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "FieldUpperLeft",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldUpperCenter",
+    "valueType" : "number",
+    "defaultValue" : 2,
+    "configTitle" : "FieldUpperCenter",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldUpperRight",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "FieldUpperRight",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldLowerLeft",
+    "valueType" : "number",
+    "defaultValue" : 4,
+    "configTitle" : "FieldLowerLeft",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldLowerRight",
+    "valueType" : "number",
+    "defaultValue" : 6,
+    "configTitle" : "FieldLowerRight",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "FieldBottom",
+    "valueType" : "number",
+    "defaultValue" : 7,
+    "configTitle" : "FieldBottom",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ShowGraph",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "ShowGraph",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "ita" : {
+      "HeartRate" : "hr",
+      "AltimeterExt" : "Altimetro",
+      "HeartRateExt" : "Frequenza Cardiaca",
+      "Altimeter" : "alt",
+      "SunEventRise" : "alba",
+      "FieldUpperRight" : "Campo in alto a destra",
+      "AppName" : "Essence",
+      "FieldLowerLeft" : "Campo in basso a sinistra",
+      "FieldUpperLeft" : "Campo in alto a sinistra",
+      "Battery" : "batt",
+      "ShowGraph" : "Mostra Grafico",
+      "FieldUpperCenter" : "Campo in alto centrale",
+      "FieldTop" : "Campo superiore",
+      "CalendarExt" : "Calendario",
+      "BatteryExt" : "Batteria",
+      "NotificationsExt" : "Notifiche",
+      "Calendar" : "cal",
+      "FieldBottom" : "Campo inferiore",
+      "Weather" : "meteo",
+      "BarometerExt" : "Barometro",
+      "SunEventSet" : "tram",
+      "Barometer" : "bar",
+      "WeatherExt" : "Meteo",
+      "FieldLowerRight" : "Campo in basso a destra",
+      "Notifications" : "msg",
+      "SunEvent" : "al/tr",
+      "SunEventExt" : "Alba e Tramonto"
+    },
+    "valyrian" : {
+      "HeartRate" : "hr",
+      "AltimeterExt" : "Altimeter",
+      "HeartRateExt" : "Heart Rate",
+      "Altimeter" : "alt",
+      "SunEventRise" : "s.rise",
+      "FieldUpperRight" : "Upper right field",
+      "AppName" : "Essence",
+      "FieldLowerLeft" : "Lower left field",
+      "FieldUpperLeft" : "Upper left field",
+      "Battery" : "batt",
+      "ShowGraph" : "Show Graph",
+      "FieldUpperCenter" : "Upper center field",
+      "FieldTop" : "Top field",
+      "CalendarExt" : "Calendar",
+      "BatteryExt" : "Battery",
+      "NotificationsExt" : "Notifications",
+      "Calendar" : "cal",
+      "FieldBottom" : "Bottom field",
+      "Weather" : "weather",
+      "BarometerExt" : "Barometer",
+      "SunEventSet" : "s.set",
+      "Barometer" : "bar",
+      "WeatherExt" : "Weather",
+      "FieldLowerRight" : "Lower right field",
+      "Notifications" : "msg",
+      "SunEvent" : "sun",
+      "SunEventExt" : "Sun Event"
+    }
+  }
+}

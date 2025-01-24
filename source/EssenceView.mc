@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Time.Gregorian;
 
 class EssenceView extends WatchUi.WatchFace {
   var dw = 0;
@@ -11,6 +12,7 @@ class EssenceView extends WatchUi.WatchFace {
   var heartMax = 0;
   var heartNow = 0;
   var heartRateZones;
+  var redrawLabes = false;
   const arrayColours = [
     Graphics.COLOR_WHITE,
     Graphics.COLOR_RED,
@@ -43,6 +45,20 @@ class EssenceView extends WatchUi.WatchFace {
     heartRateZones = Toybox.UserProfile.getHeartRateZones(
       Toybox.UserProfile.getCurrentSport()
     );
+
+    loadLayout();
+    drawLabels(dc);
+  }
+
+  function drawLabels(dc) {
+    var view;
+    for (var i = 0; i < fieldLayout.size(); i = i + 1) {
+      view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+      view.setText(
+        WatchUi.loadResource(dataField[fieldLayout[i]["data"]]["label"]) as
+          String
+      );
+    }
   }
 
   function defineBoundingBoxes(dc) {
@@ -59,37 +75,37 @@ class EssenceView extends WatchUi.WatchFace {
       [dw / 3 + dw / 3, dh / 6],
     ];
 
-    var bboxTopLeft = [
+    var bboxUpperLeft = [
       [0, dh / 6],
       [dw / 3, dh / 6 + dh / 6],
     ];
 
-    var bboxTopCenter = [
+    var bboxUpperCenter = [
       [dw / 3, dh / 6],
       [dw / 3 + dw / 3, dh / 6 + dh / 6],
     ];
 
-    var bboxTopRight = [
+    var bboxUpperRight = [
       [dw / 3 + dw / 3, dh / 6],
       [dw, dh / 6 + dh / 6],
     ];
 
-    var bboxBottomLeft = [
+    var bboxLowerLeft = [
       [0, dh / 1.5],
       [dw / 3, dh / 1.5 + dh / 6],
     ];
 
-    var bboxBottomCenter = [
+    var bboxLowerCenter = [
       [dw / 3, dh / 1.5],
       [dw / 3 + dw / 3, dh / 1.5 + dh / 6],
     ];
 
-    var bboxBottomRight = [
+    var bboxLowerRight = [
       [dw / 3 + dw / 3, dh / 1.5],
       [dw, dh / 1.5 + dh / 6],
     ];
 
-    // var bboxBottom = [
+    // var bboxLower = [
     //   [dw / 3, dh - dh / 6],
     //   [dw / 3 + dw / 3, dh],
     // ];
@@ -108,44 +124,44 @@ class EssenceView extends WatchUi.WatchFace {
       },
       {
         "label" => "Calendar",
-        "bounds" => bboxTopLeft,
+        "bounds" => bboxUpperLeft,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS,
       },
       {
-        "label" => "Notification",
-        "bounds" => bboxTopCenter,
+        "label" => "Notifications",
+        "bounds" => bboxUpperCenter,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT,
       },
       {
         "label" => "Sunrise",
-        "bounds" => bboxTopRight,
+        "bounds" => bboxUpperRight,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_SUNRISE,
       },
 
       {
         "label" => "Altitude",
-        "bounds" => bboxBottomLeft,
+        "bounds" => bboxLowerLeft,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
       },
       {
         "label" => "HeartRate",
-        "bounds" => bboxBottomCenter,
+        "bounds" => bboxLowerCenter,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
       },
       {
         "label" => "Pressure",
-        "bounds" => bboxBottomRight,
+        "bounds" => bboxLowerRight,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
       },
       // {
       //   "label" => "Battery",
-      //   "bounds" => bboxBottom,
+      //   "bounds" => bboxLower,
       //   "value" => "",
       //   "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
       // },
@@ -163,24 +179,50 @@ class EssenceView extends WatchUi.WatchFace {
   // loading resources into memory.
   function onShow() as Void {}
 
+  function changedLayout() as Void {
+    redrawLabes = true;
+    WatchUi.requestUpdate();
+  }
+
   // Update the view
   function onUpdate(dc as Dc) as Void {
-    drawWeather(dc);
-    drawCalendar(dc);
-    drawNotification(dc);
-    drawSunEvent(dc);
+    if (redrawLabes) {
+      drawLabels(dc);
+      redrawLabes = false;
+    }
+    drawData(dc);
     drawDate(dc);
     drawTime(dc);
-    drawIcons(dc);
-    drawAltitude(dc);
-    drawHeartRate(dc);
-    drawPressure(dc);
-    drawBattery(dc);
-
     View.onUpdate(dc);
 
     drawHRgraph(dc);
     // drawBoundingBoxes(dc);
+  }
+
+  function drawData(dc) {
+    var view;
+    var fun;
+    for (var i = 0; i < fieldLayout.size(); i = i + 1) {
+      view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
+
+      if (fieldLayout[i]["data"].equals(3)) {
+        // SunEvent exception
+        var sunevent = getSunEvent();
+        view.setText(sunevent["value"]);
+
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+        view.setText(sunevent["label"]);
+      } else {
+        fun = dataField[fieldLayout[i]["data"]]["getter"];
+        fun = method(fun);
+        view.setText(fun.invoke());
+      }
+    }
+  }
+
+  function drawDate(dc) {
+    var view = View.findDrawableById("FieldDate") as Text;
+    view.setText(getDate());
   }
 
   function drawTime(dc as Dc) as Void {
@@ -202,73 +244,251 @@ class EssenceView extends WatchUi.WatchFace {
       clockTime.min.format("%02d"),
     ]);
 
-    var view = View.findDrawableById("TimeData") as Text;
+    var view = View.findDrawableById("FieldTime") as Text;
     view.setText(timeString);
   }
 
-  function drawWeather(dc as Dc) as Void {
-    var view = View.findDrawableById("WeatherData") as Text;
-    view.setText(getWeather());
+  function getWeather() {
+    if (Toybox has :Weather) {
+      var data = Toybox.Weather.getCurrentConditions();
+      return (
+        (data.lowTemperature + 0.5).toNumber().toString() +
+        "/" +
+        (data.highTemperature + 0.5).toNumber().toString()
+      );
+    }
+
+    return "--";
   }
 
-  function drawCalendar(dc as Dc) as Void {
-    var view = View.findDrawableById("CalendarData") as Text;
-    view.setText(getCalender());
+  function getCalendar() {
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_CALENDAR_EVENTS)
+      );
+      if (comp.value != null) {
+        return comp.value;
+      }
+    }
+
+    return "--";
   }
 
-  function drawSunEvent(dc as Dc) as Void {
-    var sunEvent = getSunEvent();
-    var view = View.findDrawableById("SunEventLabel") as Text;
-    view.setText(sunEvent["label"]);
-    view = View.findDrawableById("SunEventData") as Text;
-    view.setText(sunEvent["value"]);
+  function getSunEvent() {
+    if (Toybox has :Position) {
+      var positionInfo = Toybox.Position.getInfo();
+      if (positionInfo.position == null) {
+        return {
+          "label" => WatchUi.loadResource($.Rez.Strings.SunEvent) as String,
+          "value" => "--",
+        };
+      }
+      if (Toybox has :Weather) {
+        var time = Time.now();
+        var sunrise = Toybox.Weather.getSunrise(positionInfo.position, time);
+        var sunset = Toybox.Weather.getSunset(positionInfo.position, time);
+        if (sunrise == null || sunset == null) {
+          return {
+            "label" => WatchUi.loadResource($.Rez.Strings.SunEvent) as String,
+            "value" => "--",
+          };
+        }
+
+        if (time.compare(sunrise) > 0 && time.compare(sunset) < 0) {
+          time = Gregorian.info(sunset, Time.FORMAT_MEDIUM);
+          return {
+            "label" => WatchUi.loadResource($.Rez.Strings.SunEventSet) as
+            String,
+            "value" => Lang.format("$1$:$2$", [
+              time.hour,
+              time.min.format("%02d"),
+            ]),
+          };
+        } else {
+          time = Gregorian.info(sunrise, Time.FORMAT_MEDIUM);
+          return {
+            "label" => WatchUi.loadResource($.Rez.Strings.SunEventRise) as
+            String,
+            "value" => Lang.format("$1$:$2$", [
+              time.hour,
+              time.min.format("%02d"),
+            ]),
+          };
+        }
+      }
+      return {
+        "label" => WatchUi.loadResource($.Rez.Strings.SunEvent) as String,
+        "value" => "--",
+      };
+    }
+
+    return "--";
   }
 
-  function drawNotification(dc as Dc) as Void {
-    var view = View.findDrawableById("NotificationData") as Text;
-    view.setText(getNotification());
+  function getDate() {
+    var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+    return Lang.format("$1$, $2$", [now.day_of_week, now.day]).toLower();
   }
 
-  function drawDate(dc as Dc) as Void {
-    var view = View.findDrawableById("DateData") as Text;
-    view.setText(getDate());
+  function getNotifications() {
+    if (Toybox.System.getDeviceSettings() has :notificationCount) {
+      return Toybox.System.getDeviceSettings().notificationCount.toString();
+    }
+
+    return "--";
   }
 
-  function drawAltitude(dc as Dc) as Void {
-    var view = View.findDrawableById("AltitudeData") as Text;
-    view.setText(getAltitude());
+  function getBattery() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_BATTERY)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      if (Toybox has :System) {
+        if (Toybox.System.getSystemStats() has :battery) {
+          data = Toybox.System.getSystemStats().battery;
+        }
+      }
+    }
+    if (data == null) {
+      return "--";
+    }
+    return data.format("%d");
   }
 
-  function drawHeartRate(dc as Dc) as Void {
-    var view = View.findDrawableById("HeartRateData") as Text;
-    view.setText(getHeartrate());
+  function getAltimeter() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_ALTITUDE)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      if (Toybox has :Activity) {
+        if (Toybox.Activity.getActivityInfo() has :altitude) {
+          data = Toybox.Activity.getActivityInfo().altitude;
+        }
+      }
+    }
+    if (data == null) {
+      var iterator = Toybox.SensorHistory.getElevationHistory({});
+      var sample = iterator.next();
+      if (sample.data != null) {
+        data = sample.data;
+      } else {
+        return "--";
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    data = (data + 0.5).toNumber().toString();
+    return data;
   }
 
-  function drawPressure(dc as Dc) as Void {
-    var view = View.findDrawableById("PressureData") as Text;
-    view.setText(getPressure());
+  function getHeartRate() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_HEART_RATE)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == "--") {
+      if (Toybox has :Activity) {
+        if (Toybox.Activity.getActivityInfo() has :currentHeartRate) {
+          data = Toybox.Activity.getActivityInfo().currentHeartRate;
+        }
+      }
+    }
+    if (data == "--") {
+      if (Toybox has :SensorHistory) {
+        if (Toybox.SensorHistory has :getHeartRateHistory) {
+          var iterator = Toybox.SensorHistory.getHeartRateHistory({});
+          var sample = iterator.next();
+          if (
+            sample.data != null &&
+            sample.data != Toybox.ActivityMonitor.INVALID_HR_SAMPLE
+          ) {
+            data = sample.data;
+          } else {
+            return "--";
+          }
+        }
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    return Lang.format("$1$", [data]);
   }
 
-  function drawBattery(dc as Dc) as Void {
-    var view = View.findDrawableById("BatteryData") as Text;
-    view.setText(getBattery());
+  function getBarometer() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      if (Toybox has :Activity) {
+        if (Toybox.Activity.getActivityInfo() has :meanSeaLevelPressure) {
+          data = Toybox.Activity.getActivityInfo().meanSeaLevelPressure;
+        }
+      }
+    }
+    if (data == null) {
+      if (Toybox has :SensorHistory) {
+        if (Toybox.SensorHistory has :getStressHistory) {
+          var iterator = Toybox.SensorHistory.getPressureHistory({});
+          var sample = iterator.next();
+          if (sample != null) {
+            data = sample.data;
+          } else {
+            return "--";
+          }
+        }
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    data = data / 100;
+    data = (data + 0.5).toNumber().toString();
+    return Lang.format("$1$", [data]);
   }
 
   function drawIcons(dc) {
     var settings = System.getDeviceSettings().phoneConnected;
-    var systemIcons = "";
+    var FieldIcons = "";
     if (settings) {
-      systemIcons = "V";
+      FieldIcons = "V";
     }
 
     settings = System.getDeviceSettings().alarmCount;
     if (settings > 0) {
-      systemIcons += "R";
+      FieldIcons += "R";
     }
 
-    if (systemIcons.length() > 0) {
-      var view = View.findDrawableById("SystemIcons") as Text;
-      view.setText(systemIcons);
+    if (FieldIcons.length() > 0) {
+      var view = View.findDrawableById("FieldIcons") as Text;
+      view.setText(FieldIcons);
     }
   }
 
@@ -312,6 +532,12 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   function drawHRgraph(dc) {
+    var view = View.findDrawableById("FieldGraphLabel") as Text;
+    view.setText(WatchUi.loadResource(Rez.Strings.HeartRate) as String);
+
+    view = View.findDrawableById("FieldGraphData") as Text;
+    view.setText(getHeartRate());
+
     var curHeartMin = 0;
     var curHeartMax = 0;
     var maxSecs = 14400;

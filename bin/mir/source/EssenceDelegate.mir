@@ -1,0 +1,84 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 2; ]
+using Toybox.Complications as :Complications;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 4; ]
+class EssenceDelegate extends Ui.WatchFaceDelegate{
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 5; ]
+    function initialize() as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_5_24_7_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 6 4 ]
+        %tmp.2 = getv ? :WatchFaceDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_5_24_7_2_stop:
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 9; ]
+    public
+    function onPress(clickEvent) {
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 10 4 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_start" "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_stop" ]
+        %co_ords.1 = local;
+        %tmp.1 = lgetv %clickEvent;
+        %tmp.2 = getv function %tmp.1 :getCoordinates;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %co_ords.1 %tmp.3;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 11 4 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_start" "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_stop" ]
+        %complicationId.2 = local;
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :checkBoundingBoxes;
+        %tmp.7 = lgetv %co_ords.1;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        lputv %complicationId.2 %tmp.8;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 12 4 ]
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_4_18_4_if_stmt:
+        %tmp.10 = lgetv %complicationId.2;
+        bf %tmp.10 @D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_4_18_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_4_18_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_24_18_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 13 6 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_24_18_4_start" "D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_24_18_4_stop" ]
+        %thisComplication.3 = local;
+        %tmp.13 = getm $.Toybox.Complications;
+        %tmp.14 = getv function ? %tmp.13 :Id;
+        %tmp.16 = lgetv %complicationId.2;
+        %tmp.11 = newc %tmp.14 (%tmp.16);
+        lputv %thisComplication.3 %tmp.11;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 14 6 ]
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_6_16_6_if_stmt:
+        %tmp.18 = lgetv %thisComplication.3;
+        bf %tmp.18 @D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_6_16_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_6_16_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_28_16_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 15 8 ]
+        %tmp.19 = getm $.Toybox.Complications;
+        %tmp.20 = getv function %tmp.19 :exitTo;
+        %tmp.22 = lgetv %thisComplication.3;
+        invoke %tmp.19 %tmp.20(%tmp.22);
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_28_16_6_stop:
+        goto @D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_6_16_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_14_6_16_6_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 17 6 ]
+        %tmp.23 = true;
+        ret %tmp.23;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_24_18_4_stop:
+        goto @D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_4_18_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_12_4_18_4_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc" 19 4 ]
+        %tmp.24 = false;
+        ret %tmp.24;
+D_dev_Monkey_C_prj_Essence_source_EssenceDelegate_mc_9_38_20_2_stop:
+    }
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceDelegate.mc"; @line = 1; ]
+<init> {
+}

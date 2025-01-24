@@ -1,0 +1,99 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 5; ]
+class EssenceApp extends Application.AppBase{
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 6; @position = 6; ]
+    var essenceView;
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 7; ]
+    function initialize() as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_7_24_9_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 8 4 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_7_24_9_2_stop:
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 15; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 18; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_18_66_25_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 19 4 ]
+        %tmp.4 = getv ? :EssenceView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :essenceView %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 20 4 ]
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_stmt:
+        %tmp.6 = getv ? :Toybox;
+        %tmp.8 = const :Complications;
+        %tmp.9 = canhazplz %tmp.6 %tmp.8;
+        bf %tmp.9 @D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_false;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_35_22_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 21 6 ]
+        %tmp.10 = newa 2;
+        %tmp.12 = getv ? :essenceView;
+        %tmp.13 = dup %tmp.10;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.18 = getv ? :EssenceDelegate;
+        %tmp.15 = newc %tmp.18 ();
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 1 %tmp.15;
+        ret %tmp.20;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_35_22_4_stop:
+        goto @D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_false:
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_22_11_24_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 23 6 ]
+        %tmp.21 = newa 1;
+        %tmp.23 = getv ? :essenceView;
+        %tmp.24 = dup %tmp.21;
+        %tmp.25 = aputv %tmp.24 0 %tmp.23;
+        ret %tmp.25;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_22_11_24_4_stop:
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_20_4_24_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_18_66_25_2_stop:
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 27; ]
+    function onSettingsChanged() as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_27_39_30_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 28 4 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :loadLayout;
+        invoke %tmp.1 %tmp.2();
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 29 4 ]
+        %tmp.4 = getv ? :essenceView;
+        %tmp.5 = getv function %tmp.4 :changedLayout;
+        invoke %tmp.4 %tmp.5();
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_27_39_30_2_stop:
+    }
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 33; ]
+function getApp() as EssenceApp {
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_33_32_35_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 34 2 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 EssenceApp;
+    ret %tmp.4;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_33_32_35_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 1; ]
+<init> {
+}

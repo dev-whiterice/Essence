@@ -1,0 +1,98 @@
+<settings>
+
+    <setting propertyKey="@Properties.FieldTop" title="@Strings.FieldTop">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldUpperLeft" title="@Strings.FieldUpperLeft">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldUpperCenter" title="@Strings.FieldUpperCenter">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldUpperRight" title="@Strings.FieldUpperRight">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldLowerLeft" title="@Strings.FieldLowerLeft">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldLowerRight" title="@Strings.FieldLowerRight">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.FieldBottom" title="@Strings.FieldBottom">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowGraph" title="@Strings.ShowGraph">
+        <settingConfig type="boolean" />
+    </setting>
+
+</settings>

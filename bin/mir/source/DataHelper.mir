@@ -1,0 +1,1106 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 5; ]
+import Toybox.Time;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 6; ]
+import Toybox.Time.Gregorian;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 7; ]
+import Toybox.Complications;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 9; ]
+function getWeather() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_9_22_20_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 10 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_2_17_2_if_stmt:
+    %tmp.2 = getv ? :Toybox;
+    %tmp.4 = const :Weather;
+    %tmp.5 = canhazplz %tmp.2 %tmp.4;
+    bf %tmp.5 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_2_17_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_2_17_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_27_17_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 11 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_27_17_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_27_17_2_stop" ]
+    %data.1 = local;
+    %tmp.6 = getm $.Toybox.Weather;
+    %tmp.7 = getv function %tmp.6 :getCurrentConditions;
+    %tmp.8 = invoke %tmp.6 %tmp.7();
+    lputv %data.1 %tmp.8;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 12 4 ]
+    %tmp.9 = lgetv %data.1;
+    %tmp.10 = getv %tmp.9 :lowTemperature;
+    %tmp.11 = 0.5;
+    %tmp.12 = add %tmp.10 %tmp.11;
+    %tmp.13 = getv function %tmp.12 :toNumber;
+    %tmp.14 = invoke %tmp.12 %tmp.13();
+    %tmp.15 = getv function %tmp.14 :toString;
+    %tmp.16 = invoke %tmp.14 %tmp.15();
+    %tmp.17 = "/";
+    %tmp.18 = add %tmp.16 %tmp.17;
+    %tmp.19 = lgetv %data.1;
+    %tmp.20 = getv %tmp.19 :highTemperature;
+    %tmp.21 = 0.5;
+    %tmp.22 = add %tmp.20 %tmp.21;
+    %tmp.23 = getv function %tmp.22 :toNumber;
+    %tmp.24 = invoke %tmp.22 %tmp.23();
+    %tmp.25 = getv function %tmp.24 :toString;
+    %tmp.26 = invoke %tmp.24 %tmp.25();
+    %tmp.27 = add %tmp.18 %tmp.26;
+    ret %tmp.27;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_27_17_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_2_17_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_10_2_17_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 19 2 ]
+    %tmp.28 = "--";
+    ret %tmp.28;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_9_22_20_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 22; ]
+function getCalendar() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_22_23_33_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 23 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_2_30_2_if_stmt:
+    %tmp.2 = getv ? :Toybox;
+    %tmp.4 = const :Complications;
+    %tmp.5 = canhazplz %tmp.2 %tmp.4;
+    bf %tmp.5 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_2_30_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_2_30_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_33_30_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 24 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_33_30_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_33_30_2_stop" ]
+    %comp.1 = local;
+    %tmp.6 = getm $.Toybox.Complications;
+    %tmp.7 = getv function %tmp.6 :getComplication;
+    %tmp.10 = getm $.Toybox.Complications;
+    %tmp.11 = getv function ? %tmp.10 :Id;
+    %tmp.12 = getm $.Toybox.Complications;
+    %tmp.13 = getv %tmp.12 :COMPLICATION_TYPE_CALENDAR_EVENTS;
+    %tmp.8 = newc %tmp.11 (%tmp.13);
+    %tmp.14 = invoke %tmp.6 %tmp.7(%tmp.8);
+    lputv %comp.1 %tmp.14;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 27 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_4_29_4_if_stmt:
+    %tmp.15 = lgetv %comp.1;
+    %tmp.16 = getv %tmp.15 :value;
+    %tmp.17 = null;
+    %tmp.18 = ne %tmp.16 %tmp.17;
+    bf %tmp.18 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_4_29_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_4_29_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_28_29_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 28 6 ]
+    %tmp.19 = lgetv %comp.1;
+    %tmp.20 = getv %tmp.19 :value;
+    ret %tmp.20;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_28_29_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_4_29_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_27_4_29_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_33_30_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_2_30_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_23_2_30_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 32 2 ]
+    %tmp.21 = "--";
+    ret %tmp.21;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_22_23_33_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 35; ]
+function getSunEvent() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_35_23_82_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 36 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_2_79_2_if_stmt:
+    %tmp.2 = getv ? :Toybox;
+    %tmp.4 = const :Position;
+    %tmp.5 = canhazplz %tmp.2 %tmp.4;
+    bf %tmp.5 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_2_79_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_2_79_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_28_79_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 37 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_28_79_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_28_79_2_stop" ]
+    %positionInfo.1 = local;
+    %tmp.6 = getm $.Toybox.Position;
+    %tmp.7 = getv function %tmp.6 :getInfo;
+    %tmp.8 = invoke %tmp.6 %tmp.7();
+    lputv %positionInfo.1 %tmp.8;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 38 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_4_43_4_if_stmt:
+    %tmp.9 = lgetv %positionInfo.1;
+    %tmp.10 = getv %tmp.9 :position;
+    %tmp.11 = null;
+    %tmp.12 = eq %tmp.10 %tmp.11;
+    bf %tmp.12 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_4_43_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_4_43_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_39_43_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 39 6 ]
+    %tmp.13 = newd 2;
+    %tmp.14 = "label";
+    %tmp.15 = getm $.Toybox.WatchUi;
+    %tmp.16 = getv function %tmp.15 :loadResource;
+    %tmp.17 = getm $;
+    %tmp.18 = getv %tmp.17 :Rez;
+    %tmp.19 = getv %tmp.18 :Strings;
+    %tmp.20 = getv %tmp.19 :SunEvent;
+    %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+    %tmp.22 = as %tmp.21 String;
+    %tmp.23 = dup %tmp.13;
+    %tmp.24 = aputv %tmp.23 %tmp.14 %tmp.22;
+    %tmp.25 = "value";
+    %tmp.26 = "--";
+    %tmp.27 = dup %tmp.24;
+    %tmp.28 = aputv %tmp.27 %tmp.25 %tmp.26;
+    ret %tmp.28;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_39_43_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_4_43_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_38_4_43_4_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 44 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_4_74_4_if_stmt:
+    %tmp.30 = getv ? :Toybox;
+    %tmp.32 = const :Weather;
+    %tmp.33 = canhazplz %tmp.30 %tmp.32;
+    bf %tmp.33 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_4_74_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_4_74_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 45 6 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_stop" ]
+    %time.2 = local;
+    %tmp.34 = getm $.Toybox.Time;
+    %tmp.35 = getv function %tmp.34 :now;
+    %tmp.36 = invoke %tmp.34 %tmp.35();
+    lputv %time.2 %tmp.36;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 46 6 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_stop" ]
+    %sunrise.3 = local;
+    %tmp.37 = getm $.Toybox.Weather;
+    %tmp.38 = getv function %tmp.37 :getSunrise;
+    %tmp.39 = lgetv %positionInfo.1;
+    %tmp.40 = getv %tmp.39 :position;
+    %tmp.42 = lgetv %time.2;
+    %tmp.43 = invoke %tmp.37 %tmp.38(%tmp.40, %tmp.42);
+    lputv %sunrise.3 %tmp.43;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 47 6 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_stop" ]
+    %sunset.4 = local;
+    %tmp.44 = getm $.Toybox.Weather;
+    %tmp.45 = getv function %tmp.44 :getSunset;
+    %tmp.46 = lgetv %positionInfo.1;
+    %tmp.47 = getv %tmp.46 :position;
+    %tmp.49 = lgetv %time.2;
+    %tmp.50 = invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49);
+    lputv %sunset.4 %tmp.50;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 48 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_stmt:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_10_48_39_begin:
+    %tmp.52 = lgetv %sunrise.3;
+    %tmp.53 = null;
+    %tmp.54 = eq %tmp.52 %tmp.53;
+    bt %tmp.54 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_true;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_29_48_39_false:
+    %tmp.56 = lgetv %sunset.4;
+    %tmp.57 = null;
+    %tmp.58 = eq %tmp.56 %tmp.57;
+    push %tmp.58;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_29_48_39_end:
+    %tmp.59 = phi [%tmp.54 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_10_48_39_begin] [%tmp.58 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_29_48_39_false] [%tmp.59 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_29_48_39_end];
+    bf %tmp.59 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_45_53_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 49 8 ]
+    %tmp.60 = newd 2;
+    %tmp.61 = "label";
+    %tmp.62 = getm $.Toybox.WatchUi;
+    %tmp.63 = getv function %tmp.62 :loadResource;
+    %tmp.64 = getm $;
+    %tmp.65 = getv %tmp.64 :Rez;
+    %tmp.66 = getv %tmp.65 :Strings;
+    %tmp.67 = getv %tmp.66 :SunEvent;
+    %tmp.68 = invoke %tmp.62 %tmp.63(%tmp.67);
+    %tmp.69 = as %tmp.68 String;
+    %tmp.70 = dup %tmp.60;
+    %tmp.71 = aputv %tmp.70 %tmp.61 %tmp.69;
+    %tmp.72 = "value";
+    %tmp.73 = "--";
+    %tmp.74 = dup %tmp.71;
+    %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+    ret %tmp.75;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_45_53_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_48_6_53_6_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 55 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_stmt:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_10_55_62_begin:
+    %tmp.76 = lgetv %time.2;
+    %tmp.77 = getv function %tmp.76 :compare;
+    %tmp.79 = lgetv %sunrise.3;
+    %tmp.80 = invoke %tmp.76 %tmp.77(%tmp.79);
+    %tmp.81 = 0;
+    %tmp.82 = gt %tmp.80 %tmp.81;
+    bf %tmp.82 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_39_55_62_true:
+    %tmp.83 = lgetv %time.2;
+    %tmp.84 = getv function %tmp.83 :compare;
+    %tmp.86 = lgetv %sunset.4;
+    %tmp.87 = invoke %tmp.83 %tmp.84(%tmp.86);
+    %tmp.88 = 0;
+    %tmp.89 = lt %tmp.87 %tmp.88;
+    push %tmp.89;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_39_55_62_end:
+    %tmp.90 = phi [%tmp.82 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_10_55_62_begin] [%tmp.89 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_39_55_62_true] [%tmp.90 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_39_55_62_end];
+    bf %tmp.90 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_65_64_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 56 8 ]
+    %tmp.91 = getm $.Toybox.Time.Gregorian;
+    %tmp.92 = getv function %tmp.91 :info;
+    %tmp.94 = lgetv %sunset.4;
+    %tmp.95 = getm $.Toybox.Time;
+    %tmp.96 = getv %tmp.95 :FORMAT_MEDIUM;
+    %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.94, %tmp.96);
+    lputv %time.2 %tmp.97;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 57 8 ]
+    %tmp.98 = newd 2;
+    %tmp.99 = "label";
+    %tmp.100 = getm $.Toybox.WatchUi;
+    %tmp.101 = getv function %tmp.100 :loadResource;
+    %tmp.102 = getm $;
+    %tmp.103 = getv %tmp.102 :Rez;
+    %tmp.104 = getv %tmp.103 :Strings;
+    %tmp.105 = getv %tmp.104 :SunEventSet;
+    %tmp.106 = invoke %tmp.100 %tmp.101(%tmp.105);
+    %tmp.107 = as %tmp.106 String;
+    %tmp.108 = dup %tmp.98;
+    %tmp.109 = aputv %tmp.108 %tmp.99 %tmp.107;
+    %tmp.110 = "value";
+    %tmp.111 = getm $.Toybox.Lang;
+    %tmp.112 = getv function %tmp.111 :format;
+    %tmp.113 = "$1$:$2$";
+    %tmp.114 = newa 2;
+    %tmp.115 = lgetv %time.2;
+    %tmp.116 = getv %tmp.115 :hour;
+    %tmp.117 = dup %tmp.114;
+    %tmp.118 = aputv %tmp.117 0 %tmp.116;
+    %tmp.119 = lgetv %time.2;
+    %tmp.120 = getv %tmp.119 :min;
+    %tmp.121 = getv function %tmp.120 :format;
+    %tmp.122 = "%02d";
+    %tmp.123 = invoke %tmp.120 %tmp.121(%tmp.122);
+    %tmp.124 = dup %tmp.118;
+    %tmp.125 = aputv %tmp.124 1 %tmp.123;
+    %tmp.126 = invoke %tmp.111 %tmp.112(%tmp.113, %tmp.125);
+    %tmp.127 = dup %tmp.109;
+    %tmp.128 = aputv %tmp.127 %tmp.110 %tmp.126;
+    ret %tmp.128;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_65_64_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_false:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_64_13_73_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 65 8 ]
+    %tmp.129 = getm $.Toybox.Time.Gregorian;
+    %tmp.130 = getv function %tmp.129 :info;
+    %tmp.132 = lgetv %sunrise.3;
+    %tmp.133 = getm $.Toybox.Time;
+    %tmp.134 = getv %tmp.133 :FORMAT_MEDIUM;
+    %tmp.135 = invoke %tmp.129 %tmp.130(%tmp.132, %tmp.134);
+    lputv %time.2 %tmp.135;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 66 8 ]
+    %tmp.136 = newd 2;
+    %tmp.137 = "label";
+    %tmp.138 = getm $.Toybox.WatchUi;
+    %tmp.139 = getv function %tmp.138 :loadResource;
+    %tmp.140 = getm $;
+    %tmp.141 = getv %tmp.140 :Rez;
+    %tmp.142 = getv %tmp.141 :Strings;
+    %tmp.143 = getv %tmp.142 :SunEventRise;
+    %tmp.144 = invoke %tmp.138 %tmp.139(%tmp.143);
+    %tmp.145 = as %tmp.144 String;
+    %tmp.146 = dup %tmp.136;
+    %tmp.147 = aputv %tmp.146 %tmp.137 %tmp.145;
+    %tmp.148 = "value";
+    %tmp.149 = getm $.Toybox.Lang;
+    %tmp.150 = getv function %tmp.149 :format;
+    %tmp.151 = "$1$:$2$";
+    %tmp.152 = newa 2;
+    %tmp.153 = lgetv %time.2;
+    %tmp.154 = getv %tmp.153 :hour;
+    %tmp.155 = dup %tmp.152;
+    %tmp.156 = aputv %tmp.155 0 %tmp.154;
+    %tmp.157 = lgetv %time.2;
+    %tmp.158 = getv %tmp.157 :min;
+    %tmp.159 = getv function %tmp.158 :format;
+    %tmp.160 = "%02d";
+    %tmp.161 = invoke %tmp.158 %tmp.159(%tmp.160);
+    %tmp.162 = dup %tmp.156;
+    %tmp.163 = aputv %tmp.162 1 %tmp.161;
+    %tmp.164 = invoke %tmp.149 %tmp.150(%tmp.151, %tmp.163);
+    %tmp.165 = dup %tmp.147;
+    %tmp.166 = aputv %tmp.165 %tmp.148 %tmp.164;
+    ret %tmp.166;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_64_13_73_6_stop:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_55_6_73_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_29_74_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_4_74_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_44_4_74_4_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 75 4 ]
+    %tmp.167 = newd 2;
+    %tmp.168 = "label";
+    %tmp.169 = getm $.Toybox.WatchUi;
+    %tmp.170 = getv function %tmp.169 :loadResource;
+    %tmp.171 = getm $;
+    %tmp.172 = getv %tmp.171 :Rez;
+    %tmp.173 = getv %tmp.172 :Strings;
+    %tmp.174 = getv %tmp.173 :SunEvent;
+    %tmp.175 = invoke %tmp.169 %tmp.170(%tmp.174);
+    %tmp.176 = as %tmp.175 String;
+    %tmp.177 = dup %tmp.167;
+    %tmp.178 = aputv %tmp.177 %tmp.168 %tmp.176;
+    %tmp.179 = "value";
+    %tmp.180 = "--";
+    %tmp.181 = dup %tmp.178;
+    %tmp.182 = aputv %tmp.181 %tmp.179 %tmp.180;
+    ret %tmp.182;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_28_79_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_2_79_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_36_2_79_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 81 2 ]
+    %tmp.183 = "--";
+    ret %tmp.183;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_35_23_82_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 84; ]
+function getDate() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_84_19_87_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 85 2 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_84_19_87_0_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_84_19_87_0_stop" ]
+    %now.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %now.1 %tmp.8;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 86 2 ]
+    %tmp.9 = getm $.Toybox.Lang;
+    %tmp.10 = getv function %tmp.9 :format;
+    %tmp.11 = "$1$, $2$";
+    %tmp.12 = newa 2;
+    %tmp.13 = lgetv %now.1;
+    %tmp.14 = getv %tmp.13 :day_of_week;
+    %tmp.15 = dup %tmp.12;
+    %tmp.16 = aputv %tmp.15 0 %tmp.14;
+    %tmp.17 = lgetv %now.1;
+    %tmp.18 = getv %tmp.17 :day;
+    %tmp.19 = dup %tmp.16;
+    %tmp.20 = aputv %tmp.19 1 %tmp.18;
+    %tmp.21 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.20);
+    %tmp.22 = getv function %tmp.21 :toLower;
+    %tmp.23 = invoke %tmp.21 %tmp.22();
+    ret %tmp.23;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_84_19_87_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 89; ]
+function getNotifications() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_89_28_95_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 90 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_2_92_2_if_stmt:
+    %tmp.1 = getm $.Toybox.System;
+    %tmp.2 = getv function %tmp.1 :getDeviceSettings;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.5 = const :notificationCount;
+    %tmp.6 = canhazplz %tmp.3 %tmp.5;
+    bf %tmp.6 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_2_92_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_2_92_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_64_92_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 91 4 ]
+    %tmp.7 = getm $.Toybox.System;
+    %tmp.8 = getv function %tmp.7 :getDeviceSettings;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    %tmp.10 = getv %tmp.9 :notificationCount;
+    %tmp.11 = getv function %tmp.10 :toString;
+    %tmp.12 = invoke %tmp.10 %tmp.11();
+    ret %tmp.12;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_64_92_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_2_92_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_90_2_92_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 94 2 ]
+    %tmp.13 = "--";
+    ret %tmp.13;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_89_28_95_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 97; ]
+function getBattery() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_97_22_118_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 98 2 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_97_22_118_0_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_97_22_118_0_stop" ]
+    %data.1 = local;
+    %tmp.1 = null;
+    lputv %data.1 %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 99 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_2_106_2_if_stmt:
+    %tmp.3 = getv ? :Toybox;
+    %tmp.5 = const :Complications;
+    %tmp.6 = canhazplz %tmp.3 %tmp.5;
+    bf %tmp.6 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_2_106_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_2_106_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_33_106_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 100 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_33_106_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_33_106_2_stop" ]
+    %comp.2 = local;
+    %tmp.7 = getm $.Toybox.Complications;
+    %tmp.8 = getv function %tmp.7 :getComplication;
+    %tmp.11 = getm $.Toybox.Complications;
+    %tmp.12 = getv function ? %tmp.11 :Id;
+    %tmp.13 = getm $.Toybox.Complications;
+    %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_BATTERY;
+    %tmp.9 = newc %tmp.12 (%tmp.14);
+    %tmp.15 = invoke %tmp.7 %tmp.8(%tmp.9);
+    lputv %comp.2 %tmp.15;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 103 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_4_105_4_if_stmt:
+    %tmp.16 = lgetv %comp.2;
+    %tmp.17 = getv %tmp.16 :value;
+    %tmp.18 = null;
+    %tmp.19 = ne %tmp.17 %tmp.18;
+    bf %tmp.19 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_4_105_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_4_105_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_28_105_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 104 6 ]
+    %tmp.20 = lgetv %comp.2;
+    %tmp.21 = getv %tmp.20 :value;
+    lputv %data.1 %tmp.21;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_28_105_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_4_105_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_103_4_105_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_33_106_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_2_106_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_99_2_106_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 107 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_2_113_2_if_stmt:
+    %tmp.23 = lgetv %data.1;
+    %tmp.24 = null;
+    %tmp.25 = eq %tmp.23 %tmp.24;
+    bf %tmp.25 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_2_113_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_2_113_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_20_113_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 108 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_4_112_4_if_stmt:
+    %tmp.27 = getv ? :Toybox;
+    %tmp.29 = const :System;
+    %tmp.30 = canhazplz %tmp.27 %tmp.29;
+    bf %tmp.30 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_4_112_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_4_112_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_28_112_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 109 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_6_111_6_if_stmt:
+    %tmp.31 = getm $.Toybox.System;
+    %tmp.32 = getv function %tmp.31 :getSystemStats;
+    %tmp.33 = invoke %tmp.31 %tmp.32();
+    %tmp.35 = const :battery;
+    %tmp.36 = canhazplz %tmp.33 %tmp.35;
+    bf %tmp.36 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_6_111_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_6_111_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_55_111_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 110 8 ]
+    %tmp.37 = getm $.Toybox.System;
+    %tmp.38 = getv function %tmp.37 :getSystemStats;
+    %tmp.39 = invoke %tmp.37 %tmp.38();
+    %tmp.40 = getv %tmp.39 :battery;
+    lputv %data.1 %tmp.40;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_55_111_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_6_111_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_109_6_111_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_28_112_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_4_112_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_108_4_112_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_20_113_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_2_113_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_107_2_113_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 114 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_2_116_2_if_stmt:
+    %tmp.42 = lgetv %data.1;
+    %tmp.43 = null;
+    %tmp.44 = eq %tmp.42 %tmp.43;
+    bf %tmp.44 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_2_116_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_2_116_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_20_116_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 115 4 ]
+    %tmp.45 = "--";
+    ret %tmp.45;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_20_116_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_2_116_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_114_2_116_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 117 2 ]
+    %tmp.46 = lgetv %data.1;
+    %tmp.47 = getv function %tmp.46 :format;
+    %tmp.48 = "%d";
+    %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+    ret %tmp.49;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_97_22_118_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 120; ]
+function getAltimeter() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_120_24_152_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 121 2 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_120_24_152_0_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_120_24_152_0_stop" ]
+    %data.1 = local;
+    %tmp.1 = null;
+    lputv %data.1 %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 122 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_2_129_2_if_stmt:
+    %tmp.3 = getv ? :Toybox;
+    %tmp.5 = const :Complications;
+    %tmp.6 = canhazplz %tmp.3 %tmp.5;
+    bf %tmp.6 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_2_129_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_2_129_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_33_129_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 123 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_33_129_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_33_129_2_stop" ]
+    %comp.2 = local;
+    %tmp.7 = getm $.Toybox.Complications;
+    %tmp.8 = getv function %tmp.7 :getComplication;
+    %tmp.11 = getm $.Toybox.Complications;
+    %tmp.12 = getv function ? %tmp.11 :Id;
+    %tmp.13 = getm $.Toybox.Complications;
+    %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_ALTITUDE;
+    %tmp.9 = newc %tmp.12 (%tmp.14);
+    %tmp.15 = invoke %tmp.7 %tmp.8(%tmp.9);
+    lputv %comp.2 %tmp.15;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 126 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_4_128_4_if_stmt:
+    %tmp.16 = lgetv %comp.2;
+    %tmp.17 = getv %tmp.16 :value;
+    %tmp.18 = null;
+    %tmp.19 = ne %tmp.17 %tmp.18;
+    bf %tmp.19 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_4_128_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_4_128_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_28_128_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 127 6 ]
+    %tmp.20 = lgetv %comp.2;
+    %tmp.21 = getv %tmp.20 :value;
+    lputv %data.1 %tmp.21;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_28_128_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_4_128_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_126_4_128_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_33_129_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_2_129_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_122_2_129_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 130 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_2_136_2_if_stmt:
+    %tmp.23 = lgetv %data.1;
+    %tmp.24 = null;
+    %tmp.25 = eq %tmp.23 %tmp.24;
+    bf %tmp.25 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_2_136_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_2_136_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_20_136_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 131 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_4_135_4_if_stmt:
+    %tmp.27 = getv ? :Toybox;
+    %tmp.29 = const :Activity;
+    %tmp.30 = canhazplz %tmp.27 %tmp.29;
+    bf %tmp.30 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_4_135_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_4_135_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_30_135_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 132 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_6_134_6_if_stmt:
+    %tmp.31 = getm $.Toybox.Activity;
+    %tmp.32 = getv function %tmp.31 :getActivityInfo;
+    %tmp.33 = invoke %tmp.31 %tmp.32();
+    %tmp.35 = const :altitude;
+    %tmp.36 = canhazplz %tmp.33 %tmp.35;
+    bf %tmp.36 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_6_134_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_6_134_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_59_134_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 133 8 ]
+    %tmp.37 = getm $.Toybox.Activity;
+    %tmp.38 = getv function %tmp.37 :getActivityInfo;
+    %tmp.39 = invoke %tmp.37 %tmp.38();
+    %tmp.40 = getv %tmp.39 :altitude;
+    lputv %data.1 %tmp.40;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_59_134_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_6_134_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_132_6_134_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_30_135_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_4_135_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_131_4_135_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_20_136_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_2_136_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_130_2_136_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 137 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_2_145_2_if_stmt:
+    %tmp.42 = lgetv %data.1;
+    %tmp.43 = null;
+    %tmp.44 = eq %tmp.42 %tmp.43;
+    bf %tmp.44 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_2_145_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_2_145_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 138 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_stop" ]
+    %iterator.3 = local;
+    %tmp.45 = getm $.Toybox.SensorHistory;
+    %tmp.46 = getv function %tmp.45 :getElevationHistory;
+    %tmp.47 = newd 0;
+    %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
+    lputv %iterator.3 %tmp.48;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 139 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_stop" ]
+    %sample.4 = local;
+    %tmp.49 = lgetv %iterator.3;
+    %tmp.50 = getv function %tmp.49 :next;
+    %tmp.51 = invoke %tmp.49 %tmp.50();
+    lputv %sample.4 %tmp.51;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 140 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_stmt:
+    %tmp.52 = lgetv %sample.4;
+    %tmp.53 = getv %tmp.52 :data;
+    %tmp.54 = null;
+    %tmp.55 = ne %tmp.53 %tmp.54;
+    bf %tmp.55 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_29_142_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 141 6 ]
+    %tmp.56 = lgetv %sample.4;
+    %tmp.57 = getv %tmp.56 :data;
+    lputv %data.1 %tmp.57;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_29_142_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_false:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_142_11_144_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 143 6 ]
+    %tmp.58 = "--";
+    ret %tmp.58;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_142_11_144_4_stop:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_140_4_144_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_20_145_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_2_145_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_137_2_145_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 147 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_2_149_2_if_stmt:
+    %tmp.60 = lgetv %data.1;
+    %tmp.61 = null;
+    %tmp.62 = eq %tmp.60 %tmp.61;
+    bf %tmp.62 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_2_149_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_2_149_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_20_149_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 148 4 ]
+    %tmp.63 = "--";
+    ret %tmp.63;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_20_149_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_2_149_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_147_2_149_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 150 2 ]
+    %tmp.65 = lgetv %data.1;
+    %tmp.66 = 0.5;
+    %tmp.67 = add %tmp.65 %tmp.66;
+    %tmp.68 = getv function %tmp.67 :toNumber;
+    %tmp.69 = invoke %tmp.67 %tmp.68();
+    %tmp.70 = getv function %tmp.69 :toString;
+    %tmp.71 = invoke %tmp.69 %tmp.70();
+    lputv %data.1 %tmp.71;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 151 2 ]
+    %tmp.73 = lgetv %data.1;
+    ret %tmp.73;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_120_24_152_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 154; ]
+function getHeartrate() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_154_24_192_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 155 2 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_154_24_192_0_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_154_24_192_0_stop" ]
+    %data.1 = local;
+    %tmp.1 = null;
+    lputv %data.1 %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 156 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_2_163_2_if_stmt:
+    %tmp.3 = getv ? :Toybox;
+    %tmp.5 = const :Complications;
+    %tmp.6 = canhazplz %tmp.3 %tmp.5;
+    bf %tmp.6 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_2_163_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_2_163_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_33_163_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 157 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_33_163_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_33_163_2_stop" ]
+    %comp.2 = local;
+    %tmp.7 = getm $.Toybox.Complications;
+    %tmp.8 = getv function %tmp.7 :getComplication;
+    %tmp.11 = getm $.Toybox.Complications;
+    %tmp.12 = getv function ? %tmp.11 :Id;
+    %tmp.13 = getm $.Toybox.Complications;
+    %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_HEART_RATE;
+    %tmp.9 = newc %tmp.12 (%tmp.14);
+    %tmp.15 = invoke %tmp.7 %tmp.8(%tmp.9);
+    lputv %comp.2 %tmp.15;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 160 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_4_162_4_if_stmt:
+    %tmp.16 = lgetv %comp.2;
+    %tmp.17 = getv %tmp.16 :value;
+    %tmp.18 = null;
+    %tmp.19 = ne %tmp.17 %tmp.18;
+    bf %tmp.19 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_4_162_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_4_162_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_28_162_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 161 6 ]
+    %tmp.20 = lgetv %comp.2;
+    %tmp.21 = getv %tmp.20 :value;
+    lputv %data.1 %tmp.21;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_28_162_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_4_162_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_160_4_162_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_33_163_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_2_163_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_156_2_163_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 164 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_2_170_2_if_stmt:
+    %tmp.23 = lgetv %data.1;
+    %tmp.24 = "--";
+    %tmp.25 = eq %tmp.23 %tmp.24;
+    bf %tmp.25 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_2_170_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_2_170_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_20_170_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 165 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_4_169_4_if_stmt:
+    %tmp.27 = getv ? :Toybox;
+    %tmp.29 = const :Activity;
+    %tmp.30 = canhazplz %tmp.27 %tmp.29;
+    bf %tmp.30 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_4_169_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_4_169_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_30_169_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 166 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_6_168_6_if_stmt:
+    %tmp.31 = getm $.Toybox.Activity;
+    %tmp.32 = getv function %tmp.31 :getActivityInfo;
+    %tmp.33 = invoke %tmp.31 %tmp.32();
+    %tmp.35 = const :currentHeartRate;
+    %tmp.36 = canhazplz %tmp.33 %tmp.35;
+    bf %tmp.36 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_6_168_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_6_168_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_67_168_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 167 8 ]
+    %tmp.37 = getm $.Toybox.Activity;
+    %tmp.38 = getv function %tmp.37 :getActivityInfo;
+    %tmp.39 = invoke %tmp.37 %tmp.38();
+    %tmp.40 = getv %tmp.39 :currentHeartRate;
+    lputv %data.1 %tmp.40;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_67_168_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_6_168_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_166_6_168_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_30_169_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_4_169_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_165_4_169_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_20_170_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_2_170_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_164_2_170_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 171 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_2_186_2_if_stmt:
+    %tmp.42 = lgetv %data.1;
+    %tmp.43 = "--";
+    %tmp.44 = eq %tmp.42 %tmp.43;
+    bf %tmp.44 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_2_186_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_2_186_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_20_186_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 172 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_4_185_4_if_stmt:
+    %tmp.46 = getv ? :Toybox;
+    %tmp.48 = const :SensorHistory;
+    %tmp.49 = canhazplz %tmp.46 %tmp.48;
+    bf %tmp.49 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_4_185_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_4_185_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_35_185_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 173 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_6_184_6_if_stmt:
+    %tmp.51 = getv ? :Toybox;
+    %tmp.52 = as %tmp.51 { (interface { var SensorHistory; }) };
+    %tmp.53 = getv %tmp.52 :SensorHistory;
+    %tmp.55 = const :getHeartRateHistory;
+    %tmp.56 = canhazplz %tmp.53 %tmp.55;
+    bf %tmp.56 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_6_184_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_6_184_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 174 8 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_stop" ]
+    %iterator.3 = local;
+    %tmp.57 = getm $.Toybox.SensorHistory;
+    %tmp.58 = getv function %tmp.57 :getHeartRateHistory;
+    %tmp.59 = newd 0;
+    %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
+    lputv %iterator.3 %tmp.60;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 175 8 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_stop" ]
+    %sample.4 = local;
+    %tmp.61 = lgetv %iterator.3;
+    %tmp.62 = getv function %tmp.61 :next;
+    %tmp.63 = invoke %tmp.61 %tmp.62();
+    lputv %sample.4 %tmp.63;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 176 8 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_stmt:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_177_10_178_48_begin:
+    %tmp.64 = lgetv %sample.4;
+    %tmp.65 = getv %tmp.64 :data;
+    %tmp.66 = null;
+    %tmp.67 = ne %tmp.65 %tmp.66;
+    bf %tmp.67 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_178_10_178_48_true:
+    %tmp.68 = lgetv %sample.4;
+    %tmp.69 = getv %tmp.68 :data;
+    %tmp.70 = getm $.Toybox.ActivityMonitor;
+    %tmp.71 = getv %tmp.70 :INVALID_HR_SAMPLE;
+    %tmp.72 = ne %tmp.69 %tmp.71;
+    push %tmp.72;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_178_10_178_48_end:
+    %tmp.73 = phi [%tmp.67 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_177_10_178_48_begin] [%tmp.72 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_178_10_178_48_true] [%tmp.73 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_178_10_178_48_end];
+    bf %tmp.73 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_179_10_181_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 180 10 ]
+    %tmp.74 = lgetv %sample.4;
+    %tmp.75 = getv %tmp.74 :data;
+    lputv %data.1 %tmp.75;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_179_10_181_8_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_false:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_181_15_183_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 182 10 ]
+    %tmp.76 = "--";
+    ret %tmp.76;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_181_15_183_8_stop:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_176_8_183_8_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_57_184_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_6_184_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_173_6_184_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_35_185_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_4_185_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_172_4_185_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_20_186_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_2_186_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_171_2_186_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 188 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_2_190_2_if_stmt:
+    %tmp.78 = lgetv %data.1;
+    %tmp.79 = null;
+    %tmp.80 = eq %tmp.78 %tmp.79;
+    bf %tmp.80 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_2_190_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_2_190_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_20_190_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 189 4 ]
+    %tmp.81 = "--";
+    ret %tmp.81;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_20_190_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_2_190_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_188_2_190_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 191 2 ]
+    %tmp.82 = getm $.Toybox.Lang;
+    %tmp.83 = getv function %tmp.82 :format;
+    %tmp.84 = "$1$";
+    %tmp.85 = newa 1;
+    %tmp.87 = lgetv %data.1;
+    %tmp.88 = dup %tmp.85;
+    %tmp.89 = aputv %tmp.88 0 %tmp.87;
+    %tmp.90 = invoke %tmp.82 %tmp.83(%tmp.84, %tmp.89);
+    ret %tmp.90;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_154_24_192_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 194; ]
+function getBarometer() {
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_194_24_231_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 195 2 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_194_24_231_0_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_194_24_231_0_stop" ]
+    %data.1 = local;
+    %tmp.1 = null;
+    lputv %data.1 %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 196 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_2_203_2_if_stmt:
+    %tmp.3 = getv ? :Toybox;
+    %tmp.5 = const :Complications;
+    %tmp.6 = canhazplz %tmp.3 %tmp.5;
+    bf %tmp.6 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_2_203_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_2_203_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_33_203_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 197 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_33_203_2_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_33_203_2_stop" ]
+    %comp.2 = local;
+    %tmp.7 = getm $.Toybox.Complications;
+    %tmp.8 = getv function %tmp.7 :getComplication;
+    %tmp.11 = getm $.Toybox.Complications;
+    %tmp.12 = getv function ? %tmp.11 :Id;
+    %tmp.13 = getm $.Toybox.Complications;
+    %tmp.14 = getv %tmp.13 :COMPLICATION_TYPE_SEA_LEVEL_PRESSURE;
+    %tmp.9 = newc %tmp.12 (%tmp.14);
+    %tmp.15 = invoke %tmp.7 %tmp.8(%tmp.9);
+    lputv %comp.2 %tmp.15;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 200 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_4_202_4_if_stmt:
+    %tmp.16 = lgetv %comp.2;
+    %tmp.17 = getv %tmp.16 :value;
+    %tmp.18 = null;
+    %tmp.19 = ne %tmp.17 %tmp.18;
+    bf %tmp.19 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_4_202_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_4_202_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_28_202_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 201 6 ]
+    %tmp.20 = lgetv %comp.2;
+    %tmp.21 = getv %tmp.20 :value;
+    lputv %data.1 %tmp.21;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_28_202_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_4_202_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_200_4_202_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_33_203_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_2_203_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_196_2_203_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 204 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_2_210_2_if_stmt:
+    %tmp.23 = lgetv %data.1;
+    %tmp.24 = null;
+    %tmp.25 = eq %tmp.23 %tmp.24;
+    bf %tmp.25 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_2_210_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_2_210_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_20_210_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 205 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_4_209_4_if_stmt:
+    %tmp.27 = getv ? :Toybox;
+    %tmp.29 = const :Activity;
+    %tmp.30 = canhazplz %tmp.27 %tmp.29;
+    bf %tmp.30 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_4_209_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_4_209_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_30_209_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 206 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_6_208_6_if_stmt:
+    %tmp.31 = getm $.Toybox.Activity;
+    %tmp.32 = getv function %tmp.31 :getActivityInfo;
+    %tmp.33 = invoke %tmp.31 %tmp.32();
+    %tmp.35 = const :meanSeaLevelPressure;
+    %tmp.36 = canhazplz %tmp.33 %tmp.35;
+    bf %tmp.36 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_6_208_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_6_208_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_71_208_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 207 8 ]
+    %tmp.37 = getm $.Toybox.Activity;
+    %tmp.38 = getv function %tmp.37 :getActivityInfo;
+    %tmp.39 = invoke %tmp.37 %tmp.38();
+    %tmp.40 = getv %tmp.39 :meanSeaLevelPressure;
+    lputv %data.1 %tmp.40;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_71_208_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_6_208_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_206_6_208_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_30_209_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_4_209_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_205_4_209_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_20_210_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_2_210_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_204_2_210_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 211 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_2_223_2_if_stmt:
+    %tmp.42 = lgetv %data.1;
+    %tmp.43 = null;
+    %tmp.44 = eq %tmp.42 %tmp.43;
+    bf %tmp.44 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_2_223_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_2_223_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_20_223_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 212 4 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_4_222_4_if_stmt:
+    %tmp.46 = getv ? :Toybox;
+    %tmp.48 = const :SensorHistory;
+    %tmp.49 = canhazplz %tmp.46 %tmp.48;
+    bf %tmp.49 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_4_222_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_4_222_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_35_222_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 213 6 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_6_221_6_if_stmt:
+    %tmp.51 = getv ? :Toybox;
+    %tmp.52 = as %tmp.51 { (interface { var SensorHistory; }) };
+    %tmp.53 = getv %tmp.52 :SensorHistory;
+    %tmp.55 = const :getStressHistory;
+    %tmp.56 = canhazplz %tmp.53 %tmp.55;
+    bf %tmp.56 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_6_221_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_6_221_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 214 8 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_stop" ]
+    %iterator.3 = local;
+    %tmp.57 = getm $.Toybox.SensorHistory;
+    %tmp.58 = getv function %tmp.57 :getPressureHistory;
+    %tmp.59 = newd 0;
+    %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
+    lputv %iterator.3 %tmp.60;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 215 8 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_start" "D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_stop" ]
+    %sample.4 = local;
+    %tmp.61 = lgetv %iterator.3;
+    %tmp.62 = getv function %tmp.61 :next;
+    %tmp.63 = invoke %tmp.61 %tmp.62();
+    lputv %sample.4 %tmp.63;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 216 8 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_stmt:
+    %tmp.65 = lgetv %sample.4;
+    %tmp.66 = null;
+    %tmp.67 = ne %tmp.65 %tmp.66;
+    bf %tmp.67 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_false;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_28_218_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 217 10 ]
+    %tmp.68 = lgetv %sample.4;
+    %tmp.69 = as %tmp.68 { (!Null) };
+    %tmp.70 = getv %tmp.69 :data;
+    lputv %data.1 %tmp.70;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_28_218_8_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_false:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_218_15_220_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 219 10 ]
+    %tmp.71 = "--";
+    ret %tmp.71;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_218_15_220_8_stop:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_216_8_220_8_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_54_221_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_6_221_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_213_6_221_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_35_222_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_4_222_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_212_4_222_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_20_223_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_2_223_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_211_2_223_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 225 2 ]
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_2_227_2_if_stmt:
+    %tmp.73 = lgetv %data.1;
+    %tmp.74 = null;
+    %tmp.75 = eq %tmp.73 %tmp.74;
+    bf %tmp.75 @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_2_227_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_2_227_2_if_true:
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_20_227_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 226 4 ]
+    %tmp.76 = "--";
+    ret %tmp.76;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_20_227_2_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_2_227_2_if_end;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_225_2_227_2_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 228 2 ]
+    %tmp.78 = lgetv %data.1;
+    %tmp.79 = 100;
+    %tmp.80 = div %tmp.78 %tmp.79;
+    lputv %data.1 %tmp.80;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 229 2 ]
+    %tmp.82 = lgetv %data.1;
+    %tmp.83 = 0.5;
+    %tmp.84 = add %tmp.82 %tmp.83;
+    %tmp.85 = getv function %tmp.84 :toNumber;
+    %tmp.86 = invoke %tmp.84 %tmp.85();
+    %tmp.87 = getv function %tmp.86 :toString;
+    %tmp.88 = invoke %tmp.86 %tmp.87();
+    lputv %data.1 %tmp.88;
+[ "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc" 230 2 ]
+    %tmp.89 = getm $.Toybox.Lang;
+    %tmp.90 = getv function %tmp.89 :format;
+    %tmp.91 = "$1$";
+    %tmp.92 = newa 1;
+    %tmp.94 = lgetv %data.1;
+    %tmp.95 = dup %tmp.92;
+    %tmp.96 = aputv %tmp.95 0 %tmp.94;
+    %tmp.97 = invoke %tmp.89 %tmp.90(%tmp.91, %tmp.96);
+    ret %tmp.97;
+D_dev_Monkey_C_prj_Essence_source_DataHelper_mc_194_24_231_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\DataHelper.mc"; @line = 1; ]
+<init> {
+}
