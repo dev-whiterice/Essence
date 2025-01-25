@@ -11,23 +11,8 @@ class EssenceView extends WatchUi.WatchFace {
   var heartMin = 2000;
   var heartMax = 0;
   var heartNow = 0;
-  var heartRateZones;
-  var redrawLabes = false;
-  const arrayColours = [
-    Graphics.COLOR_WHITE,
-    Graphics.COLOR_RED,
-    Graphics.COLOR_DK_RED,
-    Graphics.COLOR_YELLOW,
-    Graphics.COLOR_ORANGE,
-    Graphics.COLOR_LT_GRAY,
-    Graphics.COLOR_DK_GRAY,
-    Graphics.COLOR_BLUE,
-    Graphics.COLOR_GREEN,
-    Graphics.COLOR_DK_GREEN,
-    Graphics.COLOR_DK_BLUE,
-    Graphics.COLOR_PURPLE,
-    Graphics.COLOR_PINK,
-  ];
+  var batterySave = false;
+  var showGraph = false;
 
   function initialize() {
     WatchFace.initialize();
@@ -35,19 +20,31 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Load your resources here
   function onLayout(dc as Dc) as Void {
-    setLayout(Rez.Layouts.WatchFace(dc));
-
     dw = dc.getWidth();
     dh = dc.getHeight();
 
     defineBoundingBoxes(dc);
 
-    heartRateZones = Toybox.UserProfile.getHeartRateZones(
-      Toybox.UserProfile.getCurrentSport()
-    );
+    batterySave = getApp().getProperty("BatterySave");
+    showGraph = getApp().getProperty("ShowGraph");
 
-    loadLayout();
-    drawLabels(dc);
+    if (batterySave == false) {
+      setLayout(Rez.Layouts.WatchFace(dc));
+      loadLayout();
+      drawLabels(dc);
+      if (showGraph == 0) {
+        var view = View.findDrawableById("FieldLowerCenterLabel") as Text;
+        view.setText(
+          WatchUi.loadResource(dataField[fieldLowerCenter["data"]]["label"]) as
+            String
+        );
+      } else {
+        var view = View.findDrawableById("FieldLowerCenterLabel") as Text;
+        view.setText("");
+      }
+    } else {
+      setLayout(Rez.Layouts.BatterySave(dc));
+    }
   }
 
   function drawLabels(dc) {
@@ -180,23 +177,37 @@ class EssenceView extends WatchUi.WatchFace {
   function onShow() as Void {}
 
   function changedLayout() as Void {
-    redrawLabes = true;
+    redrawLayout = true;
     WatchUi.requestUpdate();
   }
 
   // Update the view
   function onUpdate(dc as Dc) as Void {
-    if (redrawLabes) {
-      drawLabels(dc);
-      redrawLabes = false;
+    if (redrawLayout) {
+      onLayout(dc);
+      redrawLayout = false;
     }
-    drawData(dc);
+
+    if (batterySave == false) {
+      drawData(dc);
+      drawIcons(dc);
+    }
+
     drawDate(dc);
     drawTime(dc);
-    drawIcons(dc);
+
     View.onUpdate(dc);
 
-    drawHRgraph(dc);
+    if (batterySave == false) {
+      if (showGraph == 0) {
+        var view = View.findDrawableById("FieldLowerCenterData") as Text;
+        var fun = dataField[fieldLowerCenter["data"]]["getter"];
+        fun = method(fun);
+        view.setText(fun.invoke());
+      } else {
+        drawHRgraph(dc);
+      }
+    }
     // drawBoundingBoxes(dc);
   }
 
@@ -226,7 +237,7 @@ class EssenceView extends WatchUi.WatchFace {
     view.setText(getDate());
   }
 
-  function drawTime(dc as Dc) as Void {
+  function drawTime(dc as Dc) {
     var timeFormat = "$1$:$2$";
     var clockTime = System.getClockTime();
     var hours = clockTime.hour;
@@ -632,12 +643,9 @@ class EssenceView extends WatchUi.WatchFace {
                   (curHeartMax - curHeartMin * 0.9)) *
                 totHeight;
               var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
-              var yVal = dh / 2 + 71 + totHeight - height;
+              var yVal = dh / 2 + 69 + totHeight - height;
 
-              dc.setColor(
-                arrayColours[getHRColour(heartBinMid)],
-                Graphics.COLOR_TRANSPARENT
-              );
+              dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
 
               dc.fillRectangle(xVal, yVal, binPixels, height);
             }
@@ -651,39 +659,6 @@ class EssenceView extends WatchUi.WatchFace {
           }
         }
       }
-    }
-  }
-
-  function getHRColour(heartrate) {
-    if (heartrate == null || heartrate < heartRateZones[0] / 2) {
-      return 0;
-    } else if (
-      heartrate >= heartRateZones[0] / 2 &&
-      heartrate < heartRateZones[1]
-    ) {
-      return 1;
-    } else if (
-      heartrate >= heartRateZones[1] &&
-      heartrate < heartRateZones[2]
-    ) {
-      return 2;
-    } else if (
-      heartrate >= heartRateZones[1] &&
-      heartrate < heartRateZones[2]
-    ) {
-      return 3;
-    } else if (
-      heartrate >= heartRateZones[2] &&
-      heartrate < heartRateZones[3]
-    ) {
-      return 4;
-    } else if (
-      heartrate >= heartRateZones[3] &&
-      heartrate < heartRateZones[4]
-    ) {
-      return 5;
-    } else {
-      return 6;
     }
   }
 

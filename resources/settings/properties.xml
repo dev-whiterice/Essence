@@ -1,15 +1,17 @@
 <properties>
 
+    <property id="BatterySave" type="boolean">false</property>
+
     <property id="FieldTop" type="number">0</property>
     <property id="FieldUpperLeft" type="number">1</property>
     <property id="FieldUpperCenter" type="number">2</property>
     <property id="FieldUpperRight" type="number">3</property>
     <property id="FieldLowerLeft" type="number">4</property>
+    <property id="FieldLowerCentral" type="number">5</property>
     <property id="FieldLowerRight" type="number">6</property>
     <property id="FieldBottom" type="number">7</property>
 
-    <property id="ShowGraph" type="boolean">true</property>
-
+    <property id="ShowGraph" type="number">1</property>
 
 
 </properties>

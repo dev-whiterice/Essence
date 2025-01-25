@@ -38,37 +38,56 @@ module Rez {
 
             var rez_cmp_local_text_FieldUpperRightData = new WatchUi.Text({:identifier=>"FieldUpperRightData", :locX=>(280 * (65 / 100.0)), :locY=>(280 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_DataFont});
 
-            var rez_cmp_local_text_FieldDate = new WatchUi.Text({:identifier=>"FieldDate", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (96 / 100.0)), :locY=>(280 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_DataFont});
+            var rez_cmp_local_text_FieldDate = new WatchUi.Text({:identifier=>"FieldDate", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (94 / 100.0)), :locY=>(280 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_DataFont});
 
             var rez_cmp_local_text_FieldTime = new WatchUi.Text({:identifier=>"FieldTime", :locX=>(280 * (52.5 / 100.0)), :locY=>((280 - 130) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_TimeFont});
 
-            var rez_cmp_local_text_FieldIcons = new WatchUi.Text({:identifier=>"FieldIcons", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (95 / 100.0)), :locY=>(280 * (66 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_IconFont20});
+            var rez_cmp_local_text_FieldIcons = new WatchUi.Text({:identifier=>"FieldIcons", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (93 / 100.0)), :locY=>(280 * (65 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_IconFont20});
 
-            var rez_cmp_local_text_FieldLowerLeftLabel = new WatchUi.Text({:identifier=>"FieldLowerLeftLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (35 / 100.0)), :locY=>(280 * (72 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_LabelFont});
+            var rez_cmp_local_text_FieldLowerLeftLabel = new WatchUi.Text({:identifier=>"FieldLowerLeftLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (35 / 100.0)), :locY=>(280 * (71 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_LabelFont});
 
-            var rez_cmp_local_text_FieldLowerLeftData = new WatchUi.Text({:identifier=>"FieldLowerLeftData", :locX=>(280 * (35 / 100.0)), :locY=>(280 * (77 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_DataFont});
+            var rez_cmp_local_text_FieldLowerLeftData = new WatchUi.Text({:identifier=>"FieldLowerLeftData", :locX=>(280 * (35 / 100.0)), :locY=>(280 * (76 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_DataFont});
 
-            var rez_cmp_local_text_FieldGraphLabel = new WatchUi.Text({:identifier=>"FieldGraphLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (41 / 100.0)), :locY=>(280 * (68 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_LabelFont});
+            var rez_cmp_local_text_FieldGraphLabel = new WatchUi.Text({:identifier=>"FieldGraphLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (41 / 100.0)), :locY=>(280 * (67 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_LabelFont});
 
-            var rez_cmp_local_text_FieldGraphData = new WatchUi.Text({:identifier=>"FieldGraphData", :locX=>(280 * (58 / 100.0)), :locY=>(280 * (68 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_LabelFont});
+            var rez_cmp_local_text_FieldGraphData = new WatchUi.Text({:identifier=>"FieldGraphData", :locX=>(280 * (58 / 100.0)), :locY=>(280 * (67 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_LabelFont});
 
-            var rez_cmp_local_text_FieldLowerRightLabel = new WatchUi.Text({:identifier=>"FieldLowerRightLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (65 / 100.0)), :locY=>(280 * (72 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_LabelFont});
+            var rez_cmp_local_text_FieldLowerCenterLabel = new WatchUi.Text({:identifier=>"FieldLowerCenterLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * 0.5), :locY=>(280 * (71 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_LabelFont});
 
-            var rez_cmp_local_text_FieldLowerRightData = new WatchUi.Text({:identifier=>"FieldLowerRightData", :locX=>(280 * (65 / 100.0)), :locY=>(280 * (77 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_DataFont});
+            var rez_cmp_local_text_FieldLowerCenterData = new WatchUi.Text({:identifier=>"FieldLowerCenterData", :locX=>(280 * 0.5), :locY=>(280 * (76 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_DataFont});
 
-            var rez_cmp_local_text_FieldBottomLabel = new WatchUi.Text({:identifier=>"FieldBottomLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * 0.5), :locY=>(280 * (85 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_LabelFont});
+            var rez_cmp_local_text_FieldLowerRightLabel = new WatchUi.Text({:identifier=>"FieldLowerRightLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * (65 / 100.0)), :locY=>(280 * (71 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_LabelFont});
 
-            var rez_cmp_local_text_FieldBottomData = new WatchUi.Text({:identifier=>"FieldBottomData", :locX=>(280 * 0.5), :locY=>(280 * (90 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_DataFont});
+            var rez_cmp_local_text_FieldLowerRightData = new WatchUi.Text({:identifier=>"FieldLowerRightData", :locX=>(280 * (65 / 100.0)), :locY=>(280 * (76 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_DataFont});
 
-            return [rez_cmp_local_text_FieldTopLabel, rez_cmp_local_text_FieldTopData, rez_cmp_local_text_FieldUpperLeftLabel, rez_cmp_local_text_FieldUpperLeftData, rez_cmp_local_text_FieldUpperCenterLabel, rez_cmp_local_text_FieldUpperCenterData, rez_cmp_local_text_FieldUpperRightLabel, rez_cmp_local_text_FieldUpperRightData, rez_cmp_local_text_FieldDate, rez_cmp_local_text_FieldTime, rez_cmp_local_text_FieldIcons, rez_cmp_local_text_FieldLowerLeftLabel, rez_cmp_local_text_FieldLowerLeftData, rez_cmp_local_text_FieldGraphLabel, rez_cmp_local_text_FieldGraphData, rez_cmp_local_text_FieldLowerRightLabel, rez_cmp_local_text_FieldLowerRightData, rez_cmp_local_text_FieldBottomLabel, rez_cmp_local_text_FieldBottomData] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_FieldBottomLabel = new WatchUi.Text({:identifier=>"FieldBottomLabel", :color=>Graphics.COLOR_DK_GRAY, :locX=>(280 * 0.5), :locY=>(280 * (84 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_LabelFont});
+
+            var rez_cmp_local_text_FieldBottomData = new WatchUi.Text({:identifier=>"FieldBottomData", :locX=>(280 * 0.5), :locY=>(280 * (89 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_DataFont});
+
+            return [rez_cmp_local_text_FieldTopLabel, rez_cmp_local_text_FieldTopData, rez_cmp_local_text_FieldUpperLeftLabel, rez_cmp_local_text_FieldUpperLeftData, rez_cmp_local_text_FieldUpperCenterLabel, rez_cmp_local_text_FieldUpperCenterData, rez_cmp_local_text_FieldUpperRightLabel, rez_cmp_local_text_FieldUpperRightData, rez_cmp_local_text_FieldDate, rez_cmp_local_text_FieldTime, rez_cmp_local_text_FieldIcons, rez_cmp_local_text_FieldLowerLeftLabel, rez_cmp_local_text_FieldLowerLeftData, rez_cmp_local_text_FieldGraphLabel, rez_cmp_local_text_FieldGraphData, rez_cmp_local_text_FieldLowerCenterLabel, rez_cmp_local_text_FieldLowerCenterData, rez_cmp_local_text_FieldLowerRightLabel, rez_cmp_local_text_FieldLowerRightData, rez_cmp_local_text_FieldBottomLabel, rez_cmp_local_text_FieldBottomData] as Array<WatchUi.Drawable>;
+        }
+
+        function BatterySave(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var local_Rez_Fonts_DataFont = (WatchUi.loadResource($.Rez.Fonts.DataFont) as Graphics.FontReference);
+            var local_Rez_Fonts_TimeFont = (WatchUi.loadResource($.Rez.Fonts.TimeFont) as Graphics.FontReference);
+            var local_Rez_Fonts_IconFont20 = (WatchUi.loadResource($.Rez.Fonts.IconFont20) as Graphics.FontReference);
+            var rez_cmp_local_text_FieldDate = new WatchUi.Text({:identifier=>"FieldDate", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (94 / 100.0)), :locY=>(280 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_DataFont});
+
+            var rez_cmp_local_text_FieldTime = new WatchUi.Text({:identifier=>"FieldTime", :locX=>(280 * (52.5 / 100.0)), :locY=>((280 - 130) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_TimeFont});
+
+            var rez_cmp_local_text_FieldIcons = new WatchUi.Text({:identifier=>"FieldIcons", :color=>Graphics.COLOR_BLUE, :locX=>(280 * (93 / 100.0)), :locY=>(280 * (65 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>local_Rez_Fonts_IconFont20});
+
+            return [rez_cmp_local_text_FieldDate, rez_cmp_local_text_FieldTime, rez_cmp_local_text_FieldIcons] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
     module Strings {
+        (:initialized) var ShowGraph1 as ResourceId;
         (:initialized) var HeartRate as ResourceId;
         (:initialized) var AltimeterExt as ResourceId;
         (:initialized) var HeartRateExt as ResourceId;
         (:initialized) var Altimeter as ResourceId;
+        (:initialized) var BatterySave as ResourceId;
         (:initialized) var SunEventRise as ResourceId;
         (:initialized) var FieldUpperRight as ResourceId;
         (:initialized) var AppName as ResourceId;
@@ -77,11 +96,13 @@ module Rez {
         (:initialized) var Battery as ResourceId;
         (:initialized) var ShowGraph as ResourceId;
         (:initialized) var FieldUpperCenter as ResourceId;
+        (:initialized) var Settings as ResourceId;
         (:initialized) var FieldTop as ResourceId;
         (:initialized) var CalendarExt as ResourceId;
         (:initialized) var BatteryExt as ResourceId;
         (:initialized) var NotificationsExt as ResourceId;
         (:initialized) var Calendar as ResourceId;
+        (:initialized) var FieldLowerCentral as ResourceId;
         (:initialized) var FieldBottom as ResourceId;
         (:initialized) var Weather as ResourceId;
         (:initialized) var BarometerExt as ResourceId;
@@ -91,6 +112,7 @@ module Rez {
         (:initialized) var FieldLowerRight as ResourceId;
         (:initialized) var Notifications as ResourceId;
         (:initialized) var SunEvent as ResourceId;
+        (:initialized) var ShowGraph0 as ResourceId;
         (:initialized) var SunEventExt as ResourceId;
     } // Strings
 

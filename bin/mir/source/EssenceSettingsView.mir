@@ -1,0 +1,406 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 7; ]
+import Toybox.Application.Storage;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 8; ]
+import Toybox.Graphics;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 9; ]
+import Toybox.Lang;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 10; ]
+import Toybox.WatchUi;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 13; ]
+class EssenceSettingsView extends WatchUi.View{
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 15; ]
+    public
+    function initialize() as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_15_31_17_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 16 4 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_15_31_17_2_stop:
+    }
+    //! Handle the update event
+    //! @param dc Device context
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 21; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_21_45_34_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 22 4 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :clearClip;
+        invoke %tmp.1 %tmp.2();
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 23 4 ]
+        %tmp.3 = lgetv %dc;
+        %tmp.4 = getv function %tmp.3 :setColor;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        %tmp.7 = getm $.Toybox.Graphics;
+        %tmp.8 = getv %tmp.7 :COLOR_BLACK;
+        invoke %tmp.3 %tmp.4(%tmp.6, %tmp.8);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 24 4 ]
+        %tmp.9 = lgetv %dc;
+        %tmp.10 = getv function %tmp.9 :clear;
+        invoke %tmp.9 %tmp.10();
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 25 4 ]
+        %tmp.11 = lgetv %dc;
+        %tmp.12 = getv function %tmp.11 :setColor;
+        %tmp.13 = getm $.Toybox.Graphics;
+        %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+        %tmp.15 = getm $.Toybox.Graphics;
+        %tmp.16 = getv %tmp.15 :COLOR_TRANSPARENT;
+        invoke %tmp.11 %tmp.12(%tmp.14, %tmp.16);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 27 4 ]
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :drawText;
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :getWidth;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = 2;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %dc;
+        %tmp.25 = getv function %tmp.24 :getHeight;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        %tmp.29 = 30;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.31 = getm $.Toybox.Graphics;
+        %tmp.32 = getv %tmp.31 :FONT_SMALL;
+        %tmp.33 = "Premi Menu \nper impostazioni";
+        %tmp.34 = getm $.Toybox.Graphics;
+        %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.17 %tmp.18(%tmp.23, %tmp.30, %tmp.32, %tmp.33, %tmp.35);
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_21_45_34_2_stop:
+    }
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 38; ]
+class EssenceSettingsDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 38; ]
+    <init> {
+    }
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 38; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 40; ]
+    public
+    function initialize() as Void {
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_40_31_42_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 41 4 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_40_31_42_2_stop:
+    }
+    //! Handle the menu event
+    //! @return true if handled, false otherwise
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 46; ]
+    public
+    function onMenu() as Boolean {
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 47 4 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_start" "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_stop" ]
+        %menu.1 = local;
+        %tmp.4 = getm $;
+        %tmp.5 = getv %tmp.4 :EssenceSettingsMenu;
+        %tmp.1 = newc %tmp.5 ();
+        lputv %menu.1 %tmp.1;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 48 4 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_start" "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_stop" ]
+        %value.2 = local;
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :getProperty;
+        %tmp.10 = "BatterySave";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        lputv %value.2 %tmp.11;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 49 4 ]
+        %tmp.12 = lgetv %menu.1;
+        %tmp.13 = getv function %tmp.12 :addItem;
+        %tmp.16 = getm $.Toybox.WatchUi;
+        %tmp.17 = getv function ? %tmp.16 :ToggleMenuItem;
+        %tmp.19 = getv ? :Rez;
+        %tmp.20 = getv %tmp.19 :Strings;
+        %tmp.21 = getv %tmp.20 :BatterySave;
+        %tmp.22 = null;
+        %tmp.23 = 1;
+        %tmp.25 = lgetv %value.2;
+        %tmp.26 = null;
+        %tmp.14 = newc %tmp.17 (%tmp.21, %tmp.22, %tmp.23, %tmp.25, %tmp.26);
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 53 4 ]
+        %tmp.27 = self;
+        %tmp.28 = getv function %tmp.27 :getApp;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = getv function %tmp.29 :getProperty;
+        %tmp.31 = "FieldTop";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        lputv %value.2 %tmp.32;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 54 4 ]
+        %tmp.33 = lgetv %menu.1;
+        %tmp.34 = getv function %tmp.33 :addItem;
+        %tmp.37 = getm $.Toybox.WatchUi;
+        %tmp.38 = getv function ? %tmp.37 :MenuItem;
+        %tmp.40 = getv ? :Rez;
+        %tmp.41 = getv %tmp.40 :Strings;
+        %tmp.42 = getv %tmp.41 :FieldTop;
+        %tmp.44 = getv ? :dataField;
+        %tmp.46 = lgetv %value.2;
+        %tmp.47 = agetv %tmp.44 %tmp.46;
+        %tmp.48 = "label";
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.50 = 2;
+        %tmp.51 = newd 0;
+        %tmp.35 = newc %tmp.38 (%tmp.42, %tmp.49, %tmp.50, %tmp.51);
+        invoke %tmp.33 %tmp.34(%tmp.35);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 62 4 ]
+        %tmp.52 = self;
+        %tmp.53 = getv function %tmp.52 :getApp;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.55 = getv function %tmp.54 :getProperty;
+        %tmp.56 = "FieldUpperLeft";
+        %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
+        lputv %value.2 %tmp.57;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 63 4 ]
+        %tmp.58 = lgetv %menu.1;
+        %tmp.59 = getv function %tmp.58 :addItem;
+        %tmp.62 = getm $.Toybox.WatchUi;
+        %tmp.63 = getv function ? %tmp.62 :MenuItem;
+        %tmp.65 = getv ? :Rez;
+        %tmp.66 = getv %tmp.65 :Strings;
+        %tmp.67 = getv %tmp.66 :FieldUpperLeft;
+        %tmp.69 = getv ? :dataField;
+        %tmp.71 = lgetv %value.2;
+        %tmp.72 = agetv %tmp.69 %tmp.71;
+        %tmp.73 = "label";
+        %tmp.74 = agetv %tmp.72 %tmp.73;
+        %tmp.75 = 3;
+        %tmp.76 = newd 0;
+        %tmp.60 = newc %tmp.63 (%tmp.67, %tmp.74, %tmp.75, %tmp.76);
+        invoke %tmp.58 %tmp.59(%tmp.60);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 71 4 ]
+        %tmp.77 = self;
+        %tmp.78 = getv function %tmp.77 :getApp;
+        %tmp.79 = invoke %tmp.77 %tmp.78();
+        %tmp.80 = getv function %tmp.79 :getProperty;
+        %tmp.81 = "FieldUpperCenter";
+        %tmp.82 = invoke %tmp.79 %tmp.80(%tmp.81);
+        lputv %value.2 %tmp.82;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 72 4 ]
+        %tmp.83 = lgetv %menu.1;
+        %tmp.84 = getv function %tmp.83 :addItem;
+        %tmp.87 = getm $.Toybox.WatchUi;
+        %tmp.88 = getv function ? %tmp.87 :MenuItem;
+        %tmp.90 = getv ? :Rez;
+        %tmp.91 = getv %tmp.90 :Strings;
+        %tmp.92 = getv %tmp.91 :FieldUpperCenter;
+        %tmp.94 = getv ? :dataField;
+        %tmp.96 = lgetv %value.2;
+        %tmp.97 = agetv %tmp.94 %tmp.96;
+        %tmp.98 = "label";
+        %tmp.99 = agetv %tmp.97 %tmp.98;
+        %tmp.100 = 4;
+        %tmp.101 = newd 0;
+        %tmp.85 = newc %tmp.88 (%tmp.92, %tmp.99, %tmp.100, %tmp.101);
+        invoke %tmp.83 %tmp.84(%tmp.85);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 80 4 ]
+        %tmp.102 = self;
+        %tmp.103 = getv function %tmp.102 :getApp;
+        %tmp.104 = invoke %tmp.102 %tmp.103();
+        %tmp.105 = getv function %tmp.104 :getProperty;
+        %tmp.106 = "FieldUpperRight";
+        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
+        lputv %value.2 %tmp.107;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 81 4 ]
+        %tmp.108 = lgetv %menu.1;
+        %tmp.109 = getv function %tmp.108 :addItem;
+        %tmp.112 = getm $.Toybox.WatchUi;
+        %tmp.113 = getv function ? %tmp.112 :MenuItem;
+        %tmp.115 = getv ? :Rez;
+        %tmp.116 = getv %tmp.115 :Strings;
+        %tmp.117 = getv %tmp.116 :FieldUpperRight;
+        %tmp.119 = getv ? :dataField;
+        %tmp.121 = lgetv %value.2;
+        %tmp.122 = agetv %tmp.119 %tmp.121;
+        %tmp.123 = "label";
+        %tmp.124 = agetv %tmp.122 %tmp.123;
+        %tmp.125 = 5;
+        %tmp.126 = newd 0;
+        %tmp.110 = newc %tmp.113 (%tmp.117, %tmp.124, %tmp.125, %tmp.126);
+        invoke %tmp.108 %tmp.109(%tmp.110);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 89 4 ]
+        %tmp.127 = self;
+        %tmp.128 = getv function %tmp.127 :getApp;
+        %tmp.129 = invoke %tmp.127 %tmp.128();
+        %tmp.130 = getv function %tmp.129 :getProperty;
+        %tmp.131 = "FieldLowerLeft";
+        %tmp.132 = invoke %tmp.129 %tmp.130(%tmp.131);
+        lputv %value.2 %tmp.132;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 90 4 ]
+        %tmp.133 = lgetv %menu.1;
+        %tmp.134 = getv function %tmp.133 :addItem;
+        %tmp.137 = getm $.Toybox.WatchUi;
+        %tmp.138 = getv function ? %tmp.137 :MenuItem;
+        %tmp.140 = getv ? :Rez;
+        %tmp.141 = getv %tmp.140 :Strings;
+        %tmp.142 = getv %tmp.141 :FieldLowerLeft;
+        %tmp.144 = getv ? :dataField;
+        %tmp.146 = lgetv %value.2;
+        %tmp.147 = agetv %tmp.144 %tmp.146;
+        %tmp.148 = "label";
+        %tmp.149 = agetv %tmp.147 %tmp.148;
+        %tmp.150 = 6;
+        %tmp.151 = newd 0;
+        %tmp.135 = newc %tmp.138 (%tmp.142, %tmp.149, %tmp.150, %tmp.151);
+        invoke %tmp.133 %tmp.134(%tmp.135);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 98 4 ]
+        %tmp.152 = self;
+        %tmp.153 = getv function %tmp.152 :getApp;
+        %tmp.154 = invoke %tmp.152 %tmp.153();
+        %tmp.155 = getv function %tmp.154 :getProperty;
+        %tmp.156 = "FieldLowerCentral";
+        %tmp.157 = invoke %tmp.154 %tmp.155(%tmp.156);
+        lputv %value.2 %tmp.157;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 99 4 ]
+        %tmp.158 = lgetv %menu.1;
+        %tmp.159 = getv function %tmp.158 :addItem;
+        %tmp.162 = getm $.Toybox.WatchUi;
+        %tmp.163 = getv function ? %tmp.162 :MenuItem;
+        %tmp.165 = getv ? :Rez;
+        %tmp.166 = getv %tmp.165 :Strings;
+        %tmp.167 = getv %tmp.166 :FieldLowerCentral;
+        %tmp.169 = getv ? :dataField;
+        %tmp.171 = lgetv %value.2;
+        %tmp.172 = agetv %tmp.169 %tmp.171;
+        %tmp.173 = "label";
+        %tmp.174 = agetv %tmp.172 %tmp.173;
+        %tmp.175 = 7;
+        %tmp.176 = newd 0;
+        %tmp.160 = newc %tmp.163 (%tmp.167, %tmp.174, %tmp.175, %tmp.176);
+        invoke %tmp.158 %tmp.159(%tmp.160);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 107 4 ]
+        %tmp.177 = self;
+        %tmp.178 = getv function %tmp.177 :getApp;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        %tmp.180 = getv function %tmp.179 :getProperty;
+        %tmp.181 = "FieldLowerRight";
+        %tmp.182 = invoke %tmp.179 %tmp.180(%tmp.181);
+        lputv %value.2 %tmp.182;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 108 4 ]
+        %tmp.183 = lgetv %menu.1;
+        %tmp.184 = getv function %tmp.183 :addItem;
+        %tmp.187 = getm $.Toybox.WatchUi;
+        %tmp.188 = getv function ? %tmp.187 :MenuItem;
+        %tmp.190 = getv ? :Rez;
+        %tmp.191 = getv %tmp.190 :Strings;
+        %tmp.192 = getv %tmp.191 :FieldLowerRight;
+        %tmp.194 = getv ? :dataField;
+        %tmp.196 = lgetv %value.2;
+        %tmp.197 = agetv %tmp.194 %tmp.196;
+        %tmp.198 = "label";
+        %tmp.199 = agetv %tmp.197 %tmp.198;
+        %tmp.200 = 8;
+        %tmp.201 = newd 0;
+        %tmp.185 = newc %tmp.188 (%tmp.192, %tmp.199, %tmp.200, %tmp.201);
+        invoke %tmp.183 %tmp.184(%tmp.185);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 116 4 ]
+        %tmp.202 = self;
+        %tmp.203 = getv function %tmp.202 :getApp;
+        %tmp.204 = invoke %tmp.202 %tmp.203();
+        %tmp.205 = getv function %tmp.204 :getProperty;
+        %tmp.206 = "FieldBottom";
+        %tmp.207 = invoke %tmp.204 %tmp.205(%tmp.206);
+        lputv %value.2 %tmp.207;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 117 4 ]
+        %tmp.208 = lgetv %menu.1;
+        %tmp.209 = getv function %tmp.208 :addItem;
+        %tmp.212 = getm $.Toybox.WatchUi;
+        %tmp.213 = getv function ? %tmp.212 :MenuItem;
+        %tmp.215 = getv ? :Rez;
+        %tmp.216 = getv %tmp.215 :Strings;
+        %tmp.217 = getv %tmp.216 :FieldBottom;
+        %tmp.219 = getv ? :dataField;
+        %tmp.221 = lgetv %value.2;
+        %tmp.222 = agetv %tmp.219 %tmp.221;
+        %tmp.223 = "label";
+        %tmp.224 = agetv %tmp.222 %tmp.223;
+        %tmp.225 = 9;
+        %tmp.226 = newd 0;
+        %tmp.210 = newc %tmp.213 (%tmp.217, %tmp.224, %tmp.225, %tmp.226);
+        invoke %tmp.208 %tmp.209(%tmp.210);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 126 4 ]
+        %tmp.227 = self;
+        %tmp.228 = getv function %tmp.227 :getApp;
+        %tmp.229 = invoke %tmp.227 %tmp.228();
+        %tmp.230 = getv function %tmp.229 :getProperty;
+        %tmp.231 = "ShowGraph";
+        %tmp.232 = invoke %tmp.229 %tmp.230(%tmp.231);
+        lputv %value.2 %tmp.232;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 127 4 ]
+        [ "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_start" "D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_stop" ]
+        %subtitle.3 = local;
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 128 4 ]
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_stmt:
+        %tmp.234 = lgetv %value.2;
+        %tmp.235 = 0;
+        %tmp.236 = eq %tmp.234 %tmp.235;
+        bf %tmp.236 @D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_false;
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_20_130_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 129 6 ]
+        %tmp.238 = getv ? :Rez;
+        %tmp.239 = getv %tmp.238 :Strings;
+        %tmp.240 = getv %tmp.239 :ShowGraph0;
+        lputv %subtitle.3 %tmp.240;
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_20_130_4_stop:
+        goto @D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_false:
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_130_11_132_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 131 6 ]
+        %tmp.242 = getv ? :Rez;
+        %tmp.243 = getv %tmp.242 :Strings;
+        %tmp.244 = getv %tmp.243 :ShowGraph1;
+        lputv %subtitle.3 %tmp.244;
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_130_11_132_4_stop:
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_128_4_132_4_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 133 4 ]
+        %tmp.245 = lgetv %menu.1;
+        %tmp.246 = getv function %tmp.245 :addItem;
+        %tmp.249 = getm $.Toybox.WatchUi;
+        %tmp.250 = getv function ? %tmp.249 :MenuItem;
+        %tmp.252 = getv ? :Rez;
+        %tmp.253 = getv %tmp.252 :Strings;
+        %tmp.254 = getv %tmp.253 :ShowGraph;
+        %tmp.256 = lgetv %subtitle.3;
+        %tmp.257 = 10;
+        %tmp.258 = newd 0;
+        %tmp.247 = newc %tmp.250 (%tmp.254, %tmp.256, %tmp.257, %tmp.258);
+        invoke %tmp.245 %tmp.246(%tmp.247);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 135 4 ]
+        %tmp.259 = getm $.Toybox.WatchUi;
+        %tmp.260 = getv function %tmp.259 :pushView;
+        %tmp.262 = lgetv %menu.1;
+        %tmp.266 = getm $;
+        %tmp.267 = getv %tmp.266 :EssenceSettingsMenuDelegate;
+        %tmp.263 = newc %tmp.267 ();
+        %tmp.268 = getm $.Toybox.WatchUi;
+        %tmp.269 = getv %tmp.268 :SLIDE_IMMEDIATE;
+        invoke %tmp.259 %tmp.260(%tmp.262, %tmp.263, %tmp.269);
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc" 140 4 ]
+        %tmp.270 = true;
+        ret %tmp.270;
+D_dev_Monkey_C_prj_Essence_source_EssenceSettingsView_mc_46_38_141_2_stop:
+    }
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceSettingsView.mc"; @line = 7; ]
+<init> {
+}

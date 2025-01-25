@@ -28,6 +28,15 @@ class EssenceApp extends Application.AppBase {
     loadLayout();
     essenceView.changedLayout();
   }
+
+  //! Return the settings view and delegate
+  //! @return Array Pair [View, Delegate]
+  public function getSettingsView() as [Views] or
+    [Views, InputDelegates] or
+    Null {
+    // return [new $.EssenceSettingsView(), new $.EssenceSettingsDelegate()];
+    return [new $.EssenceSettingsMenu(), new $.EssenceSettingsMenuDelegate()];
+  }
 }
 
 function getApp() as EssenceApp {

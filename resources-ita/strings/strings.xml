@@ -6,6 +6,7 @@
     <string id="FieldUpperCenter">Campo in alto centrale</string>
     <string id="FieldUpperRight">Campo in alto a destra</string>
     <string id="FieldLowerLeft">Campo in basso a sinistra</string>
+    <string id="FieldLowerCentral">Campo in basso centrale</string>
     <string id="FieldLowerRight">Campo in basso a destra</string>
     <string id="FieldBottom">Campo inferiore</string>
 
@@ -22,6 +23,8 @@
     <string id="Barometer">bar</string>
     <string id="Battery">batt</string>
 
+    <string id="BatterySave">Risparmio batteria</string>
+
     <string id="WeatherExt">Meteo</string>
     <string id="CalendarExt">Calendario</string>
     <string id="NotificationsExt">Notifiche</string>
@@ -30,5 +33,11 @@
     <string id="HeartRateExt">Frequenza Cardiaca</string>
     <string id="BarometerExt">Barometro</string>
     <string id="BatteryExt">Batteria</string>
+
+    <string id="ShowGraph0">Mostra campo dati</string>
+    <string id="ShowGraph1">Mostra gafico frequenza cardiaca</string>
+
+    <string id="Settings">Impostazioni</string>
+
 </strings>
 

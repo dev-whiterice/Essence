@@ -82,17 +82,38 @@ D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_27_39_30_2_start:
         invoke %tmp.4 %tmp.5();
 D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_27_39_30_2_stop:
     }
+    //! Return the settings view and delegate
+    //! @return Array Pair [View, Delegate]
+    [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 34; ]
+    public
+    function getSettingsView() as [Views] or [Views, InputDelegates] or Null {
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_36_9_39_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 38 4 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getm $;
+        %tmp.6 = getv %tmp.5 :EssenceSettingsMenu;
+        %tmp.2 = newc %tmp.6 ();
+        %tmp.7 = dup %tmp.1;
+        %tmp.8 = aputv %tmp.7 0 %tmp.2;
+        %tmp.12 = getm $;
+        %tmp.13 = getv %tmp.12 :EssenceSettingsMenuDelegate;
+        %tmp.9 = newc %tmp.13 ();
+        %tmp.14 = dup %tmp.8;
+        %tmp.15 = aputv %tmp.14 1 %tmp.9;
+        ret %tmp.15;
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_36_9_39_2_stop:
+    }
 }
-[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 33; ]
+[ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 42; ]
 function getApp() as EssenceApp {
-D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_33_32_35_0_start:
-[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 34 2 ]
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_42_32_44_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc" 43 2 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 EssenceApp;
     ret %tmp.4;
-D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_33_32_35_0_stop:
+D_dev_Monkey_C_prj_Essence_source_EssenceApp_mc_42_32_44_0_stop:
 }
 [ @file = "D:\dev\Monkey C\prj\Essence\source\EssenceApp.mc"; @line = 1; ]
 <init> {

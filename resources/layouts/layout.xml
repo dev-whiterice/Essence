@@ -1,21 +1,31 @@
-<layout id="WatchFace">
-    <label id="FieldTopLabel" x="center" y="0%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldTopData" x="center" y="5%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>   
-    <label id="FieldUpperLeftLabel" x="35%" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldUpperLeftData" x="35%" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
-    <label id="FieldUpperCenterLabel" x="center" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldUpperCenterData" x="center" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
-    <label id="FieldUpperRightLabel" x="65%" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldUpperRightData" x="65%" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
-    <label id="FieldDate" x="96%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
-    <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
-    <label id="FieldIcons" x="95%" y="66%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
-    <label id="FieldLowerLeftLabel" x="35%" y="72%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldLowerLeftData" x="35%" y="77%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
-    <label id="FieldGraphLabel" x="41%" y="68%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldGraphData" x="58%" y="68%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
-    <label id="FieldLowerRightLabel" x="65%" y="72%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldLowerRightData" x="65%" y="77%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
-    <label id="FieldBottomLabel" x="center" y="85%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
-    <label id="FieldBottomData" x="center" y="90%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>   
-</layout>
+<layouts>
+    <layout id="WatchFace">
+        <label id="FieldTopLabel" x="center" y="0%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldTopData" x="center" y="5%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>   
+        <label id="FieldUpperLeftLabel" x="35%" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldUpperLeftData" x="35%" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
+        <label id="FieldUpperCenterLabel" x="center" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldUpperCenterData" x="center" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+        <label id="FieldUpperRightLabel" x="65%" y="13%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldUpperRightData" x="65%" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
+        <label id="FieldDate" x="94%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+        <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldLowerLeftLabel" x="35%" y="71%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldLowerLeftData" x="35%" y="76%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
+        <label id="FieldGraphLabel" x="41%" y="67%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldGraphData" x="58%" y="67%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
+        <label id="FieldLowerCenterLabel" x="center" y="71%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldLowerCenterData" x="center" y="76%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+        <label id="FieldLowerRightLabel" x="65%" y="71%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldLowerRightData" x="65%" y="76%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
+        <label id="FieldBottomLabel" x="center" y="84%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_GRAY"/>
+        <label id="FieldBottomData" x="center" y="89%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>   
+    </layout>
+
+    <layout id="BatterySave">
+        <label id="FieldDate" x="94%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+        <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+    </layout>
+</layouts>

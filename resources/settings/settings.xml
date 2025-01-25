@@ -1,5 +1,11 @@
 <settings>
 
+
+    <setting propertyKey="@Properties.BatterySave" title="@Strings.BatterySave">
+        <settingConfig type="boolean" />
+    </setting>
+
+
     <setting propertyKey="@Properties.FieldTop" title="@Strings.FieldTop">
         <settingConfig type="list">
             <listEntry value="0">@Strings.WeatherExt</listEntry>
@@ -65,6 +71,19 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.FieldLowerCentral" title="@Strings.FieldLowerCentral">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeatherExt</listEntry>
+            <listEntry value="1">@Strings.CalendarExt</listEntry>
+            <listEntry value="2">@Strings.NotificationsExt</listEntry>
+            <listEntry value="3">@Strings.SunEventExt</listEntry>
+            <listEntry value="4">@Strings.AltimeterExt</listEntry>
+            <listEntry value="5">@Strings.HeartRateExt</listEntry>
+            <listEntry value="6">@Strings.BarometerExt</listEntry>
+            <listEntry value="7">@Strings.BatteryExt</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.FieldLowerRight" title="@Strings.FieldLowerRight">
         <settingConfig type="list">
             <listEntry value="0">@Strings.WeatherExt</listEntry>
@@ -92,7 +111,11 @@
     </setting>
 
     <setting propertyKey="@Properties.ShowGraph" title="@Strings.ShowGraph">
-        <settingConfig type="boolean" />
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ShowGraph0</listEntry>
+            <listEntry value="1">@Strings.ShowGraph1</listEntry>
+        </settingConfig>
     </setting>
+
 
 </settings>

@@ -1,5 +1,20 @@
 {
   "settings" : [ {
+    "key" : "BatterySave",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "BatterySave",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
     "key" : "FieldTop",
     "valueType" : "number",
     "defaultValue" : 0,
@@ -195,6 +210,45 @@
     "configMax" : null,
     "configMaxLength" : null
   }, {
+    "key" : "FieldLowerCentral",
+    "valueType" : "number",
+    "defaultValue" : 5,
+    "configTitle" : "FieldLowerCentral",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "WeatherExt",
+      "value" : 0
+    }, {
+      "display" : "CalendarExt",
+      "value" : 1
+    }, {
+      "display" : "NotificationsExt",
+      "value" : 2
+    }, {
+      "display" : "SunEventExt",
+      "value" : 3
+    }, {
+      "display" : "AltimeterExt",
+      "value" : 4
+    }, {
+      "display" : "HeartRateExt",
+      "value" : 5
+    }, {
+      "display" : "BarometerExt",
+      "value" : 6
+    }, {
+      "display" : "BatteryExt",
+      "value" : 7
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
     "key" : "FieldLowerRight",
     "valueType" : "number",
     "defaultValue" : 6,
@@ -274,16 +328,22 @@
     "configMaxLength" : null
   }, {
     "key" : "ShowGraph",
-    "valueType" : "boolean",
-    "defaultValue" : true,
+    "valueType" : "number",
+    "defaultValue" : 1,
     "configTitle" : "ShowGraph",
     "configPrompt" : null,
-    "configType" : "boolean",
+    "configType" : "list",
     "configError" : null,
     "configHelpUrl" : null,
     "configReadonly" : false,
     "configRequired" : false,
-    "configOptions" : null,
+    "configOptions" : [ {
+      "display" : "ShowGraph0",
+      "value" : 0
+    }, {
+      "display" : "ShowGraph1",
+      "value" : 1
+    } ],
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
@@ -291,10 +351,12 @@
   "supportsLiveValidation" : false,
   "languages" : {
     "ita" : {
+      "ShowGraph1" : "Mostra gafico frequenza cardiaca",
       "HeartRate" : "hr",
       "AltimeterExt" : "Altimetro",
       "HeartRateExt" : "Frequenza Cardiaca",
       "Altimeter" : "alt",
+      "BatterySave" : "Risparmio batteria",
       "SunEventRise" : "alba",
       "FieldUpperRight" : "Campo in alto a destra",
       "AppName" : "Essence",
@@ -303,11 +365,13 @@
       "Battery" : "batt",
       "ShowGraph" : "Mostra Grafico",
       "FieldUpperCenter" : "Campo in alto centrale",
+      "Settings" : "Impostazioni",
       "FieldTop" : "Campo superiore",
       "CalendarExt" : "Calendario",
       "BatteryExt" : "Batteria",
       "NotificationsExt" : "Notifiche",
       "Calendar" : "cal",
+      "FieldLowerCentral" : "Campo in basso centrale",
       "FieldBottom" : "Campo inferiore",
       "Weather" : "meteo",
       "BarometerExt" : "Barometro",
@@ -317,13 +381,16 @@
       "FieldLowerRight" : "Campo in basso a destra",
       "Notifications" : "msg",
       "SunEvent" : "al/tr",
+      "ShowGraph0" : "Mostra campo dati",
       "SunEventExt" : "Alba e Tramonto"
     },
     "valyrian" : {
+      "ShowGraph1" : "Show HR Graph",
       "HeartRate" : "hr",
       "AltimeterExt" : "Altimeter",
       "HeartRateExt" : "Heart Rate",
       "Altimeter" : "alt",
+      "BatterySave" : "Battery save",
       "SunEventRise" : "s.rise",
       "FieldUpperRight" : "Upper right field",
       "AppName" : "Essence",
@@ -332,11 +399,13 @@
       "Battery" : "batt",
       "ShowGraph" : "Show Graph",
       "FieldUpperCenter" : "Upper center field",
+      "Settings" : "Settings",
       "FieldTop" : "Top field",
       "CalendarExt" : "Calendar",
       "BatteryExt" : "Battery",
       "NotificationsExt" : "Notifications",
       "Calendar" : "cal",
+      "FieldLowerCentral" : "Lower center field",
       "FieldBottom" : "Bottom field",
       "Weather" : "weather",
       "BarometerExt" : "Barometer",
@@ -346,6 +415,7 @@
       "FieldLowerRight" : "Lower right field",
       "Notifications" : "msg",
       "SunEvent" : "sun",
+      "ShowGraph0" : "Show data field",
       "SunEventExt" : "Sun Event"
     }
   }
