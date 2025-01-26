@@ -3,6 +3,8 @@ using Toybox.Complications;
 
 public var bboxes = [];
 public var boundingBoxes = [];
+var redrawLayout = false;
+var batterySave = false;
 
 public function checkBoundingBoxes(points) {
   for (var i = 0; i < boundingBoxes.size(); i++) {
@@ -136,5 +138,3 @@ function loadLayout() {
     fieldLayout[i]["data"] = getApp().getProperty(fieldLayout[i]["id"]);
   }
 }
-
-var redrawLayout = false;

@@ -8,7 +8,7 @@
 
     <setting propertyKey="@Properties.FieldTop" title="@Strings.FieldTop">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -22,7 +22,7 @@
 
     <setting propertyKey="@Properties.FieldUpperLeft" title="@Strings.FieldUpperLeft">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -36,7 +36,7 @@
 
     <setting propertyKey="@Properties.FieldUpperCenter" title="@Strings.FieldUpperCenter">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -50,7 +50,7 @@
 
     <setting propertyKey="@Properties.FieldUpperRight" title="@Strings.FieldUpperRight">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -64,7 +64,7 @@
 
     <setting propertyKey="@Properties.FieldLowerLeft" title="@Strings.FieldLowerLeft">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -78,7 +78,7 @@
 
     <setting propertyKey="@Properties.FieldLowerCenter" title="@Strings.FieldLowerCenter">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -92,7 +92,7 @@
 
     <setting propertyKey="@Properties.FieldLowerRight" title="@Strings.FieldLowerRight">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>
@@ -106,7 +106,7 @@
 
     <setting propertyKey="@Properties.FieldBottom" title="@Strings.FieldBottom">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.Empty</listEntry>
+            <listEntry value="0">@Strings.EmptyExt</listEntry>
             <listEntry value="1">@Strings.WeatherExt</listEntry>
             <listEntry value="2">@Strings.CalendarExt</listEntry>
             <listEntry value="3">@Strings.NotificationsExt</listEntry>

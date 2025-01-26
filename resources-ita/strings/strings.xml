@@ -26,7 +26,7 @@
 
     <string id="BatterySave">Risparmio batteria</string>
 
-    <string id="Empty">Vuoto</string>
+    <string id="EmptyExt">Vuoto</string>
     <string id="WeatherExt">Meteo</string>
     <string id="CalendarExt">Calendario</string>
     <string id="NotificationsExt">Notifiche</string>

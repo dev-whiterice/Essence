@@ -7,14 +7,16 @@ class EssenceDelegate extends Ui.WatchFaceDelegate {
   }
 
   public function onPress(clickEvent) {
-    var co_ords = clickEvent.getCoordinates();
-    var complicationId = checkBoundingBoxes(co_ords);
-    if (complicationId) {
-      var thisComplication = new Complications.Id(complicationId);
-      if (thisComplication) {
-        Complications.exitTo(thisComplication);
+    if (batterySave == false) {
+      var co_ords = clickEvent.getCoordinates();
+      var complicationId = checkBoundingBoxes(co_ords);
+      if (complicationId) {
+        var thisComplication = new Complications.Id(complicationId);
+        if (thisComplication) {
+          Complications.exitTo(thisComplication);
+        }
+        return true;
       }
-      return true;
     }
     return false;
   }

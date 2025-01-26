@@ -11,7 +11,6 @@ class EssenceView extends WatchUi.WatchFace {
   var heartMin = 2000;
   var heartMax = 0;
   var heartNow = 0;
-  var batterySave = false;
   var showGraph = false;
 
   function initialize() {
