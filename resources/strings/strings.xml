@@ -6,12 +6,13 @@
     <string id="FieldUpperCenter">Upper center field</string>
     <string id="FieldUpperRight">Upper right field</string>
     <string id="FieldLowerLeft">Lower left field</string>
-    <string id="FieldLowerCentral">Lower center field</string>
+    <string id="FieldLowerCenter">Lower center field</string>
     <string id="FieldLowerRight">Lower right field</string>
     <string id="FieldBottom">Bottom field</string>
+
     <string id="ShowGraph">Show Graph</string>
 
-
+    <string id="Empty"></string>
     <string id="Weather">weather</string>
     <string id="Calendar">cal</string>
     <string id="Notifications">msg</string>
@@ -25,6 +26,7 @@
 
     <string id="BatterySave">Battery save</string>
 
+    <string id="EmptyExt">Empty</string>
     <string id="WeatherExt">Weather</string>
     <string id="CalendarExt">Calendar</string>
     <string id="NotificationsExt">Notifications</string>
@@ -37,9 +39,5 @@
     <string id="ShowGraph0">Show data field</string>
     <string id="ShowGraph1">Show HR Graph</string>
 
-
     <string id="Settings">Settings</string>
-
-
-
 </strings>

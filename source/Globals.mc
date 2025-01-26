@@ -8,7 +8,11 @@ public function checkBoundingBoxes(points) {
   for (var i = 0; i < boundingBoxes.size(); i++) {
     var currentBounds = boundingBoxes[i];
     if (checkBoundsForComplication(points, currentBounds["bounds"])) {
-      return currentBounds["complicationId"];
+      var dataIndex = fieldLayout[i]["data"];
+      if (dataField[dataIndex]["complicationId"] == null) {
+        return false;
+      }
+      return dataField[dataIndex]["complicationId"];
     }
   }
   return false;
@@ -48,6 +52,10 @@ var fieldLayout = [
     "data" => 4,
   },
   {
+    "id" => "FieldLowerCenter",
+    "data" => 5,
+  },
+  {
     "id" => "FieldLowerRight",
     "data" => 6,
   },
@@ -59,66 +67,74 @@ var fieldLayout = [
 
 var dataField = [
   {
+    "id" => "Empty",
+    "label" => Rez.Strings.Empty,
+    "labelExt" => Rez.Strings.EmptyExt,
+    "getter" => :getEmpty,
+    "complicationId" => null,
+  },
+  {
     "id" => "Weather",
     "label" => Rez.Strings.Weather,
+    "labelExt" => Rez.Strings.WeatherExt,
     "getter" => :getWeather,
     "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_WEATHER,
   },
   {
     "id" => "Calendar",
     "label" => Rez.Strings.Calendar,
+    "labelExt" => Rez.Strings.CalendarExt,
     "getter" => :getCalendar,
     "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS,
   },
   {
     "id" => "Notifications",
     "label" => Rez.Strings.Notifications,
+    "labelExt" => Rez.Strings.NotificationsExt,
     "getter" => :getNotifications,
     "complicationId" => Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT,
   },
   {
     "id" => "SunEvent",
     "label" => Rez.Strings.SunEvent,
+    "labelExt" => Rez.Strings.SunEventExt,
     "getter" => :getSunEvent,
     "complicationId" => Complications.COMPLICATION_TYPE_SUNRISE,
   },
   {
     "id" => "Altimeter",
     "label" => Rez.Strings.Altimeter,
+    "labelExt" => Rez.Strings.AltimeterExt,
     "getter" => :getAltimeter,
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
   },
   {
     "id" => "HeartRate",
     "label" => Rez.Strings.HeartRate,
+    "labelExt" => Rez.Strings.HeartRateExt,
     "getter" => :getHeartRate,
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
   },
   {
     "id" => "Barometer",
     "label" => Rez.Strings.Barometer,
+    "labelExt" => Rez.Strings.BarometerExt,
     "getter" => :getBarometer,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
   },
   {
     "id" => "Battery",
     "label" => Rez.Strings.Battery,
+    "labelExt" => Rez.Strings.BatteryExt,
     "getter" => :getBattery,
     "complicationId" => null,
   },
 ];
 
-var fieldLowerCenter = {
-  "id" => "FieldLowerCentral",
-  "data" => 5,
-};
-
 function loadLayout() {
   for (var i = 0; i < fieldLayout.size(); i = i + 1) {
     fieldLayout[i]["data"] = getApp().getProperty(fieldLayout[i]["id"]);
   }
-
-  fieldLowerCenter["data"] = getApp().getProperty("FieldLowerCentral");
 }
 
 var redrawLayout = false;

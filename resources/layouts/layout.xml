@@ -10,7 +10,7 @@
         <label id="FieldUpperRightData" x="65%" y="18%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
         <label id="FieldDate" x="94%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
         <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
-        <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldIcons" x="94%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
         <label id="FieldLowerLeftLabel" x="35%" y="71%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GRAY"/>
         <label id="FieldLowerLeftData" x="35%" y="76%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT"/>
         <label id="FieldGraphLabel" x="41%" y="67%" font="@Fonts.LabelFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GRAY"/>
@@ -26,6 +26,6 @@
     <layout id="BatterySave">
         <label id="FieldDate" x="94%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
         <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
-        <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldIcons" x="94%" y="65%" font="@Fonts.IconFont20" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
     </layout>
 </layouts>

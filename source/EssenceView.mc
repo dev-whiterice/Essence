@@ -32,16 +32,6 @@ class EssenceView extends WatchUi.WatchFace {
       setLayout(Rez.Layouts.WatchFace(dc));
       loadLayout();
       drawLabels(dc);
-      if (showGraph == 0) {
-        var view = View.findDrawableById("FieldLowerCenterLabel") as Text;
-        view.setText(
-          WatchUi.loadResource(dataField[fieldLowerCenter["data"]]["label"]) as
-            String
-        );
-      } else {
-        var view = View.findDrawableById("FieldLowerCenterLabel") as Text;
-        view.setText("");
-      }
     } else {
       setLayout(Rez.Layouts.BatterySave(dc));
     }
@@ -50,11 +40,16 @@ class EssenceView extends WatchUi.WatchFace {
   function drawLabels(dc) {
     var view;
     for (var i = 0; i < fieldLayout.size(); i = i + 1) {
-      view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
-      view.setText(
-        WatchUi.loadResource(dataField[fieldLayout[i]["data"]]["label"]) as
-          String
-      );
+      if (i == 5 && showGraph > 0) {
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+        view.setText("");
+      } else {
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+        view.setText(
+          WatchUi.loadResource(dataField[fieldLayout[i]["data"]]["label"]) as
+            String
+        );
+      }
     }
   }
 
@@ -102,72 +97,61 @@ class EssenceView extends WatchUi.WatchFace {
       [dw, dh / 1.5 + dh / 6],
     ];
 
-    // var bboxLower = [
-    //   [dw / 3, dh - dh / 6],
-    //   [dw / 3 + dw / 3, dh],
-    // ];
-
-    // var bboxCentral = [
-    //   [0, dh / 2.9],
-    //   [dw, dh / 3 + dh / 3.2],
-    // ];
+    var bboxLower = [
+      [dw / 3, dh - dh / 6],
+      [dw / 3 + dw / 3, dh],
+    ];
 
     boundingBoxes = [
       {
-        "label" => "Weather",
+        "id" => "FieldTop",
         "bounds" => bboxTop,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_WEATHER,
       },
       {
-        "label" => "Calendar",
+        "id" => "FieldUpperLeft",
         "bounds" => bboxUpperLeft,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS,
       },
       {
-        "label" => "Notifications",
+        "id" => "FieldUpperCenter",
         "bounds" => bboxUpperCenter,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT,
       },
       {
-        "label" => "Sunrise",
+        "id" => "FieldUpperRight",
         "bounds" => bboxUpperRight,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_SUNRISE,
       },
 
       {
-        "label" => "Altitude",
+        "id" => "FieldLowerLeft",
         "bounds" => bboxLowerLeft,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
       },
       {
-        "label" => "HeartRate",
+        "id" => "FieldLowerCenter",
         "bounds" => bboxLowerCenter,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
       },
       {
-        "label" => "Pressure",
+        "id" => "FieldLowerRight",
         "bounds" => bboxLowerRight,
         "value" => "",
         "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
       },
-      // {
-      //   "label" => "Battery",
-      //   "bounds" => bboxLower,
-      //   "value" => "",
-      //   "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
-      // },
-      // {
-      //   "label" => "Time",
-      //   "bounds" => bboxCentral,
-      //   "value" => "",
-      //   "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS,
-      // },
+      {
+        "id" => "FieldBottom",
+        "bounds" => bboxLower,
+        "value" => "",
+        "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
+      },
     ];
   }
 
@@ -175,11 +159,6 @@ class EssenceView extends WatchUi.WatchFace {
   // the state of this View and prepare it to be shown. This includes
   // loading resources into memory.
   function onShow() as Void {}
-
-  function changedLayout() as Void {
-    redrawLayout = true;
-    WatchUi.requestUpdate();
-  }
 
   // Update the view
   function onUpdate(dc as Dc) as Void {
@@ -190,21 +169,16 @@ class EssenceView extends WatchUi.WatchFace {
 
     if (batterySave == false) {
       drawData(dc);
-      drawIcons(dc);
     }
 
     drawDate(dc);
     drawTime(dc);
+    drawIcons(dc);
 
     View.onUpdate(dc);
 
     if (batterySave == false) {
-      if (showGraph == 0) {
-        var view = View.findDrawableById("FieldLowerCenterData") as Text;
-        var fun = dataField[fieldLowerCenter["data"]]["getter"];
-        fun = method(fun);
-        view.setText(fun.invoke());
-      } else {
+      if (showGraph > 0) {
         drawHRgraph(dc);
       }
     }
@@ -215,19 +189,24 @@ class EssenceView extends WatchUi.WatchFace {
     var view;
     var fun;
     for (var i = 0; i < fieldLayout.size(); i = i + 1) {
-      view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
-
-      if (fieldLayout[i]["data"].equals(3)) {
-        // SunEvent exception
-        var sunevent = getSunEvent();
-        view.setText(sunevent["value"]);
-
-        view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
-        view.setText(sunevent["label"]);
+      if (i == 5 && showGraph > 0) {
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
+        view.setText("");
       } else {
-        fun = dataField[fieldLayout[i]["data"]]["getter"];
-        fun = method(fun);
-        view.setText(fun.invoke());
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
+
+        if (fieldLayout[i]["data"].equals(4)) {
+          // SunEvent exception
+          var sunevent = getSunEvent();
+          view.setText(sunevent["value"]);
+
+          view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+          view.setText(sunevent["label"]);
+        } else {
+          fun = dataField[fieldLayout[i]["data"]]["getter"];
+          fun = method(fun);
+          view.setText(fun.invoke());
+        }
       }
     }
   }
@@ -260,9 +239,16 @@ class EssenceView extends WatchUi.WatchFace {
     view.setText(timeString);
   }
 
+  function getEmpty() {
+    return "";
+  }
+
   function getWeather() {
     if (Toybox has :Weather) {
       var data = Toybox.Weather.getCurrentConditions();
+      if (data == null) {
+        return "--";
+      }
       return (
         (data.lowTemperature + 0.5).toNumber().toString() +
         "/" +
@@ -521,8 +507,8 @@ class EssenceView extends WatchUi.WatchFace {
       dc.drawRectangle(x1, y1, x2 - x1, y2 - y1);
 
       // draw the complication label and value
-      var value = boundingBoxes[i]["value"];
-      var label = boundingBoxes[i]["label"];
+      var value = boundingBoxes[i]["id"];
+      var label = boundingBoxes[i]["id"];
       var font = Graphics.FONT_SYSTEM_TINY;
 
       dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);

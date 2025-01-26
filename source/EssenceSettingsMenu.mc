@@ -26,7 +26,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldTop,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         2,
         {}
       )
@@ -35,7 +35,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperLeft,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         3,
         {}
       )
@@ -44,7 +44,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperCenter,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         4,
         {}
       )
@@ -53,7 +53,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperRight,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         5,
         {}
       )
@@ -62,16 +62,16 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerLeft,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         6,
         {}
       )
     );
-    value = getApp().getProperty("FieldLowerCentral");
+    value = getApp().getProperty("FieldLowerCenter");
     Menu2.addItem(
       new WatchUi.MenuItem(
-        Rez.Strings.FieldLowerCentral,
-        dataField[value]["label"],
+        Rez.Strings.FieldLowerCenter,
+        dataField[value]["labelExt"],
         7,
         {}
       )
@@ -80,7 +80,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerRight,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         8,
         {}
       )
@@ -89,7 +89,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldBottom,
-        dataField[value]["label"],
+        dataField[value]["labelExt"],
         9,
         {}
       )
@@ -126,33 +126,20 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
         getApp().setProperty("BatterySave", menuItem.isEnabled());
       }
     } else if (itemId <= 9) {
+      itemId = itemId - 2;
       if (itemId == 7) {
-        var value = getApp().getProperty("FieldLowerCentral");
-
-        if (value < dataField.size() - 1) {
-          value = value + 1;
-        } else {
-          value = 0;
-        }
-
-        menuItem.setSubLabel(dataField[value]["label"]);
-        getApp().setProperty("FieldLowerCentral", value);
-      } else {
-        itemId = itemId - 2;
-        if (itemId == 7) {
-          itemId = 6;
-        }
-        var value = getApp().getProperty(fieldLayout[itemId]["id"]);
-
-        if (value < dataField.size() - 1) {
-          value = value + 1;
-        } else {
-          value = 0;
-        }
-
-        menuItem.setSubLabel(dataField[value]["label"]);
-        getApp().setProperty(fieldLayout[itemId]["id"], value);
+        itemId = 6;
       }
+      var value = getApp().getProperty(fieldLayout[itemId]["id"]);
+
+      if (value < dataField.size() - 1) {
+        value = value + 1;
+      } else {
+        value = 0;
+      }
+
+      menuItem.setSubLabel(dataField[value]["labelExt"]);
+      getApp().setProperty(fieldLayout[itemId]["id"], value);
     } else {
       itemId = itemId - 2;
       var value = getApp().getProperty("ShowGraph");

@@ -25,8 +25,8 @@ class EssenceApp extends Application.AppBase {
   }
 
   function onSettingsChanged() as Void {
-    loadLayout();
-    essenceView.changedLayout();
+    redrawLayout = true;
+    WatchUi.requestUpdate();
   }
 
   //! Return the settings view and delegate

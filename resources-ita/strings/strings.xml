@@ -6,12 +6,13 @@
     <string id="FieldUpperCenter">Campo in alto centrale</string>
     <string id="FieldUpperRight">Campo in alto a destra</string>
     <string id="FieldLowerLeft">Campo in basso a sinistra</string>
-    <string id="FieldLowerCentral">Campo in basso centrale</string>
+    <string id="FieldLowerCenter">Campo in basso centrale</string>
     <string id="FieldLowerRight">Campo in basso a destra</string>
     <string id="FieldBottom">Campo inferiore</string>
 
     <string id="ShowGraph">Mostra Grafico</string>
 
+    <string id="Empty"></string>
     <string id="Weather">meteo</string>
     <string id="Calendar">cal</string>
     <string id="Notifications">msg</string>
@@ -25,6 +26,7 @@
 
     <string id="BatterySave">Risparmio batteria</string>
 
+    <string id="Empty">Vuoto</string>
     <string id="WeatherExt">Meteo</string>
     <string id="CalendarExt">Calendario</string>
     <string id="NotificationsExt">Notifiche</string>
