@@ -11,7 +11,10 @@ class EssenceView extends WatchUi.WatchFace {
   var heartMin = 2000;
   var heartMax = 0;
   var heartNow = 0;
-  var showGraph = false;
+
+  var graphMin = 2000;
+  var graphMax = 0;
+  var graphNow = 0;
 
   function initialize() {
     WatchFace.initialize();
@@ -178,7 +181,8 @@ class EssenceView extends WatchUi.WatchFace {
 
     if (batterySave == false) {
       if (showGraph > 0) {
-        drawHRgraph(dc);
+        // drawHRgraph(dc);
+        drawGraph(dc);
       }
     }
     // drawBoundingBoxes(dc);
@@ -392,6 +396,60 @@ class EssenceView extends WatchUi.WatchFace {
     return data;
   }
 
+  function getBodyBattery() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      var iterator = Toybox.SensorHistory.getBodyBatteryHistory({});
+      var sample = iterator.next();
+      if (sample.data != null) {
+        data = sample.data;
+      } else {
+        return "--";
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    data = (data + 0.5).toNumber().toString();
+    return data;
+  }
+
+  function getStress() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_STRESS)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      var iterator = Toybox.SensorHistory.getStressHistory({});
+      var sample = iterator.next();
+      if (sample.data != null) {
+        data = sample.data;
+      } else {
+        return "--";
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    data = (data + 0.5).toNumber().toString();
+    return data;
+  }
+
   function getHeartRate() {
     var data = null;
     if (Toybox has :Complications) {
@@ -528,31 +586,52 @@ class EssenceView extends WatchUi.WatchFace {
     }
   }
 
-  function drawHRgraph(dc) {
+  function drawGraph(dc) {
+    if (dataGraph[showGraph]["iterator"] == null) {
+      return;
+    }
+
     var view = View.findDrawableById("FieldGraphLabel") as Text;
-    view.setText(WatchUi.loadResource(Rez.Strings.HeartRate) as String);
+    view.setText(WatchUi.loadResource(dataGraph[showGraph]["label"]) as String);
 
     view = View.findDrawableById("FieldGraphData") as Text;
-    view.setText(getHeartRate());
+    var fun = dataGraph[showGraph]["getter"];
+    fun = method(fun);
+    view.setText(fun.invoke());
 
-    var curHeartMin = 0;
-    var curHeartMax = 0;
+    var curMin = 0;
+    var curMax = 0;
     var maxSecs = 14400;
-    var sample = SensorHistory.getHeartRateHistory({
-      // :period => historyDuration,
+    // var sample = SensorHistory.getHeartRateHistory({
+    //   // :period => historyDuration,
+    //   :period => maxSecs,
+    //   :order => SensorHistory.ORDER_NEWEST_FIRST,
+    // });
+
+    var getSensorHistory = new Lang.Method(
+      Toybox.SensorHistory,
+      dataGraph[showGraph]["iterator"]
+    );
+    var sample = getSensorHistory.invoke({
       :period => maxSecs,
       :order => SensorHistory.ORDER_NEWEST_FIRST,
     });
+
+    // var sample = SensorHistory.getPressureHistory({
+    //   :period => maxSecs,
+    //   :order => SensorHistory.ORDER_NEWEST_FIRST,
+    // });
+
     if (sample != null) {
-      var heart = sample.next();
-      if (heart.data != null) {
-        heartNow = heart.data;
+      var sampleData = sample.next();
+      if (sampleData.data != null) {
+        heartNow = sampleData.data;
       }
 
-      curHeartMin = heartMin;
-      curHeartMax = heartMax;
-      heartMin = 1000;
-      heartMax = 0;
+      curMin = graphMin;
+      curMax = graphMax;
+      graphMin = 1000;
+      graphMax = 0;
 
       // var maxSecs = graphLength * 60;
       // if (maxSecs < 900) {
@@ -571,45 +650,45 @@ class EssenceView extends WatchUi.WatchFace {
         (binPixels * maxSecs) / totWidth
       ).toNumber();
 
-      var heartSecs;
-      var heartValue = 0;
+      var graphSecs;
+      var graphValue = 0;
       var secsBin = 0;
-      var lastHeartSecs = sample.getNewestSampleTime().value();
-      var heartBinMax;
-      var heartBinMin;
+      var lastGraphSecs = sample.getNewestSampleTime().value();
+      var graphBinMax;
+      var graphBinMin;
 
       var finished = false;
 
       for (var i = 0; i < totBins; ++i) {
-        heartBinMax = 0;
-        heartBinMin = 0;
+        graphBinMax = 0;
+        graphBinMin = 0;
 
         if (!finished) {
-          if (secsBin > 0 && heartValue != null) {
-            heartBinMax = heartValue;
-            heartBinMin = heartValue;
+          if (secsBin > 0 && graphValue != null) {
+            graphBinMax = graphValue;
+            graphBinMin = graphValue;
           }
           while (!finished && secsBin < binWidthSecs) {
-            heart = sample.next();
-            if (heart != null) {
-              heartValue = heart.data;
-              if (heartValue != null) {
-                if (heartBinMax == 0) {
-                  heartBinMax = heartValue;
-                  heartBinMin = heartValue;
+            sampleData = sample.next();
+            if (sampleData != null) {
+              graphValue = sampleData.data;
+              if (graphValue != null) {
+                if (graphBinMax == 0) {
+                  graphBinMax = graphValue;
+                  graphBinMin = graphValue;
                 } else {
-                  if (heartValue > heartBinMax) {
-                    heartBinMax = heartValue;
+                  if (graphValue > graphBinMax) {
+                    graphBinMax = graphValue;
                   }
 
-                  if (heartValue < heartBinMin) {
-                    heartBinMin = heartValue;
+                  if (graphValue < graphBinMin) {
+                    graphBinMin = graphValue;
                   }
                 }
               }
-              heartSecs = lastHeartSecs - heart.when.value();
-              lastHeartSecs = heart.when.value();
-              secsBin += heartSecs;
+              graphSecs = lastGraphSecs - sampleData.when.value();
+              lastGraphSecs = sampleData.when.value();
+              secsBin += graphSecs;
             } else {
               finished = true;
             }
@@ -620,12 +699,11 @@ class EssenceView extends WatchUi.WatchFace {
           }
 
           // only plot bar if we have valid values
-          if (heartBinMax > 0 && heartBinMax >= heartBinMin) {
-            if (curHeartMax > 0 && curHeartMax > curHeartMin) {
-              var heartBinMid = (heartBinMax + heartBinMin) / 2;
+          if (graphBinMax > 0 && graphBinMax >= graphBinMin) {
+            if (curMax > 0 && curMax > curMin) {
+              var heartBinMid = (graphBinMax + graphBinMin) / 2;
               var height =
-                ((heartBinMid - curHeartMin * 0.9) /
-                  (curHeartMax - curHeartMin * 0.9)) *
+                ((heartBinMid - curMin * 0.9) / (curMax - curMin * 0.9)) *
                 totHeight;
               var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
               var yVal = dh / 2 + 69 + totHeight - height;
@@ -635,11 +713,11 @@ class EssenceView extends WatchUi.WatchFace {
               dc.fillRectangle(xVal, yVal, binPixels, height);
             }
 
-            if (heartBinMin < heartMin) {
-              heartMin = heartBinMin;
+            if (graphBinMin < graphMin) {
+              graphMin = graphBinMin;
             }
-            if (heartBinMax > heartMax) {
-              heartMax = heartBinMax;
+            if (graphBinMax > graphMax) {
+              graphMax = graphBinMax;
             }
           }
         }

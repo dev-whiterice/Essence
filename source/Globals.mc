@@ -5,16 +5,24 @@ public var bboxes = [];
 public var boundingBoxes = [];
 var redrawLayout = false;
 var batterySave = false;
+var showGraph = 0;
 
 public function checkBoundingBoxes(points) {
   for (var i = 0; i < boundingBoxes.size(); i++) {
     var currentBounds = boundingBoxes[i];
     if (checkBoundsForComplication(points, currentBounds["bounds"])) {
-      var dataIndex = fieldLayout[i]["data"];
-      if (dataField[dataIndex]["complicationId"] == null) {
-        return false;
+      if (fieldLayout[i]["id"].equals("FieldLowerCenter") && showGraph > 0) {
+        if (dataGraph[showGraph]["complicationId"] == null) {
+          return false;
+        }
+        return dataGraph[showGraph]["complicationId"];
+      } else {
+        var dataIndex = fieldLayout[i]["data"];
+        if (dataField[dataIndex]["complicationId"] == null) {
+          return false;
+        }
+        return dataField[dataIndex]["complicationId"];
       }
-      return dataField[dataIndex]["complicationId"];
     }
   }
   return false;
@@ -130,6 +138,55 @@ var dataField = [
     "labelExt" => Rez.Strings.BatteryExt,
     "getter" => :getBattery,
     "complicationId" => null,
+  },
+  {
+    "id" => "Stress",
+    "label" => Rez.Strings.Stress,
+    "labelExt" => Rez.Strings.StressExt,
+    "getter" => :getStress,
+    "complicationId" => Complications.COMPLICATION_TYPE_STRESS,
+  },
+  {
+    "id" => "BodyBattery",
+    "label" => Rez.Strings.BodyBattery,
+    "labelExt" => Rez.Strings.BodyBatteryExt,
+    "getter" => :getBodyBattery,
+    "complicationId" => Complications.COMPLICATION_TYPE_BODY_BATTERY,
+  },
+];
+
+var dataGraph = [
+  {
+    "id" => "DataField",
+    "label" => null,
+    "labelExt" => Rez.Strings.ShowGraphDataField,
+    "getter" => :getEmpty,
+    "iterator" => null,
+    "complicationId" => null,
+  },
+  {
+    "id" => "HeartRate",
+    "label" => Rez.Strings.HeartRate,
+    "labelExt" => Rez.Strings.ShowGraphHeartRate,
+    "getter" => :getHeartRate,
+    "iterator" => :getHeartRateHistory,
+    "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
+  },
+  {
+    "id" => "Barometer",
+    "label" => Rez.Strings.Barometer,
+    "labelExt" => Rez.Strings.ShowGraphPressure,
+    "getter" => :getBarometer,
+    "iterator" => :getPressureHistory,
+    "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
+  },
+  {
+    "id" => "Altimeter",
+    "label" => Rez.Strings.Altimeter,
+    "labelExt" => Rez.Strings.ShowGraphAltimeter,
+    "getter" => :getAltimeter,
+    "iterator" => :getElevationHistory,
+    "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
   },
 ];
 

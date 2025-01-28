@@ -96,14 +96,13 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     );
 
     value = getApp().getProperty("ShowGraph");
-    var subtitle;
-    if (value == 0) {
-      subtitle = Rez.Strings.ShowGraph0;
-    } else {
-      subtitle = Rez.Strings.ShowGraph1;
-    }
     Menu2.addItem(
-      new WatchUi.MenuItem(Rez.Strings.ShowGraph, subtitle, 10, {})
+      new WatchUi.MenuItem(
+        Rez.Strings.ShowGraph,
+        dataGraph[value]["labelExt"],
+        10,
+        {}
+      )
     );
   }
 }
@@ -144,13 +143,13 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
       itemId = itemId - 2;
       var value = getApp().getProperty("ShowGraph");
 
-      if (value == 0) {
-        value = 1;
-        menuItem.setSubLabel(Rez.Strings.ShowGraph1);
+      if (value < dataGraph.size() - 1) {
+        value = value + 1;
       } else {
         value = 0;
-        menuItem.setSubLabel(Rez.Strings.ShowGraph0);
       }
+
+      menuItem.setSubLabel(dataGraph[value]["labelExt"]);
       getApp().setProperty("ShowGraph", value);
     }
     redrawLayout = true;
