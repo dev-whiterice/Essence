@@ -22,12 +22,17 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.ToggleMenuItem(Rez.Strings.BatterySave, null, 1, value, null)
     );
 
+    value = getApp().getProperty("DarkMode");
+    Menu2.addItem(
+      new WatchUi.ToggleMenuItem(Rez.Strings.DarkMode, null, 2, value, null)
+    );
+
     value = getApp().getProperty("FieldTop");
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldTop,
         dataField[value]["labelExt"],
-        2,
+        3,
         {}
       )
     );
@@ -36,7 +41,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperLeft,
         dataField[value]["labelExt"],
-        3,
+        4,
         {}
       )
     );
@@ -45,7 +50,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperCenter,
         dataField[value]["labelExt"],
-        4,
+        5,
         {}
       )
     );
@@ -54,7 +59,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperRight,
         dataField[value]["labelExt"],
-        5,
+        6,
         {}
       )
     );
@@ -63,7 +68,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerLeft,
         dataField[value]["labelExt"],
-        6,
+        7,
         {}
       )
     );
@@ -72,7 +77,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerCenter,
         dataField[value]["labelExt"],
-        7,
+        8,
         {}
       )
     );
@@ -81,7 +86,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerRight,
         dataField[value]["labelExt"],
-        8,
+        9,
         {}
       )
     );
@@ -90,7 +95,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.FieldBottom,
         dataField[value]["labelExt"],
-        9,
+        10,
         {}
       )
     );
@@ -100,7 +105,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
       new WatchUi.MenuItem(
         Rez.Strings.ShowGraph,
         dataGraph[value]["labelExt"],
-        10,
+        11,
         {}
       )
     );
@@ -124,11 +129,13 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
       if (menuItem instanceof ToggleMenuItem) {
         getApp().setProperty("BatterySave", menuItem.isEnabled());
       }
-    } else if (itemId <= 9) {
-      itemId = itemId - 2;
-      if (itemId == 7) {
-        itemId = 6;
+    } else if (itemId == 2) {
+      if (menuItem instanceof ToggleMenuItem) {
+        getApp().setProperty("DarkMode", menuItem.isEnabled());
       }
+    } else if (itemId <= 10) {
+      itemId = itemId - 3;
+
       var value = getApp().getProperty(fieldLayout[itemId]["id"]);
 
       if (value < dataField.size() - 1) {

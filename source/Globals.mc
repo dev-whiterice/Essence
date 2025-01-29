@@ -1,11 +1,13 @@
 using Toybox.System;
 using Toybox.Complications;
+using Toybox.Graphics;
 
 public var bboxes = [];
 public var boundingBoxes = [];
 var redrawLayout = false;
 var batterySave = false;
 var showGraph = 0;
+var darkMode = true;
 
 public function checkBoundingBoxes(points) {
   for (var i = 0; i < boundingBoxes.size(); i++) {
@@ -163,6 +165,7 @@ var dataGraph = [
     "getter" => :getEmpty,
     "iterator" => null,
     "complicationId" => null,
+    "color" => null,
   },
   {
     "id" => "HeartRate",
@@ -171,6 +174,7 @@ var dataGraph = [
     "getter" => :getHeartRate,
     "iterator" => :getHeartRateHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
+    "color" => Graphics.COLOR_RED,
   },
   {
     "id" => "Barometer",
@@ -179,6 +183,7 @@ var dataGraph = [
     "getter" => :getBarometer,
     "iterator" => :getPressureHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
+    "color" => Graphics.COLOR_DK_BLUE,
   },
   {
     "id" => "Altimeter",
@@ -187,6 +192,7 @@ var dataGraph = [
     "getter" => :getAltimeter,
     "iterator" => :getElevationHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
+    "color" => Graphics.COLOR_DK_GREEN,
   },
 ];
 

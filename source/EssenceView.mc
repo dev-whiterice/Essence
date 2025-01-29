@@ -7,7 +7,10 @@ import Toybox.Time.Gregorian;
 class EssenceView extends WatchUi.WatchFace {
   var dw = 0;
   var dh = 0;
-  const graphLength = 60;
+
+  var graphWidthFactor = 1;
+  var graphVertOffset = 69;
+
   var heartMin = 2000;
   var heartMax = 0;
   var heartNow = 0;
@@ -16,8 +19,11 @@ class EssenceView extends WatchUi.WatchFace {
   var graphMax = 0;
   var graphNow = 0;
 
+  var bGrondFillerWhite;
+
   function initialize() {
     WatchFace.initialize();
+    bGrondFillerWhite = new Rez.Drawables.bGrondFillerWhite();
   }
 
   // Load your resources here
@@ -25,13 +31,23 @@ class EssenceView extends WatchUi.WatchFace {
     dw = dc.getWidth();
     dh = dc.getHeight();
 
+    if (dh == 454) {
+      graphVertOffset = 123;
+      graphWidthFactor = 1.3;
+    }
+
     defineBoundingBoxes(dc);
 
     batterySave = getApp().getProperty("BatterySave");
     showGraph = getApp().getProperty("ShowGraph");
+    darkMode = getApp().getProperty("DarkMode");
 
     if (batterySave == false) {
-      setLayout(Rez.Layouts.WatchFace(dc));
+      if (darkMode == true) {
+        setLayout(Rez.Layouts.WatchFace(dc));
+      } else {
+        setLayout(Rez.Layouts.WatchFaceLight(dc));
+      }
       loadLayout();
       drawLabels(dc);
     } else {
@@ -181,7 +197,6 @@ class EssenceView extends WatchUi.WatchFace {
 
     if (batterySave == false) {
       if (showGraph > 0) {
-        // drawHRgraph(dc);
         drawGraph(dc);
       }
     }
@@ -617,11 +632,6 @@ class EssenceView extends WatchUi.WatchFace {
       :order => SensorHistory.ORDER_NEWEST_FIRST,
     });
 
-    // var sample = SensorHistory.getPressureHistory({
-    //   :period => maxSecs,
-    //   :order => SensorHistory.ORDER_NEWEST_FIRST,
-    // });
-
     if (sample != null) {
       var sampleData = sample.next();
       if (sampleData.data != null) {
@@ -643,6 +653,7 @@ class EssenceView extends WatchUi.WatchFace {
 
       var totHeight = 30;
       var totWidth = 70;
+      totWidth = totWidth * graphWidthFactor;
       var binPixels = 1;
 
       var totBins = Math.ceil(totWidth / binPixels).toNumber();
@@ -706,9 +717,12 @@ class EssenceView extends WatchUi.WatchFace {
                 ((heartBinMid - curMin * 0.9) / (curMax - curMin * 0.9)) *
                 totHeight;
               var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
-              var yVal = dh / 2 + 69 + totHeight - height;
+              var yVal = dh / 2 + graphVertOffset + totHeight - height;
 
-              dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+              dc.setColor(
+                dataGraph[showGraph]["color"],
+                Graphics.COLOR_TRANSPARENT
+              );
 
               dc.fillRectangle(xVal, yVal, binPixels, height);
             }

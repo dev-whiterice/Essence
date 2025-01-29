@@ -5,6 +5,10 @@
         <settingConfig type="boolean" />
     </setting>
 
+    <setting propertyKey="@Properties.DarkMode" title="@Strings.DarkMode">
+        <settingConfig type="boolean" />
+    </setting>
+
 
     <setting propertyKey="@Properties.FieldTop" title="@Strings.FieldTop">
         <settingConfig type="list">

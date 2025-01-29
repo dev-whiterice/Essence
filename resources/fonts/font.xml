@@ -2,5 +2,5 @@
     	<font id="LabelFont" antialias="true" filename="square20.fnt"/>
     	<font id="DataFont" antialias="true" filename="square30.fnt"/>
     	<font id="TimeFont" antialias="true" filename="square130.fnt"/>
-		<font id="IconFont20" antialias="true" filename="icons20.fnt"/>
+		<font id="IconFont" antialias="true" filename="icons20.fnt"/>
     </fonts>
