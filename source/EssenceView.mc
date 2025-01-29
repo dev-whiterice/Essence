@@ -33,7 +33,7 @@ class EssenceView extends WatchUi.WatchFace {
 
     if (dh == 454) {
       graphVertOffset = 128;
-      graphWidthFactor = 1.3;
+      graphWidthFactor = 1.5;
     }
 
     defineBoundingBoxes(dc);
@@ -198,6 +198,7 @@ class EssenceView extends WatchUi.WatchFace {
     if (batterySave == false) {
       if (showGraph > 0) {
         drawGraph(dc);
+        // drawGraphNew(dc);
       }
     }
     // drawBoundingBoxes(dc);
@@ -632,15 +633,22 @@ class EssenceView extends WatchUi.WatchFace {
       :order => SensorHistory.ORDER_NEWEST_FIRST,
     });
 
+    var minHistory = sample.getMin();
+    minHistory = minHistory * 0.95;
+
     if (sample != null) {
       var sampleData = sample.next();
       if (sampleData.data != null) {
         heartNow = sampleData.data;
       }
 
+      if (showGraph == 2) {
+        heartNow = (heartNow - minHistory) * 10;
+      }
+
       curMin = graphMin;
       curMax = graphMax;
-      graphMin = 1000;
+      graphMin = 2000;
       graphMax = 0;
 
       // var maxSecs = graphLength * 60;
@@ -683,6 +691,11 @@ class EssenceView extends WatchUi.WatchFace {
             sampleData = sample.next();
             if (sampleData != null) {
               graphValue = sampleData.data;
+
+              if (showGraph == 2) {
+                graphValue = (graphValue - minHistory) * 10;
+              }
+
               if (graphValue != null) {
                 if (graphBinMax == 0) {
                   graphBinMax = graphValue;
