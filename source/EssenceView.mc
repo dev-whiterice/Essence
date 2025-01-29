@@ -32,7 +32,7 @@ class EssenceView extends WatchUi.WatchFace {
     dh = dc.getHeight();
 
     if (dh == 454) {
-      graphVertOffset = 123;
+      graphVertOffset = 128;
       graphWidthFactor = 1.3;
     }
 
