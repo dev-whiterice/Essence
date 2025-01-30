@@ -166,6 +166,7 @@ var dataGraph = [
     "iterator" => null,
     "complicationId" => null,
     "color" => null,
+    "scale" => 0.9,
   },
   {
     "id" => "HeartRate",
@@ -175,6 +176,7 @@ var dataGraph = [
     "iterator" => :getHeartRateHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
     "color" => Graphics.COLOR_RED,
+    "scale" => 0.9,
   },
   {
     "id" => "Barometer",
@@ -184,6 +186,7 @@ var dataGraph = [
     "iterator" => :getPressureHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
     "color" => Graphics.COLOR_DK_BLUE,
+    "scale" => 1,
   },
   {
     "id" => "Altimeter",
@@ -193,6 +196,7 @@ var dataGraph = [
     "iterator" => :getElevationHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
     "color" => Graphics.COLOR_DK_GREEN,
+    "scale" => 0.9,
   },
 ];
 

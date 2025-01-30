@@ -11,14 +11,6 @@ class EssenceView extends WatchUi.WatchFace {
   var graphWidthFactor = 1;
   var graphVertOffset = 69;
 
-  var heartMin = 2000;
-  var heartMax = 0;
-  var heartNow = 0;
-
-  var graphMin = 2000;
-  var graphMax = 0;
-  var graphNow = 0;
-
   var bGrondFillerWhite;
 
   function initialize() {
@@ -198,7 +190,6 @@ class EssenceView extends WatchUi.WatchFace {
     if (batterySave == false) {
       if (showGraph > 0) {
         drawGraph(dc);
-        // drawGraphNew(dc);
       }
     }
     // drawBoundingBoxes(dc);
@@ -615,14 +606,10 @@ class EssenceView extends WatchUi.WatchFace {
     fun = method(fun);
     view.setText(fun.invoke());
 
+    var heartNow = 0;
     var curMin = 0;
     var curMax = 0;
     var maxSecs = 14400;
-    // var sample = SensorHistory.getHeartRateHistory({
-    //   // :period => historyDuration,
-    //   :period => maxSecs,
-    //   :order => SensorHistory.ORDER_NEWEST_FIRST,
-    // });
 
     var getSensorHistory = new Lang.Method(
       Toybox.SensorHistory,
@@ -633,31 +620,18 @@ class EssenceView extends WatchUi.WatchFace {
       :order => SensorHistory.ORDER_NEWEST_FIRST,
     });
 
-    var minHistory = sample.getMin();
-    minHistory = minHistory * 0.95;
-
     if (sample != null) {
+      var graphMin = sample.getMin();
+      var graphMax = sample.getMax();
       var sampleData = sample.next();
       if (sampleData.data != null) {
         heartNow = sampleData.data;
       }
 
-      if (showGraph == 2) {
-        heartNow = (heartNow - minHistory) * 10;
-      }
-
       curMin = graphMin;
       curMax = graphMax;
-      graphMin = 2000;
+      graphMin = 1000;
       graphMax = 0;
-
-      // var maxSecs = graphLength * 60;
-      // if (maxSecs < 900) {
-      //   maxSecs = 900;
-      // } // 900sec = 15min
-      // else if (maxSecs > 14355) {
-      //   maxSecs = 14355;
-      // } // 14400sec = 4hrs
 
       var totHeight = 30;
       var totWidth = 70;
@@ -692,10 +666,6 @@ class EssenceView extends WatchUi.WatchFace {
             if (sampleData != null) {
               graphValue = sampleData.data;
 
-              if (showGraph == 2) {
-                graphValue = (graphValue - minHistory) * 10;
-              }
-
               if (graphValue != null) {
                 if (graphBinMax == 0) {
                   graphBinMax = graphValue;
@@ -727,8 +697,10 @@ class EssenceView extends WatchUi.WatchFace {
             if (curMax > 0 && curMax > curMin) {
               var heartBinMid = (graphBinMax + graphBinMin) / 2;
               var height =
-                ((heartBinMid - curMin * 0.9) / (curMax - curMin * 0.9)) *
+                ((heartBinMid - curMin * dataGraph[showGraph]["scale"]) /
+                  (curMax - curMin * dataGraph[showGraph]["scale"])) *
                 totHeight;
+
               var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
               var yVal = dh / 2 + graphVertOffset + totHeight - height;
 
