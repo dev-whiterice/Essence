@@ -23,6 +23,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>             
         </settingConfig>
     </setting>
 
@@ -39,6 +41,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>      
         </settingConfig>
     </setting>
 
@@ -55,6 +59,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>       
         </settingConfig>
     </setting>
 
@@ -71,6 +77,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
         </settingConfig>
     </setting>
 
@@ -87,6 +95,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>    
         </settingConfig>
     </setting>
 
@@ -103,6 +113,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>        
         </settingConfig>
     </setting>
 
@@ -119,6 +131,8 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
         </settingConfig>
     </setting>
 
@@ -135,12 +149,14 @@
             <listEntry value="8">@Strings.BatteryExt</listEntry>
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
+            <listEntry value="11">@Strings.StepsExt</listEntry>  
+            <listEntry value="12">@Strings.FloorsExt</listEntry>      
         </settingConfig>
     </setting>
 
     <setting propertyKey="@Properties.ShowGraph" title="@Strings.ShowGraph">
         <settingConfig type="list">
-            <listEntry value="0">@Strings.ShowGraphDataField</listEntry>
+            <listEntry value="0">@Strings.ShowGraphfieldCatalog</listEntry>
             <listEntry value="1">@Strings.ShowGraphHeartRate</listEntry>
             <listEntry value="2">@Strings.ShowGraphPressure</listEntry>
             <listEntry value="3">@Strings.ShowGraphAltimeter</listEntry>

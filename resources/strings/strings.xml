@@ -25,7 +25,8 @@
     <string id="Battery">batt</string>
     <string id="Stress">stress</string>
     <string id="BodyBattery">b.batt</string>
-
+    <string id="Steps">steps</string>
+    <string id="Floors">floors</string>
 
     <string id="BatterySave">Battery save</string>
 
@@ -40,9 +41,11 @@
     <string id="BatteryExt">Battery</string>
     <string id="StressExt">Stress</string>
     <string id="BodyBatteryExt">Body Battery</string>
+    <string id="StepsExt">Steps</string>
+    <string id="FloorsExt">Floors</string>
 
 
-    <string id="ShowGraphDataField">Show Data Field</string>
+    <string id="ShowGraphfieldCatalog">Show Data Field</string>
     <string id="ShowGraphHeartRate">Show HR Graph</string>
     <string id="ShowGraphPressure">Show Pressure Graph</string>
     <string id="ShowGraphAltimeter">Show Elevation Graph</string>

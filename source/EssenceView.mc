@@ -56,7 +56,7 @@ class EssenceView extends WatchUi.WatchFace {
       } else {
         view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
         view.setText(
-          WatchUi.loadResource(dataField[fieldLayout[i]["data"]]["label"]) as
+          WatchUi.loadResource(fieldCatalog[fieldLayout[i]["data"]]["label"]) as
             String
         );
       }
@@ -207,13 +207,13 @@ class EssenceView extends WatchUi.WatchFace {
 
         if (fieldLayout[i]["data"].equals(4)) {
           // SunEvent exception
-          var sunevent = getSunEvent();
-          view.setText(sunevent["value"]);
+          var sunEvent = getSunEvent();
+          view.setText(sunEvent["value"]);
 
           view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
-          view.setText(sunevent["label"]);
+          view.setText(sunEvent["label"]);
         } else {
-          fun = dataField[fieldLayout[i]["data"]]["getter"];
+          fun = fieldCatalog[fieldLayout[i]["data"]]["getter"];
           fun = method(fun);
           view.setText(fun.invoke());
         }
@@ -497,6 +497,50 @@ class EssenceView extends WatchUi.WatchFace {
     return Lang.format("$1$", [data]);
   }
 
+  function getSteps() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_STEPS)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null || data == "--") {
+      if (Toybox has :Activity) {
+        data = Toybox.Activity.ActivityMonitor.getInfo().steps;
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    return Lang.format("$1$", [data]);
+  }
+
+  function getFloors() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_FLOORS_CLIMBED)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null || data == "--") {
+      if (Toybox has :Activity) {
+        data = Toybox.Activity.ActivityMonitor.getInfo().floorsClimbed;
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    return Lang.format("$1$", [data]);
+  }
+
   function getBarometer() {
     var data = null;
     if (Toybox has :Complications) {
@@ -594,15 +638,17 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   function drawGraph(dc) {
-    if (dataGraph[showGraph]["iterator"] == null) {
+    if (graphCatalog[showGraph]["iterator"] == null) {
       return;
     }
 
     var view = View.findDrawableById("FieldGraphLabel") as Text;
-    view.setText(WatchUi.loadResource(dataGraph[showGraph]["label"]) as String);
+    view.setText(
+      WatchUi.loadResource(graphCatalog[showGraph]["label"]) as String
+    );
 
     view = View.findDrawableById("FieldGraphData") as Text;
-    var fun = dataGraph[showGraph]["getter"];
+    var fun = graphCatalog[showGraph]["getter"];
     fun = method(fun);
     view.setText(fun.invoke());
 
@@ -613,7 +659,7 @@ class EssenceView extends WatchUi.WatchFace {
 
     var getSensorHistory = new Lang.Method(
       Toybox.SensorHistory,
-      dataGraph[showGraph]["iterator"]
+      graphCatalog[showGraph]["iterator"]
     );
     var sample = getSensorHistory.invoke({
       :period => maxSecs,
@@ -697,15 +743,15 @@ class EssenceView extends WatchUi.WatchFace {
             if (curMax > 0 && curMax > curMin) {
               var heartBinMid = (graphBinMax + graphBinMin) / 2;
               var height =
-                ((heartBinMid - curMin * dataGraph[showGraph]["scale"]) /
-                  (curMax - curMin * dataGraph[showGraph]["scale"])) *
+                ((heartBinMid - curMin * graphCatalog[showGraph]["scale"]) /
+                  (curMax - curMin * graphCatalog[showGraph]["scale"])) *
                 totHeight;
 
               var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
               var yVal = dh / 2 + graphVertOffset + totHeight - height;
 
               dc.setColor(
-                dataGraph[showGraph]["color"],
+                graphCatalog[showGraph]["color"],
                 Graphics.COLOR_TRANSPARENT
               );
 

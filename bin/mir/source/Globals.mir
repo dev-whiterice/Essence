@@ -1,0 +1,915 @@
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 2; ]
+using Toybox.Complications;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 3; ]
+using Toybox.Graphics;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 5; @position = 11; ]
+var bboxes;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 6; @position = 11; ]
+var boundingBoxes;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 7; @position = 4; ]
+var redrawLayout = false;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 8; @position = 4; ]
+var batterySave = false;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 9; @position = 4; ]
+var showGraph = 0;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 10; @position = 4; ]
+var darkMode = true;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 12; ]
+function checkBoundingBoxes(points) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_12_43_31_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 13 2 ]
+    for @D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_test @D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_incr @D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_init:
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_begin" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_end" ]
+    %i.1 = local;
+    %tmp.1 = 0;
+    lputv %i.1 %tmp.1;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_test:
+    %tmp.3 = lgetv %i.1;
+    %tmp.5 = getv ? :boundingBoxes;
+    %tmp.6 = getv function %tmp.5 :size;
+    %tmp.7 = invoke %tmp.5 %tmp.6();
+    %tmp.8 = lt %tmp.3 %tmp.7;
+    bf %tmp.8 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_49_29_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 14 4 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_49_29_2_start" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_49_29_2_stop" ]
+    %currentBounds.2 = local;
+    %tmp.10 = getv ? :boundingBoxes;
+    %tmp.12 = lgetv %i.1;
+    %tmp.13 = agetv %tmp.10 %tmp.12;
+    lputv %currentBounds.2 %tmp.13;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 15 4 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_4_28_4_if_stmt:
+    %tmp.14 = self;
+    %tmp.15 = getv function %tmp.14 :checkBoundsForComplication;
+    %tmp.17 = lgetv %points;
+    %tmp.19 = lgetv %currentBounds.2;
+    %tmp.20 = "bounds";
+    %tmp.21 = agetv %tmp.19 %tmp.20;
+    %tmp.22 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.21);
+    bf %tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_4_28_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_4_28_4_if_true:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_69_28_4_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 16 6 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_stmt:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_10_16_73_begin:
+    %tmp.24 = getv ? :fieldLayout;
+    %tmp.26 = lgetv %i.1;
+    %tmp.27 = agetv %tmp.24 %tmp.26;
+    %tmp.28 = "id";
+    %tmp.29 = agetv %tmp.27 %tmp.28;
+    %tmp.30 = getv function %tmp.29 :equals;
+    %tmp.31 = "FieldLowerCenter";
+    %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+    bf %tmp.32 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_false;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_61_16_73_true:
+    %tmp.34 = getv ? :showGraph;
+    %tmp.35 = 0;
+    %tmp.36 = gt %tmp.34 %tmp.35;
+    push %tmp.36;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_61_16_73_end:
+    %tmp.37 = phi [%tmp.32 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_10_16_73_begin] [%tmp.36 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_61_16_73_true] [%tmp.37 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_61_16_73_end];
+    bf %tmp.37 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_false;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_true:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_76_21_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 17 8 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_8_19_8_if_stmt:
+    %tmp.39 = getv ? :graphCatalog;
+    %tmp.41 = getv ? :showGraph;
+    %tmp.42 = agetv %tmp.39 %tmp.41;
+    %tmp.43 = "complicationId";
+    %tmp.44 = agetv %tmp.42 %tmp.43;
+    %tmp.45 = null;
+    %tmp.46 = eq %tmp.44 %tmp.45;
+    bf %tmp.46 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_8_19_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_8_19_8_if_true:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_63_19_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 18 10 ]
+    %tmp.47 = false;
+    ret %tmp.47;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_63_19_8_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_8_19_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_17_8_19_8_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 20 8 ]
+    %tmp.49 = getv ? :graphCatalog;
+    %tmp.51 = getv ? :showGraph;
+    %tmp.52 = agetv %tmp.49 %tmp.51;
+    %tmp.53 = "complicationId";
+    %tmp.54 = agetv %tmp.52 %tmp.53;
+    ret %tmp.54;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_76_21_6_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_false:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_13_27_6_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 22 8 ]
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_13_27_6_start" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_13_27_6_stop" ]
+    %dataIndex.3 = local;
+    %tmp.56 = getv ? :fieldLayout;
+    %tmp.58 = lgetv %i.1;
+    %tmp.59 = agetv %tmp.56 %tmp.58;
+    %tmp.60 = "data";
+    %tmp.61 = agetv %tmp.59 %tmp.60;
+    lputv %dataIndex.3 %tmp.61;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 23 8 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_8_25_8_if_stmt:
+    %tmp.63 = getv ? :fieldCatalog;
+    %tmp.65 = lgetv %dataIndex.3;
+    %tmp.66 = agetv %tmp.63 %tmp.65;
+    %tmp.67 = "complicationId";
+    %tmp.68 = agetv %tmp.66 %tmp.67;
+    %tmp.69 = null;
+    %tmp.70 = eq %tmp.68 %tmp.69;
+    bf %tmp.70 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_8_25_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_8_25_8_if_true:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_63_25_8_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 24 10 ]
+    %tmp.71 = false;
+    ret %tmp.71;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_63_25_8_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_8_25_8_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_23_8_25_8_if_end:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 26 8 ]
+    %tmp.73 = getv ? :fieldCatalog;
+    %tmp.75 = lgetv %dataIndex.3;
+    %tmp.76 = agetv %tmp.73 %tmp.75;
+    %tmp.77 = "complicationId";
+    %tmp.78 = agetv %tmp.76 %tmp.77;
+    ret %tmp.78;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_21_13_27_6_stop:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_16_6_27_6_if_end:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_69_28_4_stop:
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_4_28_4_if_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_15_4_28_4_if_end:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_49_29_2_stop:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_incr:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 13 ]
+    %tmp.81 = lgetv %i.1;
+    %tmp.82 = add %tmp.81 1;
+    lputv %i.1 %tmp.82;
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_test;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_13_2_29_2_for_end:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 30 2 ]
+    %tmp.83 = false;
+    ret %tmp.83;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_12_43_31_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 32; ]
+function checkBoundsForComplication(points, boundingBox) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_32_64_34_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 33 2 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :boxContains;
+    %tmp.4 = lgetv %points;
+    %tmp.6 = lgetv %boundingBox;
+    %tmp.7 = 0;
+    %tmp.8 = agetv %tmp.6 %tmp.7;
+    %tmp.10 = lgetv %boundingBox;
+    %tmp.11 = 1;
+    %tmp.12 = agetv %tmp.10 %tmp.11;
+    %tmp.13 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.8, %tmp.12);
+    ret %tmp.13;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_32_64_34_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 36; ]
+function boxContains(points, boxMinXY, boxMaxXY) {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_36_56_43_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 37 2 ]
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_41_27_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_40_27_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_39_27_begin:
+    %tmp.2 = lgetv %points;
+    %tmp.3 = 0;
+    %tmp.4 = agetv %tmp.2 %tmp.3;
+    %tmp.6 = lgetv %boxMaxXY;
+    %tmp.7 = 0;
+    %tmp.8 = agetv %tmp.6 %tmp.7;
+    %tmp.9 = lte %tmp.4 %tmp.8;
+    %tmp.10 = dup %tmp.9;
+    bf %tmp.10 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_39_4_39_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_39_4_39_27_true:
+    %tmp.12 = lgetv %points;
+    %tmp.13 = 1;
+    %tmp.14 = agetv %tmp.12 %tmp.13;
+    %tmp.16 = lgetv %boxMaxXY;
+    %tmp.17 = 1;
+    %tmp.18 = agetv %tmp.16 %tmp.17;
+    %tmp.19 = lte %tmp.14 %tmp.18;
+    %tmp.20 = and %tmp.9 %tmp.19;
+    push %tmp.20;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_39_4_39_27_end:
+    %tmp.21 = phi [%tmp.10 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_39_27_begin] [%tmp.20 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_39_4_39_27_true] [%tmp.21 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_39_4_39_27_end];
+    %tmp.22 = dup %tmp.21;
+    bf %tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_40_4_40_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_40_4_40_27_true:
+    %tmp.24 = lgetv %points;
+    %tmp.25 = 0;
+    %tmp.26 = agetv %tmp.24 %tmp.25;
+    %tmp.28 = lgetv %boxMinXY;
+    %tmp.29 = 0;
+    %tmp.30 = agetv %tmp.28 %tmp.29;
+    %tmp.31 = gte %tmp.26 %tmp.30;
+    %tmp.32 = and %tmp.21 %tmp.31;
+    push %tmp.32;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_40_4_40_27_end:
+    %tmp.33 = phi [%tmp.22 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_40_27_begin] [%tmp.32 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_40_4_40_27_true] [%tmp.33 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_40_4_40_27_end];
+    %tmp.34 = dup %tmp.33;
+    bf %tmp.34 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_41_4_41_27_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_41_4_41_27_true:
+    %tmp.36 = lgetv %points;
+    %tmp.37 = 1;
+    %tmp.38 = agetv %tmp.36 %tmp.37;
+    %tmp.40 = lgetv %boxMinXY;
+    %tmp.41 = 1;
+    %tmp.42 = agetv %tmp.40 %tmp.41;
+    %tmp.43 = gte %tmp.38 %tmp.42;
+    %tmp.44 = and %tmp.33 %tmp.43;
+    push %tmp.44;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_41_4_41_27_end:
+    %tmp.45 = phi [%tmp.34 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_38_4_41_27_begin] [%tmp.44 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_41_4_41_27_true] [%tmp.45 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_41_4_41_27_end];
+    ret %tmp.45;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_36_56_43_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 45; @position = 4; ]
+var fieldLayout;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 80; @position = 4; ]
+var fieldCatalog;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 174; @position = 4; ]
+var graphCatalog;
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 217; ]
+function loadLayout() {
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_217_22_221_0_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 218 2 ]
+    for @D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_test @D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_incr @D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_init:
+    [ "D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_begin" "D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_end" ]
+    %i.1 = local;
+    %tmp.1 = 0;
+    lputv %i.1 %tmp.1;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_test:
+    %tmp.3 = lgetv %i.1;
+    %tmp.5 = getv ? :fieldLayout;
+    %tmp.6 = getv function %tmp.5 :size;
+    %tmp.7 = invoke %tmp.5 %tmp.6();
+    %tmp.8 = lt %tmp.3 %tmp.7;
+    bf %tmp.8 @D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_end;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_begin:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_53_220_2_start:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 219 4 ]
+    %tmp.9 = getv self :fieldLayout;
+    %tmp.11 = lgetv %i.1;
+    %tmp.12 = agetv %tmp.9 %tmp.11;
+    %tmp.13 = self;
+    %tmp.14 = getv function %tmp.13 :getApp;
+    %tmp.15 = invoke %tmp.13 %tmp.14();
+    %tmp.16 = getv function %tmp.15 :getProperty;
+    %tmp.18 = getv ? :fieldLayout;
+    %tmp.20 = lgetv %i.1;
+    %tmp.21 = agetv %tmp.18 %tmp.20;
+    %tmp.22 = "id";
+    %tmp.23 = agetv %tmp.21 %tmp.22;
+    %tmp.24 = invoke %tmp.15 %tmp.16(%tmp.23);
+    %tmp.25 = "data";
+    aputv %tmp.12 %tmp.25 %tmp.24;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_53_220_2_stop:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_incr:
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 218 ]
+    %tmp.27 = lgetv %i.1;
+    %tmp.28 = 1;
+    %tmp.29 = add %tmp.27 %tmp.28;
+    lputv %i.1 %tmp.29;
+    goto @D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_test;
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_218_2_220_2_for_end:
+D_dev_Monkey_C_prj_Essence_source_Globals_mc_217_22_221_0_stop:
+}
+[ @file = "D:\dev\Monkey C\prj\Essence\source\Globals.mc"; @line = 1; ]
+<init> {
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 5 11 ]
+    %tmp.30 = newa 0;
+    putv self :bboxes %tmp.30;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 6 11 ]
+    %tmp.31 = newa 0;
+    putv self :boundingBoxes %tmp.31;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 45 4 ]
+    %tmp.32 = newa 8;
+    %tmp.33 = newd 2;
+    %tmp.34 = "id";
+    %tmp.35 = "FieldTop";
+    %tmp.36 = dup %tmp.33;
+    %tmp.37 = aputv %tmp.36 %tmp.34 %tmp.35;
+    %tmp.38 = "data";
+    %tmp.39 = 0;
+    %tmp.40 = dup %tmp.37;
+    %tmp.41 = aputv %tmp.40 %tmp.38 %tmp.39;
+    %tmp.42 = dup %tmp.32;
+    %tmp.43 = aputv %tmp.42 0 %tmp.41;
+    %tmp.44 = newd 2;
+    %tmp.45 = "id";
+    %tmp.46 = "FieldUpperLeft";
+    %tmp.47 = dup %tmp.44;
+    %tmp.48 = aputv %tmp.47 %tmp.45 %tmp.46;
+    %tmp.49 = "data";
+    %tmp.50 = 1;
+    %tmp.51 = dup %tmp.48;
+    %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+    %tmp.53 = dup %tmp.43;
+    %tmp.54 = aputv %tmp.53 1 %tmp.52;
+    %tmp.55 = newd 2;
+    %tmp.56 = "id";
+    %tmp.57 = "FieldUpperCenter";
+    %tmp.58 = dup %tmp.55;
+    %tmp.59 = aputv %tmp.58 %tmp.56 %tmp.57;
+    %tmp.60 = "data";
+    %tmp.61 = 2;
+    %tmp.62 = dup %tmp.59;
+    %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+    %tmp.64 = dup %tmp.54;
+    %tmp.65 = aputv %tmp.64 2 %tmp.63;
+    %tmp.66 = newd 2;
+    %tmp.67 = "id";
+    %tmp.68 = "FieldUpperRight";
+    %tmp.69 = dup %tmp.66;
+    %tmp.70 = aputv %tmp.69 %tmp.67 %tmp.68;
+    %tmp.71 = "data";
+    %tmp.72 = 3;
+    %tmp.73 = dup %tmp.70;
+    %tmp.74 = aputv %tmp.73 %tmp.71 %tmp.72;
+    %tmp.75 = dup %tmp.65;
+    %tmp.76 = aputv %tmp.75 3 %tmp.74;
+    %tmp.77 = newd 2;
+    %tmp.78 = "id";
+    %tmp.79 = "FieldLowerLeft";
+    %tmp.80 = dup %tmp.77;
+    %tmp.81 = aputv %tmp.80 %tmp.78 %tmp.79;
+    %tmp.82 = "data";
+    %tmp.83 = 4;
+    %tmp.84 = dup %tmp.81;
+    %tmp.85 = aputv %tmp.84 %tmp.82 %tmp.83;
+    %tmp.86 = dup %tmp.76;
+    %tmp.87 = aputv %tmp.86 4 %tmp.85;
+    %tmp.88 = newd 2;
+    %tmp.89 = "id";
+    %tmp.90 = "FieldLowerCenter";
+    %tmp.91 = dup %tmp.88;
+    %tmp.92 = aputv %tmp.91 %tmp.89 %tmp.90;
+    %tmp.93 = "data";
+    %tmp.94 = 5;
+    %tmp.95 = dup %tmp.92;
+    %tmp.96 = aputv %tmp.95 %tmp.93 %tmp.94;
+    %tmp.97 = dup %tmp.87;
+    %tmp.98 = aputv %tmp.97 5 %tmp.96;
+    %tmp.99 = newd 2;
+    %tmp.100 = "id";
+    %tmp.101 = "FieldLowerRight";
+    %tmp.102 = dup %tmp.99;
+    %tmp.103 = aputv %tmp.102 %tmp.100 %tmp.101;
+    %tmp.104 = "data";
+    %tmp.105 = 6;
+    %tmp.106 = dup %tmp.103;
+    %tmp.107 = aputv %tmp.106 %tmp.104 %tmp.105;
+    %tmp.108 = dup %tmp.98;
+    %tmp.109 = aputv %tmp.108 6 %tmp.107;
+    %tmp.110 = newd 2;
+    %tmp.111 = "id";
+    %tmp.112 = "FieldBottom";
+    %tmp.113 = dup %tmp.110;
+    %tmp.114 = aputv %tmp.113 %tmp.111 %tmp.112;
+    %tmp.115 = "data";
+    %tmp.116 = 7;
+    %tmp.117 = dup %tmp.114;
+    %tmp.118 = aputv %tmp.117 %tmp.115 %tmp.116;
+    %tmp.119 = dup %tmp.109;
+    %tmp.120 = aputv %tmp.119 7 %tmp.118;
+    putv self :fieldLayout %tmp.120;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 80 4 ]
+    %tmp.121 = newa 13;
+    %tmp.122 = newd 5;
+    %tmp.123 = "id";
+    %tmp.124 = "Empty";
+    %tmp.125 = dup %tmp.122;
+    %tmp.126 = aputv %tmp.125 %tmp.123 %tmp.124;
+    %tmp.127 = "label";
+    %tmp.129 = getv ? :Rez;
+    %tmp.130 = getv %tmp.129 :Strings;
+    %tmp.131 = getv %tmp.130 :Empty;
+    %tmp.132 = dup %tmp.126;
+    %tmp.133 = aputv %tmp.132 %tmp.127 %tmp.131;
+    %tmp.134 = "labelExt";
+    %tmp.136 = getv ? :Rez;
+    %tmp.137 = getv %tmp.136 :Strings;
+    %tmp.138 = getv %tmp.137 :EmptyExt;
+    %tmp.139 = dup %tmp.133;
+    %tmp.140 = aputv %tmp.139 %tmp.134 %tmp.138;
+    %tmp.141 = "getter";
+    %tmp.143 = const :getEmpty;
+    %tmp.144 = dup %tmp.140;
+    %tmp.145 = aputv %tmp.144 %tmp.141 %tmp.143;
+    %tmp.146 = "complicationId";
+    %tmp.147 = null;
+    %tmp.148 = dup %tmp.145;
+    %tmp.149 = aputv %tmp.148 %tmp.146 %tmp.147;
+    %tmp.150 = dup %tmp.121;
+    %tmp.151 = aputv %tmp.150 0 %tmp.149;
+    %tmp.152 = newd 5;
+    %tmp.153 = "id";
+    %tmp.154 = "Weather";
+    %tmp.155 = dup %tmp.152;
+    %tmp.156 = aputv %tmp.155 %tmp.153 %tmp.154;
+    %tmp.157 = "label";
+    %tmp.159 = getv ? :Rez;
+    %tmp.160 = getv %tmp.159 :Strings;
+    %tmp.161 = getv %tmp.160 :Weather;
+    %tmp.162 = dup %tmp.156;
+    %tmp.163 = aputv %tmp.162 %tmp.157 %tmp.161;
+    %tmp.164 = "labelExt";
+    %tmp.166 = getv ? :Rez;
+    %tmp.167 = getv %tmp.166 :Strings;
+    %tmp.168 = getv %tmp.167 :WeatherExt;
+    %tmp.169 = dup %tmp.163;
+    %tmp.170 = aputv %tmp.169 %tmp.164 %tmp.168;
+    %tmp.171 = "getter";
+    %tmp.173 = const :getWeather;
+    %tmp.174 = dup %tmp.170;
+    %tmp.175 = aputv %tmp.174 %tmp.171 %tmp.173;
+    %tmp.176 = "complicationId";
+    %tmp.177 = getm $.Toybox.Complications;
+    %tmp.178 = getv %tmp.177 :COMPLICATION_TYPE_CURRENT_WEATHER;
+    %tmp.179 = dup %tmp.175;
+    %tmp.180 = aputv %tmp.179 %tmp.176 %tmp.178;
+    %tmp.181 = dup %tmp.151;
+    %tmp.182 = aputv %tmp.181 1 %tmp.180;
+    %tmp.183 = newd 5;
+    %tmp.184 = "id";
+    %tmp.185 = "Calendar";
+    %tmp.186 = dup %tmp.183;
+    %tmp.187 = aputv %tmp.186 %tmp.184 %tmp.185;
+    %tmp.188 = "label";
+    %tmp.190 = getv ? :Rez;
+    %tmp.191 = getv %tmp.190 :Strings;
+    %tmp.192 = getv %tmp.191 :Calendar;
+    %tmp.193 = dup %tmp.187;
+    %tmp.194 = aputv %tmp.193 %tmp.188 %tmp.192;
+    %tmp.195 = "labelExt";
+    %tmp.197 = getv ? :Rez;
+    %tmp.198 = getv %tmp.197 :Strings;
+    %tmp.199 = getv %tmp.198 :CalendarExt;
+    %tmp.200 = dup %tmp.194;
+    %tmp.201 = aputv %tmp.200 %tmp.195 %tmp.199;
+    %tmp.202 = "getter";
+    %tmp.204 = const :getCalendar;
+    %tmp.205 = dup %tmp.201;
+    %tmp.206 = aputv %tmp.205 %tmp.202 %tmp.204;
+    %tmp.207 = "complicationId";
+    %tmp.208 = getm $.Toybox.Complications;
+    %tmp.209 = getv %tmp.208 :COMPLICATION_TYPE_CALENDAR_EVENTS;
+    %tmp.210 = dup %tmp.206;
+    %tmp.211 = aputv %tmp.210 %tmp.207 %tmp.209;
+    %tmp.212 = dup %tmp.182;
+    %tmp.213 = aputv %tmp.212 2 %tmp.211;
+    %tmp.214 = newd 5;
+    %tmp.215 = "id";
+    %tmp.216 = "Notifications";
+    %tmp.217 = dup %tmp.214;
+    %tmp.218 = aputv %tmp.217 %tmp.215 %tmp.216;
+    %tmp.219 = "label";
+    %tmp.221 = getv ? :Rez;
+    %tmp.222 = getv %tmp.221 :Strings;
+    %tmp.223 = getv %tmp.222 :Notifications;
+    %tmp.224 = dup %tmp.218;
+    %tmp.225 = aputv %tmp.224 %tmp.219 %tmp.223;
+    %tmp.226 = "labelExt";
+    %tmp.228 = getv ? :Rez;
+    %tmp.229 = getv %tmp.228 :Strings;
+    %tmp.230 = getv %tmp.229 :NotificationsExt;
+    %tmp.231 = dup %tmp.225;
+    %tmp.232 = aputv %tmp.231 %tmp.226 %tmp.230;
+    %tmp.233 = "getter";
+    %tmp.235 = const :getNotifications;
+    %tmp.236 = dup %tmp.232;
+    %tmp.237 = aputv %tmp.236 %tmp.233 %tmp.235;
+    %tmp.238 = "complicationId";
+    %tmp.239 = getm $.Toybox.Complications;
+    %tmp.240 = getv %tmp.239 :COMPLICATION_TYPE_NOTIFICATION_COUNT;
+    %tmp.241 = dup %tmp.237;
+    %tmp.242 = aputv %tmp.241 %tmp.238 %tmp.240;
+    %tmp.243 = dup %tmp.213;
+    %tmp.244 = aputv %tmp.243 3 %tmp.242;
+    %tmp.245 = newd 5;
+    %tmp.246 = "id";
+    %tmp.247 = "SunEvent";
+    %tmp.248 = dup %tmp.245;
+    %tmp.249 = aputv %tmp.248 %tmp.246 %tmp.247;
+    %tmp.250 = "label";
+    %tmp.252 = getv ? :Rez;
+    %tmp.253 = getv %tmp.252 :Strings;
+    %tmp.254 = getv %tmp.253 :SunEvent;
+    %tmp.255 = dup %tmp.249;
+    %tmp.256 = aputv %tmp.255 %tmp.250 %tmp.254;
+    %tmp.257 = "labelExt";
+    %tmp.259 = getv ? :Rez;
+    %tmp.260 = getv %tmp.259 :Strings;
+    %tmp.261 = getv %tmp.260 :SunEventExt;
+    %tmp.262 = dup %tmp.256;
+    %tmp.263 = aputv %tmp.262 %tmp.257 %tmp.261;
+    %tmp.264 = "getter";
+    %tmp.266 = const :getSunEvent;
+    %tmp.267 = dup %tmp.263;
+    %tmp.268 = aputv %tmp.267 %tmp.264 %tmp.266;
+    %tmp.269 = "complicationId";
+    %tmp.270 = getm $.Toybox.Complications;
+    %tmp.271 = getv %tmp.270 :COMPLICATION_TYPE_SUNRISE;
+    %tmp.272 = dup %tmp.268;
+    %tmp.273 = aputv %tmp.272 %tmp.269 %tmp.271;
+    %tmp.274 = dup %tmp.244;
+    %tmp.275 = aputv %tmp.274 4 %tmp.273;
+    %tmp.276 = newd 5;
+    %tmp.277 = "id";
+    %tmp.278 = "Altimeter";
+    %tmp.279 = dup %tmp.276;
+    %tmp.280 = aputv %tmp.279 %tmp.277 %tmp.278;
+    %tmp.281 = "label";
+    %tmp.283 = getv ? :Rez;
+    %tmp.284 = getv %tmp.283 :Strings;
+    %tmp.285 = getv %tmp.284 :Altimeter;
+    %tmp.286 = dup %tmp.280;
+    %tmp.287 = aputv %tmp.286 %tmp.281 %tmp.285;
+    %tmp.288 = "labelExt";
+    %tmp.290 = getv ? :Rez;
+    %tmp.291 = getv %tmp.290 :Strings;
+    %tmp.292 = getv %tmp.291 :AltimeterExt;
+    %tmp.293 = dup %tmp.287;
+    %tmp.294 = aputv %tmp.293 %tmp.288 %tmp.292;
+    %tmp.295 = "getter";
+    %tmp.297 = const :getAltimeter;
+    %tmp.298 = dup %tmp.294;
+    %tmp.299 = aputv %tmp.298 %tmp.295 %tmp.297;
+    %tmp.300 = "complicationId";
+    %tmp.301 = getm $.Toybox.Complications;
+    %tmp.302 = getv %tmp.301 :COMPLICATION_TYPE_ALTITUDE;
+    %tmp.303 = dup %tmp.299;
+    %tmp.304 = aputv %tmp.303 %tmp.300 %tmp.302;
+    %tmp.305 = dup %tmp.275;
+    %tmp.306 = aputv %tmp.305 5 %tmp.304;
+    %tmp.307 = newd 5;
+    %tmp.308 = "id";
+    %tmp.309 = "HeartRate";
+    %tmp.310 = dup %tmp.307;
+    %tmp.311 = aputv %tmp.310 %tmp.308 %tmp.309;
+    %tmp.312 = "label";
+    %tmp.314 = getv ? :Rez;
+    %tmp.315 = getv %tmp.314 :Strings;
+    %tmp.316 = getv %tmp.315 :HeartRate;
+    %tmp.317 = dup %tmp.311;
+    %tmp.318 = aputv %tmp.317 %tmp.312 %tmp.316;
+    %tmp.319 = "labelExt";
+    %tmp.321 = getv ? :Rez;
+    %tmp.322 = getv %tmp.321 :Strings;
+    %tmp.323 = getv %tmp.322 :HeartRateExt;
+    %tmp.324 = dup %tmp.318;
+    %tmp.325 = aputv %tmp.324 %tmp.319 %tmp.323;
+    %tmp.326 = "getter";
+    %tmp.328 = const :getHeartRate;
+    %tmp.329 = dup %tmp.325;
+    %tmp.330 = aputv %tmp.329 %tmp.326 %tmp.328;
+    %tmp.331 = "complicationId";
+    %tmp.332 = getm $.Toybox.Complications;
+    %tmp.333 = getv %tmp.332 :COMPLICATION_TYPE_HEART_RATE;
+    %tmp.334 = dup %tmp.330;
+    %tmp.335 = aputv %tmp.334 %tmp.331 %tmp.333;
+    %tmp.336 = dup %tmp.306;
+    %tmp.337 = aputv %tmp.336 6 %tmp.335;
+    %tmp.338 = newd 5;
+    %tmp.339 = "id";
+    %tmp.340 = "Barometer";
+    %tmp.341 = dup %tmp.338;
+    %tmp.342 = aputv %tmp.341 %tmp.339 %tmp.340;
+    %tmp.343 = "label";
+    %tmp.345 = getv ? :Rez;
+    %tmp.346 = getv %tmp.345 :Strings;
+    %tmp.347 = getv %tmp.346 :Barometer;
+    %tmp.348 = dup %tmp.342;
+    %tmp.349 = aputv %tmp.348 %tmp.343 %tmp.347;
+    %tmp.350 = "labelExt";
+    %tmp.352 = getv ? :Rez;
+    %tmp.353 = getv %tmp.352 :Strings;
+    %tmp.354 = getv %tmp.353 :BarometerExt;
+    %tmp.355 = dup %tmp.349;
+    %tmp.356 = aputv %tmp.355 %tmp.350 %tmp.354;
+    %tmp.357 = "getter";
+    %tmp.359 = const :getBarometer;
+    %tmp.360 = dup %tmp.356;
+    %tmp.361 = aputv %tmp.360 %tmp.357 %tmp.359;
+    %tmp.362 = "complicationId";
+    %tmp.363 = getm $.Toybox.Complications;
+    %tmp.364 = getv %tmp.363 :COMPLICATION_TYPE_SEA_LEVEL_PRESSURE;
+    %tmp.365 = dup %tmp.361;
+    %tmp.366 = aputv %tmp.365 %tmp.362 %tmp.364;
+    %tmp.367 = dup %tmp.337;
+    %tmp.368 = aputv %tmp.367 7 %tmp.366;
+    %tmp.369 = newd 5;
+    %tmp.370 = "id";
+    %tmp.371 = "Battery";
+    %tmp.372 = dup %tmp.369;
+    %tmp.373 = aputv %tmp.372 %tmp.370 %tmp.371;
+    %tmp.374 = "label";
+    %tmp.376 = getv ? :Rez;
+    %tmp.377 = getv %tmp.376 :Strings;
+    %tmp.378 = getv %tmp.377 :Battery;
+    %tmp.379 = dup %tmp.373;
+    %tmp.380 = aputv %tmp.379 %tmp.374 %tmp.378;
+    %tmp.381 = "labelExt";
+    %tmp.383 = getv ? :Rez;
+    %tmp.384 = getv %tmp.383 :Strings;
+    %tmp.385 = getv %tmp.384 :BatteryExt;
+    %tmp.386 = dup %tmp.380;
+    %tmp.387 = aputv %tmp.386 %tmp.381 %tmp.385;
+    %tmp.388 = "getter";
+    %tmp.390 = const :getBattery;
+    %tmp.391 = dup %tmp.387;
+    %tmp.392 = aputv %tmp.391 %tmp.388 %tmp.390;
+    %tmp.393 = "complicationId";
+    %tmp.394 = null;
+    %tmp.395 = dup %tmp.392;
+    %tmp.396 = aputv %tmp.395 %tmp.393 %tmp.394;
+    %tmp.397 = dup %tmp.368;
+    %tmp.398 = aputv %tmp.397 8 %tmp.396;
+    %tmp.399 = newd 5;
+    %tmp.400 = "id";
+    %tmp.401 = "Stress";
+    %tmp.402 = dup %tmp.399;
+    %tmp.403 = aputv %tmp.402 %tmp.400 %tmp.401;
+    %tmp.404 = "label";
+    %tmp.406 = getv ? :Rez;
+    %tmp.407 = getv %tmp.406 :Strings;
+    %tmp.408 = getv %tmp.407 :Stress;
+    %tmp.409 = dup %tmp.403;
+    %tmp.410 = aputv %tmp.409 %tmp.404 %tmp.408;
+    %tmp.411 = "labelExt";
+    %tmp.413 = getv ? :Rez;
+    %tmp.414 = getv %tmp.413 :Strings;
+    %tmp.415 = getv %tmp.414 :StressExt;
+    %tmp.416 = dup %tmp.410;
+    %tmp.417 = aputv %tmp.416 %tmp.411 %tmp.415;
+    %tmp.418 = "getter";
+    %tmp.420 = const :getStress;
+    %tmp.421 = dup %tmp.417;
+    %tmp.422 = aputv %tmp.421 %tmp.418 %tmp.420;
+    %tmp.423 = "complicationId";
+    %tmp.424 = getm $.Toybox.Complications;
+    %tmp.425 = getv %tmp.424 :COMPLICATION_TYPE_STRESS;
+    %tmp.426 = dup %tmp.422;
+    %tmp.427 = aputv %tmp.426 %tmp.423 %tmp.425;
+    %tmp.428 = dup %tmp.398;
+    %tmp.429 = aputv %tmp.428 9 %tmp.427;
+    %tmp.430 = newd 5;
+    %tmp.431 = "id";
+    %tmp.432 = "BodyBattery";
+    %tmp.433 = dup %tmp.430;
+    %tmp.434 = aputv %tmp.433 %tmp.431 %tmp.432;
+    %tmp.435 = "label";
+    %tmp.437 = getv ? :Rez;
+    %tmp.438 = getv %tmp.437 :Strings;
+    %tmp.439 = getv %tmp.438 :BodyBattery;
+    %tmp.440 = dup %tmp.434;
+    %tmp.441 = aputv %tmp.440 %tmp.435 %tmp.439;
+    %tmp.442 = "labelExt";
+    %tmp.444 = getv ? :Rez;
+    %tmp.445 = getv %tmp.444 :Strings;
+    %tmp.446 = getv %tmp.445 :BodyBatteryExt;
+    %tmp.447 = dup %tmp.441;
+    %tmp.448 = aputv %tmp.447 %tmp.442 %tmp.446;
+    %tmp.449 = "getter";
+    %tmp.451 = const :getBodyBattery;
+    %tmp.452 = dup %tmp.448;
+    %tmp.453 = aputv %tmp.452 %tmp.449 %tmp.451;
+    %tmp.454 = "complicationId";
+    %tmp.455 = getm $.Toybox.Complications;
+    %tmp.456 = getv %tmp.455 :COMPLICATION_TYPE_BODY_BATTERY;
+    %tmp.457 = dup %tmp.453;
+    %tmp.458 = aputv %tmp.457 %tmp.454 %tmp.456;
+    %tmp.459 = dup %tmp.429;
+    %tmp.460 = aputv %tmp.459 10 %tmp.458;
+    %tmp.461 = newd 5;
+    %tmp.462 = "id";
+    %tmp.463 = "Steps";
+    %tmp.464 = dup %tmp.461;
+    %tmp.465 = aputv %tmp.464 %tmp.462 %tmp.463;
+    %tmp.466 = "label";
+    %tmp.468 = getv ? :Rez;
+    %tmp.469 = getv %tmp.468 :Strings;
+    %tmp.470 = getv %tmp.469 :Steps;
+    %tmp.471 = dup %tmp.465;
+    %tmp.472 = aputv %tmp.471 %tmp.466 %tmp.470;
+    %tmp.473 = "labelExt";
+    %tmp.475 = getv ? :Rez;
+    %tmp.476 = getv %tmp.475 :Strings;
+    %tmp.477 = getv %tmp.476 :StepsExt;
+    %tmp.478 = dup %tmp.472;
+    %tmp.479 = aputv %tmp.478 %tmp.473 %tmp.477;
+    %tmp.480 = "getter";
+    %tmp.482 = const :getSteps;
+    %tmp.483 = dup %tmp.479;
+    %tmp.484 = aputv %tmp.483 %tmp.480 %tmp.482;
+    %tmp.485 = "complicationId";
+    %tmp.486 = getm $.Toybox.Complications;
+    %tmp.487 = getv %tmp.486 :COMPLICATION_TYPE_STEPS;
+    %tmp.488 = dup %tmp.484;
+    %tmp.489 = aputv %tmp.488 %tmp.485 %tmp.487;
+    %tmp.490 = dup %tmp.460;
+    %tmp.491 = aputv %tmp.490 11 %tmp.489;
+    %tmp.492 = newd 5;
+    %tmp.493 = "id";
+    %tmp.494 = "Floors";
+    %tmp.495 = dup %tmp.492;
+    %tmp.496 = aputv %tmp.495 %tmp.493 %tmp.494;
+    %tmp.497 = "label";
+    %tmp.499 = getv ? :Rez;
+    %tmp.500 = getv %tmp.499 :Strings;
+    %tmp.501 = getv %tmp.500 :Floors;
+    %tmp.502 = dup %tmp.496;
+    %tmp.503 = aputv %tmp.502 %tmp.497 %tmp.501;
+    %tmp.504 = "labelExt";
+    %tmp.506 = getv ? :Rez;
+    %tmp.507 = getv %tmp.506 :Strings;
+    %tmp.508 = getv %tmp.507 :FloorsExt;
+    %tmp.509 = dup %tmp.503;
+    %tmp.510 = aputv %tmp.509 %tmp.504 %tmp.508;
+    %tmp.511 = "getter";
+    %tmp.513 = const :getFloors;
+    %tmp.514 = dup %tmp.510;
+    %tmp.515 = aputv %tmp.514 %tmp.511 %tmp.513;
+    %tmp.516 = "complicationId";
+    %tmp.517 = getm $.Toybox.Complications;
+    %tmp.518 = getv %tmp.517 :COMPLICATION_TYPE_FLOORS_CLIMBED;
+    %tmp.519 = dup %tmp.515;
+    %tmp.520 = aputv %tmp.519 %tmp.516 %tmp.518;
+    %tmp.521 = dup %tmp.491;
+    %tmp.522 = aputv %tmp.521 12 %tmp.520;
+    putv self :fieldCatalog %tmp.522;
+[ "D:\dev\Monkey C\prj\Essence\source\Globals.mc" 174 4 ]
+    %tmp.523 = newa 4;
+    %tmp.524 = newd 8;
+    %tmp.525 = "id";
+    %tmp.526 = "fieldCatalog";
+    %tmp.527 = dup %tmp.524;
+    %tmp.528 = aputv %tmp.527 %tmp.525 %tmp.526;
+    %tmp.529 = "label";
+    %tmp.530 = null;
+    %tmp.531 = dup %tmp.528;
+    %tmp.532 = aputv %tmp.531 %tmp.529 %tmp.530;
+    %tmp.533 = "labelExt";
+    %tmp.535 = getv ? :Rez;
+    %tmp.536 = getv %tmp.535 :Strings;
+    %tmp.537 = getv %tmp.536 :ShowGraphfieldCatalog;
+    %tmp.538 = dup %tmp.532;
+    %tmp.539 = aputv %tmp.538 %tmp.533 %tmp.537;
+    %tmp.540 = "getter";
+    %tmp.542 = const :getEmpty;
+    %tmp.543 = dup %tmp.539;
+    %tmp.544 = aputv %tmp.543 %tmp.540 %tmp.542;
+    %tmp.545 = "iterator";
+    %tmp.546 = null;
+    %tmp.547 = dup %tmp.544;
+    %tmp.548 = aputv %tmp.547 %tmp.545 %tmp.546;
+    %tmp.549 = "complicationId";
+    %tmp.550 = null;
+    %tmp.551 = dup %tmp.548;
+    %tmp.552 = aputv %tmp.551 %tmp.549 %tmp.550;
+    %tmp.553 = "color";
+    %tmp.554 = null;
+    %tmp.555 = dup %tmp.552;
+    %tmp.556 = aputv %tmp.555 %tmp.553 %tmp.554;
+    %tmp.557 = "scale";
+    %tmp.558 = 0.9;
+    %tmp.559 = dup %tmp.556;
+    %tmp.560 = aputv %tmp.559 %tmp.557 %tmp.558;
+    %tmp.561 = dup %tmp.523;
+    %tmp.562 = aputv %tmp.561 0 %tmp.560;
+    %tmp.563 = newd 8;
+    %tmp.564 = "id";
+    %tmp.565 = "HeartRate";
+    %tmp.566 = dup %tmp.563;
+    %tmp.567 = aputv %tmp.566 %tmp.564 %tmp.565;
+    %tmp.568 = "label";
+    %tmp.570 = getv ? :Rez;
+    %tmp.571 = getv %tmp.570 :Strings;
+    %tmp.572 = getv %tmp.571 :HeartRate;
+    %tmp.573 = dup %tmp.567;
+    %tmp.574 = aputv %tmp.573 %tmp.568 %tmp.572;
+    %tmp.575 = "labelExt";
+    %tmp.577 = getv ? :Rez;
+    %tmp.578 = getv %tmp.577 :Strings;
+    %tmp.579 = getv %tmp.578 :ShowGraphHeartRate;
+    %tmp.580 = dup %tmp.574;
+    %tmp.581 = aputv %tmp.580 %tmp.575 %tmp.579;
+    %tmp.582 = "getter";
+    %tmp.584 = const :getHeartRate;
+    %tmp.585 = dup %tmp.581;
+    %tmp.586 = aputv %tmp.585 %tmp.582 %tmp.584;
+    %tmp.587 = "iterator";
+    %tmp.589 = const :getHeartRateHistory;
+    %tmp.590 = dup %tmp.586;
+    %tmp.591 = aputv %tmp.590 %tmp.587 %tmp.589;
+    %tmp.592 = "complicationId";
+    %tmp.593 = getm $.Toybox.Complications;
+    %tmp.594 = getv %tmp.593 :COMPLICATION_TYPE_HEART_RATE;
+    %tmp.595 = dup %tmp.591;
+    %tmp.596 = aputv %tmp.595 %tmp.592 %tmp.594;
+    %tmp.597 = "color";
+    %tmp.598 = getm $.Toybox.Graphics;
+    %tmp.599 = getv %tmp.598 :COLOR_RED;
+    %tmp.600 = dup %tmp.596;
+    %tmp.601 = aputv %tmp.600 %tmp.597 %tmp.599;
+    %tmp.602 = "scale";
+    %tmp.603 = 0.9;
+    %tmp.604 = dup %tmp.601;
+    %tmp.605 = aputv %tmp.604 %tmp.602 %tmp.603;
+    %tmp.606 = dup %tmp.562;
+    %tmp.607 = aputv %tmp.606 1 %tmp.605;
+    %tmp.608 = newd 8;
+    %tmp.609 = "id";
+    %tmp.610 = "Barometer";
+    %tmp.611 = dup %tmp.608;
+    %tmp.612 = aputv %tmp.611 %tmp.609 %tmp.610;
+    %tmp.613 = "label";
+    %tmp.615 = getv ? :Rez;
+    %tmp.616 = getv %tmp.615 :Strings;
+    %tmp.617 = getv %tmp.616 :Barometer;
+    %tmp.618 = dup %tmp.612;
+    %tmp.619 = aputv %tmp.618 %tmp.613 %tmp.617;
+    %tmp.620 = "labelExt";
+    %tmp.622 = getv ? :Rez;
+    %tmp.623 = getv %tmp.622 :Strings;
+    %tmp.624 = getv %tmp.623 :ShowGraphPressure;
+    %tmp.625 = dup %tmp.619;
+    %tmp.626 = aputv %tmp.625 %tmp.620 %tmp.624;
+    %tmp.627 = "getter";
+    %tmp.629 = const :getBarometer;
+    %tmp.630 = dup %tmp.626;
+    %tmp.631 = aputv %tmp.630 %tmp.627 %tmp.629;
+    %tmp.632 = "iterator";
+    %tmp.634 = const :getPressureHistory;
+    %tmp.635 = dup %tmp.631;
+    %tmp.636 = aputv %tmp.635 %tmp.632 %tmp.634;
+    %tmp.637 = "complicationId";
+    %tmp.638 = getm $.Toybox.Complications;
+    %tmp.639 = getv %tmp.638 :COMPLICATION_TYPE_SEA_LEVEL_PRESSURE;
+    %tmp.640 = dup %tmp.636;
+    %tmp.641 = aputv %tmp.640 %tmp.637 %tmp.639;
+    %tmp.642 = "color";
+    %tmp.643 = getm $.Toybox.Graphics;
+    %tmp.644 = getv %tmp.643 :COLOR_DK_BLUE;
+    %tmp.645 = dup %tmp.641;
+    %tmp.646 = aputv %tmp.645 %tmp.642 %tmp.644;
+    %tmp.647 = "scale";
+    %tmp.648 = 0.99;
+    %tmp.649 = dup %tmp.646;
+    %tmp.650 = aputv %tmp.649 %tmp.647 %tmp.648;
+    %tmp.651 = dup %tmp.607;
+    %tmp.652 = aputv %tmp.651 2 %tmp.650;
+    %tmp.653 = newd 8;
+    %tmp.654 = "id";
+    %tmp.655 = "Altimeter";
+    %tmp.656 = dup %tmp.653;
+    %tmp.657 = aputv %tmp.656 %tmp.654 %tmp.655;
+    %tmp.658 = "label";
+    %tmp.660 = getv ? :Rez;
+    %tmp.661 = getv %tmp.660 :Strings;
+    %tmp.662 = getv %tmp.661 :Altimeter;
+    %tmp.663 = dup %tmp.657;
+    %tmp.664 = aputv %tmp.663 %tmp.658 %tmp.662;
+    %tmp.665 = "labelExt";
+    %tmp.667 = getv ? :Rez;
+    %tmp.668 = getv %tmp.667 :Strings;
+    %tmp.669 = getv %tmp.668 :ShowGraphAltimeter;
+    %tmp.670 = dup %tmp.664;
+    %tmp.671 = aputv %tmp.670 %tmp.665 %tmp.669;
+    %tmp.672 = "getter";
+    %tmp.674 = const :getAltimeter;
+    %tmp.675 = dup %tmp.671;
+    %tmp.676 = aputv %tmp.675 %tmp.672 %tmp.674;
+    %tmp.677 = "iterator";
+    %tmp.679 = const :getElevationHistory;
+    %tmp.680 = dup %tmp.676;
+    %tmp.681 = aputv %tmp.680 %tmp.677 %tmp.679;
+    %tmp.682 = "complicationId";
+    %tmp.683 = getm $.Toybox.Complications;
+    %tmp.684 = getv %tmp.683 :COMPLICATION_TYPE_ALTITUDE;
+    %tmp.685 = dup %tmp.681;
+    %tmp.686 = aputv %tmp.685 %tmp.682 %tmp.684;
+    %tmp.687 = "color";
+    %tmp.688 = getm $.Toybox.Graphics;
+    %tmp.689 = getv %tmp.688 :COLOR_DK_GREEN;
+    %tmp.690 = dup %tmp.686;
+    %tmp.691 = aputv %tmp.690 %tmp.687 %tmp.689;
+    %tmp.692 = "scale";
+    %tmp.693 = 0.9;
+    %tmp.694 = dup %tmp.691;
+    %tmp.695 = aputv %tmp.694 %tmp.692 %tmp.693;
+    %tmp.696 = dup %tmp.652;
+    %tmp.697 = aputv %tmp.696 3 %tmp.695;
+    putv self :graphCatalog %tmp.697;
+}

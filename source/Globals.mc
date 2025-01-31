@@ -14,16 +14,16 @@ public function checkBoundingBoxes(points) {
     var currentBounds = boundingBoxes[i];
     if (checkBoundsForComplication(points, currentBounds["bounds"])) {
       if (fieldLayout[i]["id"].equals("FieldLowerCenter") && showGraph > 0) {
-        if (dataGraph[showGraph]["complicationId"] == null) {
+        if (graphCatalog[showGraph]["complicationId"] == null) {
           return false;
         }
-        return dataGraph[showGraph]["complicationId"];
+        return graphCatalog[showGraph]["complicationId"];
       } else {
         var dataIndex = fieldLayout[i]["data"];
-        if (dataField[dataIndex]["complicationId"] == null) {
+        if (fieldCatalog[dataIndex]["complicationId"] == null) {
           return false;
         }
-        return dataField[dataIndex]["complicationId"];
+        return fieldCatalog[dataIndex]["complicationId"];
       }
     }
   }
@@ -77,7 +77,7 @@ var fieldLayout = [
   },
 ];
 
-var dataField = [
+var fieldCatalog = [
   {
     "id" => "Empty",
     "label" => Rez.Strings.Empty,
@@ -155,13 +155,27 @@ var dataField = [
     "getter" => :getBodyBattery,
     "complicationId" => Complications.COMPLICATION_TYPE_BODY_BATTERY,
   },
+  {
+    "id" => "Steps",
+    "label" => Rez.Strings.Steps,
+    "labelExt" => Rez.Strings.StepsExt,
+    "getter" => :getSteps,
+    "complicationId" => Complications.COMPLICATION_TYPE_STEPS,
+  },
+  {
+    "id" => "Floors",
+    "label" => Rez.Strings.Floors,
+    "labelExt" => Rez.Strings.FloorsExt,
+    "getter" => :getFloors,
+    "complicationId" => Complications.COMPLICATION_TYPE_FLOORS_CLIMBED,
+  },
 ];
 
-var dataGraph = [
+var graphCatalog = [
   {
-    "id" => "DataField",
+    "id" => "fieldCatalog",
     "label" => null,
-    "labelExt" => Rez.Strings.ShowGraphDataField,
+    "labelExt" => Rez.Strings.ShowGraphfieldCatalog,
     "getter" => :getEmpty,
     "iterator" => null,
     "complicationId" => null,
@@ -186,7 +200,7 @@ var dataGraph = [
     "iterator" => :getPressureHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
     "color" => Graphics.COLOR_DK_BLUE,
-    "scale" => 1,
+    "scale" => 0.99,
   },
   {
     "id" => "Altimeter",

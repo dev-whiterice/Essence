@@ -31,7 +31,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldTop,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         3,
         {}
       )
@@ -40,7 +40,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperLeft,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         4,
         {}
       )
@@ -49,7 +49,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperCenter,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         5,
         {}
       )
@@ -58,7 +58,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldUpperRight,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         6,
         {}
       )
@@ -67,7 +67,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerLeft,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         7,
         {}
       )
@@ -76,7 +76,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerCenter,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         8,
         {}
       )
@@ -85,7 +85,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldLowerRight,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         9,
         {}
       )
@@ -94,7 +94,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.FieldBottom,
-        dataField[value]["labelExt"],
+        fieldCatalog[value]["labelExt"],
         10,
         {}
       )
@@ -104,7 +104,7 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(
         Rez.Strings.ShowGraph,
-        dataGraph[value]["labelExt"],
+        graphCatalog[value]["labelExt"],
         11,
         {}
       )
@@ -138,25 +138,25 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
 
       var value = getApp().getProperty(fieldLayout[itemId]["id"]);
 
-      if (value < dataField.size() - 1) {
+      if (value < fieldCatalog.size() - 1) {
         value = value + 1;
       } else {
         value = 0;
       }
 
-      menuItem.setSubLabel(dataField[value]["labelExt"]);
+      menuItem.setSubLabel(fieldCatalog[value]["labelExt"]);
       getApp().setProperty(fieldLayout[itemId]["id"], value);
     } else {
       itemId = itemId - 2;
       var value = getApp().getProperty("ShowGraph");
 
-      if (value < dataGraph.size() - 1) {
+      if (value < graphCatalog.size() - 1) {
         value = value + 1;
       } else {
         value = 0;
       }
 
-      menuItem.setSubLabel(dataGraph[value]["labelExt"]);
+      menuItem.setSubLabel(graphCatalog[value]["labelExt"]);
       getApp().setProperty("ShowGraph", value);
     }
     redrawLayout = true;
