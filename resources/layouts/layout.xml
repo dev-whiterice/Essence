@@ -53,4 +53,11 @@
         <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
         <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
     </layout>
+
+    <layout id="BatterySaveLight">
+        <drawable id="bGrondFillerWhite" />
+        <label id="FieldDate" x="93%" y="26%" font="@Fonts.DataFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+        <label id="FieldTime" x="52.5%" y="center" font="@Fonts.TimeFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLACK"/>
+        <label id="FieldIcons" x="93%" y="65%" font="@Fonts.IconFont" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE"/>/>
+    </layout>
 </layouts>

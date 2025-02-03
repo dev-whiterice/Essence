@@ -22,17 +22,15 @@ class EssenceView extends WatchUi.WatchFace {
   function onLayout(dc as Dc) as Void {
     dw = dc.getWidth();
     dh = dc.getHeight();
+    defineBoundingBoxes(dc);
+    batterySave = getApp().getProperty("BatterySave");
+    showGraph = getApp().getProperty("ShowGraph");
+    darkMode = getApp().getProperty("DarkMode");
 
     if (dh == 454) {
       graphVertOffset = 128;
       graphWidthFactor = 1.5;
     }
-
-    defineBoundingBoxes(dc);
-
-    batterySave = getApp().getProperty("BatterySave");
-    showGraph = getApp().getProperty("ShowGraph");
-    darkMode = getApp().getProperty("DarkMode");
 
     if (batterySave == false) {
       if (darkMode == true) {
@@ -43,7 +41,11 @@ class EssenceView extends WatchUi.WatchFace {
       loadLayout();
       drawLabels(dc);
     } else {
-      setLayout(Rez.Layouts.BatterySave(dc));
+      if (darkMode == true) {
+        setLayout(Rez.Layouts.BatterySave(dc));
+      } else {
+        setLayout(Rez.Layouts.BatterySaveLight(dc));
+      }
     }
   }
 
@@ -60,6 +62,13 @@ class EssenceView extends WatchUi.WatchFace {
             String
         );
       }
+    }
+
+    if (showGraph > 0) {
+      view = View.findDrawableById("FieldGraphLabel") as Text;
+      view.setText(
+        WatchUi.loadResource(graphCatalog[showGraph]["label"]) as String
+      );
     }
   }
 
@@ -219,6 +228,13 @@ class EssenceView extends WatchUi.WatchFace {
         }
       }
     }
+
+    if (showGraph > 0) {
+      view = View.findDrawableById("FieldGraphData") as Text;
+      fun = graphCatalog[showGraph]["getter"];
+      fun = method(fun);
+      view.setText(fun.invoke());
+    }
   }
 
   function drawDate(dc) {
@@ -369,6 +385,32 @@ class EssenceView extends WatchUi.WatchFace {
     return data.format("%d");
   }
 
+  function getBatteryDays() {
+    var data = null;
+    if (Toybox has :System) {
+      if (Toybox.System.getSystemStats() has :batteryInDays) {
+        data = Toybox.System.getSystemStats().batteryInDays;
+      }
+    }
+    if (data == null) {
+      return "--";
+    }
+    return data.format("%d");
+  }
+
+  function getSolarIntensity() {
+    var data = null;
+    if (Toybox has :System) {
+      if (Toybox.System.getSystemStats() has :solarIntensity) {
+        data = Toybox.System.getSystemStats().solarIntensity;
+      }
+    }
+    if (data == null) {
+      return "--";
+    }
+    return data.format("%d");
+  }
+
   function getAltimeter() {
     var data = null;
     if (Toybox has :Complications) {
@@ -487,6 +529,30 @@ class EssenceView extends WatchUi.WatchFace {
           } else {
             return "--";
           }
+        }
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    return Lang.format("$1$", [data]);
+  }
+
+  function getCalories() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(Complications.COMPLICATION_TYPE_CALORIES)
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == "--") {
+      if (Toybox has :Activity) {
+        if (Toybox.Activity.getActivityInfo() has :calories) {
+          data = Toybox.Activity.getActivityInfo().calories;
         }
       }
     }
@@ -642,16 +708,6 @@ class EssenceView extends WatchUi.WatchFace {
       return;
     }
 
-    var view = View.findDrawableById("FieldGraphLabel") as Text;
-    view.setText(
-      WatchUi.loadResource(graphCatalog[showGraph]["label"]) as String
-    );
-
-    view = View.findDrawableById("FieldGraphData") as Text;
-    var fun = graphCatalog[showGraph]["getter"];
-    fun = method(fun);
-    view.setText(fun.invoke());
-
     var heartNow = 0;
     var curMin = 0;
     var curMax = 0;
@@ -751,11 +807,16 @@ class EssenceView extends WatchUi.WatchFace {
               var yVal = dh / 2 + graphVertOffset + totHeight - height;
 
               dc.setColor(
+                graphCatalog[showGraph]["colorDark"],
+                Graphics.COLOR_TRANSPARENT
+              );
+              dc.fillRectangle(xVal, yVal, binPixels, height);
+
+              dc.setColor(
                 graphCatalog[showGraph]["color"],
                 Graphics.COLOR_TRANSPARENT
               );
-
-              dc.fillRectangle(xVal, yVal, binPixels, height);
+              dc.fillRectangle(xVal, yVal, binPixels, 2 * binPixels);
             }
 
             if (graphBinMin < graphMin) {

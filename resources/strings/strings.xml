@@ -27,6 +27,9 @@
     <string id="BodyBattery">b.batt</string>
     <string id="Steps">steps</string>
     <string id="Floors">floors</string>
+    <string id="BatteryDays">batt.d</string>
+    <string id="SolarIntensity">solar</string>
+    <string id="Calories">cal</string>
 
     <string id="BatterySave">Battery save</string>
 
@@ -43,7 +46,9 @@
     <string id="BodyBatteryExt">Body Battery</string>
     <string id="StepsExt">Steps</string>
     <string id="FloorsExt">Floors</string>
-
+    <string id="BatteryDaysExt">Battery days</string>
+    <string id="SolarIntensityExt">Solar Intenisty</string>
+    <string id="CaloriesExt">Calories</string>
 
     <string id="ShowGraphfieldCatalog">Show Data Field</string>
     <string id="ShowGraphHeartRate">Show HR Graph</string>

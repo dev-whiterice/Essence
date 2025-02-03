@@ -24,7 +24,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>             
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>             
         </settingConfig>
     </setting>
 
@@ -42,7 +45,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>      
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>            
         </settingConfig>
     </setting>
 
@@ -60,7 +66,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>       
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>           
         </settingConfig>
     </setting>
 
@@ -79,6 +88,9 @@
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>        
         </settingConfig>
     </setting>
 
@@ -96,7 +108,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>    
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>           
         </settingConfig>
     </setting>
 
@@ -114,7 +129,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>        
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>             
         </settingConfig>
     </setting>
 
@@ -133,6 +151,9 @@
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>        
         </settingConfig>
     </setting>
 
@@ -150,7 +171,10 @@
             <listEntry value="9">@Strings.StressExt</listEntry>
             <listEntry value="10">@Strings.BodyBatteryExt</listEntry>
             <listEntry value="11">@Strings.StepsExt</listEntry>  
-            <listEntry value="12">@Strings.FloorsExt</listEntry>      
+            <listEntry value="12">@Strings.FloorsExt</listEntry>     
+            <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
+            <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>         
         </settingConfig>
     </setting>
 

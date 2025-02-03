@@ -139,7 +139,7 @@ var fieldCatalog = [
     "label" => Rez.Strings.Battery,
     "labelExt" => Rez.Strings.BatteryExt,
     "getter" => :getBattery,
-    "complicationId" => null,
+    "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
   },
   {
     "id" => "Stress",
@@ -169,6 +169,27 @@ var fieldCatalog = [
     "getter" => :getFloors,
     "complicationId" => Complications.COMPLICATION_TYPE_FLOORS_CLIMBED,
   },
+  {
+    "id" => "BatteryDays",
+    "label" => Rez.Strings.BatteryDays,
+    "labelExt" => Rez.Strings.BatteryDaysExt,
+    "getter" => :getBatteryDays,
+    "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
+  },
+  {
+    "id" => "SolarIntensity",
+    "label" => Rez.Strings.SolarIntensity,
+    "labelExt" => Rez.Strings.SolarIntensityExt,
+    "getter" => :getSolarIntensity,
+    "complicationId" => Complications.COMPLICATION_TYPE_SOLAR_INPUT,
+  },
+  {
+    "id" => "Calories",
+    "label" => Rez.Strings.Calories,
+    "labelExt" => Rez.Strings.CaloriesExt,
+    "getter" => :getCalories,
+    "complicationId" => Complications.COMPLICATION_TYPE_CALORIES,
+  },
 ];
 
 var graphCatalog = [
@@ -180,6 +201,7 @@ var graphCatalog = [
     "iterator" => null,
     "complicationId" => null,
     "color" => null,
+    "colorDark" => null,
     "scale" => 0.9,
   },
   {
@@ -190,6 +212,7 @@ var graphCatalog = [
     "iterator" => :getHeartRateHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
     "color" => Graphics.COLOR_RED,
+    "colorDark" => Graphics.COLOR_DK_RED,
     "scale" => 0.9,
   },
   {
@@ -199,7 +222,8 @@ var graphCatalog = [
     "getter" => :getBarometer,
     "iterator" => :getPressureHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
-    "color" => Graphics.COLOR_DK_BLUE,
+    "color" => Graphics.COLOR_BLUE,
+    "colorDark" => Graphics.COLOR_DK_BLUE,
     "scale" => 0.99,
   },
   {
@@ -209,6 +233,7 @@ var graphCatalog = [
     "getter" => :getAltimeter,
     "iterator" => :getElevationHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
+    "colorDark" => Graphics.COLOR_GREEN,
     "color" => Graphics.COLOR_DK_GREEN,
     "scale" => 0.9,
   },
