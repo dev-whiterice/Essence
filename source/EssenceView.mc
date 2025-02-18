@@ -717,6 +717,7 @@ class EssenceView extends WatchUi.WatchFace {
       Toybox.SensorHistory,
       graphCatalog[showGraph]["iterator"]
     );
+
     var sample = getSensorHistory.invoke({
       :period => maxSecs,
       :order => SensorHistory.ORDER_NEWEST_FIRST,
@@ -726,6 +727,10 @@ class EssenceView extends WatchUi.WatchFace {
       var graphMin = sample.getMin();
       var graphMax = sample.getMax();
       var sampleData = sample.next();
+      if (sampleData == null) {
+        return;
+      }
+
       if (sampleData.data != null) {
         heartNow = sampleData.data;
       }
