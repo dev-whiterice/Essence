@@ -32,6 +32,11 @@ class EssenceView extends WatchUi.WatchFace {
       graphWidthFactor = 1.5;
     }
 
+    if (dh == 260) {
+      graphVertOffset = 61;
+      graphWidthFactor = 0.9;
+    }
+
     if (batterySave == false) {
       if (darkMode == true) {
         setLayout(Rez.Layouts.WatchFace(dc));

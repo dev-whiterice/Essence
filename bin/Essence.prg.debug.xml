@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\dev\projects\Monkey C\Essence\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="5" lineNum="5" parent="globals" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="5" lineNum="6" parent="globals" pc="268435469" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="5" lineNum="45" parent="globals" pc="268435478" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="5" lineNum="80" parent="globals" pc="268435553" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="5" lineNum="195" parent="globals" pc="268436604" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="7" lineNum="12" parent="globals/EssenceSettingsMenu" pc="268436887" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="8" lineNum="42" parent="globals" pc="268436899" symbol="getApp"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="8" lineNum="43" parent="globals" pc="268436909" symbol="getApp"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="9" lineNum="32" parent="globals" pc="268436920" symbol="checkBoundsForComplication"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="9" lineNum="33" parent="globals" pc="268436930" symbol="checkBoundsForComplication"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="10" lineNum="7" parent="globals/Rez" pc="268436950" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="11" lineNum="4" parent="globals/EssenceDelegate" pc="268436970" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="12" lineNum="116" parent="globals/EssenceSettingsMenuDelegate" pc="268436982" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="13" lineNum="36" parent="globals" pc="268436994" symbol="boxContains"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="13" lineNum="37" parent="globals" pc="268437004" symbol="boxContains"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="12" parent="globals" pc="268437063" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="13" parent="globals" pc="268437074" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="14" parent="globals" pc="268437094" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="15" parent="globals" pc="268437104" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="16" parent="globals" pc="268437125" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="17" parent="globals" pc="268437165" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="18" parent="globals" pc="268437186" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="20" parent="globals" pc="268437191" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="22" parent="globals" pc="268437212" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="23" parent="globals" pc="268437228" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="24" parent="globals" pc="268437246" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="26" parent="globals" pc="268437251" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="14" lineNum="30" parent="globals" pc="268437279" symbol="checkBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="15" lineNum="5" parent="globals/EssenceApp" pc="268437281" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="16" lineNum="242" parent="globals" pc="268437293" symbol="loadLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="16" lineNum="243" parent="globals" pc="268437304" symbol="loadLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\Globals.mc" id="16" lineNum="244" parent="globals" pc="268437324" symbol="loadLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="17" lineNum="7" parent="globals/EssenceView" pc="268437377" symbol="&lt;init&gt;"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="19" parent="globals/EssenceSettingsMenu" pc="268437389" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="20" parent="globals/EssenceSettingsMenu" pc="268437392" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="21" parent="globals/EssenceSettingsMenu" pc="268437413" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="25" parent="globals/EssenceSettingsMenu" pc="268437474" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="26" parent="globals/EssenceSettingsMenu" pc="268437495" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="30" parent="globals/EssenceSettingsMenu" pc="268437556" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="31" parent="globals/EssenceSettingsMenu" pc="268437577" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="39" parent="globals/EssenceSettingsMenu" pc="268437650" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="40" parent="globals/EssenceSettingsMenu" pc="268437671" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="48" parent="globals/EssenceSettingsMenu" pc="268437744" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="49" parent="globals/EssenceSettingsMenu" pc="268437765" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="57" parent="globals/EssenceSettingsMenu" pc="268437838" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="58" parent="globals/EssenceSettingsMenu" pc="268437859" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="66" parent="globals/EssenceSettingsMenu" pc="268437932" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="67" parent="globals/EssenceSettingsMenu" pc="268437953" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="75" parent="globals/EssenceSettingsMenu" pc="268438026" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="76" parent="globals/EssenceSettingsMenu" pc="268438047" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="84" parent="globals/EssenceSettingsMenu" pc="268438120" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="85" parent="globals/EssenceSettingsMenu" pc="268438141" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="93" parent="globals/EssenceSettingsMenu" pc="268438214" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="94" parent="globals/EssenceSettingsMenu" pc="268438235" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="103" parent="globals/EssenceSettingsMenu" pc="268438308" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="18" lineNum="104" parent="globals/EssenceSettingsMenu" pc="268438329" symbol="buildMenu"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="19" lineNum="14" parent="globals/EssenceSettingsMenu" pc="268438403" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="19" lineNum="15" parent="globals/EssenceSettingsMenu" pc="268438405" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="19" lineNum="16" parent="globals/EssenceSettingsMenu" pc="268438449" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="9" parent="globals/EssenceDelegate" pc="268438457" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="10" parent="globals/EssenceDelegate" pc="268438460" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="11" parent="globals/EssenceDelegate" pc="268438470" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="12" parent="globals/EssenceDelegate" pc="268438479" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="13" parent="globals/EssenceDelegate" pc="268438491" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="14" parent="globals/EssenceDelegate" pc="268438496" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="15" parent="globals/EssenceDelegate" pc="268438522" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="16" parent="globals/EssenceDelegate" pc="268438527" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="18" parent="globals/EssenceDelegate" pc="268438545" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="20" lineNum="21" parent="globals/EssenceDelegate" pc="268438553" symbol="onPress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="21" lineNum="5" parent="globals/EssenceDelegate" pc="268438555" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceDelegate.mc" id="21" lineNum="6" parent="globals/EssenceDelegate" pc="268438557" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="22" lineNum="118" parent="globals/EssenceSettingsMenuDelegate" pc="268438570" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="22" lineNum="119" parent="globals/EssenceSettingsMenuDelegate" pc="268438572" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="124" parent="globals/EssenceSettingsMenuDelegate" pc="268438585" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="125" parent="globals/EssenceSettingsMenuDelegate" pc="268438588" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="126" parent="globals/EssenceSettingsMenuDelegate" pc="268438597" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="128" parent="globals/EssenceSettingsMenuDelegate" pc="268438601" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="129" parent="globals/EssenceSettingsMenuDelegate" pc="268438609" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="130" parent="globals/EssenceSettingsMenuDelegate" pc="268438624" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="132" parent="globals/EssenceSettingsMenuDelegate" pc="268438658" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="133" parent="globals/EssenceSettingsMenuDelegate" pc="268438666" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="134" parent="globals/EssenceSettingsMenuDelegate" pc="268438681" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="136" parent="globals/EssenceSettingsMenuDelegate" pc="268438715" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="137" parent="globals/EssenceSettingsMenuDelegate" pc="268438723" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="139" parent="globals/EssenceSettingsMenuDelegate" pc="268438730" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="141" parent="globals/EssenceSettingsMenuDelegate" pc="268438760" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="142" parent="globals/EssenceSettingsMenuDelegate" pc="268438780" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="144" parent="globals/EssenceSettingsMenuDelegate" pc="268438790" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="147" parent="globals/EssenceSettingsMenuDelegate" pc="268438793" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="148" parent="globals/EssenceSettingsMenuDelegate" pc="268438817" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="150" parent="globals/EssenceSettingsMenuDelegate" pc="268438851" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="151" parent="globals/EssenceSettingsMenuDelegate" pc="268438858" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="153" parent="globals/EssenceSettingsMenuDelegate" pc="268438879" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="154" parent="globals/EssenceSettingsMenuDelegate" pc="268438899" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="156" parent="globals/EssenceSettingsMenuDelegate" pc="268438909" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="159" parent="globals/EssenceSettingsMenuDelegate" pc="268438912" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="160" parent="globals/EssenceSettingsMenuDelegate" pc="268438936" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceSettingsMenu.mc" id="23" lineNum="162" parent="globals/EssenceSettingsMenuDelegate" pc="268438958" symbol="onSelect"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="24" lineNum="12" parent="globals/EssenceApp" pc="268438967" symbol="onStart"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="25" lineNum="34" parent="globals/EssenceApp" pc="268438970" symbol="getSettingsView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="25" lineNum="38" parent="globals/EssenceApp" pc="268438972" symbol="getSettingsView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="26" lineNum="27" parent="globals/EssenceApp" pc="268439027" symbol="onSettingsChanged"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="26" lineNum="28" parent="globals/EssenceApp" pc="268439029" symbol="onSettingsChanged"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="26" lineNum="29" parent="globals/EssenceApp" pc="268439037" symbol="onSettingsChanged"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="27" lineNum="18" parent="globals/EssenceApp" pc="268439049" symbol="getInitialView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="27" lineNum="19" parent="globals/EssenceApp" pc="268439051" symbol="getInitialView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="27" lineNum="20" parent="globals/EssenceApp" pc="268439080" symbol="getInitialView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="27" lineNum="21" parent="globals/EssenceApp" pc="268439095" symbol="getInitialView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="27" lineNum="23" parent="globals/EssenceApp" pc="268439136" symbol="getInitialView"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="28" lineNum="7" parent="globals/EssenceApp" pc="268439150" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="28" lineNum="8" parent="globals/EssenceApp" pc="268439152" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceApp.mc" id="29" lineNum="15" parent="globals/EssenceApp" pc="268439165" symbol="onStop"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="30" lineNum="362" parent="globals/EssenceView" pc="268439168" symbol="getNotifications"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="30" lineNum="363" parent="globals/EssenceView" pc="268439170" symbol="getNotifications"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="30" lineNum="364" parent="globals/EssenceView" pc="268439189" symbol="getNotifications"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="30" lineNum="367" parent="globals/EssenceView" pc="268439214" symbol="getNotifications"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="480" parent="globals/EssenceView" pc="268439220" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="481" parent="globals/EssenceView" pc="268439223" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="482" parent="globals/EssenceView" pc="268439226" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="483" parent="globals/EssenceView" pc="268439241" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="486" parent="globals/EssenceView" pc="268439279" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="487" parent="globals/EssenceView" pc="268439289" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="490" parent="globals/EssenceView" pc="268439303" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="491" parent="globals/EssenceView" pc="268439309" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="492" parent="globals/EssenceView" pc="268439325" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="493" parent="globals/EssenceView" pc="268439334" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="494" parent="globals/EssenceView" pc="268439344" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="496" parent="globals/EssenceView" pc="268439355" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="500" parent="globals/EssenceView" pc="268439364" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="501" parent="globals/EssenceView" pc="268439370" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="503" parent="globals/EssenceView" pc="268439379" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="31" lineNum="504" parent="globals/EssenceView" pc="268439401" symbol="getStress"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="615" parent="globals/EssenceView" pc="268439404" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="616" parent="globals/EssenceView" pc="268439407" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="617" parent="globals/EssenceView" pc="268439410" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="618" parent="globals/EssenceView" pc="268439425" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="621" parent="globals/EssenceView" pc="268439463" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="622" parent="globals/EssenceView" pc="268439473" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="625" parent="globals/EssenceView" pc="268439487" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="626" parent="globals/EssenceView" pc="268439493" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="627" parent="globals/EssenceView" pc="268439508" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="628" parent="globals/EssenceView" pc="268439534" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="632" parent="globals/EssenceView" pc="268439560" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="633" parent="globals/EssenceView" pc="268439566" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="634" parent="globals/EssenceView" pc="268439581" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="635" parent="globals/EssenceView" pc="268439601" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="636" parent="globals/EssenceView" pc="268439624" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="637" parent="globals/EssenceView" pc="268439633" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="638" parent="globals/EssenceView" pc="268439639" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="640" parent="globals/EssenceView" pc="268439651" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="646" parent="globals/EssenceView" pc="268439666" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="647" parent="globals/EssenceView" pc="268439672" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="649" parent="globals/EssenceView" pc="268439681" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="650" parent="globals/EssenceView" pc="268439688" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="32" lineNum="651" parent="globals/EssenceView" pc="268439710" symbol="getBarometer"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="711" parent="globals/EssenceView" pc="268439737" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="712" parent="globals/EssenceView" pc="268439740" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="713" parent="globals/EssenceView" pc="268439761" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="716" parent="globals/EssenceView" pc="268439765" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="717" parent="globals/EssenceView" pc="268439768" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="718" parent="globals/EssenceView" pc="268439771" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="719" parent="globals/EssenceView" pc="268439774" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="721" parent="globals/EssenceView" pc="268439779" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="726" parent="globals/EssenceView" pc="268439826" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="731" parent="globals/EssenceView" pc="268439857" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="732" parent="globals/EssenceView" pc="268439863" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="733" parent="globals/EssenceView" pc="268439873" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="734" parent="globals/EssenceView" pc="268439883" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="735" parent="globals/EssenceView" pc="268439893" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="736" parent="globals/EssenceView" pc="268439899" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="739" parent="globals/EssenceView" pc="268439903" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="740" parent="globals/EssenceView" pc="268439913" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="743" parent="globals/EssenceView" pc="268439924" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="744" parent="globals/EssenceView" pc="268439928" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="745" parent="globals/EssenceView" pc="268439932" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="746" parent="globals/EssenceView" pc="268439937" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="748" parent="globals/EssenceView" pc="268439940" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="749" parent="globals/EssenceView" pc="268439944" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="750" parent="globals/EssenceView" pc="268439948" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="751" parent="globals/EssenceView" pc="268439958" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="753" parent="globals/EssenceView" pc="268439962" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="754" parent="globals/EssenceView" pc="268439987" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="759" parent="globals/EssenceView" pc="268440015" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="760" parent="globals/EssenceView" pc="268440018" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="761" parent="globals/EssenceView" pc="268440021" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="765" parent="globals/EssenceView" pc="268440037" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="767" parent="globals/EssenceView" pc="268440040" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="768" parent="globals/EssenceView" pc="268440051" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="769" parent="globals/EssenceView" pc="268440054" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="771" parent="globals/EssenceView" pc="268440057" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="772" parent="globals/EssenceView" pc="268440063" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="773" parent="globals/EssenceView" pc="268440076" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="774" parent="globals/EssenceView" pc="268440080" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="776" parent="globals/EssenceView" pc="268440087" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="777" parent="globals/EssenceView" pc="268440104" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="778" parent="globals/EssenceView" pc="268440114" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="779" parent="globals/EssenceView" pc="268440120" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="781" parent="globals/EssenceView" pc="268440129" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="782" parent="globals/EssenceView" pc="268440135" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="783" parent="globals/EssenceView" pc="268440142" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="784" parent="globals/EssenceView" pc="268440146" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="786" parent="globals/EssenceView" pc="268440153" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="787" parent="globals/EssenceView" pc="268440161" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="790" parent="globals/EssenceView" pc="268440168" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="791" parent="globals/EssenceView" pc="268440176" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="795" parent="globals/EssenceView" pc="268440186" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="796" parent="globals/EssenceView" pc="268440204" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="797" parent="globals/EssenceView" pc="268440219" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="799" parent="globals/EssenceView" pc="268440229" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="803" parent="globals/EssenceView" pc="268440235" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="804" parent="globals/EssenceView" pc="268440243" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="808" parent="globals/EssenceView" pc="268440253" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="809" parent="globals/EssenceView" pc="268440268" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="810" parent="globals/EssenceView" pc="268440283" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="811" parent="globals/EssenceView" pc="268440293" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="816" parent="globals/EssenceView" pc="268440345" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="817" parent="globals/EssenceView" pc="268440370" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="819" parent="globals/EssenceView" pc="268440392" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="823" parent="globals/EssenceView" pc="268440421" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="825" parent="globals/EssenceView" pc="268440439" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="829" parent="globals/EssenceView" pc="268440468" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="832" parent="globals/EssenceView" pc="268440492" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="833" parent="globals/EssenceView" pc="268440500" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="835" parent="globals/EssenceView" pc="268440507" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="33" lineNum="836" parent="globals/EssenceView" pc="268440515" symbol="drawGraph"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="250" parent="globals/EssenceView" pc="268440542" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="251" parent="globals/EssenceView" pc="268440545" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="252" parent="globals/EssenceView" pc="268440552" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="253" parent="globals/EssenceView" pc="268440564" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="254" parent="globals/EssenceView" pc="268440572" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="255" parent="globals/EssenceView" pc="268440591" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="256" parent="globals/EssenceView" pc="268440599" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="259" parent="globals/EssenceView" pc="268440612" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="260" parent="globals/EssenceView" pc="268440638" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="261" parent="globals/EssenceView" pc="268440645" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="264" parent="globals/EssenceView" pc="268440664" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="269" parent="globals/EssenceView" pc="268440711" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="34" lineNum="270" parent="globals/EssenceView" pc="268440735" symbol="drawTime"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="277" parent="globals/EssenceView" pc="268440748" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="278" parent="globals/EssenceView" pc="268440751" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="279" parent="globals/EssenceView" pc="268440766" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="280" parent="globals/EssenceView" pc="268440785" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="281" parent="globals/EssenceView" pc="268440791" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="283" parent="globals/EssenceView" pc="268440800" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="35" lineNum="290" parent="globals/EssenceView" pc="268440859" symbol="getWeather"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="453" parent="globals/EssenceView" pc="268440865" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="454" parent="globals/EssenceView" pc="268440868" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="455" parent="globals/EssenceView" pc="268440871" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="456" parent="globals/EssenceView" pc="268440886" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="459" parent="globals/EssenceView" pc="268440924" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="460" parent="globals/EssenceView" pc="268440934" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="463" parent="globals/EssenceView" pc="268440948" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="464" parent="globals/EssenceView" pc="268440954" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="465" parent="globals/EssenceView" pc="268440970" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="466" parent="globals/EssenceView" pc="268440979" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="467" parent="globals/EssenceView" pc="268440989" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="469" parent="globals/EssenceView" pc="268441000" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="473" parent="globals/EssenceView" pc="268441009" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="474" parent="globals/EssenceView" pc="268441015" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="476" parent="globals/EssenceView" pc="268441024" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="36" lineNum="477" parent="globals/EssenceView" pc="268441046" symbol="getBodyBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="293" parent="globals/EssenceView" pc="268441049" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="294" parent="globals/EssenceView" pc="268441052" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="295" parent="globals/EssenceView" pc="268441067" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="298" parent="globals/EssenceView" pc="268441105" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="299" parent="globals/EssenceView" pc="268441115" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="37" lineNum="303" parent="globals/EssenceView" pc="268441128" symbol="getCalendar"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="507" parent="globals/EssenceView" pc="268441134" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="508" parent="globals/EssenceView" pc="268441137" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="509" parent="globals/EssenceView" pc="268441140" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="510" parent="globals/EssenceView" pc="268441155" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="513" parent="globals/EssenceView" pc="268441193" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="514" parent="globals/EssenceView" pc="268441203" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="517" parent="globals/EssenceView" pc="268441217" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="518" parent="globals/EssenceView" pc="268441228" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="519" parent="globals/EssenceView" pc="268441243" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="520" parent="globals/EssenceView" pc="268441269" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="524" parent="globals/EssenceView" pc="268441295" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="525" parent="globals/EssenceView" pc="268441306" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="526" parent="globals/EssenceView" pc="268441321" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="527" parent="globals/EssenceView" pc="268441341" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="528" parent="globals/EssenceView" pc="268441364" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="529" parent="globals/EssenceView" pc="268441373" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="533" parent="globals/EssenceView" pc="268441396" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="535" parent="globals/EssenceView" pc="268441407" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="541" parent="globals/EssenceView" pc="268441422" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="542" parent="globals/EssenceView" pc="268441428" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="38" lineNum="544" parent="globals/EssenceView" pc="268441437" symbol="getHeartRate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="57" parent="globals/EssenceView" pc="268441464" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="59" parent="globals/EssenceView" pc="268441467" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="60" parent="globals/EssenceView" pc="268441487" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="61" parent="globals/EssenceView" pc="268441505" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="62" parent="globals/EssenceView" pc="268441544" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="64" parent="globals/EssenceView" pc="268441562" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="65" parent="globals/EssenceView" pc="268441601" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="72" parent="globals/EssenceView" pc="268441659" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="73" parent="globals/EssenceView" pc="268441669" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="39" lineNum="74" parent="globals/EssenceView" pc="268441693" symbol="drawLabels"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="593" parent="globals/EssenceView" pc="268441736" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="594" parent="globals/EssenceView" pc="268441739" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="595" parent="globals/EssenceView" pc="268441742" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="596" parent="globals/EssenceView" pc="268441757" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="599" parent="globals/EssenceView" pc="268441795" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="600" parent="globals/EssenceView" pc="268441805" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="603" parent="globals/EssenceView" pc="268441819" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="604" parent="globals/EssenceView" pc="268441836" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="605" parent="globals/EssenceView" pc="268441851" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="609" parent="globals/EssenceView" pc="268441886" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="610" parent="globals/EssenceView" pc="268441892" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="40" lineNum="612" parent="globals/EssenceView" pc="268441901" symbol="getFloors"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="306" parent="globals/EssenceView" pc="268441928" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="307" parent="globals/EssenceView" pc="268441931" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="308" parent="globals/EssenceView" pc="268441946" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="309" parent="globals/EssenceView" pc="268441965" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="310" parent="globals/EssenceView" pc="268441975" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="315" parent="globals/EssenceView" pc="268442023" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="316" parent="globals/EssenceView" pc="268442038" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="317" parent="globals/EssenceView" pc="268442050" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="318" parent="globals/EssenceView" pc="268442072" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="319" parent="globals/EssenceView" pc="268442094" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="320" parent="globals/EssenceView" pc="268442106" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="326" parent="globals/EssenceView" pc="268442154" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="327" parent="globals/EssenceView" pc="268442186" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="328" parent="globals/EssenceView" pc="268442204" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="337" parent="globals/EssenceView" pc="268442308" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="338" parent="globals/EssenceView" pc="268442326" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="348" parent="globals/EssenceView" pc="268442430" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="41" lineNum="354" parent="globals/EssenceView" pc="268442478" symbol="getSunEvent"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="370" parent="globals/EssenceView" pc="268442484" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="371" parent="globals/EssenceView" pc="268442487" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="372" parent="globals/EssenceView" pc="268442490" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="373" parent="globals/EssenceView" pc="268442505" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="376" parent="globals/EssenceView" pc="268442543" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="377" parent="globals/EssenceView" pc="268442553" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="380" parent="globals/EssenceView" pc="268442567" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="381" parent="globals/EssenceView" pc="268442573" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="382" parent="globals/EssenceView" pc="268442588" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="383" parent="globals/EssenceView" pc="268442614" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="387" parent="globals/EssenceView" pc="268442640" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="388" parent="globals/EssenceView" pc="268442646" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="42" lineNum="390" parent="globals/EssenceView" pc="268442655" symbol="getBattery"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="571" parent="globals/EssenceView" pc="268442670" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="572" parent="globals/EssenceView" pc="268442673" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="573" parent="globals/EssenceView" pc="268442676" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="574" parent="globals/EssenceView" pc="268442691" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="577" parent="globals/EssenceView" pc="268442729" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="578" parent="globals/EssenceView" pc="268442739" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="581" parent="globals/EssenceView" pc="268442753" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="582" parent="globals/EssenceView" pc="268442770" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="583" parent="globals/EssenceView" pc="268442785" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="587" parent="globals/EssenceView" pc="268442820" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="588" parent="globals/EssenceView" pc="268442826" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="43" lineNum="590" parent="globals/EssenceView" pc="268442835" symbol="getSteps"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="44" lineNum="357" parent="globals/EssenceView" pc="268442862" symbol="getDate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="44" lineNum="358" parent="globals/EssenceView" pc="268442865" symbol="getDate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="44" lineNum="359" parent="globals/EssenceView" pc="268442891" symbol="getDate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="673" parent="globals/EssenceView" pc="268442937" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="674" parent="globals/EssenceView" pc="268442940" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="676" parent="globals/EssenceView" pc="268442952" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="677" parent="globals/EssenceView" pc="268442972" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="678" parent="globals/EssenceView" pc="268442992" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="679" parent="globals/EssenceView" pc="268443013" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="680" parent="globals/EssenceView" pc="268443034" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="683" parent="globals/EssenceView" pc="268443056" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="684" parent="globals/EssenceView" pc="268443076" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="685" parent="globals/EssenceView" pc="268443094" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="686" parent="globals/EssenceView" pc="268443112" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="689" parent="globals/EssenceView" pc="268443136" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="690" parent="globals/EssenceView" pc="268443152" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="691" parent="globals/EssenceView" pc="268443168" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="693" parent="globals/EssenceView" pc="268443172" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="694" parent="globals/EssenceView" pc="268443189" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="45" lineNum="701" parent="globals/EssenceView" pc="268443244" symbol="drawBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="80" parent="globals/EssenceView" pc="268443298" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="89" parent="globals/EssenceView" pc="268443301" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="94" parent="globals/EssenceView" pc="268443365" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="99" parent="globals/EssenceView" pc="268443430" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="104" parent="globals/EssenceView" pc="268443512" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="109" parent="globals/EssenceView" pc="268443591" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="114" parent="globals/EssenceView" pc="268443662" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="119" parent="globals/EssenceView" pc="268443750" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="124" parent="globals/EssenceView" pc="268443835" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="47" lineNum="129" parent="globals/EssenceView" pc="268443911" symbol="defineBoundingBoxes"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="212" parent="globals/EssenceView" pc="268444067" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="215" parent="globals/EssenceView" pc="268444070" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="216" parent="globals/EssenceView" pc="268444090" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="217" parent="globals/EssenceView" pc="268444108" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="218" parent="globals/EssenceView" pc="268444147" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="220" parent="globals/EssenceView" pc="268444165" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="222" parent="globals/EssenceView" pc="268444204" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="224" parent="globals/EssenceView" pc="268444231" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="225" parent="globals/EssenceView" pc="268444239" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="227" parent="globals/EssenceView" pc="268444257" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="228" parent="globals/EssenceView" pc="268444296" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="230" parent="globals/EssenceView" pc="268444317" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="231" parent="globals/EssenceView" pc="268444345" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="232" parent="globals/EssenceView" pc="268444357" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="237" parent="globals/EssenceView" pc="268444384" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="238" parent="globals/EssenceView" pc="268444394" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="239" parent="globals/EssenceView" pc="268444418" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="240" parent="globals/EssenceView" pc="268444437" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="48" lineNum="241" parent="globals/EssenceView" pc="268444449" symbol="drawData"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="406" parent="globals/EssenceView" pc="268444470" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="407" parent="globals/EssenceView" pc="268444473" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="408" parent="globals/EssenceView" pc="268444476" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="409" parent="globals/EssenceView" pc="268444491" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="410" parent="globals/EssenceView" pc="268444517" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="413" parent="globals/EssenceView" pc="268444540" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="414" parent="globals/EssenceView" pc="268444546" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="51" lineNum="416" parent="globals/EssenceView" pc="268444555" symbol="getSolarIntensity"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="22" parent="globals/EssenceView" pc="268444570" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="23" parent="globals/EssenceView" pc="268444572" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="24" parent="globals/EssenceView" pc="268444586" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="25" parent="globals/EssenceView" pc="268444600" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="26" parent="globals/EssenceView" pc="268444611" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="27" parent="globals/EssenceView" pc="268444637" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="28" parent="globals/EssenceView" pc="268444663" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="30" parent="globals/EssenceView" pc="268444689" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="31" parent="globals/EssenceView" pc="268444701" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="32" parent="globals/EssenceView" pc="268444711" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="35" parent="globals/EssenceView" pc="268444726" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="36" parent="globals/EssenceView" pc="268444738" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="37" parent="globals/EssenceView" pc="268444747" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="40" parent="globals/EssenceView" pc="268444762" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="41" parent="globals/EssenceView" pc="268444772" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="42" parent="globals/EssenceView" pc="268444782" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="44" parent="globals/EssenceView" pc="268444818" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="46" parent="globals/EssenceView" pc="268444851" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="47" parent="globals/EssenceView" pc="268444858" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="49" parent="globals/EssenceView" pc="268444872" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="50" parent="globals/EssenceView" pc="268444882" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="52" lineNum="52" parent="globals/EssenceView" pc="268444918" symbol="onLayout"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="393" parent="globals/EssenceView" pc="268444952" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="394" parent="globals/EssenceView" pc="268444955" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="395" parent="globals/EssenceView" pc="268444958" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="396" parent="globals/EssenceView" pc="268444973" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="397" parent="globals/EssenceView" pc="268444999" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="400" parent="globals/EssenceView" pc="268445022" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="401" parent="globals/EssenceView" pc="268445028" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="53" lineNum="403" parent="globals/EssenceView" pc="268445037" symbol="getBatteryDays"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="547" parent="globals/EssenceView" pc="268445052" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="548" parent="globals/EssenceView" pc="268445055" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="549" parent="globals/EssenceView" pc="268445058" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="550" parent="globals/EssenceView" pc="268445073" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="553" parent="globals/EssenceView" pc="268445111" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="554" parent="globals/EssenceView" pc="268445121" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="557" parent="globals/EssenceView" pc="268445135" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="558" parent="globals/EssenceView" pc="268445146" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="559" parent="globals/EssenceView" pc="268445161" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="560" parent="globals/EssenceView" pc="268445187" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="565" parent="globals/EssenceView" pc="268445213" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="566" parent="globals/EssenceView" pc="268445219" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="54" lineNum="568" parent="globals/EssenceView" pc="268445228" symbol="getCalories"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="55" lineNum="273" parent="globals/EssenceView" pc="268445255" symbol="getEmpty"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="55" lineNum="274" parent="globals/EssenceView" pc="268445257" symbol="getEmpty"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="654" parent="globals/EssenceView" pc="268445263" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="655" parent="globals/EssenceView" pc="268445266" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="656" parent="globals/EssenceView" pc="268445283" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="657" parent="globals/EssenceView" pc="268445290" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="658" parent="globals/EssenceView" pc="268445295" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="661" parent="globals/EssenceView" pc="268445305" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="662" parent="globals/EssenceView" pc="268445322" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="663" parent="globals/EssenceView" pc="268445329" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="666" parent="globals/EssenceView" pc="268445342" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="667" parent="globals/EssenceView" pc="268445354" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="56" lineNum="668" parent="globals/EssenceView" pc="268445378" symbol="drawIcons"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="419" parent="globals/EssenceView" pc="268445394" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="420" parent="globals/EssenceView" pc="268445397" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="421" parent="globals/EssenceView" pc="268445400" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="422" parent="globals/EssenceView" pc="268445415" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="425" parent="globals/EssenceView" pc="268445453" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="426" parent="globals/EssenceView" pc="268445463" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="429" parent="globals/EssenceView" pc="268445477" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="430" parent="globals/EssenceView" pc="268445483" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="431" parent="globals/EssenceView" pc="268445498" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="432" parent="globals/EssenceView" pc="268445524" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="436" parent="globals/EssenceView" pc="268445550" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="437" parent="globals/EssenceView" pc="268445556" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="438" parent="globals/EssenceView" pc="268445572" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="439" parent="globals/EssenceView" pc="268445581" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="440" parent="globals/EssenceView" pc="268445591" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="442" parent="globals/EssenceView" pc="268445602" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="446" parent="globals/EssenceView" pc="268445611" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="447" parent="globals/EssenceView" pc="268445617" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="449" parent="globals/EssenceView" pc="268445626" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="58" lineNum="450" parent="globals/EssenceView" pc="268445648" symbol="getAltimeter"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="59" lineNum="16" parent="globals/EssenceView" pc="268445651" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="59" lineNum="17" parent="globals/EssenceView" pc="268445653" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="59" lineNum="18" parent="globals/EssenceView" pc="268445665" symbol="initialize"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="188" parent="globals/EssenceView" pc="268445705" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="189" parent="globals/EssenceView" pc="268445707" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="190" parent="globals/EssenceView" pc="268445715" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="191" parent="globals/EssenceView" pc="268445726" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="194" parent="globals/EssenceView" pc="268445737" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="195" parent="globals/EssenceView" pc="268445747" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="198" parent="globals/EssenceView" pc="268445761" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="199" parent="globals/EssenceView" pc="268445772" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="200" parent="globals/EssenceView" pc="268445783" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="202" parent="globals/EssenceView" pc="268445794" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="204" parent="globals/EssenceView" pc="268445814" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="205" parent="globals/EssenceView" pc="268445824" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="60" lineNum="206" parent="globals/EssenceView" pc="268445834" symbol="onUpdate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="61" lineNum="245" parent="globals/EssenceView" pc="268445852" symbol="drawDate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="61" lineNum="246" parent="globals/EssenceView" pc="268445855" symbol="drawDate"/>
+<entry filename="D:\\dev\\projects\\Monkey C\\Essence\\source\\EssenceView.mc" id="61" lineNum="247" parent="globals/EssenceView" pc="268445879" symbol="drawDate"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="62" lineNum="11" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268445896" symbol="&lt;init&gt;"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="157" parent="globals/Rez/Layouts" pc="268445908" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="158" parent="globals/Rez/Layouts" pc="268445919" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="159" parent="globals/Rez/Layouts" pc="268445952" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="160" parent="globals/Rez/Layouts" pc="268445985" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="161" parent="globals/Rez/Layouts" pc="268446018" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="162" parent="globals/Rez/Layouts" pc="268446052" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="163" parent="globals/Rez/Layouts" pc="268446062" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="166" parent="globals/Rez/Layouts" pc="268446078" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="168" parent="globals/Rez/Layouts" pc="268446165" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="170" parent="globals/Rez/Layouts" pc="268446250" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="63" lineNum="172" parent="globals/Rez/Layouts" pc="268446337" symbol="BatterySaveLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="144" parent="globals/Rez/Layouts" pc="268446362" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="145" parent="globals/Rez/Layouts" pc="268446373" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="146" parent="globals/Rez/Layouts" pc="268446406" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="147" parent="globals/Rez/Layouts" pc="268446439" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="148" parent="globals/Rez/Layouts" pc="268446472" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="150" parent="globals/Rez/Layouts" pc="268446559" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="152" parent="globals/Rez/Layouts" pc="268446637" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="64" lineNum="154" parent="globals/Rez/Layouts" pc="268446724" symbol="BatterySave"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="89" parent="globals/Rez/Layouts" pc="268446744" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="90" parent="globals/Rez/Layouts" pc="268446755" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="91" parent="globals/Rez/Layouts" pc="268446788" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="92" parent="globals/Rez/Layouts" pc="268446821" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="93" parent="globals/Rez/Layouts" pc="268446854" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="94" parent="globals/Rez/Layouts" pc="268446887" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="95" parent="globals/Rez/Layouts" pc="268446921" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="96" parent="globals/Rez/Layouts" pc="268446931" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="99" parent="globals/Rez/Layouts" pc="268446947" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="101" parent="globals/Rez/Layouts" pc="268447031" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="103" parent="globals/Rez/Layouts" pc="268447116" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="105" parent="globals/Rez/Layouts" pc="268447203" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="107" parent="globals/Rez/Layouts" pc="268447287" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="109" parent="globals/Rez/Layouts" pc="268447375" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="111" parent="globals/Rez/Layouts" pc="268447460" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="113" parent="globals/Rez/Layouts" pc="268447548" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="115" parent="globals/Rez/Layouts" pc="268447633" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="117" parent="globals/Rez/Layouts" pc="268447720" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="119" parent="globals/Rez/Layouts" pc="268447805" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="121" parent="globals/Rez/Layouts" pc="268447892" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="123" parent="globals/Rez/Layouts" pc="268447979" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="125" parent="globals/Rez/Layouts" pc="268448063" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="127" parent="globals/Rez/Layouts" pc="268448150" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="129" parent="globals/Rez/Layouts" pc="268448235" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="131" parent="globals/Rez/Layouts" pc="268448323" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="133" parent="globals/Rez/Layouts" pc="268448408" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="135" parent="globals/Rez/Layouts" pc="268448496" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="137" parent="globals/Rez/Layouts" pc="268448581" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="139" parent="globals/Rez/Layouts" pc="268448669" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="65" lineNum="141" parent="globals/Rez/Layouts" pc="268448754" symbol="WatchFaceLight"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="39" parent="globals/Rez/Layouts" pc="268448869" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="40" parent="globals/Rez/Layouts" pc="268448880" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="41" parent="globals/Rez/Layouts" pc="268448913" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="42" parent="globals/Rez/Layouts" pc="268448946" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="43" parent="globals/Rez/Layouts" pc="268448979" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="44" parent="globals/Rez/Layouts" pc="268449012" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="46" parent="globals/Rez/Layouts" pc="268449096" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="48" parent="globals/Rez/Layouts" pc="268449174" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="50" parent="globals/Rez/Layouts" pc="268449261" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="52" parent="globals/Rez/Layouts" pc="268449338" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="54" parent="globals/Rez/Layouts" pc="268449426" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="56" parent="globals/Rez/Layouts" pc="268449504" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="58" parent="globals/Rez/Layouts" pc="268449592" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="60" parent="globals/Rez/Layouts" pc="268449670" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="62" parent="globals/Rez/Layouts" pc="268449757" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="64" parent="globals/Rez/Layouts" pc="268449835" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="66" parent="globals/Rez/Layouts" pc="268449922" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="68" parent="globals/Rez/Layouts" pc="268450009" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="70" parent="globals/Rez/Layouts" pc="268450086" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="72" parent="globals/Rez/Layouts" pc="268450173" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="74" parent="globals/Rez/Layouts" pc="268450251" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="76" parent="globals/Rez/Layouts" pc="268450339" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="78" parent="globals/Rez/Layouts" pc="268450417" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="80" parent="globals/Rez/Layouts" pc="268450505" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="82" parent="globals/Rez/Layouts" pc="268450583" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="84" parent="globals/Rez/Layouts" pc="268450671" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="66" lineNum="86" parent="globals/Rez/Layouts" pc="268450749" symbol="WatchFace"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="67" lineNum="13" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450859" symbol="initialize"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="67" lineNum="14" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450861" symbol="initialize"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="17" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450878" symbol="draw"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="18" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450880" symbol="draw"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="19" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450890" symbol="draw"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="20" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450899" symbol="draw"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="25" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450906" symbol="draw"/>
+<entry filename="d:\\dev\\projects\\Monkey C\\Essence\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="68" lineNum="26" parent="globals/Rez/Drawables/bGrondFillerWhite" pc="268450923" symbol="draw"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="15" method="true" symbol="boxContains"/>
+<entry field="true" id="82" symbol="Empty"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="28" object="true" symbol="bGrondFillerWhite"/>
+<entry field="true" id="90" symbol="FieldUpperLeft"/>
+<entry id="9" object="true" symbol="EssenceSettingsMenu"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="33" method="true" symbol="drawDate"/>
+<entry id="32" method="true" symbol="drawData"/>
+<entry field="true" id="97" symbol="ShowGraph"/>
+<entry field="true" id="104" symbol="Steps"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="8388737" symbol="calories"/>
+<entry id="47" method="true" symbol="getEmpty"/>
+<entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+<entry field="true" id="111" symbol="SunEventSet"/>
+<entry field="true" id="8390212" symbol="meanSeaLevelPressure"/>
+<entry field="true" id="100" symbol="ShowGraphPressure"/>
+<entry id="8390424" module="true" symbol="Storage"/>
+<entry id="8" object="true" symbol="EssenceDelegate"/>
+<entry id="53" method="true" symbol="getStress"/>
+<entry field="true" id="105" symbol="StepsExt"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="52" method="true" symbol="getSteps"/>
+<entry field="true" id="8391500" symbol="solarIntensity"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8389801" method="true" symbol="getPressureHistory"/>
+<entry field="true" id="109" symbol="SunEventExt"/>
+<entry id="41" method="true" symbol="getBattery"/>
+<entry field="true" id="94" symbol="HeartRate"/>
+<entry field="true" id="85" symbol="FieldLowerCenter"/>
+<entry id="60" method="true" symbol="BatterySaveLight"/>
+<entry id="37" method="true" symbol="drawTime"/>
+<entry field="true" id="21" symbol="graphCatalog"/>
+<entry field="true" id="68" symbol="AppName"/>
+<entry field="true" id="8388963" symbol="altitude"/>
+<entry field="true" id="96" symbol="NotificationsExt"/>
+<entry field="true" id="91" symbol="FieldUpperRight"/>
+<entry id="22" method="true" symbol="loadLayout"/>
+<entry field="true" id="75" symbol="BodyBattery"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry field="true" id="72" symbol="BatteryDays"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="8388724" symbol="battery"/>
+<entry id="49" method="true" symbol="getHeartRate"/>
+<entry id="36" method="true" symbol="drawLabels"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry field="true" id="56" symbol="graphVertOffset"/>
+<entry field="true" id="69" symbol="Barometer"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="14" symbol="boundingBoxes"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="10" object="true" symbol="EssenceSettingsMenuDelegate"/>
+<entry field="true" id="23" symbol="redrawLayout"/>
+<entry field="true" id="108" symbol="SunEvent"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="40" method="true" symbol="getBarometer"/>
+<entry field="true" id="13" symbol="bboxes"/>
+<entry field="true" id="8391489" module="true" symbol="Weather"/>
+<entry field="true" id="83" symbol="EmptyExt"/>
+<entry field="true" id="99" symbol="ShowGraphHeartRate"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="45" method="true" symbol="getCalories"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="65" symbol="TimeFont"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="63" symbol="IconFont"/>
+<entry field="true" id="106" symbol="Stress"/>
+<entry id="46" method="true" symbol="getDate"/>
+<entry field="true" id="8391300" method="true" symbol="isVisible"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="16" method="true" symbol="checkBoundingBoxes"/>
+<entry field="true" id="77" symbol="Calendar"/>
+<entry field="true" id="38" symbol="dw"/>
+<entry field="true" id="30" symbol="dh"/>
+<entry field="true" id="67" symbol="AltimeterExt"/>
+<entry field="true" id="12" symbol="batterySave"/>
+<entry id="8389802" method="true" symbol="getElevationHistory"/>
+<entry id="25" method="true" symbol="buildMenu"/>
+<entry id="50" method="true" symbol="getNotifications"/>
+<entry field="true" id="87" symbol="FieldLowerRight"/>
+<entry field="true" id="8391854" symbol="batteryInDays"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389809" symbol="order"/>
+<entry field="true" id="89" symbol="FieldUpperCenter"/>
+<entry field="true" id="59" method="true" symbol="BatterySave"/>
+<entry field="true" id="112" symbol="WeatherExt"/>
+<entry field="true" id="81" symbol="DarkMode"/>
+<entry field="true" id="70" symbol="BarometerExt"/>
+<entry id="43" method="true" symbol="getBodyBattery"/>
+<entry field="true" id="102" symbol="SolarIntensity"/>
+<entry field="true" id="88" symbol="FieldTop"/>
+<entry id="42" method="true" symbol="getBatteryDays"/>
+<entry field="true" id="74" symbol="BatteryExt"/>
+<entry field="true" id="101" symbol="ShowGraphfieldCatalog"/>
+<entry field="true" id="8392335" object="true" symbol="Settings"/>
+<entry field="true" id="24" symbol="showGraph"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="31" method="true" symbol="drawBoundingBoxes"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="35" method="true" symbol="drawIcons"/>
+<entry field="true" id="80" symbol="CaloriesExt"/>
+<entry field="true" id="107" symbol="StressExt"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="58" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="48" method="true" symbol="getFloors"/>
+<entry field="true" id="20" symbol="fieldLayout"/>
+<entry id="8391847" method="true" symbol="getStressHistory"/>
+<entry id="51" method="true" symbol="getSolarIntensity"/>
+<entry field="true" id="57" symbol="graphWidthFactor"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8391962" module="true" symbol="Complications"/>
+<entry field="true" id="92" symbol="Floors"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="71" symbol="Battery"/>
+<entry id="34" method="true" symbol="drawGraph"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="18" symbol="darkMode"/>
+<entry field="true" id="27" symbol="essenceView"/>
+<entry field="true" id="76" symbol="BodyBatteryExt"/>
+<entry field="true" id="64" symbol="LabelFont"/>
+<entry id="8389808" symbol="period"/>
+<entry id="61" method="true" symbol="WatchFaceLight"/>
+<entry field="true" id="86" symbol="FieldLowerLeft"/>
+<entry field="true" id="8388747" symbol="currentHeartRate"/>
+<entry id="8391703" method="true" symbol="getSettingsView"/>
+<entry field="true" id="19" symbol="fieldCatalog"/>
+<entry field="true" id="66" symbol="Altimeter"/>
+<entry field="true" id="84" symbol="FieldBottom"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="11" object="true" symbol="EssenceView"/>
+<entry field="true" id="8389347" symbol="color"/>
+<entry id="7" object="true" symbol="EssenceApp"/>
+<entry field="true" id="78" symbol="CalendarExt"/>
+<entry id="55" method="true" symbol="getWeather"/>
+<entry id="8389781" module="true" symbol="SensorHistory"/>
+<entry id="54" method="true" symbol="getSunEvent"/>
+<entry id="8392031" method="true" symbol="onPress"/>
+<entry id="39" method="true" symbol="getAltimeter"/>
+<entry field="true" id="110" symbol="SunEventRise"/>
+<entry id="26" module="true" symbol="Layouts"/>
+<entry field="true" id="73" symbol="BatteryDaysExt"/>
+<entry field="true" id="79" symbol="Calories"/>
+<entry id="17" method="true" symbol="checkBoundsForComplication"/>
+<entry id="8388642" module="true" symbol="Position"/>
+<entry field="true" id="8392365" module="true" symbol="Notifications"/>
+<entry field="true" id="62" symbol="DataFont"/>
+<entry id="29" method="true" symbol="defineBoundingBoxes"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="95" symbol="HeartRateExt"/>
+<entry id="44" method="true" symbol="getCalendar"/>
+<entry field="true" id="93" symbol="FloorsExt"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="103" symbol="SolarIntensityExt"/>
+<entry field="true" id="8389642" symbol="title"/>
+<entry field="true" id="98" symbol="ShowGraphAltimeter"/>
+<entry field="true" id="8389584" symbol="notificationCount"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268436949" name="points" stackId="1" startPc="268436920"/>
+<entry arg="true" endPc="268436949" name="boundingBox" stackId="2" startPc="268436920"/>
+<entry arg="true" endPc="268437062" name="points" stackId="1" startPc="268436994"/>
+<entry arg="true" endPc="268437062" name="boxMinXY" stackId="2" startPc="268436994"/>
+<entry arg="true" endPc="268437062" name="boxMaxXY" stackId="3" startPc="268436994"/>
+<entry arg="true" endPc="268437280" name="points" stackId="1" startPc="268437063"/>
+<entry endPc="268437278" name="i" stackId="2" startPc="268437094"/>
+<entry endPc="268437268" name="currentBounds" stackId="3" startPc="268437094"/>
+<entry endPc="268437265" name="dataIndex" stackId="4" startPc="268437212"/>
+<entry endPc="268437375" name="i" stackId="1" startPc="268437324"/>
+<entry endPc="268438401" name="value" stackId="1" startPc="268437392"/>
+<entry arg="true" endPc="268438554" name="clickEvent" stackId="1" startPc="268438457"/>
+<entry endPc="268438549" name="co_ords" stackId="2" startPc="268438470"/>
+<entry endPc="268438549" name="complicationId" stackId="3" startPc="268438470"/>
+<entry endPc="268438546" name="thisComplication" stackId="4" startPc="268438496"/>
+<entry arg="true" endPc="268438966" name="menuItem" stackId="1" startPc="268438585"/>
+<entry endPc="268438965" name="itemId" stackId="2" startPc="268438588"/>
+<entry endPc="268438847" name="value" stackId="3" startPc="268438723"/>
+<entry endPc="268438957" name="value" stackId="4" startPc="268438851"/>
+<entry endPc="268439403" name="data" stackId="1" startPc="268439223"/>
+<entry endPc="268439299" name="comp" stackId="2" startPc="268439241"/>
+<entry endPc="268439360" name="iterator" stackId="3" startPc="268439309"/>
+<entry endPc="268439360" name="sample" stackId="4" startPc="268439309"/>
+<entry endPc="268439736" name="data" stackId="1" startPc="268439407"/>
+<entry endPc="268439483" name="comp" stackId="2" startPc="268439425"/>
+<entry endPc="268439656" name="iterator" stackId="3" startPc="268439601"/>
+<entry endPc="268439656" name="sample" stackId="4" startPc="268439601"/>
+<entry arg="true" endPc="268440541" name="dc" stackId="1" startPc="268439737"/>
+<entry endPc="268440540" name="heartNow" stackId="2" startPc="268439740"/>
+<entry endPc="268440540" name="curMin" stackId="3" startPc="268439740"/>
+<entry endPc="268440540" name="curMax" stackId="4" startPc="268439740"/>
+<entry endPc="268440540" name="maxSecs" stackId="5" startPc="268439740"/>
+<entry endPc="268440540" name="getSensorHistory" stackId="6" startPc="268439740"/>
+<entry endPc="268440540" name="sample" stackId="7" startPc="268439740"/>
+<entry endPc="268440537" name="graphMin" stackId="8" startPc="268439863"/>
+<entry endPc="268440537" name="graphMax" stackId="9" startPc="268439863"/>
+<entry endPc="268440537" name="sampleData" stackId="10" startPc="268439863"/>
+<entry endPc="268440537" name="totHeight" stackId="11" startPc="268439863"/>
+<entry endPc="268440537" name="totWidth" stackId="12" startPc="268439863"/>
+<entry endPc="268440537" name="binPixels" stackId="13" startPc="268439863"/>
+<entry endPc="268440537" name="totBins" stackId="14" startPc="268439863"/>
+<entry endPc="268440537" name="binWidthSecs" stackId="15" startPc="268439863"/>
+<entry endPc="268440537" name="graphSecs" stackId="16" startPc="268439863"/>
+<entry endPc="268440537" name="graphValue" stackId="17" startPc="268439863"/>
+<entry endPc="268440537" name="secsBin" stackId="18" startPc="268439863"/>
+<entry endPc="268440537" name="lastGraphSecs" stackId="19" startPc="268439863"/>
+<entry endPc="268440537" name="graphBinMax" stackId="20" startPc="268439863"/>
+<entry endPc="268440537" name="graphBinMin" stackId="21" startPc="268439863"/>
+<entry endPc="268440537" name="finished" stackId="22" startPc="268439863"/>
+<entry endPc="268440537" name="i" stackId="23" startPc="268440051"/>
+<entry endPc="268440488" name="heartBinMid" stackId="24" startPc="268440283"/>
+<entry endPc="268440488" name="height" stackId="25" startPc="268440283"/>
+<entry endPc="268440488" name="xVal" stackId="26" startPc="268440283"/>
+<entry endPc="268440488" name="yVal" stackId="27" startPc="268440283"/>
+<entry arg="true" endPc="268440747" name="dc" stackId="1" startPc="268440542"/>
+<entry endPc="268440746" name="timeFormat" stackId="2" startPc="268440545"/>
+<entry endPc="268440746" name="clockTime" stackId="3" startPc="268440545"/>
+<entry endPc="268440746" name="hours" stackId="4" startPc="268440545"/>
+<entry endPc="268440746" name="timeString" stackId="5" startPc="268440545"/>
+<entry endPc="268440746" name="view" stackId="6" startPc="268440545"/>
+<entry endPc="268440855" name="data" stackId="1" startPc="268440766"/>
+<entry endPc="268441048" name="data" stackId="1" startPc="268440868"/>
+<entry endPc="268440944" name="comp" stackId="2" startPc="268440886"/>
+<entry endPc="268441005" name="iterator" stackId="3" startPc="268440954"/>
+<entry endPc="268441005" name="sample" stackId="4" startPc="268440954"/>
+<entry endPc="268441124" name="comp" stackId="1" startPc="268441067"/>
+<entry endPc="268441463" name="data" stackId="1" startPc="268441137"/>
+<entry endPc="268441213" name="comp" stackId="2" startPc="268441155"/>
+<entry endPc="268441412" name="iterator" stackId="3" startPc="268441341"/>
+<entry endPc="268441412" name="sample" stackId="4" startPc="268441341"/>
+<entry arg="true" endPc="268441735" name="dc" stackId="1" startPc="268441464"/>
+<entry endPc="268441734" name="view" stackId="2" startPc="268441467"/>
+<entry endPc="268441658" name="i" stackId="3" startPc="268441487"/>
+<entry endPc="268441927" name="data" stackId="1" startPc="268441739"/>
+<entry endPc="268441815" name="comp" stackId="2" startPc="268441757"/>
+<entry endPc="268442474" name="positionInfo" stackId="1" startPc="268441946"/>
+<entry endPc="268442426" name="time" stackId="2" startPc="268442038"/>
+<entry endPc="268442426" name="sunrise" stackId="3" startPc="268442038"/>
+<entry endPc="268442426" name="sunset" stackId="4" startPc="268442038"/>
+<entry endPc="268442669" name="data" stackId="1" startPc="268442487"/>
+<entry endPc="268442563" name="comp" stackId="2" startPc="268442505"/>
+<entry endPc="268442861" name="data" stackId="1" startPc="268442673"/>
+<entry endPc="268442749" name="comp" stackId="2" startPc="268442691"/>
+<entry endPc="268442936" name="now" stackId="1" startPc="268442865"/>
+<entry arg="true" endPc="268443297" name="dc" stackId="1" startPc="268442937"/>
+<entry endPc="268443296" name="i" stackId="2" startPc="268442972"/>
+<entry endPc="268443286" name="x1" stackId="3" startPc="268442972"/>
+<entry endPc="268443286" name="y1" stackId="4" startPc="268442972"/>
+<entry endPc="268443286" name="x2" stackId="5" startPc="268442972"/>
+<entry endPc="268443286" name="y2" stackId="6" startPc="268442972"/>
+<entry endPc="268443286" name="value" stackId="7" startPc="268442972"/>
+<entry endPc="268443286" name="label" stackId="8" startPc="268442972"/>
+<entry endPc="268443286" name="font" stackId="9" startPc="268442972"/>
+<entry arg="true" endPc="268444066" name="dc" stackId="1" startPc="268443298"/>
+<entry endPc="268444065" name="bboxTop" stackId="2" startPc="268443301"/>
+<entry endPc="268444065" name="bboxUpperLeft" stackId="3" startPc="268443301"/>
+<entry endPc="268444065" name="bboxUpperCenter" stackId="4" startPc="268443301"/>
+<entry endPc="268444065" name="bboxUpperRight" stackId="5" startPc="268443301"/>
+<entry endPc="268444065" name="bboxLowerLeft" stackId="6" startPc="268443301"/>
+<entry endPc="268444065" name="bboxLowerCenter" stackId="7" startPc="268443301"/>
+<entry endPc="268444065" name="bboxLowerRight" stackId="8" startPc="268443301"/>
+<entry endPc="268444065" name="bboxLower" stackId="9" startPc="268443301"/>
+<entry arg="true" endPc="268444469" name="dc" stackId="1" startPc="268444067"/>
+<entry endPc="268444468" name="view" stackId="2" startPc="268444070"/>
+<entry endPc="268444468" name="fun" stackId="3" startPc="268444070"/>
+<entry endPc="268444383" name="i" stackId="4" startPc="268444090"/>
+<entry endPc="268444313" name="sunEvent" stackId="5" startPc="268444231"/>
+<entry endPc="268444569" name="data" stackId="1" startPc="268444473"/>
+<entry arg="true" endPc="268444951" name="dc" stackId="1" startPc="268444570"/>
+<entry endPc="268445051" name="data" stackId="1" startPc="268444955"/>
+<entry endPc="268445254" name="data" stackId="1" startPc="268445055"/>
+<entry endPc="268445131" name="comp" stackId="2" startPc="268445073"/>
+<entry arg="true" endPc="268445393" name="dc" stackId="1" startPc="268445263"/>
+<entry endPc="268445392" name="settings" stackId="2" startPc="268445266"/>
+<entry endPc="268445392" name="FieldIcons" stackId="3" startPc="268445266"/>
+<entry endPc="268445389" name="view" stackId="4" startPc="268445354"/>
+<entry endPc="268445650" name="data" stackId="1" startPc="268445397"/>
+<entry endPc="268445473" name="comp" stackId="2" startPc="268445415"/>
+<entry endPc="268445607" name="iterator" stackId="3" startPc="268445556"/>
+<entry endPc="268445607" name="sample" stackId="4" startPc="268445556"/>
+<entry arg="true" endPc="268445851" name="dc" stackId="1" startPc="268445705"/>
+<entry arg="true" endPc="268445895" name="dc" stackId="1" startPc="268445852"/>
+<entry endPc="268445894" name="view" stackId="2" startPc="268445855"/>
+<entry arg="true" endPc="268446361" name="dc" stackId="1" startPc="268445908"/>
+<entry endPc="268446361" name="local_Rez_Fonts_DataFont" stackId="2" startPc="268445919"/>
+<entry endPc="268446361" name="local_Rez_Fonts_TimeFont" stackId="3" startPc="268445919"/>
+<entry endPc="268446361" name="local_Rez_Fonts_IconFont" stackId="4" startPc="268445919"/>
+<entry endPc="268446361" name="rez_cmp_local_custom_drawable_bGrondFillerWhite" stackId="5" startPc="268445919"/>
+<entry endPc="268446361" name="rez_cmp_local_text_FieldDate" stackId="6" startPc="268445919"/>
+<entry endPc="268446361" name="rez_cmp_local_text_FieldTime" stackId="7" startPc="268445919"/>
+<entry endPc="268446361" name="rez_cmp_local_text_FieldIcons" stackId="8" startPc="268445919"/>
+<entry arg="true" endPc="268446743" name="dc" stackId="1" startPc="268446362"/>
+<entry endPc="268446743" name="local_Rez_Fonts_DataFont" stackId="2" startPc="268446373"/>
+<entry endPc="268446743" name="local_Rez_Fonts_TimeFont" stackId="3" startPc="268446373"/>
+<entry endPc="268446743" name="local_Rez_Fonts_IconFont" stackId="4" startPc="268446373"/>
+<entry endPc="268446743" name="rez_cmp_local_text_FieldDate" stackId="5" startPc="268446373"/>
+<entry endPc="268446743" name="rez_cmp_local_text_FieldTime" stackId="6" startPc="268446373"/>
+<entry endPc="268446743" name="rez_cmp_local_text_FieldIcons" stackId="7" startPc="268446373"/>
+<entry arg="true" endPc="268448868" name="dc" stackId="1" startPc="268446744"/>
+<entry endPc="268448868" name="local_Rez_Fonts_DataFont" stackId="2" startPc="268446755"/>
+<entry endPc="268448868" name="local_Rez_Fonts_IconFont" stackId="3" startPc="268446755"/>
+<entry endPc="268448868" name="local_Rez_Fonts_LabelFont" stackId="4" startPc="268446755"/>
+<entry endPc="268448868" name="local_Rez_Fonts_TimeFont" stackId="5" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_custom_drawable_bGrondFillerWhite" stackId="6" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldTopLabel" stackId="7" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldTopData" stackId="8" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperLeftLabel" stackId="9" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperLeftData" stackId="10" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperCenterLabel" stackId="11" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperCenterData" stackId="12" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperRightLabel" stackId="13" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldUpperRightData" stackId="14" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldDate" stackId="15" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldTime" stackId="16" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldIcons" stackId="17" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerLeftLabel" stackId="18" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerLeftData" stackId="19" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldGraphLabel" stackId="20" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldGraphData" stackId="21" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerCenterLabel" stackId="22" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerCenterData" stackId="23" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerRightLabel" stackId="24" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldLowerRightData" stackId="25" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldBottomLabel" stackId="26" startPc="268446755"/>
+<entry endPc="268448868" name="rez_cmp_local_text_FieldBottomData" stackId="27" startPc="268446755"/>
+<entry arg="true" endPc="268450858" name="dc" stackId="1" startPc="268448869"/>
+<entry endPc="268450858" name="local_Rez_Fonts_DataFont" stackId="2" startPc="268448880"/>
+<entry endPc="268450858" name="local_Rez_Fonts_IconFont" stackId="3" startPc="268448880"/>
+<entry endPc="268450858" name="local_Rez_Fonts_LabelFont" stackId="4" startPc="268448880"/>
+<entry endPc="268450858" name="local_Rez_Fonts_TimeFont" stackId="5" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldTopLabel" stackId="6" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldTopData" stackId="7" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperLeftLabel" stackId="8" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperLeftData" stackId="9" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperCenterLabel" stackId="10" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperCenterData" stackId="11" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperRightLabel" stackId="12" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldUpperRightData" stackId="13" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldDate" stackId="14" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldTime" stackId="15" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldIcons" stackId="16" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerLeftLabel" stackId="17" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerLeftData" stackId="18" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldGraphLabel" stackId="19" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldGraphData" stackId="20" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerCenterLabel" stackId="21" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerCenterData" stackId="22" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerRightLabel" stackId="23" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldLowerRightData" stackId="24" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldBottomLabel" stackId="25" startPc="268448880"/>
+<entry endPc="268450858" name="rez_cmp_local_text_FieldBottomData" stackId="26" startPc="268448880"/>
+<entry arg="true" endPc="268450941" name="dc" stackId="1" startPc="268450878"/>
+</localVars>
+<deviceInfo deviceVersion="de121dfa604491767422db2c3063530f8fd6465b" partNumber="006-B3992-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Calendar"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldTop"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldLowerLeft"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Battery"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WeatherExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Floors"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatterySave"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HeartRate"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SunEventRise"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowGraphHeartRate"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FloorsExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Stress"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AltimeterExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowGraphAltimeter"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CaloriesExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DarkMode"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldUpperLeft"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SunEventSet"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Notifications"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TimeFont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Steps"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryDaysExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldUpperCenter"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldBottom"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="IconFont"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StressExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowGraph"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="NotificationsExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Calories"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Altimeter"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldLowerCenter"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldLowerRight"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Barometer"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SunEvent"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Empty"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowGraphPressure"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="EmptyExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BarometerExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SolarIntensityExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldUpperRight"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HeartRateExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SunEventExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryDays"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BodyBattery"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="DataFont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="LabelFont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SolarIntensity"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Weather"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CalendarExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StepsExt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowGraphfieldCatalog"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Settings"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BodyBatteryExt"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/EssenceSettingsMenu" offset="3745" parentId="globals" symbolId="EssenceSettingsMenu" type="class"/>
+<dataEntry label="globals/Rez" offset="3798" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/EssenceDelegate" offset="3860" parentId="globals" symbolId="EssenceDelegate" type="class"/>
+<dataEntry label="globals/EssenceSettingsMenuDelegate" offset="3913" parentId="globals" symbolId="EssenceSettingsMenuDelegate" type="class"/>
+<dataEntry label="globals/EssenceApp" offset="3966" parentId="globals" symbolId="EssenceApp" type="class"/>
+<dataEntry label="globals/EssenceView" offset="4064" parentId="globals" symbolId="EssenceView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="4432" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="4476" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="4538" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="4600" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/Drawables/bGrondFillerWhite" offset="5085" parentId="Drawables" symbolId="bGrondFillerWhite" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268436898" name="&lt;init&gt;" parent="EssenceSettingsMenu" startPc="268436887">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436919" name="getApp" startPc="268436899">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436949" name="checkBoundsForComplication" startPc="268436920">
+<param id="points"/>
+<param id="boundingBox"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436969" name="&lt;init&gt;" parent="Rez" startPc="268436950">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436981" name="&lt;init&gt;" parent="EssenceDelegate" startPc="268436970">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436993" name="&lt;init&gt;" parent="EssenceSettingsMenuDelegate" startPc="268436982">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437062" name="boxContains" startPc="268436994">
+<param id="points"/>
+<param id="boxMinXY"/>
+<param id="boxMaxXY"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437280" name="checkBoundingBoxes" startPc="268437063">
+<param id="points"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437292" name="&lt;init&gt;" parent="EssenceApp" startPc="268437281">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437376" name="loadLayout" startPc="268437293">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437388" name="&lt;init&gt;" parent="EssenceView" startPc="268437377">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438402" name="buildMenu" parent="EssenceSettingsMenu" startPc="268437389">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438456" name="initialize" parent="EssenceSettingsMenu" startPc="268438403">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438554" name="onPress" parent="EssenceDelegate" startPc="268438457">
+<param id="clickEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438569" name="initialize" parent="EssenceDelegate" startPc="268438555">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438584" name="initialize" parent="EssenceSettingsMenuDelegate" startPc="268438570">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438966" name="onSelect" parent="EssenceSettingsMenuDelegate" startPc="268438585">
+<param id="menuItem"/>
+<documentation><![CDATA[<div class="description"> Handle a menu item being selected<br/> <div class="param"> menuItem The menu item selected</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438969" name="onStart" parent="EssenceApp" startPc="268438967">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439026" name="getSettingsView" parent="EssenceApp" startPc="268438970">
+<documentation><![CDATA[<div class="description"> Return the settings view and delegate<br/> <div class="returns">Returns  Array Pair [View, Delegate]</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439048" name="onSettingsChanged" parent="EssenceApp" startPc="268439027">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439149" name="getInitialView" parent="EssenceApp" startPc="268439049">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439164" name="initialize" parent="EssenceApp" startPc="268439150">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439167" name="onStop" parent="EssenceApp" startPc="268439165">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439219" name="getNotifications" parent="EssenceView" startPc="268439168">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439403" name="getStress" parent="EssenceView" startPc="268439220">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439736" name="getBarometer" parent="EssenceView" startPc="268439404">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440541" name="drawGraph" parent="EssenceView" startPc="268439737">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440747" name="drawTime" parent="EssenceView" startPc="268440542">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440864" name="getWeather" parent="EssenceView" startPc="268440748">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441048" name="getBodyBattery" parent="EssenceView" startPc="268440865">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441133" name="getCalendar" parent="EssenceView" startPc="268441049">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441463" name="getHeartRate" parent="EssenceView" startPc="268441134">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441735" name="drawLabels" parent="EssenceView" startPc="268441464">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441927" name="getFloors" parent="EssenceView" startPc="268441736">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442483" name="getSunEvent" parent="EssenceView" startPc="268441928">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442669" name="getBattery" parent="EssenceView" startPc="268442484">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442861" name="getSteps" parent="EssenceView" startPc="268442670">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442936" name="getDate" parent="EssenceView" startPc="268442862">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443297" name="drawBoundingBoxes" parent="EssenceView" startPc="268442937">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="EssenceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444066" name="defineBoundingBoxes" parent="EssenceView" startPc="268443298">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444469" name="drawData" parent="EssenceView" startPc="268444067">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="EssenceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="EssenceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444569" name="getSolarIntensity" parent="EssenceView" startPc="268444470">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444951" name="onLayout" parent="EssenceView" startPc="268444570">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445051" name="getBatteryDays" parent="EssenceView" startPc="268444952">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445254" name="getCalories" parent="EssenceView" startPc="268445052">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445262" name="getEmpty" parent="EssenceView" startPc="268445255">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445393" name="drawIcons" parent="EssenceView" startPc="268445263">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="EssenceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445650" name="getAltimeter" parent="EssenceView" startPc="268445394">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445704" name="initialize" parent="EssenceView" startPc="268445651">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445851" name="onUpdate" parent="EssenceView" startPc="268445705">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445895" name="drawDate" parent="EssenceView" startPc="268445852">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268445907" name="&lt;init&gt;" parent="bGrondFillerWhite" startPc="268445896">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446361" name="BatterySaveLight" parent="Layouts" startPc="268445908">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268446743" name="BatterySave" parent="Layouts" startPc="268446362">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268448868" name="WatchFaceLight" parent="Layouts" startPc="268446744">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450858" name="WatchFace" parent="Layouts" startPc="268448869">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450877" name="initialize" parent="bGrondFillerWhite" startPc="268450859">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268450941" name="draw" parent="bGrondFillerWhite" startPc="268450878">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
