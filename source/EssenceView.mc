@@ -450,6 +450,35 @@ class EssenceView extends WatchUi.WatchFace {
     return data;
   }
 
+  function getTemperature() {
+    var data = null;
+    if (Toybox has :Complications) {
+      var comp = Complications.getComplication(
+        new Complications.Id(
+          Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE
+        )
+      );
+      if (comp.value != null) {
+        data = comp.value;
+      }
+    }
+    if (data == null) {
+      var iterator = Toybox.SensorHistory.getTemperatureHistory({});
+      var sample = iterator.next();
+      if (sample.data != null) {
+        data = sample.data;
+      } else {
+        return "--";
+      }
+    }
+
+    if (data == null) {
+      return "--";
+    }
+    data = (data + 0.5).toNumber().toString();
+    return data;
+  }
+
   function getBodyBattery() {
     var data = null;
     if (Toybox has :Complications) {
@@ -587,7 +616,8 @@ class EssenceView extends WatchUi.WatchFace {
     if (data == null) {
       return "--";
     }
-    return Lang.format("$1$", [data]);
+    // return Lang.format("$1$", [data]);
+    return data.toString();
   }
 
   function getFloors() {

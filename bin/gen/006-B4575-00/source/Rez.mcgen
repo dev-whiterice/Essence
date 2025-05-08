@@ -198,6 +198,7 @@ module Rez {
         (:initialized) var Steps as ResourceId;
         (:initialized) var SolarIntensityExt as ResourceId;
         (:initialized) var HeartRate as ResourceId;
+        (:initialized) var Temperature as ResourceId;
         (:initialized) var DarkMode as ResourceId;
         (:initialized) var EmptyExt as ResourceId;
         (:initialized) var HeartRateExt as ResourceId;
@@ -218,6 +219,7 @@ module Rez {
         (:initialized) var Stress as ResourceId;
         (:initialized) var Calories as ResourceId;
         (:initialized) var Weather as ResourceId;
+        (:initialized) var TemperatureExt as ResourceId;
         (:initialized) var FieldLowerCenter as ResourceId;
         (:initialized) var BarometerExt as ResourceId;
         (:initialized) var FloorsExt as ResourceId;

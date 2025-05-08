@@ -190,6 +190,13 @@ var fieldCatalog = [
     "getter" => :getCalories,
     "complicationId" => Complications.COMPLICATION_TYPE_CALORIES,
   },
+  {
+    "id" => "Temperature",
+    "label" => Rez.Strings.Temperature,
+    "labelExt" => Rez.Strings.TemperatureExt,
+    "getter" => :getTemperature,
+    "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE,
+  },
 ];
 
 var graphCatalog = [

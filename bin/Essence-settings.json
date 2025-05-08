@@ -88,6 +88,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -151,6 +154,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -214,6 +220,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -277,6 +286,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -340,6 +352,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -403,6 +418,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -466,6 +484,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -529,6 +550,9 @@
     }, {
       "display" : "CaloriesExt",
       "value" : 15
+    }, {
+      "display" : "TemperatureExt",
+      "value" : 16
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -580,6 +604,7 @@
       "FieldBottom" : "Campo inferiore",
       "SunEventSet" : "tram",
       "Barometer" : "bar",
+      "CaloriesExt" : "Calorie",
       "FieldLowerRight" : "Campo in basso a destra",
       "Notifications" : "msg",
       "SunEvent" : "al/tr",
@@ -587,6 +612,7 @@
       "Steps" : "passi",
       "SolarIntensityExt" : "Intensità solare",
       "HeartRate" : "hr",
+      "Temperature" : "temp",
       "DarkMode" : "Tema Scuro",
       "EmptyExt" : "Vuoto",
       "HeartRateExt" : "Frequenza Cardiaca",
@@ -605,8 +631,9 @@
       "Calendar" : "cal",
       "ShowGraphHeartRate" : "Mostra grafico FC",
       "Stress" : "stress",
-      "Calories" : "Calorie",
+      "Calories" : "cal",
       "Weather" : "meteo",
+      "TemperatureExt" : "Temperatura",
       "FieldLowerCenter" : "Campo in basso centrale",
       "BarometerExt" : "Barometro",
       "FloorsExt" : "Piani",
@@ -640,6 +667,7 @@
       "Steps" : "steps",
       "SolarIntensityExt" : "Solar Intenisty",
       "HeartRate" : "hr",
+      "Temperature" : "temp",
       "DarkMode" : "Dark Mode",
       "EmptyExt" : "Empty",
       "HeartRateExt" : "Heart Rate",
@@ -660,6 +688,7 @@
       "Stress" : "stress",
       "Calories" : "cal",
       "Weather" : "weather",
+      "TemperatureExt" : "Temperature",
       "FieldLowerCenter" : "Lower center field",
       "BarometerExt" : "Barometer",
       "FloorsExt" : "Floors",

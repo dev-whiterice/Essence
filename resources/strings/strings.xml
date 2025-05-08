@@ -30,6 +30,8 @@
     <string id="BatteryDays">batt.d</string>
     <string id="SolarIntensity">solar</string>
     <string id="Calories">cal</string>
+    <string id="Temperature">temp</string>
+
 
     <string id="BatterySave">Battery save</string>
 
@@ -49,6 +51,7 @@
     <string id="BatteryDaysExt">Battery days</string>
     <string id="SolarIntensityExt">Solar Intenisty</string>
     <string id="CaloriesExt">Calories</string>
+    <string id="TemperatureExt">Temperature</string>
 
     <string id="ShowGraphfieldCatalog">Show Data Field</string>
     <string id="ShowGraphHeartRate">Show HR Graph</string>

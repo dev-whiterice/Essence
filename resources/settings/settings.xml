@@ -27,7 +27,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>             
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>   
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>          
         </settingConfig>
     </setting>
 
@@ -48,7 +49,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>            
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>   
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>            
         </settingConfig>
     </setting>
 
@@ -69,7 +71,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>           
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>    
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>          
         </settingConfig>
     </setting>
 
@@ -90,7 +93,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>        
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>    
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>       
         </settingConfig>
     </setting>
 
@@ -111,7 +115,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>           
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>  
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>            
         </settingConfig>
     </setting>
 
@@ -132,7 +137,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>             
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>    
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>            
         </settingConfig>
     </setting>
 
@@ -153,7 +159,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>        
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>   
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>        
         </settingConfig>
     </setting>
 
@@ -174,7 +181,8 @@
             <listEntry value="12">@Strings.FloorsExt</listEntry>     
             <listEntry value="13">@Strings.BatteryDaysExt</listEntry>   
             <listEntry value="14">@Strings.SolarIntensityExt</listEntry>  
-            <listEntry value="15">@Strings.CaloriesExt</listEntry>         
+            <listEntry value="15">@Strings.CaloriesExt</listEntry>   
+            <listEntry value="16">@Strings.TemperatureExt</listEntry>         
         </settingConfig>
     </setting>
 

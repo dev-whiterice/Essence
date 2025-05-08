@@ -30,6 +30,7 @@
     <string id="BatteryDays">batt.gg</string>
     <string id="SolarIntensity">solar</string>
     <string id="Calories">cal</string>
+    <string id="Temperature">temp</string>
 
     <string id="BatterySave">Risparmio batteria</string>
 
@@ -48,7 +49,8 @@
     <string id="FloorsExt">Piani</string>
     <string id="BatteryDaysExt">Giorni Batteria</string>
     <string id="SolarIntensityExt">Intensità solare</string>
-    <string id="Calories">Calorie</string>
+    <string id="CaloriesExt">Calorie</string>
+    <string id="TemperatureExt">Temperatura</string>
 
     <string id="ShowGraphfieldCatalog">Mostra campo dati</string>
     <string id="ShowGraphHeartRate">Mostra grafico FC</string>
