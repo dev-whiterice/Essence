@@ -682,20 +682,21 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   function drawIcons(dc) {
-    var settings = System.getDeviceSettings().phoneConnected;
     var FieldIcons = "";
+
+    var settings = System.getDeviceSettings().doNotDisturb;
     if (settings) {
-      FieldIcons = "V";
+      FieldIcons += (127).toChar().toString();
+    }
+    FieldIcons += "R";
+    settings = System.getDeviceSettings().phoneConnected;
+    if (settings) {
+      FieldIcons += "V";
     }
 
     settings = System.getDeviceSettings().alarmCount;
     if (settings > 0) {
       FieldIcons += "R";
-    }
-
-    settings = System.getDeviceSettings().doNotDisturb;
-    if (settings) {
-      FieldIcons += (127).toChar().toString();
     }
 
     if (FieldIcons.length() > 0) {
