@@ -771,17 +771,24 @@ class EssenceView extends WatchUi.WatchFace {
         return;
       }
 
-      if (
-        ((sampleData == (null | graphMin)) == (null | graphMin | graphMax)) ==
-        null
-      ) {
+      if (sampleData == null) {
         return;
       }
-
-      if (((sampleData == (0 | graphMin)) == (0 | graphMin | graphMax)) == 0) {
+      if (graphMin == null) {
         return;
       }
-
+      if (graphMax == null) {
+        return;
+      }
+      if (sampleData == 0) {
+        return;
+      }
+      if (graphMin == 0) {
+        return;
+      }
+      if (graphMax == 0) {
+        return;
+      }
       curMin = graphMin;
       curMax = graphMax;
       graphMin = 1000;
