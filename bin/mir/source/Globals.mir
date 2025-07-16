@@ -1,34 +1,34 @@
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
 using Toybox.System;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Complications,2,13,26]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Complications,2,13,26]; ]
 using Toybox.Complications;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Graphics,3,13,21]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Graphics,3,13,21]; ]
 using Toybox.Graphics;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 5; @position = 11; @symbol_vardef = [bboxes,5,11,17]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 5; @position = 11; @symbol_vardef = [bboxes,5,11,17]; ]
 var bboxes;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 6; @position = 11; @symbol_vardef = [boundingBoxes,6,11,24]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 6; @position = 11; @symbol_vardef = [boundingBoxes,6,11,24]; ]
 var boundingBoxes;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 7; @position = 4; @symbol_vardef = [redrawLayout,7,4,16]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 7; @position = 4; @symbol_vardef = [redrawLayout,7,4,16]; ]
 var redrawLayout = false;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 8; @position = 4; @symbol_vardef = [batterySave,8,4,15]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 8; @position = 4; @symbol_vardef = [batterySave,8,4,15]; ]
 var batterySave = false;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 9; @position = 4; @symbol_vardef = [showGraph,9,4,13]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 9; @position = 4; @symbol_vardef = [showGraph,9,4,13]; ]
 var showGraph = 0;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 10; @position = 4; @symbol_vardef = [darkMode,10,4,12]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 10; @position = 4; @symbol_vardef = [darkMode,10,4,12]; ]
 var darkMode = true;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 12; @symbol_functiondef = [checkBoundingBoxes,12,16,34]; @symbol_param<0> = [points,12,35,41]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 12; @symbol_functiondef = [checkBoundingBoxes,12,16,34]; @symbol_param<0> = [points,12,35,41]; ]
 function checkBoundingBoxes(points) {
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_12_43_31_0_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 13 2 ]
-    for @D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test @D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_incr @D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_init:
-    [ "D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_begin" "D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end" ]
+D__dev_Monkey_C_Essence_source_Globals_mc_12_43_31_0_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 13 2 ]
+    for @D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test @D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_incr @D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_init:
+    [ "D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_begin" "D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end" ]
     %i.1 = local;
     symbol [ i %i.1 13 11 12 ];
     %tmp.1 = 0;
     lputv %i.1 %tmp.1;
     symbol [ i %i.1 13 11 12 ];
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test:
+D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test:
     %tmp.2 = lgetv %i.1;
     symbol [ i %tmp.2 13 18 19 ];
     symbol [ boundingBoxes %tmp.4 13 22 35 ];
@@ -37,11 +37,11 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test:
     %tmp.5 = getv function %tmp.4 :size;
     %tmp.6 = invoke %tmp.4 %tmp.5();
     %tmp.7 = lt %tmp.2 %tmp.6;
-    bf %tmp.7 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_begin:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_49_29_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 14 4 ]
-    [ "D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_49_29_2_start" "D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_49_29_2_stop" ]
+    bf %tmp.7 @D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_begin:
+D__dev_Monkey_C_Essence_source_Globals_mc_13_49_29_2_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 14 4 ]
+    [ "D__dev_Monkey_C_Essence_source_Globals_mc_13_49_29_2_start" "D__dev_Monkey_C_Essence_source_Globals_mc_13_49_29_2_stop" ]
     %currentBounds.2 = local;
     symbol [ currentBounds %currentBounds.2 14 8 21 ];
     symbol [ boundingBoxes %tmp.9 14 24 37 ];
@@ -51,8 +51,8 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_49_29_2_start:
     %tmp.11 = agetv %tmp.9 %tmp.10;
     lputv %currentBounds.2 %tmp.11;
     symbol [ currentBounds %currentBounds.2 14 8 21 ];
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 15 4 ]
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_stmt:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 15 4 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_stmt:
     %tmp.12 = self;
     symbol [ checkBoundsForComplication %tmp.13 15 8 34 ];
     %tmp.13 = getv function %tmp.12 :checkBoundsForComplication;
@@ -63,12 +63,12 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_stmt:
     %tmp.16 = "bounds";
     %tmp.17 = agetv %tmp.15 %tmp.16;
     %tmp.18 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.17);
-    bf %tmp.18 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_true:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_69_28_4_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 16 6 ]
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_stmt:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_10_16_73_begin:
+    bf %tmp.18 @D__dev_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_true:
+D__dev_Monkey_C_Essence_source_Globals_mc_15_69_28_4_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 16 6 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_stmt:
+D__dev_Monkey_C_Essence_source_Globals_mc_16_10_16_73_begin:
     symbol [ fieldLayout %tmp.20 16 10 21 ];
     %tmp.20 = getv ? :fieldLayout;
     %tmp.21 = lgetv %i.1;
@@ -80,20 +80,20 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_10_16_73_begin:
     %tmp.25 = getv function %tmp.24 :equals;
     %tmp.26 = "FieldLowerCenter";
     %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
-    bf %tmp.27 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_61_16_73_true:
+    bf %tmp.27 @D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false;
+D__dev_Monkey_C_Essence_source_Globals_mc_16_61_16_73_true:
     symbol [ showGraph %tmp.29 16 61 70 ];
     %tmp.29 = getv ? :showGraph;
     %tmp.30 = 0;
     %tmp.31 = gt %tmp.29 %tmp.30;
     push %tmp.31;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_61_16_73_end:
-    %tmp.32 = phi [%tmp.27 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_10_16_73_begin] [%tmp.31 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_61_16_73_true] [%tmp.32 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_61_16_73_end];
-    bf %tmp.32 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_true:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_76_21_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 17 8 ]
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_stmt:
+D__dev_Monkey_C_Essence_source_Globals_mc_16_61_16_73_end:
+    %tmp.32 = phi [%tmp.27 @D__dev_Monkey_C_Essence_source_Globals_mc_16_10_16_73_begin] [%tmp.31 @D__dev_Monkey_C_Essence_source_Globals_mc_16_61_16_73_true] [%tmp.32 @D__dev_Monkey_C_Essence_source_Globals_mc_16_61_16_73_end];
+    bf %tmp.32 @D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false;
+D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_true:
+D__dev_Monkey_C_Essence_source_Globals_mc_16_76_21_6_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 17 8 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_stmt:
     symbol [ graphCatalog %tmp.34 17 12 24 ];
     %tmp.34 = getv ? :graphCatalog;
     symbol [ showGraph %tmp.36 17 25 34 ];
@@ -103,16 +103,16 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_stmt:
     %tmp.39 = agetv %tmp.37 %tmp.38;
     %tmp.40 = null;
     %tmp.41 = eq %tmp.39 %tmp.40;
-    bf %tmp.41 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_true:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_63_19_8_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 18 10 ]
+    bf %tmp.41 @D__dev_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_true:
+D__dev_Monkey_C_Essence_source_Globals_mc_17_63_19_8_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 18 10 ]
     %tmp.42 = false;
     ret %tmp.42;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_63_19_8_stop:
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 20 8 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_17_63_19_8_stop:
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 20 8 ]
     symbol [ graphCatalog %tmp.44 20 15 27 ];
     %tmp.44 = getv ? :graphCatalog;
     symbol [ showGraph %tmp.46 20 28 37 ];
@@ -121,12 +121,12 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_17_8_19_8_if_end:
     %tmp.48 = "complicationId";
     %tmp.49 = agetv %tmp.47 %tmp.48;
     ret %tmp.49;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_76_21_6_stop:
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_21_13_27_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 22 8 ]
-    [ "D_dev_projects_Monkey_C_Essence_source_Globals_mc_21_13_27_6_start" "D_dev_projects_Monkey_C_Essence_source_Globals_mc_21_13_27_6_stop" ]
+D__dev_Monkey_C_Essence_source_Globals_mc_16_76_21_6_stop:
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_else_false:
+D__dev_Monkey_C_Essence_source_Globals_mc_21_13_27_6_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 22 8 ]
+    [ "D__dev_Monkey_C_Essence_source_Globals_mc_21_13_27_6_start" "D__dev_Monkey_C_Essence_source_Globals_mc_21_13_27_6_stop" ]
     %dataIndex.3 = local;
     symbol [ dataIndex %dataIndex.3 22 12 21 ];
     symbol [ fieldLayout %tmp.51 22 24 35 ];
@@ -138,8 +138,8 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_21_13_27_6_start:
     %tmp.55 = agetv %tmp.53 %tmp.54;
     lputv %dataIndex.3 %tmp.55;
     symbol [ dataIndex %dataIndex.3 22 12 21 ];
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 23 8 ]
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_stmt:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 23 8 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_stmt:
     symbol [ fieldCatalog %tmp.57 23 12 24 ];
     %tmp.57 = getv ? :fieldCatalog;
     %tmp.58 = lgetv %dataIndex.3;
@@ -149,16 +149,16 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_stmt:
     %tmp.61 = agetv %tmp.59 %tmp.60;
     %tmp.62 = null;
     %tmp.63 = eq %tmp.61 %tmp.62;
-    bf %tmp.63 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_true:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_63_25_8_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 24 10 ]
+    bf %tmp.63 @D__dev_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_true:
+D__dev_Monkey_C_Essence_source_Globals_mc_23_63_25_8_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 24 10 ]
     %tmp.64 = false;
     ret %tmp.64;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_63_25_8_stop:
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 26 8 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_23_63_25_8_stop:
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 26 8 ]
     symbol [ fieldCatalog %tmp.66 26 15 27 ];
     %tmp.66 = getv ? :fieldCatalog;
     %tmp.67 = lgetv %dataIndex.3;
@@ -167,30 +167,30 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_23_8_25_8_if_end:
     %tmp.69 = "complicationId";
     %tmp.70 = agetv %tmp.68 %tmp.69;
     ret %tmp.70;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_21_13_27_6_stop:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_end:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_69_28_4_stop:
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_49_29_2_stop:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_incr:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 13 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_21_13_27_6_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_16_6_27_6_if_end:
+D__dev_Monkey_C_Essence_source_Globals_mc_15_69_28_4_stop:
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_15_4_28_4_if_end:
+D__dev_Monkey_C_Essence_source_Globals_mc_13_49_29_2_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_incr:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 13 ]
     %tmp.73 = lgetv %i.1;
     symbol [ i %tmp.73 13 44 45 ];
     %tmp.74 = add %tmp.73 1;
     lputv %i.1 %tmp.74;
     symbol [ i %i.1 13 44 45 ];
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 30 2 ]
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_test;
+D__dev_Monkey_C_Essence_source_Globals_mc_13_2_29_2_for_end:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 30 2 ]
     %tmp.75 = false;
     ret %tmp.75;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_12_43_31_0_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_12_43_31_0_stop:
 }
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 32; @symbol_functiondef = [checkBoundsForComplication,32,16,42]; @symbol_param<0> = [points,32,43,49]; @symbol_param<1> = [boundingBox,32,51,62]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 32; @symbol_functiondef = [checkBoundsForComplication,32,16,42]; @symbol_param<0> = [points,32,43,49]; @symbol_param<1> = [boundingBox,32,51,62]; ]
 function checkBoundsForComplication(points, boundingBox) {
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_32_64_34_0_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 33 2 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_32_64_34_0_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 33 2 ]
     %tmp.1 = self;
     symbol [ boxContains %tmp.2 33 9 20 ];
     %tmp.2 = getv function %tmp.1 :boxContains;
@@ -206,15 +206,15 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_32_64_34_0_start:
     %tmp.9 = agetv %tmp.7 %tmp.8;
     %tmp.10 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6, %tmp.9);
     ret %tmp.10;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_32_64_34_0_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_32_64_34_0_stop:
 }
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 36; @symbol_functiondef = [boxContains,36,16,27]; @symbol_param<0> = [points,36,28,34]; @symbol_param<1> = [boxMinXY,36,36,44]; @symbol_param<2> = [boxMaxXY,36,46,54]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 36; @symbol_functiondef = [boxContains,36,16,27]; @symbol_param<0> = [points,36,28,34]; @symbol_param<1> = [boxMinXY,36,36,44]; @symbol_param<2> = [boxMaxXY,36,46,54]; ]
 function boxContains(points, boxMinXY, boxMaxXY) {
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_36_56_43_0_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 37 2 ]
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_41_27_begin:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_40_27_begin:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_39_27_begin:
+D__dev_Monkey_C_Essence_source_Globals_mc_36_56_43_0_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 37 2 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_38_4_41_27_begin:
+D__dev_Monkey_C_Essence_source_Globals_mc_38_4_40_27_begin:
+D__dev_Monkey_C_Essence_source_Globals_mc_38_4_39_27_begin:
     %tmp.1 = lgetv %points;
     symbol [ points %tmp.1 38 4 10 ];
     %tmp.2 = 0;
@@ -225,8 +225,8 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_39_27_begin:
     %tmp.6 = agetv %tmp.4 %tmp.5;
     %tmp.7 = lte %tmp.3 %tmp.6;
     %tmp.8 = dup %tmp.7;
-    bf %tmp.8 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_true:
+    bf %tmp.8 @D__dev_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_39_4_39_27_true:
     %tmp.9 = lgetv %points;
     symbol [ points %tmp.9 39 4 10 ];
     %tmp.10 = 1;
@@ -238,11 +238,11 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_true:
     %tmp.15 = lte %tmp.11 %tmp.14;
     %tmp.16 = and %tmp.7 %tmp.15;
     push %tmp.16;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end:
-    %tmp.17 = phi [%tmp.8 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_39_27_begin] [%tmp.16 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_true] [%tmp.17 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end];
+D__dev_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end:
+    %tmp.17 = phi [%tmp.8 @D__dev_Monkey_C_Essence_source_Globals_mc_38_4_39_27_begin] [%tmp.16 @D__dev_Monkey_C_Essence_source_Globals_mc_39_4_39_27_true] [%tmp.17 @D__dev_Monkey_C_Essence_source_Globals_mc_39_4_39_27_end];
     %tmp.18 = dup %tmp.17;
-    bf %tmp.18 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_true:
+    bf %tmp.18 @D__dev_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_40_4_40_27_true:
     %tmp.19 = lgetv %points;
     symbol [ points %tmp.19 40 4 10 ];
     %tmp.20 = 0;
@@ -254,11 +254,11 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_true:
     %tmp.25 = gte %tmp.21 %tmp.24;
     %tmp.26 = and %tmp.17 %tmp.25;
     push %tmp.26;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end:
-    %tmp.27 = phi [%tmp.18 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_40_27_begin] [%tmp.26 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_true] [%tmp.27 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end];
+D__dev_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end:
+    %tmp.27 = phi [%tmp.18 @D__dev_Monkey_C_Essence_source_Globals_mc_38_4_40_27_begin] [%tmp.26 @D__dev_Monkey_C_Essence_source_Globals_mc_40_4_40_27_true] [%tmp.27 @D__dev_Monkey_C_Essence_source_Globals_mc_40_4_40_27_end];
     %tmp.28 = dup %tmp.27;
-    bf %tmp.28 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_true:
+    bf %tmp.28 @D__dev_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_41_4_41_27_true:
     %tmp.29 = lgetv %points;
     symbol [ points %tmp.29 41 4 10 ];
     %tmp.30 = 1;
@@ -270,30 +270,30 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_true:
     %tmp.35 = gte %tmp.31 %tmp.34;
     %tmp.36 = and %tmp.27 %tmp.35;
     push %tmp.36;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end:
-    %tmp.37 = phi [%tmp.28 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_38_4_41_27_begin] [%tmp.36 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_true] [%tmp.37 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end];
+D__dev_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end:
+    %tmp.37 = phi [%tmp.28 @D__dev_Monkey_C_Essence_source_Globals_mc_38_4_41_27_begin] [%tmp.36 @D__dev_Monkey_C_Essence_source_Globals_mc_41_4_41_27_true] [%tmp.37 @D__dev_Monkey_C_Essence_source_Globals_mc_41_4_41_27_end];
     ret %tmp.37;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_36_56_43_0_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_36_56_43_0_stop:
 }
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 45; @position = 4; @symbol_vardef = [fieldLayout,45,4,15]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 45; @position = 4; @symbol_vardef = [fieldLayout,45,4,15]; ]
 var fieldLayout;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 80; @position = 4; @symbol_vardef = [fieldCatalog,80,4,16]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 80; @position = 4; @symbol_vardef = [fieldCatalog,80,4,16]; ]
 var fieldCatalog;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 202; @position = 4; @symbol_vardef = [graphCatalog,202,4,16]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 202; @position = 4; @symbol_vardef = [graphCatalog,202,4,16]; ]
 var graphCatalog;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 249; @symbol_functiondef = [loadLayout,249,9,19]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 249; @symbol_functiondef = [loadLayout,249,9,19]; ]
 function loadLayout() {
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_249_22_253_0_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 250 2 ]
-    for @D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test @D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_incr @D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_init:
-    [ "D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_begin" "D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end" ]
+D__dev_Monkey_C_Essence_source_Globals_mc_249_22_253_0_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 250 2 ]
+    for @D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test @D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_incr @D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_init:
+    [ "D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_begin" "D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end" ]
     %i.1 = local;
     symbol [ i %i.1 250 11 12 ];
     %tmp.1 = 0;
     lputv %i.1 %tmp.1;
     symbol [ i %i.1 250 11 12 ];
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test:
+D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test:
     %tmp.2 = lgetv %i.1;
     symbol [ i %tmp.2 250 18 19 ];
     symbol [ fieldLayout %tmp.4 250 22 33 ];
@@ -302,10 +302,10 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test:
     %tmp.5 = getv function %tmp.4 :size;
     %tmp.6 = invoke %tmp.4 %tmp.5();
     %tmp.7 = lt %tmp.2 %tmp.6;
-    bf %tmp.7 @D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_begin:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_53_252_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 251 4 ]
+    bf %tmp.7 @D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end;
+D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_begin:
+D__dev_Monkey_C_Essence_source_Globals_mc_250_53_252_2_start:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 251 4 ]
     symbol [ fieldLayout %tmp.8 251 4 15 ];
     %tmp.8 = getv self :fieldLayout;
     %tmp.9 = lgetv %i.1;
@@ -327,28 +327,28 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_53_252_2_start:
     %tmp.21 = invoke %tmp.13 %tmp.14(%tmp.20);
     %tmp.22 = "data";
     aputv %tmp.10 %tmp.22 %tmp.21;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_53_252_2_stop:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_incr:
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 250 ]
+D__dev_Monkey_C_Essence_source_Globals_mc_250_53_252_2_stop:
+D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_incr:
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 250 ]
     %tmp.23 = lgetv %i.1;
     symbol [ i %tmp.23 250 46 47 ];
     %tmp.24 = 1;
     %tmp.25 = add %tmp.23 %tmp.24;
     lputv %i.1 %tmp.25;
     symbol [ i %i.1 250 42 43 ];
-    goto @D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test;
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end:
-D_dev_projects_Monkey_C_Essence_source_Globals_mc_249_22_253_0_stop:
+    goto @D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_test;
+D__dev_Monkey_C_Essence_source_Globals_mc_250_2_252_2_for_end:
+D__dev_Monkey_C_Essence_source_Globals_mc_249_22_253_0_stop:
 }
-[ @file = "D:\dev\projects\Monkey C\Essence\source\Globals.mc"; @line = 1; ]
+[ @file = "D:\dev\Monkey C\Essence\source\Globals.mc"; @line = 1; ]
 <init> {
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 5 11 ]
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 5 11 ]
     %tmp.26 = newa 0;
     putv self :bboxes %tmp.26;
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 6 11 ]
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 6 11 ]
     %tmp.27 = newa 0;
     putv self :boundingBoxes %tmp.27;
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 45 4 ]
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 45 4 ]
     %tmp.28 = newa 8;
     %tmp.29 = newd 2;
     %tmp.30 = "id";
@@ -439,7 +439,7 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_249_22_253_0_stop:
     %tmp.115 = dup %tmp.105;
     %tmp.116 = aputv %tmp.115 7 %tmp.114;
     putv self :fieldLayout %tmp.116;
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 80 4 ]
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 80 4 ]
     %tmp.117 = newa 17;
     %tmp.118 = newd 5;
     %tmp.119 = "id";
@@ -1068,7 +1068,7 @@ D_dev_projects_Monkey_C_Essence_source_Globals_mc_249_22_253_0_stop:
     %tmp.642 = dup %tmp.612;
     %tmp.643 = aputv %tmp.642 16 %tmp.641;
     putv self :fieldCatalog %tmp.643;
-[ "D:\dev\projects\Monkey C\Essence\source\Globals.mc" 202 4 ]
+[ "D:\dev\Monkey C\Essence\source\Globals.mc" 202 4 ]
     %tmp.644 = newa 4;
     %tmp.645 = newd 9;
     %tmp.646 = "id";

@@ -1,25 +1,25 @@
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Application,7,14,25]; @symbol_importdef<2> = [Storage,7,26,33]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Application,7,14,25]; @symbol_importdef<2> = [Storage,7,26,33]; ]
 import Toybox.Application.Storage;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Lang,8,14,18]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Lang,8,14,18]; ]
 import Toybox.Lang;
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [WatchUi,9,14,21]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [WatchUi,9,14,21]; ]
 import Toybox.WatchUi;
 //! The app settings menu
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; @symbol_classdef = [EssenceSettingsMenu,12,6,25]; @symbol_extends<0> = [WatchUi,12,34,41]; @symbol_extends<1> = [Menu2,12,42,47]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; @symbol_classdef = [EssenceSettingsMenu,12,6,25]; @symbol_extends<0> = [WatchUi,12,34,41]; @symbol_extends<1> = [Menu2,12,42,47]; ]
 class EssenceSettingsMenu extends WatchUi.Menu2 {
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
     <init> {
     }
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
     static
     <init> {
     }
     //! Constructor
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 14; @symbol_functiondef = [initialize,14,18,28]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 14; @symbol_functiondef = [initialize,14,18,28]; ]
     public
     function initialize() as Void {
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 15 4 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 15 4 ]
         symbol [ Menu2 %tmp.2 15 4 9 ];
         %tmp.2 = getv ? :Menu2;
         symbol [ initialize %tmp.3 15 10 20 ];
@@ -36,18 +36,18 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_start:
         %tmp.11 = dup %tmp.4;
         %tmp.12 = aputv %tmp.11 %tmp.6 %tmp.10;
         invoke %tmp.2 %tmp.3(%tmp.12);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 16 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 16 4 ]
         %tmp.13 = self;
         symbol [ buildMenu %tmp.14 16 4 13 ];
         %tmp.14 = getv function %tmp.13 :buildMenu;
         invoke %tmp.13 %tmp.14();
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_stop:
     }
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 19; @symbol_functiondef = [buildMenu,19,11,20]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 19; @symbol_functiondef = [buildMenu,19,11,20]; ]
     function buildMenu() {
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 20 4 ]
-        [ "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start" "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop" ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 20 4 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start" "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop" ]
         %value.1 = local;
         symbol [ value %value.1 20 8 13 ];
         %tmp.1 = self;
@@ -60,7 +60,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
         lputv %value.1 %tmp.6;
         symbol [ value %value.1 20 8 13 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 21 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 21 4 ]
         symbol [ Menu2 %tmp.8 21 4 9 ];
         %tmp.8 = getv ? :Menu2;
         symbol [ addItem %tmp.9 21 10 17 ];
@@ -82,7 +82,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.21 = null;
         %tmp.10 = newc %tmp.13 (%tmp.17, %tmp.18, %tmp.19, %tmp.20, %tmp.21);
         invoke %tmp.8 %tmp.9(%tmp.10);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 25 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 25 4 ]
         %tmp.22 = self;
         symbol [ getApp %tmp.23 25 12 18 ];
         %tmp.23 = getv function %tmp.22 :getApp;
@@ -93,7 +93,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
         lputv %value.1 %tmp.27;
         symbol [ value %value.1 25 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 26 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 26 4 ]
         symbol [ Menu2 %tmp.29 26 4 9 ];
         %tmp.29 = getv ? :Menu2;
         symbol [ addItem %tmp.30 26 10 17 ];
@@ -115,7 +115,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.42 = null;
         %tmp.31 = newc %tmp.34 (%tmp.38, %tmp.39, %tmp.40, %tmp.41, %tmp.42);
         invoke %tmp.29 %tmp.30(%tmp.31);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 30 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 30 4 ]
         %tmp.43 = self;
         symbol [ getApp %tmp.44 30 12 18 ];
         %tmp.44 = getv function %tmp.43 :getApp;
@@ -126,7 +126,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
         lputv %value.1 %tmp.48;
         symbol [ value %value.1 30 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 31 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 31 4 ]
         symbol [ Menu2 %tmp.50 31 4 9 ];
         %tmp.50 = getv ? :Menu2;
         symbol [ addItem %tmp.51 31 10 17 ];
@@ -152,7 +152,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.67 = newd 0;
         %tmp.52 = newc %tmp.55 (%tmp.59, %tmp.65, %tmp.66, %tmp.67);
         invoke %tmp.50 %tmp.51(%tmp.52);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 39 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 39 4 ]
         %tmp.68 = self;
         symbol [ getApp %tmp.69 39 12 18 ];
         %tmp.69 = getv function %tmp.68 :getApp;
@@ -163,7 +163,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
         lputv %value.1 %tmp.73;
         symbol [ value %value.1 39 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 40 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 40 4 ]
         symbol [ Menu2 %tmp.75 40 4 9 ];
         %tmp.75 = getv ? :Menu2;
         symbol [ addItem %tmp.76 40 10 17 ];
@@ -189,7 +189,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.92 = newd 0;
         %tmp.77 = newc %tmp.80 (%tmp.84, %tmp.90, %tmp.91, %tmp.92);
         invoke %tmp.75 %tmp.76(%tmp.77);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 48 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 48 4 ]
         %tmp.93 = self;
         symbol [ getApp %tmp.94 48 12 18 ];
         %tmp.94 = getv function %tmp.93 :getApp;
@@ -200,7 +200,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.98 = invoke %tmp.95 %tmp.96(%tmp.97);
         lputv %value.1 %tmp.98;
         symbol [ value %value.1 48 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 49 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 49 4 ]
         symbol [ Menu2 %tmp.100 49 4 9 ];
         %tmp.100 = getv ? :Menu2;
         symbol [ addItem %tmp.101 49 10 17 ];
@@ -226,7 +226,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.117 = newd 0;
         %tmp.102 = newc %tmp.105 (%tmp.109, %tmp.115, %tmp.116, %tmp.117);
         invoke %tmp.100 %tmp.101(%tmp.102);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 57 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 57 4 ]
         %tmp.118 = self;
         symbol [ getApp %tmp.119 57 12 18 ];
         %tmp.119 = getv function %tmp.118 :getApp;
@@ -237,7 +237,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.123 = invoke %tmp.120 %tmp.121(%tmp.122);
         lputv %value.1 %tmp.123;
         symbol [ value %value.1 57 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 58 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 58 4 ]
         symbol [ Menu2 %tmp.125 58 4 9 ];
         %tmp.125 = getv ? :Menu2;
         symbol [ addItem %tmp.126 58 10 17 ];
@@ -263,7 +263,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.142 = newd 0;
         %tmp.127 = newc %tmp.130 (%tmp.134, %tmp.140, %tmp.141, %tmp.142);
         invoke %tmp.125 %tmp.126(%tmp.127);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 66 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 66 4 ]
         %tmp.143 = self;
         symbol [ getApp %tmp.144 66 12 18 ];
         %tmp.144 = getv function %tmp.143 :getApp;
@@ -274,7 +274,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.148 = invoke %tmp.145 %tmp.146(%tmp.147);
         lputv %value.1 %tmp.148;
         symbol [ value %value.1 66 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 67 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 67 4 ]
         symbol [ Menu2 %tmp.150 67 4 9 ];
         %tmp.150 = getv ? :Menu2;
         symbol [ addItem %tmp.151 67 10 17 ];
@@ -300,7 +300,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.167 = newd 0;
         %tmp.152 = newc %tmp.155 (%tmp.159, %tmp.165, %tmp.166, %tmp.167);
         invoke %tmp.150 %tmp.151(%tmp.152);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 75 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 75 4 ]
         %tmp.168 = self;
         symbol [ getApp %tmp.169 75 12 18 ];
         %tmp.169 = getv function %tmp.168 :getApp;
@@ -311,7 +311,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.173 = invoke %tmp.170 %tmp.171(%tmp.172);
         lputv %value.1 %tmp.173;
         symbol [ value %value.1 75 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 76 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 76 4 ]
         symbol [ Menu2 %tmp.175 76 4 9 ];
         %tmp.175 = getv ? :Menu2;
         symbol [ addItem %tmp.176 76 10 17 ];
@@ -337,7 +337,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.192 = newd 0;
         %tmp.177 = newc %tmp.180 (%tmp.184, %tmp.190, %tmp.191, %tmp.192);
         invoke %tmp.175 %tmp.176(%tmp.177);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 84 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 84 4 ]
         %tmp.193 = self;
         symbol [ getApp %tmp.194 84 12 18 ];
         %tmp.194 = getv function %tmp.193 :getApp;
@@ -348,7 +348,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.198 = invoke %tmp.195 %tmp.196(%tmp.197);
         lputv %value.1 %tmp.198;
         symbol [ value %value.1 84 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 85 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 85 4 ]
         symbol [ Menu2 %tmp.200 85 4 9 ];
         %tmp.200 = getv ? :Menu2;
         symbol [ addItem %tmp.201 85 10 17 ];
@@ -374,7 +374,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.217 = newd 0;
         %tmp.202 = newc %tmp.205 (%tmp.209, %tmp.215, %tmp.216, %tmp.217);
         invoke %tmp.200 %tmp.201(%tmp.202);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 93 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 93 4 ]
         %tmp.218 = self;
         symbol [ getApp %tmp.219 93 12 18 ];
         %tmp.219 = getv function %tmp.218 :getApp;
@@ -385,7 +385,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
         lputv %value.1 %tmp.223;
         symbol [ value %value.1 93 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 94 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 94 4 ]
         symbol [ Menu2 %tmp.225 94 4 9 ];
         %tmp.225 = getv ? :Menu2;
         symbol [ addItem %tmp.226 94 10 17 ];
@@ -411,7 +411,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.242 = newd 0;
         %tmp.227 = newc %tmp.230 (%tmp.234, %tmp.240, %tmp.241, %tmp.242);
         invoke %tmp.225 %tmp.226(%tmp.227);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 103 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 103 4 ]
         %tmp.243 = self;
         symbol [ getApp %tmp.244 103 12 18 ];
         %tmp.244 = getv function %tmp.243 :getApp;
@@ -422,7 +422,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.248 = invoke %tmp.245 %tmp.246(%tmp.247);
         lputv %value.1 %tmp.248;
         symbol [ value %value.1 103 4 9 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 104 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 104 4 ]
         symbol [ Menu2 %tmp.250 104 4 9 ];
         %tmp.250 = getv ? :Menu2;
         symbol [ addItem %tmp.251 104 10 17 ];
@@ -448,40 +448,40 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
         %tmp.267 = newd 0;
         %tmp.252 = newc %tmp.255 (%tmp.259, %tmp.265, %tmp.266, %tmp.267);
         invoke %tmp.250 %tmp.251(%tmp.252);
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop:
     }
 }
 //! Input handler for the app settings menu
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; @symbol_classdef = [EssenceSettingsMenuDelegate,116,6,33]; @symbol_extends<0> = [WatchUi,116,42,49]; @symbol_extends<1> = [Menu2InputDelegate,116,50,68]; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; @symbol_classdef = [EssenceSettingsMenuDelegate,116,6,33]; @symbol_extends<0> = [WatchUi,116,42,49]; @symbol_extends<1> = [Menu2InputDelegate,116,50,68]; ]
 class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
     <init> {
     }
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
     static
     <init> {
     }
     //! Constructor
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 118; @symbol_functiondef = [initialize,118,18,28]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 118; @symbol_functiondef = [initialize,118,18,28]; ]
     public
     function initialize() as Void {
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 119 4 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 119 4 ]
         symbol [ Menu2InputDelegate %tmp.2 119 4 22 ];
         %tmp.2 = getv ? :Menu2InputDelegate;
         symbol [ initialize %tmp.3 119 23 33 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_stop:
     }
     //! Handle a menu item being selected
     //! @param menuItem The menu item selected
-    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 124; @symbol_functiondef = [onSelect,124,18,26]; @symbol_param<0> = [menuItem,124,27,35]; @symbol_param<0>_type<0> = [MenuItem,124,39,47]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 124; @symbol_functiondef = [onSelect,124,18,26]; @symbol_param<0> = [menuItem,124,27,35]; @symbol_param<0>_type<0> = [MenuItem,124,39,47]; ]
     public
     function onSelect(menuItem as MenuItem) as Void {
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 125 4 ]
-        [ "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start" "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop" ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 125 4 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start" "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop" ]
         %itemId.1 = local;
         symbol [ itemId %itemId.1 125 8 14 ];
         %tmp.1 = lgetv %menuItem;
@@ -491,33 +491,33 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %itemId.1 %tmp.3;
         symbol [ itemId %itemId.1 125 8 14 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 126 4 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 126 4 ]
         %tmp.4 = lgetv %itemId.1;
         symbol [ itemId %tmp.4 126 13 19 ];
         %tmp.5 = as %tmp.4 Number;
         symbol [ Number %tmp.5 126 23 29 ];
         lputv %itemId.1 %tmp.5;
         symbol [ itemId %itemId.1 126 4 10 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 128 4 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_stmt:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 128 4 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_stmt:
         %tmp.6 = lgetv %itemId.1;
         symbol [ itemId %tmp.6 128 8 14 ];
         %tmp.7 = 1;
         %tmp.8 = eq %tmp.6 %tmp.7;
-        bf %tmp.8 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 129 6 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_stmt:
+        bf %tmp.8 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 129 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_stmt:
         %tmp.9 = lgetv %menuItem;
         symbol [ menuItem %tmp.9 129 10 18 ];
         symbol [ ToggleMenuItem %tmp.11 129 30 44 ];
         %tmp.11 = getv ? :ToggleMenuItem;
         %tmp.12 = isa %tmp.9 %tmp.11;
-        bf %tmp.12 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 130 8 ]
+        bf %tmp.12 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 130 8 ]
         %tmp.13 = self;
         symbol [ getApp %tmp.14 130 8 14 ];
         %tmp.14 = getv function %tmp.13 :getApp;
@@ -532,32 +532,32 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_start
         %tmp.20 = getv function %tmp.19 :isEnabled;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         invoke %tmp.15 %tmp.16(%tmp.17, %tmp.21);
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 132 11 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 132 11 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_stmt:
         %tmp.22 = lgetv %itemId.1;
         symbol [ itemId %tmp.22 132 15 21 ];
         %tmp.23 = 2;
         %tmp.24 = eq %tmp.22 %tmp.23;
-        bf %tmp.24 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 133 6 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_stmt:
+        bf %tmp.24 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 133 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_stmt:
         %tmp.25 = lgetv %menuItem;
         symbol [ menuItem %tmp.25 133 10 18 ];
         symbol [ ToggleMenuItem %tmp.27 133 30 44 ];
         %tmp.27 = getv ? :ToggleMenuItem;
         %tmp.28 = isa %tmp.25 %tmp.27;
-        bf %tmp.28 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 134 8 ]
+        bf %tmp.28 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 134 8 ]
         %tmp.29 = self;
         symbol [ getApp %tmp.30 134 8 14 ];
         %tmp.30 = getv function %tmp.29 :getApp;
@@ -572,30 +572,30 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_start
         %tmp.36 = getv function %tmp.35 :isEnabled;
         %tmp.37 = invoke %tmp.35 %tmp.36();
         invoke %tmp.31 %tmp.32(%tmp.33, %tmp.37);
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 136 11 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 136 11 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_stmt:
         %tmp.38 = lgetv %itemId.1;
         symbol [ itemId %tmp.38 136 15 21 ];
         %tmp.39 = 10;
         %tmp.40 = lte %tmp.38 %tmp.39;
-        bf %tmp.40 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 137 6 ]
+        bf %tmp.40 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 137 6 ]
         %tmp.41 = lgetv %itemId.1;
         symbol [ itemId %tmp.41 137 15 21 ];
         %tmp.42 = 3;
         %tmp.43 = sub %tmp.41 %tmp.42;
         lputv %itemId.1 %tmp.43;
         symbol [ itemId %itemId.1 137 6 12 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 139 6 ]
-        [ "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start" "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop" ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 139 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start" "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop" ]
         %value.2 = local;
         symbol [ value %value.2 139 10 15 ];
         %tmp.44 = self;
@@ -614,8 +614,8 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start
         %tmp.54 = invoke %tmp.46 %tmp.47(%tmp.53);
         lputv %value.2 %tmp.54;
         symbol [ value %value.2 139 10 15 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 141 6 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_stmt:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 141 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_stmt:
         %tmp.55 = lgetv %value.2;
         symbol [ value %tmp.55 141 10 15 ];
         symbol [ fieldCatalog %tmp.57 141 18 30 ];
@@ -626,27 +626,27 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_stm
         %tmp.60 = 1;
         %tmp.61 = sub %tmp.59 %tmp.60;
         %tmp.62 = lt %tmp.55 %tmp.61;
-        bf %tmp.62 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 142 8 ]
+        bf %tmp.62 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 142 8 ]
         %tmp.63 = lgetv %value.2;
         symbol [ value %tmp.63 142 16 21 ];
         %tmp.64 = 1;
         %tmp.65 = add %tmp.63 %tmp.64;
         lputv %value.2 %tmp.65;
         symbol [ value %value.2 142 8 13 ];
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 144 8 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 144 8 ]
         %tmp.66 = 0;
         lputv %value.2 %tmp.66;
         symbol [ value %value.2 144 8 13 ];
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_stop:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 147 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 147 6 ]
         %tmp.67 = lgetv %menuItem;
         symbol [ menuItem %tmp.67 147 6 14 ];
         symbol [ setSubLabel %tmp.68 147 15 26 ];
@@ -659,7 +659,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end
         %tmp.73 = "labelExt";
         %tmp.74 = agetv %tmp.72 %tmp.73;
         invoke %tmp.67 %tmp.68(%tmp.74);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 148 6 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 148 6 ]
         %tmp.75 = self;
         symbol [ getApp %tmp.76 148 6 12 ];
         %tmp.76 = getv function %tmp.75 :getApp;
@@ -676,19 +676,19 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end
         %tmp.85 = lgetv %value.2;
         symbol [ value %tmp.85 148 54 59 ];
         invoke %tmp.77 %tmp.78(%tmp.84, %tmp.85);
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 150 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 150 6 ]
         %tmp.86 = lgetv %itemId.1;
         symbol [ itemId %tmp.86 150 15 21 ];
         %tmp.87 = 2;
         %tmp.88 = sub %tmp.86 %tmp.87;
         lputv %itemId.1 %tmp.88;
         symbol [ itemId %itemId.1 150 6 12 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 151 6 ]
-        [ "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start" "D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop" ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 151 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start" "D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop" ]
         %value.3 = local;
         symbol [ value %value.3 151 10 15 ];
         %tmp.89 = self;
@@ -701,8 +701,8 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start
         %tmp.94 = invoke %tmp.91 %tmp.92(%tmp.93);
         lputv %value.3 %tmp.94;
         symbol [ value %value.3 151 10 15 ];
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 153 6 ]
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_stmt:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 153 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_stmt:
         %tmp.95 = lgetv %value.3;
         symbol [ value %tmp.95 153 10 15 ];
         symbol [ graphCatalog %tmp.97 153 18 30 ];
@@ -713,27 +713,27 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_stm
         %tmp.100 = 1;
         %tmp.101 = sub %tmp.99 %tmp.100;
         %tmp.102 = lt %tmp.95 %tmp.101;
-        bf %tmp.102 @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_true:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 154 8 ]
+        bf %tmp.102 @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 154 8 ]
         %tmp.103 = lgetv %value.3;
         symbol [ value %tmp.103 154 16 21 ];
         %tmp.104 = 1;
         %tmp.105 = add %tmp.103 %tmp.104;
         lputv %value.3 %tmp.105;
         symbol [ value %value.3 154 8 13 ];
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_stop:
-        goto @D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_start:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 156 8 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 156 8 ]
         %tmp.106 = 0;
         lputv %value.3 %tmp.106;
         symbol [ value %value.3 156 8 13 ];
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_stop:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 159 6 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 159 6 ]
         %tmp.107 = lgetv %menuItem;
         symbol [ menuItem %tmp.107 159 6 14 ];
         symbol [ setSubLabel %tmp.108 159 15 26 ];
@@ -746,7 +746,7 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end
         %tmp.113 = "labelExt";
         %tmp.114 = agetv %tmp.112 %tmp.113;
         invoke %tmp.107 %tmp.108(%tmp.114);
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 160 6 ]
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 160 6 ]
         %tmp.115 = self;
         symbol [ getApp %tmp.116 160 6 12 ];
         %tmp.116 = getv function %tmp.115 :getApp;
@@ -757,17 +757,17 @@ D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end
         %tmp.120 = lgetv %value.3;
         symbol [ value %tmp.120 160 40 45 ];
         invoke %tmp.117 %tmp.118(%tmp.119, %tmp.120);
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end:
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end:
-[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 162 4 ]
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc" 162 4 ]
         %tmp.121 = true;
         symbol [ redrawLayout ? 162 4 16 ];
         putv self :redrawLayout %tmp.121;
-D_dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop:
+D__dev_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop:
     }
 }
-[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; ]
+[ @file = "D:\dev\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; ]
 <init> {
 }

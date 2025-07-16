@@ -693,6 +693,11 @@ class EssenceView extends WatchUi.WatchFace {
       FieldIcons += "R";
     }
 
+    settings = System.getDeviceSettings().doNotDisturb;
+    if (settings) {
+      FieldIcons += (127).toChar().toString();
+    }
+
     if (FieldIcons.length() > 0) {
       var view = View.findDrawableById("FieldIcons") as Text;
       view.setText(FieldIcons);
@@ -850,13 +855,17 @@ class EssenceView extends WatchUi.WatchFace {
                 graphCatalog[showGraph]["colorDark"],
                 Graphics.COLOR_TRANSPARENT
               );
-              dc.fillRectangle(xVal, yVal, binPixels, height);
 
+              try {
+                dc.fillRectangle(xVal, yVal, binPixels, height);
+              } catch (ex) {}
               dc.setColor(
                 graphCatalog[showGraph]["color"],
                 Graphics.COLOR_TRANSPARENT
               );
-              dc.fillRectangle(xVal, yVal, binPixels, 2 * binPixels);
+              try {
+                dc.fillRectangle(xVal, yVal, binPixels, 2 * binPixels);
+              } catch (ex) {}
             }
 
             if (graphBinMin < graphMin) {
