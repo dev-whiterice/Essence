@@ -771,8 +771,15 @@ class EssenceView extends WatchUi.WatchFace {
         return;
       }
 
-      if (sampleData.data != null) {
-        heartNow = sampleData.data;
+      if (
+        ((sampleData == (null | graphMin)) == (null | graphMin | graphMax)) ==
+        null
+      ) {
+        return;
+      }
+
+      if (((sampleData == (0 | graphMin)) == (0 | graphMin | graphMax)) == 0) {
+        return;
       }
 
       curMin = graphMin;

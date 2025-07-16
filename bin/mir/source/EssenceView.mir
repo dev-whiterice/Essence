@@ -4553,7 +4553,7 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_708_33_744_2_stop:
     }
     [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 746; @symbol_functiondef = [drawGraph,746,11,20]; @symbol_param<0> = [dc,746,21,23]; ]
     function drawGraph(dc) {
-D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 747 4 ]
 D__dev_Monkey_C_Essence_source_EssenceView_mc_747_4_749_4_if_stmt:
         symbol [ graphCatalog %tmp.2 747 8 20 ];
@@ -4574,35 +4574,35 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_747_53_749_4_stop:
         goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_747_4_749_4_if_end;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_747_4_749_4_if_end:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 751 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %heartNow.1 = local;
         symbol [ heartNow %heartNow.1 751 8 16 ];
         %tmp.10 = 0;
         lputv %heartNow.1 %tmp.10;
         symbol [ heartNow %heartNow.1 751 8 16 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 752 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %curMin.2 = local;
         symbol [ curMin %curMin.2 752 8 14 ];
         %tmp.11 = 0;
         lputv %curMin.2 %tmp.11;
         symbol [ curMin %curMin.2 752 8 14 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 753 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %curMax.3 = local;
         symbol [ curMax %curMax.3 753 8 14 ];
         %tmp.12 = 0;
         lputv %curMax.3 %tmp.12;
         symbol [ curMax %curMax.3 753 8 14 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 754 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %maxSecs.4 = local;
         symbol [ maxSecs %maxSecs.4 754 8 15 ];
         %tmp.13 = 14400;
         lputv %maxSecs.4 %tmp.13;
         symbol [ maxSecs %maxSecs.4 754 8 15 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 756 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %getSensorHistory.5 = local;
         symbol [ getSensorHistory %getSensorHistory.5 756 8 24 ];
         symbol [ Lang %tmp.16 756 31 35 ];
@@ -4624,7 +4624,7 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_747_4_749_4_if_end:
         lputv %getSensorHistory.5 %tmp.14;
         symbol [ getSensorHistory %getSensorHistory.5 756 8 24 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 761 4 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop" ]
         %sample.6 = local;
         symbol [ sample %sample.6 761 8 14 ];
         %tmp.28 = lgetv %getSensorHistory.5;
@@ -4650,16 +4650,16 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_747_4_749_4_if_end:
         lputv %sample.6 %tmp.43;
         symbol [ sample %sample.6 761 8 14 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 766 4 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_880_4_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_887_4_if_stmt:
         %tmp.44 = lgetv %sample.6;
         symbol [ sample %tmp.44 766 8 14 ];
         %tmp.45 = null;
         %tmp.46 = ne %tmp.44 %tmp.45;
-        bf %tmp.46 @D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_880_4_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_880_4_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start:
+        bf %tmp.46 @D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_887_4_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_887_4_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 767 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
         %graphMin.7 = local;
         symbol [ graphMin %graphMin.7 767 10 18 ];
         %tmp.47 = lgetv %sample.6;
@@ -4671,7 +4671,7 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start:
         lputv %graphMin.7 %tmp.50;
         symbol [ graphMin %graphMin.7 767 10 18 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 768 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
         %graphMax.8 = local;
         symbol [ graphMax %graphMax.8 768 10 18 ];
         %tmp.51 = lgetv %sample.6;
@@ -4683,7 +4683,7 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start:
         lputv %graphMax.8 %tmp.54;
         symbol [ graphMax %graphMax.8 768 10 18 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 769 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
         %sampleData.9 = local;
         symbol [ sampleData %sampleData.9 769 10 20 ];
         %tmp.55 = lgetv %sample.6;
@@ -4709,743 +4709,776 @@ D__dev_Monkey_C_Essence_source_EssenceView_mc_770_30_772_6_stop:
         goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_770_6_772_6_if_end;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_770_6_772_6_if_end:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 774 6 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_776_6_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_779_6_if_stmt:
         %tmp.62 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.62 774 10 20 ];
-        symbol [ data %tmp.63 774 21 25 ];
-        %tmp.63 = getv %tmp.62 :data;
-        %tmp.64 = null;
-        %tmp.65 = ne %tmp.63 %tmp.64;
-        bf %tmp.65 @D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_776_6_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_776_6_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_774_35_776_6_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 775 8 ]
-        %tmp.66 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.66 775 19 29 ];
-        symbol [ data %tmp.67 775 30 34 ];
-        %tmp.67 = getv %tmp.66 :data;
-        lputv %heartNow.1 %tmp.67;
-        symbol [ heartNow %heartNow.1 775 8 16 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_774_35_776_6_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_776_6_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_776_6_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 778 6 ]
+        symbol [ sampleData %tmp.62 775 10 20 ];
+        %tmp.63 = null;
+        %tmp.64 = lgetv %graphMin.7;
+        symbol [ graphMin %tmp.64 775 32 40 ];
+        %tmp.65 = bitor %tmp.63 %tmp.64;
+        %tmp.66 = eq %tmp.62 %tmp.65;
+        %tmp.67 = null;
         %tmp.68 = lgetv %graphMin.7;
-        symbol [ graphMin %tmp.68 778 15 23 ];
-        lputv %curMin.2 %tmp.68;
-        symbol [ curMin %curMin.2 778 6 12 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 779 6 ]
-        %tmp.69 = lgetv %graphMax.8;
-        symbol [ graphMax %tmp.69 779 15 23 ];
-        lputv %curMax.3 %tmp.69;
-        symbol [ curMax %curMax.3 779 6 12 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 780 6 ]
-        %tmp.70 = 1000;
-        lputv %graphMin.7 %tmp.70;
-        symbol [ graphMin %graphMin.7 780 6 14 ];
+        symbol [ graphMin %tmp.68 775 54 62 ];
+        %tmp.69 = bitor %tmp.67 %tmp.68;
+        %tmp.70 = lgetv %graphMax.8;
+        symbol [ graphMax %tmp.70 775 65 73 ];
+        %tmp.71 = bitor %tmp.69 %tmp.70;
+        %tmp.72 = eq %tmp.66 %tmp.71;
+        %tmp.73 = null;
+        %tmp.74 = eq %tmp.72 %tmp.73;
+        bf %tmp.74 @D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_779_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_779_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_777_8_779_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 778 8 ]
+        ret ?;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_777_8_779_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_779_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_774_6_779_6_if_end:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 781 6 ]
-        %tmp.71 = 0;
-        lputv %graphMax.8 %tmp.71;
-        symbol [ graphMax %graphMax.8 781 6 14 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 783 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %totHeight.10 = local;
-        symbol [ totHeight %totHeight.10 783 10 19 ];
-        %tmp.72 = 30;
-        lputv %totHeight.10 %tmp.72;
-        symbol [ totHeight %totHeight.10 783 10 19 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 784 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %totWidth.11 = local;
-        symbol [ totWidth %totWidth.11 784 10 18 ];
-        %tmp.73 = 70;
-        lputv %totWidth.11 %tmp.73;
-        symbol [ totWidth %totWidth.11 784 10 18 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_781_6_783_6_if_stmt:
+        %tmp.75 = lgetv %sampleData.9;
+        symbol [ sampleData %tmp.75 781 12 22 ];
+        %tmp.76 = 0;
+        %tmp.77 = lgetv %graphMin.7;
+        symbol [ graphMin %tmp.77 781 31 39 ];
+        %tmp.78 = bitor %tmp.76 %tmp.77;
+        %tmp.79 = eq %tmp.75 %tmp.78;
+        %tmp.80 = 0;
+        %tmp.81 = lgetv %graphMin.7;
+        symbol [ graphMin %tmp.81 781 50 58 ];
+        %tmp.82 = bitor %tmp.80 %tmp.81;
+        %tmp.83 = lgetv %graphMax.8;
+        symbol [ graphMax %tmp.83 781 61 69 ];
+        %tmp.84 = bitor %tmp.82 %tmp.83;
+        %tmp.85 = eq %tmp.79 %tmp.84;
+        %tmp.86 = 0;
+        %tmp.87 = eq %tmp.85 %tmp.86;
+        bf %tmp.87 @D__dev_Monkey_C_Essence_source_EssenceView_mc_781_6_783_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_781_6_783_6_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_781_78_783_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 782 8 ]
+        ret ?;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_781_78_783_6_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_781_6_783_6_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_781_6_783_6_if_end:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 785 6 ]
-        %tmp.74 = lgetv %totWidth.11;
-        symbol [ totWidth %tmp.74 785 17 25 ];
-        symbol [ graphWidthFactor %tmp.76 785 28 44 ];
-        %tmp.76 = getv ? :graphWidthFactor;
-        %tmp.77 = mul %tmp.74 %tmp.76;
-        lputv %totWidth.11 %tmp.77;
-        symbol [ totWidth %totWidth.11 785 6 14 ];
+        %tmp.88 = lgetv %graphMin.7;
+        symbol [ graphMin %tmp.88 785 15 23 ];
+        lputv %curMin.2 %tmp.88;
+        symbol [ curMin %curMin.2 785 6 12 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 786 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %binPixels.12 = local;
-        symbol [ binPixels %binPixels.12 786 10 19 ];
-        %tmp.78 = 1;
-        lputv %binPixels.12 %tmp.78;
-        symbol [ binPixels %binPixels.12 786 10 19 ];
+        %tmp.89 = lgetv %graphMax.8;
+        symbol [ graphMax %tmp.89 786 15 23 ];
+        lputv %curMax.3 %tmp.89;
+        symbol [ curMax %curMax.3 786 6 12 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 787 6 ]
+        %tmp.90 = 1000;
+        lputv %graphMin.7 %tmp.90;
+        symbol [ graphMin %graphMin.7 787 6 14 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 788 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %totBins.13 = local;
-        symbol [ totBins %totBins.13 788 10 17 ];
-        symbol [ Math %tmp.80 788 20 24 ];
-        %tmp.80 = getv ? :Math;
-        symbol [ ceil %tmp.81 788 25 29 ];
-        %tmp.81 = getv function %tmp.80 :ceil;
-        %tmp.82 = lgetv %totWidth.11;
-        symbol [ totWidth %tmp.82 788 30 38 ];
-        %tmp.83 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.83 788 41 50 ];
-        %tmp.84 = div %tmp.82 %tmp.83;
-        %tmp.85 = invoke %tmp.80 %tmp.81(%tmp.84);
-        symbol [ toNumber %tmp.86 788 52 60 ];
-        %tmp.86 = getv function %tmp.85 :toNumber;
-        %tmp.87 = invoke %tmp.85 %tmp.86();
-        lputv %totBins.13 %tmp.87;
-        symbol [ totBins %totBins.13 788 10 17 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 789 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %binWidthSecs.14 = local;
-        symbol [ binWidthSecs %binWidthSecs.14 789 10 22 ];
-        symbol [ Math %tmp.89 789 25 29 ];
-        %tmp.89 = getv ? :Math;
-        symbol [ floor %tmp.90 789 30 35 ];
-        %tmp.90 = getv function %tmp.89 :floor;
-        %tmp.91 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.91 790 9 18 ];
-        %tmp.92 = lgetv %maxSecs.4;
-        symbol [ maxSecs %tmp.92 790 21 28 ];
-        %tmp.93 = mul %tmp.91 %tmp.92;
+        %tmp.91 = 0;
+        lputv %graphMax.8 %tmp.91;
+        symbol [ graphMax %graphMax.8 788 6 14 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 790 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %totHeight.10 = local;
+        symbol [ totHeight %totHeight.10 790 10 19 ];
+        %tmp.92 = 30;
+        lputv %totHeight.10 %tmp.92;
+        symbol [ totHeight %totHeight.10 790 10 19 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 791 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %totWidth.11 = local;
+        symbol [ totWidth %totWidth.11 791 10 18 ];
+        %tmp.93 = 70;
+        lputv %totWidth.11 %tmp.93;
+        symbol [ totWidth %totWidth.11 791 10 18 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 792 6 ]
         %tmp.94 = lgetv %totWidth.11;
-        symbol [ totWidth %tmp.94 790 32 40 ];
-        %tmp.95 = div %tmp.93 %tmp.94;
-        %tmp.96 = invoke %tmp.89 %tmp.90(%tmp.95);
-        symbol [ toNumber %tmp.97 791 8 16 ];
-        %tmp.97 = getv function %tmp.96 :toNumber;
-        %tmp.98 = invoke %tmp.96 %tmp.97();
-        lputv %binWidthSecs.14 %tmp.98;
-        symbol [ binWidthSecs %binWidthSecs.14 789 10 22 ];
+        symbol [ totWidth %tmp.94 792 17 25 ];
+        symbol [ graphWidthFactor %tmp.96 792 28 44 ];
+        %tmp.96 = getv ? :graphWidthFactor;
+        %tmp.97 = mul %tmp.94 %tmp.96;
+        lputv %totWidth.11 %tmp.97;
+        symbol [ totWidth %totWidth.11 792 6 14 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 793 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %graphSecs.15 = local;
-        symbol [ graphSecs %graphSecs.15 793 10 19 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 794 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %graphValue.16 = local;
-        symbol [ graphValue %graphValue.16 794 10 20 ];
-        %tmp.99 = 0;
-        lputv %graphValue.16 %tmp.99;
-        symbol [ graphValue %graphValue.16 794 10 20 ];
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %binPixels.12 = local;
+        symbol [ binPixels %binPixels.12 793 10 19 ];
+        %tmp.98 = 1;
+        lputv %binPixels.12 %tmp.98;
+        symbol [ binPixels %binPixels.12 793 10 19 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 795 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %secsBin.17 = local;
-        symbol [ secsBin %secsBin.17 795 10 17 ];
-        %tmp.100 = 0;
-        lputv %secsBin.17 %tmp.100;
-        symbol [ secsBin %secsBin.17 795 10 17 ];
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %totBins.13 = local;
+        symbol [ totBins %totBins.13 795 10 17 ];
+        symbol [ Math %tmp.100 795 20 24 ];
+        %tmp.100 = getv ? :Math;
+        symbol [ ceil %tmp.101 795 25 29 ];
+        %tmp.101 = getv function %tmp.100 :ceil;
+        %tmp.102 = lgetv %totWidth.11;
+        symbol [ totWidth %tmp.102 795 30 38 ];
+        %tmp.103 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.103 795 41 50 ];
+        %tmp.104 = div %tmp.102 %tmp.103;
+        %tmp.105 = invoke %tmp.100 %tmp.101(%tmp.104);
+        symbol [ toNumber %tmp.106 795 52 60 ];
+        %tmp.106 = getv function %tmp.105 :toNumber;
+        %tmp.107 = invoke %tmp.105 %tmp.106();
+        lputv %totBins.13 %tmp.107;
+        symbol [ totBins %totBins.13 795 10 17 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 796 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %lastGraphSecs.18 = local;
-        symbol [ lastGraphSecs %lastGraphSecs.18 796 10 23 ];
-        %tmp.101 = lgetv %sample.6;
-        symbol [ sample %tmp.101 796 26 32 ];
-        %tmp.102 = as %tmp.101 { (!Null) };
-        symbol [ getNewestSampleTime %tmp.103 796 33 52 ];
-        %tmp.103 = getv function %tmp.102 :getNewestSampleTime;
-        %tmp.104 = invoke %tmp.102 %tmp.103();
-        symbol [ value %tmp.105 796 55 60 ];
-        %tmp.105 = getv function %tmp.104 :value;
-        %tmp.106 = invoke %tmp.104 %tmp.105();
-        lputv %lastGraphSecs.18 %tmp.106;
-        symbol [ lastGraphSecs %lastGraphSecs.18 796 10 23 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 797 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %graphBinMax.19 = local;
-        symbol [ graphBinMax %graphBinMax.19 797 10 21 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 798 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %graphBinMin.20 = local;
-        symbol [ graphBinMin %graphBinMin.20 798 10 21 ];
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %binWidthSecs.14 = local;
+        symbol [ binWidthSecs %binWidthSecs.14 796 10 22 ];
+        symbol [ Math %tmp.109 796 25 29 ];
+        %tmp.109 = getv ? :Math;
+        symbol [ floor %tmp.110 796 30 35 ];
+        %tmp.110 = getv function %tmp.109 :floor;
+        %tmp.111 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.111 797 9 18 ];
+        %tmp.112 = lgetv %maxSecs.4;
+        symbol [ maxSecs %tmp.112 797 21 28 ];
+        %tmp.113 = mul %tmp.111 %tmp.112;
+        %tmp.114 = lgetv %totWidth.11;
+        symbol [ totWidth %tmp.114 797 32 40 ];
+        %tmp.115 = div %tmp.113 %tmp.114;
+        %tmp.116 = invoke %tmp.109 %tmp.110(%tmp.115);
+        symbol [ toNumber %tmp.117 798 8 16 ];
+        %tmp.117 = getv function %tmp.116 :toNumber;
+        %tmp.118 = invoke %tmp.116 %tmp.117();
+        lputv %binWidthSecs.14 %tmp.118;
+        symbol [ binWidthSecs %binWidthSecs.14 796 10 22 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 800 6 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop" ]
-        %finished.21 = local;
-        symbol [ finished %finished.21 800 10 18 ];
-        %tmp.107 = false;
-        lputv %finished.21 %tmp.107;
-        symbol [ finished %finished.21 800 10 18 ];
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %graphSecs.15 = local;
+        symbol [ graphSecs %graphSecs.15 800 10 19 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 801 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %graphValue.16 = local;
+        symbol [ graphValue %graphValue.16 801 10 20 ];
+        %tmp.119 = 0;
+        lputv %graphValue.16 %tmp.119;
+        symbol [ graphValue %graphValue.16 801 10 20 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 802 6 ]
-        for @D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_test @D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_incr @D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_init:
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_begin" "D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_end" ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %secsBin.17 = local;
+        symbol [ secsBin %secsBin.17 802 10 17 ];
+        %tmp.120 = 0;
+        lputv %secsBin.17 %tmp.120;
+        symbol [ secsBin %secsBin.17 802 10 17 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 803 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %lastGraphSecs.18 = local;
+        symbol [ lastGraphSecs %lastGraphSecs.18 803 10 23 ];
+        %tmp.121 = lgetv %sample.6;
+        symbol [ sample %tmp.121 803 26 32 ];
+        %tmp.122 = as %tmp.121 { (!Null) };
+        symbol [ getNewestSampleTime %tmp.123 803 33 52 ];
+        %tmp.123 = getv function %tmp.122 :getNewestSampleTime;
+        %tmp.124 = invoke %tmp.122 %tmp.123();
+        symbol [ value %tmp.125 803 55 60 ];
+        %tmp.125 = getv function %tmp.124 :value;
+        %tmp.126 = invoke %tmp.124 %tmp.125();
+        lputv %lastGraphSecs.18 %tmp.126;
+        symbol [ lastGraphSecs %lastGraphSecs.18 803 10 23 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 804 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %graphBinMax.19 = local;
+        symbol [ graphBinMax %graphBinMax.19 804 10 21 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 805 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %graphBinMin.20 = local;
+        symbol [ graphBinMin %graphBinMin.20 805 10 21 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 807 6 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop" ]
+        %finished.21 = local;
+        symbol [ finished %finished.21 807 10 18 ];
+        %tmp.127 = false;
+        lputv %finished.21 %tmp.127;
+        symbol [ finished %finished.21 807 10 18 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 809 6 ]
+        for @D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_test @D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_incr @D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_init:
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_begin" "D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_end" ]
         %i.22 = local;
-        symbol [ i %i.22 802 15 16 ];
-        %tmp.108 = 0;
-        lputv %i.22 %tmp.108;
-        symbol [ i %i.22 802 15 16 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_test:
-        %tmp.109 = lgetv %i.22;
-        symbol [ i %tmp.109 802 22 23 ];
-        %tmp.110 = lgetv %totBins.13;
-        symbol [ totBins %tmp.110 802 26 33 ];
-        %tmp.111 = lt %tmp.109 %tmp.110;
-        bf %tmp.111 @D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_begin:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_40_879_6_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 803 8 ]
-        %tmp.112 = 0;
-        lputv %graphBinMax.19 %tmp.112;
-        symbol [ graphBinMax %graphBinMax.19 803 8 19 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 804 8 ]
-        %tmp.113 = 0;
-        lputv %graphBinMin.20 %tmp.113;
-        symbol [ graphBinMin %graphBinMin.20 804 8 19 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 806 8 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_806_8_878_8_if_stmt:
-        %tmp.114 = lgetv %finished.21;
-        symbol [ finished %tmp.114 806 13 21 ];
-        %tmp.115 = not %tmp.114;
-        bf %tmp.115 @D__dev_Monkey_C_Essence_source_EssenceView_mc_806_8_878_8_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_806_8_878_8_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_806_23_878_8_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 807 10 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_stmt:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_14_807_43_begin:
-        %tmp.116 = lgetv %secsBin.17;
-        symbol [ secsBin %tmp.116 807 14 21 ];
-        %tmp.117 = 0;
-        %tmp.118 = gt %tmp.116 %tmp.117;
-        bf %tmp.118 @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_29_807_43_true:
-        %tmp.119 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.119 807 29 39 ];
-        %tmp.120 = null;
-        %tmp.121 = ne %tmp.119 %tmp.120;
-        push %tmp.121;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_29_807_43_end:
-        %tmp.122 = phi [%tmp.118 @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_14_807_43_begin] [%tmp.121 @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_29_807_43_true] [%tmp.122 @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_29_807_43_end];
-        bf %tmp.122 @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_49_810_10_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 808 12 ]
-        %tmp.123 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.123 808 26 36 ];
-        %tmp.124 = as %tmp.123 { (!Null) };
-        lputv %graphBinMax.19 %tmp.124;
-        symbol [ graphBinMax %graphBinMax.19 808 12 23 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 809 12 ]
-        %tmp.125 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.125 809 26 36 ];
-        %tmp.126 = as %tmp.125 { (!Null) };
-        lputv %graphBinMin.20 %tmp.126;
-        symbol [ graphBinMin %graphBinMin.20 809 12 23 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_49_810_10_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_807_10_810_10_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 811 10 ]
-        while @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_test @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_test:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_17_811_40_begin:
-        %tmp.127 = lgetv %finished.21;
-        symbol [ finished %tmp.127 811 18 26 ];
-        %tmp.128 = not %tmp.127;
-        %tmp.129 = dup %tmp.128;
-        bf %tmp.129 @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_30_811_40_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_30_811_40_true:
-        %tmp.130 = lgetv %secsBin.17;
-        symbol [ secsBin %tmp.130 811 30 37 ];
-        %tmp.131 = lgetv %binWidthSecs.14;
-        symbol [ binWidthSecs %tmp.131 811 40 52 ];
-        %tmp.132 = lt %tmp.130 %tmp.131;
-        %tmp.133 = and %tmp.128 %tmp.132;
-        push %tmp.133;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_30_811_40_end:
-        %tmp.134 = phi [%tmp.129 @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_17_811_40_begin] [%tmp.133 @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_30_811_40_true] [%tmp.134 @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_30_811_40_end];
-        bf %tmp.134 @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_begin:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_54_836_10_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 812 12 ]
-        %tmp.135 = lgetv %sample.6;
-        symbol [ sample %tmp.135 812 25 31 ];
-        %tmp.136 = as %tmp.135 { (!Null) };
-        symbol [ next %tmp.137 812 32 36 ];
-        %tmp.137 = getv function %tmp.136 :next;
-        %tmp.138 = invoke %tmp.136 %tmp.137();
-        lputv %sampleData.9 %tmp.138;
-        symbol [ sampleData %sampleData.9 812 12 22 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 813 12 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_stmt:
-        %tmp.139 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.139 813 16 26 ];
+        symbol [ i %i.22 809 15 16 ];
+        %tmp.128 = 0;
+        lputv %i.22 %tmp.128;
+        symbol [ i %i.22 809 15 16 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_test:
+        %tmp.129 = lgetv %i.22;
+        symbol [ i %tmp.129 809 22 23 ];
+        %tmp.130 = lgetv %totBins.13;
+        symbol [ totBins %tmp.130 809 26 33 ];
+        %tmp.131 = lt %tmp.129 %tmp.130;
+        bf %tmp.131 @D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_begin:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_40_886_6_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 810 8 ]
+        %tmp.132 = 0;
+        lputv %graphBinMax.19 %tmp.132;
+        symbol [ graphBinMax %graphBinMax.19 810 8 19 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 811 8 ]
+        %tmp.133 = 0;
+        lputv %graphBinMin.20 %tmp.133;
+        symbol [ graphBinMin %graphBinMin.20 811 8 19 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 813 8 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_813_8_885_8_if_stmt:
+        %tmp.134 = lgetv %finished.21;
+        symbol [ finished %tmp.134 813 13 21 ];
+        %tmp.135 = not %tmp.134;
+        bf %tmp.135 @D__dev_Monkey_C_Essence_source_EssenceView_mc_813_8_885_8_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_813_8_885_8_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_813_23_885_8_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 814 10 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_14_814_43_begin:
+        %tmp.136 = lgetv %secsBin.17;
+        symbol [ secsBin %tmp.136 814 14 21 ];
+        %tmp.137 = 0;
+        %tmp.138 = gt %tmp.136 %tmp.137;
+        bf %tmp.138 @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_29_814_43_true:
+        %tmp.139 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.139 814 29 39 ];
         %tmp.140 = null;
         %tmp.141 = ne %tmp.139 %tmp.140;
-        bf %tmp.141 @D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_else_false;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_36_833_12_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 814 14 ]
-        %tmp.142 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.142 814 27 37 ];
-        %tmp.143 = as %tmp.142 { (!Null) };
-        symbol [ data %tmp.144 814 38 42 ];
-        %tmp.144 = getv %tmp.143 :data;
-        lputv %graphValue.16 %tmp.144;
-        symbol [ graphValue %graphValue.16 814 14 24 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 816 14 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_816_14_829_14_if_stmt:
+        push %tmp.141;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_29_814_43_end:
+        %tmp.142 = phi [%tmp.138 @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_14_814_43_begin] [%tmp.141 @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_29_814_43_true] [%tmp.142 @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_29_814_43_end];
+        bf %tmp.142 @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_49_817_10_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 815 12 ]
+        %tmp.143 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.143 815 26 36 ];
+        %tmp.144 = as %tmp.143 { (!Null) };
+        lputv %graphBinMax.19 %tmp.144;
+        symbol [ graphBinMax %graphBinMax.19 815 12 23 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 816 12 ]
         %tmp.145 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.145 816 18 28 ];
-        %tmp.146 = null;
-        %tmp.147 = ne %tmp.145 %tmp.146;
-        bf %tmp.147 @D__dev_Monkey_C_Essence_source_EssenceView_mc_816_14_829_14_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_816_14_829_14_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_816_38_829_14_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 817 16 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_stmt:
-        %tmp.148 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.148 817 20 31 ];
-        %tmp.149 = 0;
-        %tmp.150 = eq %tmp.148 %tmp.149;
-        bf %tmp.150 @D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_else_false;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_38_820_16_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 818 18 ]
-        %tmp.151 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.151 818 32 42 ];
-        %tmp.152 = as %tmp.151 { (!Null) };
-        lputv %graphBinMax.19 %tmp.152;
-        symbol [ graphBinMax %graphBinMax.19 818 18 29 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 819 18 ]
-        %tmp.153 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.153 819 32 42 ];
-        %tmp.154 = as %tmp.153 { (!Null) };
-        lputv %graphBinMin.20 %tmp.154;
-        symbol [ graphBinMin %graphBinMin.20 819 18 29 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_38_820_16_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_else_false:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_820_23_828_16_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 821 18 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_821_18_823_18_if_stmt:
-        %tmp.155 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.155 821 22 32 ];
+        symbol [ graphValue %tmp.145 816 26 36 ];
+        %tmp.146 = as %tmp.145 { (!Null) };
+        lputv %graphBinMin.20 %tmp.146;
+        symbol [ graphBinMin %graphBinMin.20 816 12 23 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_49_817_10_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_814_10_817_10_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 818 10 ]
+        while @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_test @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_test:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_17_818_40_begin:
+        %tmp.147 = lgetv %finished.21;
+        symbol [ finished %tmp.147 818 18 26 ];
+        %tmp.148 = not %tmp.147;
+        %tmp.149 = dup %tmp.148;
+        bf %tmp.149 @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_30_818_40_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_30_818_40_true:
+        %tmp.150 = lgetv %secsBin.17;
+        symbol [ secsBin %tmp.150 818 30 37 ];
+        %tmp.151 = lgetv %binWidthSecs.14;
+        symbol [ binWidthSecs %tmp.151 818 40 52 ];
+        %tmp.152 = lt %tmp.150 %tmp.151;
+        %tmp.153 = and %tmp.148 %tmp.152;
+        push %tmp.153;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_30_818_40_end:
+        %tmp.154 = phi [%tmp.149 @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_17_818_40_begin] [%tmp.153 @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_30_818_40_true] [%tmp.154 @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_30_818_40_end];
+        bf %tmp.154 @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_begin:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_54_843_10_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 819 12 ]
+        %tmp.155 = lgetv %sample.6;
+        symbol [ sample %tmp.155 819 25 31 ];
         %tmp.156 = as %tmp.155 { (!Null) };
-        %tmp.157 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.157 821 35 46 ];
-        %tmp.158 = gt %tmp.156 %tmp.157;
-        bf %tmp.158 @D__dev_Monkey_C_Essence_source_EssenceView_mc_821_18_823_18_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_821_18_823_18_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_821_48_823_18_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 822 20 ]
-        %tmp.159 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.159 822 34 44 ];
-        %tmp.160 = as %tmp.159 { (!Null) };
-        lputv %graphBinMax.19 %tmp.160;
-        symbol [ graphBinMax %graphBinMax.19 822 20 31 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_821_48_823_18_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_821_18_823_18_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_821_18_823_18_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 825 18 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_825_18_827_18_if_stmt:
-        %tmp.161 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.161 825 22 32 ];
-        %tmp.162 = as %tmp.161 { (!Null) };
-        %tmp.163 = lgetv %graphBinMin.20;
-        symbol [ graphBinMin %tmp.163 825 35 46 ];
-        %tmp.164 = lt %tmp.162 %tmp.163;
-        bf %tmp.164 @D__dev_Monkey_C_Essence_source_EssenceView_mc_825_18_827_18_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_825_18_827_18_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_825_48_827_18_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 826 20 ]
+        symbol [ next %tmp.157 819 32 36 ];
+        %tmp.157 = getv function %tmp.156 :next;
+        %tmp.158 = invoke %tmp.156 %tmp.157();
+        lputv %sampleData.9 %tmp.158;
+        symbol [ sampleData %sampleData.9 819 12 22 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 820 12 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_stmt:
+        %tmp.159 = lgetv %sampleData.9;
+        symbol [ sampleData %tmp.159 820 16 26 ];
+        %tmp.160 = null;
+        %tmp.161 = ne %tmp.159 %tmp.160;
+        bf %tmp.161 @D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_else_false;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_36_840_12_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 821 14 ]
+        %tmp.162 = lgetv %sampleData.9;
+        symbol [ sampleData %tmp.162 821 27 37 ];
+        %tmp.163 = as %tmp.162 { (!Null) };
+        symbol [ data %tmp.164 821 38 42 ];
+        %tmp.164 = getv %tmp.163 :data;
+        lputv %graphValue.16 %tmp.164;
+        symbol [ graphValue %graphValue.16 821 14 24 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 823 14 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_823_14_836_14_if_stmt:
         %tmp.165 = lgetv %graphValue.16;
-        symbol [ graphValue %tmp.165 826 34 44 ];
-        %tmp.166 = as %tmp.165 { (!Null) };
-        lputv %graphBinMin.20 %tmp.166;
-        symbol [ graphBinMin %graphBinMin.20 826 20 31 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_825_48_827_18_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_825_18_827_18_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_825_18_827_18_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_820_23_828_16_stop:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_817_16_828_16_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_816_38_829_14_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_816_14_829_14_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_816_14_829_14_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 830 14 ]
-        %tmp.167 = lgetv %lastGraphSecs.18;
-        symbol [ lastGraphSecs %tmp.167 830 26 39 ];
-        %tmp.168 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.168 830 42 52 ];
-        %tmp.169 = as %tmp.168 { (!Null) };
-        symbol [ when %tmp.170 830 53 57 ];
-        %tmp.170 = getv %tmp.169 :when;
-        symbol [ value %tmp.171 830 58 63 ];
-        %tmp.171 = getv function %tmp.170 :value;
-        %tmp.172 = invoke %tmp.170 %tmp.171();
-        %tmp.173 = sub %tmp.167 %tmp.172;
-        lputv %graphSecs.15 %tmp.173;
-        symbol [ graphSecs %graphSecs.15 830 14 23 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 831 14 ]
-        %tmp.174 = lgetv %sampleData.9;
-        symbol [ sampleData %tmp.174 831 30 40 ];
-        %tmp.175 = as %tmp.174 { (!Null) };
-        symbol [ when %tmp.176 831 41 45 ];
-        %tmp.176 = getv %tmp.175 :when;
-        symbol [ value %tmp.177 831 46 51 ];
-        %tmp.177 = getv function %tmp.176 :value;
-        %tmp.178 = invoke %tmp.176 %tmp.177();
-        lputv %lastGraphSecs.18 %tmp.178;
-        symbol [ lastGraphSecs %lastGraphSecs.18 831 14 27 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 832 14 ]
-        %tmp.179 = lgetv %secsBin.17;
-        symbol [ secsBin %tmp.179 832 14 21 ];
-        %tmp.180 = lgetv %graphSecs.15;
-        symbol [ graphSecs %tmp.180 832 25 34 ];
-        %tmp.181 = add %tmp.179 %tmp.180;
-        lputv %secsBin.17 %tmp.181;
-        symbol [ secsBin %secsBin.17 832 14 21 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_36_833_12_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_else_false:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_833_19_835_12_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 834 14 ]
-        %tmp.182 = true;
-        lputv %finished.21 %tmp.182;
-        symbol [ finished %finished.21 834 14 22 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_833_19_835_12_stop:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_813_12_835_12_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_54_836_10_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_test;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_811_10_836_10_while_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 838 10 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_838_10_840_10_if_stmt:
-        %tmp.183 = lgetv %secsBin.17;
-        symbol [ secsBin %tmp.183 838 14 21 ];
-        %tmp.184 = lgetv %binWidthSecs.14;
-        symbol [ binWidthSecs %tmp.184 838 25 37 ];
-        %tmp.185 = gte %tmp.183 %tmp.184;
-        bf %tmp.185 @D__dev_Monkey_C_Essence_source_EssenceView_mc_838_10_840_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_838_10_840_10_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_838_39_840_10_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 839 12 ]
-        %tmp.186 = lgetv %secsBin.17;
-        symbol [ secsBin %tmp.186 839 12 19 ];
-        %tmp.187 = lgetv %binWidthSecs.14;
-        symbol [ binWidthSecs %tmp.187 839 23 35 ];
-        %tmp.188 = sub %tmp.186 %tmp.187;
-        lputv %secsBin.17 %tmp.188;
-        symbol [ secsBin %secsBin.17 839 12 19 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_838_39_840_10_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_838_10_840_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_838_10_840_10_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 843 10 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_stmt:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_14_843_48_begin:
-        %tmp.189 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.189 843 14 25 ];
-        %tmp.190 = 0;
-        %tmp.191 = gt %tmp.189 %tmp.190;
-        bf %tmp.191 @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_33_843_48_true:
-        %tmp.192 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.192 843 33 44 ];
-        %tmp.193 = lgetv %graphBinMin.20;
-        symbol [ graphBinMin %tmp.193 843 48 59 ];
-        %tmp.194 = gte %tmp.192 %tmp.193;
-        push %tmp.194;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_33_843_48_end:
-        %tmp.195 = phi [%tmp.191 @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_14_843_48_begin] [%tmp.194 @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_33_843_48_true] [%tmp.195 @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_33_843_48_end];
-        bf %tmp.195 @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_61_877_10_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 844 12 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_stmt:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_16_844_39_begin:
-        %tmp.196 = lgetv %curMax.3;
-        symbol [ curMax %tmp.196 844 16 22 ];
-        %tmp.197 = 0;
-        %tmp.198 = gt %tmp.196 %tmp.197;
-        bf %tmp.198 @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_30_844_39_true:
-        %tmp.199 = lgetv %curMax.3;
-        symbol [ curMax %tmp.199 844 30 36 ];
-        %tmp.200 = lgetv %curMin.2;
-        symbol [ curMin %tmp.200 844 39 45 ];
-        %tmp.201 = gt %tmp.199 %tmp.200;
-        push %tmp.201;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_30_844_39_end:
-        %tmp.202 = phi [%tmp.198 @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_16_844_39_begin] [%tmp.201 @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_30_844_39_true] [%tmp.202 @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_30_844_39_end];
-        bf %tmp.202 @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 845 14 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_stop" ]
-        %heartBinMid.23 = local;
-        symbol [ heartBinMid %heartBinMid.23 845 18 29 ];
-        %tmp.203 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.203 845 33 44 ];
-        %tmp.204 = lgetv %graphBinMin.20;
-        symbol [ graphBinMin %tmp.204 845 47 58 ];
-        %tmp.205 = add %tmp.203 %tmp.204;
-        %tmp.206 = 2;
-        %tmp.207 = div %tmp.205 %tmp.206;
-        lputv %heartBinMid.23 %tmp.207;
-        symbol [ heartBinMid %heartBinMid.23 845 18 29 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 846 14 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_stop" ]
-        %height.24 = local;
-        symbol [ height %height.24 846 18 24 ];
-        %tmp.208 = lgetv %heartBinMid.23;
-        symbol [ heartBinMid %tmp.208 847 18 29 ];
-        %tmp.209 = lgetv %curMin.2;
-        symbol [ curMin %tmp.209 847 32 38 ];
-        symbol [ graphCatalog %tmp.211 847 41 53 ];
-        %tmp.211 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.213 847 54 63 ];
-        %tmp.213 = getv ? :showGraph;
-        %tmp.214 = agetv %tmp.211 %tmp.213;
-        %tmp.215 = "scale";
-        %tmp.216 = agetv %tmp.214 %tmp.215;
-        %tmp.217 = mul %tmp.209 %tmp.216;
-        %tmp.218 = sub %tmp.208 %tmp.217;
+        symbol [ graphValue %tmp.165 823 18 28 ];
+        %tmp.166 = null;
+        %tmp.167 = ne %tmp.165 %tmp.166;
+        bf %tmp.167 @D__dev_Monkey_C_Essence_source_EssenceView_mc_823_14_836_14_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_823_14_836_14_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_823_38_836_14_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 824 16 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_stmt:
+        %tmp.168 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.168 824 20 31 ];
+        %tmp.169 = 0;
+        %tmp.170 = eq %tmp.168 %tmp.169;
+        bf %tmp.170 @D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_else_false;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_38_827_16_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 825 18 ]
+        %tmp.171 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.171 825 32 42 ];
+        %tmp.172 = as %tmp.171 { (!Null) };
+        lputv %graphBinMax.19 %tmp.172;
+        symbol [ graphBinMax %graphBinMax.19 825 18 29 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 826 18 ]
+        %tmp.173 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.173 826 32 42 ];
+        %tmp.174 = as %tmp.173 { (!Null) };
+        lputv %graphBinMin.20 %tmp.174;
+        symbol [ graphBinMin %graphBinMin.20 826 18 29 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_38_827_16_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_else_false:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_827_23_835_16_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 828 18 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_828_18_830_18_if_stmt:
+        %tmp.175 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.175 828 22 32 ];
+        %tmp.176 = as %tmp.175 { (!Null) };
+        %tmp.177 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.177 828 35 46 ];
+        %tmp.178 = gt %tmp.176 %tmp.177;
+        bf %tmp.178 @D__dev_Monkey_C_Essence_source_EssenceView_mc_828_18_830_18_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_828_18_830_18_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_828_48_830_18_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 829 20 ]
+        %tmp.179 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.179 829 34 44 ];
+        %tmp.180 = as %tmp.179 { (!Null) };
+        lputv %graphBinMax.19 %tmp.180;
+        symbol [ graphBinMax %graphBinMax.19 829 20 31 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_828_48_830_18_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_828_18_830_18_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_828_18_830_18_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 832 18 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_832_18_834_18_if_stmt:
+        %tmp.181 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.181 832 22 32 ];
+        %tmp.182 = as %tmp.181 { (!Null) };
+        %tmp.183 = lgetv %graphBinMin.20;
+        symbol [ graphBinMin %tmp.183 832 35 46 ];
+        %tmp.184 = lt %tmp.182 %tmp.183;
+        bf %tmp.184 @D__dev_Monkey_C_Essence_source_EssenceView_mc_832_18_834_18_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_832_18_834_18_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_832_48_834_18_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 833 20 ]
+        %tmp.185 = lgetv %graphValue.16;
+        symbol [ graphValue %tmp.185 833 34 44 ];
+        %tmp.186 = as %tmp.185 { (!Null) };
+        lputv %graphBinMin.20 %tmp.186;
+        symbol [ graphBinMin %graphBinMin.20 833 20 31 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_832_48_834_18_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_832_18_834_18_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_832_18_834_18_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_827_23_835_16_stop:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_824_16_835_16_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_823_38_836_14_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_823_14_836_14_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_823_14_836_14_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 837 14 ]
+        %tmp.187 = lgetv %lastGraphSecs.18;
+        symbol [ lastGraphSecs %tmp.187 837 26 39 ];
+        %tmp.188 = lgetv %sampleData.9;
+        symbol [ sampleData %tmp.188 837 42 52 ];
+        %tmp.189 = as %tmp.188 { (!Null) };
+        symbol [ when %tmp.190 837 53 57 ];
+        %tmp.190 = getv %tmp.189 :when;
+        symbol [ value %tmp.191 837 58 63 ];
+        %tmp.191 = getv function %tmp.190 :value;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        %tmp.193 = sub %tmp.187 %tmp.192;
+        lputv %graphSecs.15 %tmp.193;
+        symbol [ graphSecs %graphSecs.15 837 14 23 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 838 14 ]
+        %tmp.194 = lgetv %sampleData.9;
+        symbol [ sampleData %tmp.194 838 30 40 ];
+        %tmp.195 = as %tmp.194 { (!Null) };
+        symbol [ when %tmp.196 838 41 45 ];
+        %tmp.196 = getv %tmp.195 :when;
+        symbol [ value %tmp.197 838 46 51 ];
+        %tmp.197 = getv function %tmp.196 :value;
+        %tmp.198 = invoke %tmp.196 %tmp.197();
+        lputv %lastGraphSecs.18 %tmp.198;
+        symbol [ lastGraphSecs %lastGraphSecs.18 838 14 27 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 839 14 ]
+        %tmp.199 = lgetv %secsBin.17;
+        symbol [ secsBin %tmp.199 839 14 21 ];
+        %tmp.200 = lgetv %graphSecs.15;
+        symbol [ graphSecs %tmp.200 839 25 34 ];
+        %tmp.201 = add %tmp.199 %tmp.200;
+        lputv %secsBin.17 %tmp.201;
+        symbol [ secsBin %secsBin.17 839 14 21 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_36_840_12_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_else_false:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_840_19_842_12_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 841 14 ]
+        %tmp.202 = true;
+        lputv %finished.21 %tmp.202;
+        symbol [ finished %finished.21 841 14 22 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_840_19_842_12_stop:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_820_12_842_12_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_54_843_10_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_test;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_818_10_843_10_while_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 845 10 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_845_10_847_10_if_stmt:
+        %tmp.203 = lgetv %secsBin.17;
+        symbol [ secsBin %tmp.203 845 14 21 ];
+        %tmp.204 = lgetv %binWidthSecs.14;
+        symbol [ binWidthSecs %tmp.204 845 25 37 ];
+        %tmp.205 = gte %tmp.203 %tmp.204;
+        bf %tmp.205 @D__dev_Monkey_C_Essence_source_EssenceView_mc_845_10_847_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_845_10_847_10_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_845_39_847_10_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 846 12 ]
+        %tmp.206 = lgetv %secsBin.17;
+        symbol [ secsBin %tmp.206 846 12 19 ];
+        %tmp.207 = lgetv %binWidthSecs.14;
+        symbol [ binWidthSecs %tmp.207 846 23 35 ];
+        %tmp.208 = sub %tmp.206 %tmp.207;
+        lputv %secsBin.17 %tmp.208;
+        symbol [ secsBin %secsBin.17 846 12 19 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_845_39_847_10_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_845_10_847_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_845_10_847_10_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 850 10 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_14_850_48_begin:
+        %tmp.209 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.209 850 14 25 ];
+        %tmp.210 = 0;
+        %tmp.211 = gt %tmp.209 %tmp.210;
+        bf %tmp.211 @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_33_850_48_true:
+        %tmp.212 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.212 850 33 44 ];
+        %tmp.213 = lgetv %graphBinMin.20;
+        symbol [ graphBinMin %tmp.213 850 48 59 ];
+        %tmp.214 = gte %tmp.212 %tmp.213;
+        push %tmp.214;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_33_850_48_end:
+        %tmp.215 = phi [%tmp.211 @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_14_850_48_begin] [%tmp.214 @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_33_850_48_true] [%tmp.215 @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_33_850_48_end];
+        bf %tmp.215 @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_61_884_10_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 851 12 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_stmt:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_16_851_39_begin:
+        %tmp.216 = lgetv %curMax.3;
+        symbol [ curMax %tmp.216 851 16 22 ];
+        %tmp.217 = 0;
+        %tmp.218 = gt %tmp.216 %tmp.217;
+        bf %tmp.218 @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_30_851_39_true:
         %tmp.219 = lgetv %curMax.3;
-        symbol [ curMax %tmp.219 848 19 25 ];
+        symbol [ curMax %tmp.219 851 30 36 ];
         %tmp.220 = lgetv %curMin.2;
-        symbol [ curMin %tmp.220 848 28 34 ];
-        symbol [ graphCatalog %tmp.222 848 37 49 ];
-        %tmp.222 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.224 848 50 59 ];
-        %tmp.224 = getv ? :showGraph;
-        %tmp.225 = agetv %tmp.222 %tmp.224;
-        %tmp.226 = "scale";
-        %tmp.227 = agetv %tmp.225 %tmp.226;
-        %tmp.228 = mul %tmp.220 %tmp.227;
-        %tmp.229 = sub %tmp.219 %tmp.228;
-        %tmp.230 = div %tmp.218 %tmp.229;
-        %tmp.231 = lgetv %totHeight.10;
-        symbol [ totHeight %tmp.231 849 16 25 ];
-        %tmp.232 = mul %tmp.230 %tmp.231;
-        lputv %height.24 %tmp.232;
-        symbol [ height %height.24 846 18 24 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 851 14 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_stop" ]
-        %xVal.25 = local;
-        symbol [ xVal %xVal.25 851 18 22 ];
-        symbol [ dw %tmp.234 851 26 28 ];
-        %tmp.234 = getv ? :dw;
-        %tmp.235 = lgetv %totWidth.11;
-        symbol [ totWidth %tmp.235 851 31 39 ];
-        %tmp.236 = sub %tmp.234 %tmp.235;
-        %tmp.237 = 2;
-        %tmp.238 = div %tmp.236 %tmp.237;
-        %tmp.239 = lgetv %totWidth.11;
-        symbol [ totWidth %tmp.239 851 47 55 ];
-        %tmp.240 = add %tmp.238 %tmp.239;
-        %tmp.241 = lgetv %i.22;
-        symbol [ i %tmp.241 851 58 59 ];
-        %tmp.242 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.242 851 62 71 ];
-        %tmp.243 = mul %tmp.241 %tmp.242;
-        %tmp.244 = sub %tmp.240 %tmp.243;
-        %tmp.245 = 2;
-        %tmp.246 = sub %tmp.244 %tmp.245;
-        lputv %xVal.25 %tmp.246;
-        symbol [ xVal %xVal.25 851 18 22 ];
+        symbol [ curMin %tmp.220 851 39 45 ];
+        %tmp.221 = gt %tmp.219 %tmp.220;
+        push %tmp.221;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_30_851_39_end:
+        %tmp.222 = phi [%tmp.218 @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_16_851_39_begin] [%tmp.221 @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_30_851_39_true] [%tmp.222 @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_30_851_39_end];
+        bf %tmp.222 @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_start:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 852 14 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_stop" ]
-        %yVal.26 = local;
-        symbol [ yVal %yVal.26 852 18 22 ];
-        symbol [ dh %tmp.248 852 25 27 ];
-        %tmp.248 = getv ? :dh;
-        %tmp.249 = 2;
-        %tmp.250 = div %tmp.248 %tmp.249;
-        symbol [ graphVertOffset %tmp.252 852 34 49 ];
-        %tmp.252 = getv ? :graphVertOffset;
-        %tmp.253 = add %tmp.250 %tmp.252;
-        %tmp.254 = lgetv %totHeight.10;
-        symbol [ totHeight %tmp.254 852 52 61 ];
-        %tmp.255 = add %tmp.253 %tmp.254;
-        %tmp.256 = lgetv %height.24;
-        symbol [ height %tmp.256 852 64 70 ];
-        %tmp.257 = sub %tmp.255 %tmp.256;
-        lputv %yVal.26 %tmp.257;
-        symbol [ yVal %yVal.26 852 18 22 ];
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 854 14 ]
-        %tmp.258 = lgetv %dc;
-        symbol [ dc %tmp.258 854 14 16 ];
-        symbol [ setColor %tmp.259 854 17 25 ];
-        %tmp.259 = getv function %tmp.258 :setColor;
-        symbol [ graphCatalog %tmp.261 855 16 28 ];
-        %tmp.261 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.263 855 29 38 ];
-        %tmp.263 = getv ? :showGraph;
-        %tmp.264 = agetv %tmp.261 %tmp.263;
-        %tmp.265 = "colorDark";
-        %tmp.266 = agetv %tmp.264 %tmp.265;
-        symbol [ Graphics %tmp.267 856 16 24 ];
-        %tmp.267 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.268 856 25 42 ];
-        %tmp.268 = getv %tmp.267 :COLOR_TRANSPARENT;
-        invoke %tmp.258 %tmp.259(%tmp.266, %tmp.268);
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_stop" ]
+        %heartBinMid.23 = local;
+        symbol [ heartBinMid %heartBinMid.23 852 18 29 ];
+        %tmp.223 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.223 852 33 44 ];
+        %tmp.224 = lgetv %graphBinMin.20;
+        symbol [ graphBinMin %tmp.224 852 47 58 ];
+        %tmp.225 = add %tmp.223 %tmp.224;
+        %tmp.226 = 2;
+        %tmp.227 = div %tmp.225 %tmp.226;
+        lputv %heartBinMid.23 %tmp.227;
+        symbol [ heartBinMid %heartBinMid.23 852 18 29 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 853 14 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_stop" ]
+        %height.24 = local;
+        symbol [ height %height.24 853 18 24 ];
+        %tmp.228 = lgetv %heartBinMid.23;
+        symbol [ heartBinMid %tmp.228 854 18 29 ];
+        %tmp.229 = lgetv %curMin.2;
+        symbol [ curMin %tmp.229 854 32 38 ];
+        symbol [ graphCatalog %tmp.231 854 41 53 ];
+        %tmp.231 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.233 854 54 63 ];
+        %tmp.233 = getv ? :showGraph;
+        %tmp.234 = agetv %tmp.231 %tmp.233;
+        %tmp.235 = "scale";
+        %tmp.236 = agetv %tmp.234 %tmp.235;
+        %tmp.237 = mul %tmp.229 %tmp.236;
+        %tmp.238 = sub %tmp.228 %tmp.237;
+        %tmp.239 = lgetv %curMax.3;
+        symbol [ curMax %tmp.239 855 19 25 ];
+        %tmp.240 = lgetv %curMin.2;
+        symbol [ curMin %tmp.240 855 28 34 ];
+        symbol [ graphCatalog %tmp.242 855 37 49 ];
+        %tmp.242 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.244 855 50 59 ];
+        %tmp.244 = getv ? :showGraph;
+        %tmp.245 = agetv %tmp.242 %tmp.244;
+        %tmp.246 = "scale";
+        %tmp.247 = agetv %tmp.245 %tmp.246;
+        %tmp.248 = mul %tmp.240 %tmp.247;
+        %tmp.249 = sub %tmp.239 %tmp.248;
+        %tmp.250 = div %tmp.238 %tmp.249;
+        %tmp.251 = lgetv %totHeight.10;
+        symbol [ totHeight %tmp.251 856 16 25 ];
+        %tmp.252 = mul %tmp.250 %tmp.251;
+        lputv %height.24 %tmp.252;
+        symbol [ height %height.24 853 18 24 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 858 14 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_stop" ]
+        %xVal.25 = local;
+        symbol [ xVal %xVal.25 858 18 22 ];
+        symbol [ dw %tmp.254 858 26 28 ];
+        %tmp.254 = getv ? :dw;
+        %tmp.255 = lgetv %totWidth.11;
+        symbol [ totWidth %tmp.255 858 31 39 ];
+        %tmp.256 = sub %tmp.254 %tmp.255;
+        %tmp.257 = 2;
+        %tmp.258 = div %tmp.256 %tmp.257;
+        %tmp.259 = lgetv %totWidth.11;
+        symbol [ totWidth %tmp.259 858 47 55 ];
+        %tmp.260 = add %tmp.258 %tmp.259;
+        %tmp.261 = lgetv %i.22;
+        symbol [ i %tmp.261 858 58 59 ];
+        %tmp.262 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.262 858 62 71 ];
+        %tmp.263 = mul %tmp.261 %tmp.262;
+        %tmp.264 = sub %tmp.260 %tmp.263;
+        %tmp.265 = 2;
+        %tmp.266 = sub %tmp.264 %tmp.265;
+        lputv %xVal.25 %tmp.266;
+        symbol [ xVal %xVal.25 858 18 22 ];
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 859 14 ]
-        try @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_beginTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_endTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_beginTry:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_18_861_14_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 860 16 ]
-        %tmp.269 = lgetv %dc;
-        symbol [ dc %tmp.269 860 16 18 ];
-        symbol [ fillRectangle %tmp.270 860 19 32 ];
-        %tmp.270 = getv function %tmp.269 :fillRectangle;
-        %tmp.271 = lgetv %xVal.25;
-        symbol [ xVal %tmp.271 860 33 37 ];
-        %tmp.272 = lgetv %yVal.26;
-        symbol [ yVal %tmp.272 860 39 43 ];
-        %tmp.273 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.273 860 45 54 ];
-        %tmp.274 = lgetv %height.24;
-        symbol [ height %tmp.274 860 56 62 ];
-        invoke %tmp.269 %tmp.270(%tmp.271, %tmp.272, %tmp.273, %tmp.274);
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_18_861_14_stop:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_endTry:
-        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally;
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_catch:
-        %tmp.275 = exception;
-        push %tmp.275;
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 861 16 ]
-        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_catch" "D__dev_Monkey_C_Essence_source_EssenceView_mc_861_16_861_28_end" ]
-        %ex.27 = local;
-        symbol [ ex %ex.27 861 23 25 ];
-        %tmp.276 = dup %tmp.275;
-        lputv %ex.27 %tmp.276;
-        symbol [ ex %ex.27 861 23 25 ];
-        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally;
-        pop;
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_861_16_861_28_end:
-        try @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_861_16_861_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_861_16_861_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally;
-        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally;
-        throw %tmp.275;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_finally:
-        jsrret;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_859_14_861_28_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 862 14 ]
-        %tmp.277 = lgetv %dc;
-        symbol [ dc %tmp.277 862 14 16 ];
-        symbol [ setColor %tmp.278 862 17 25 ];
-        %tmp.278 = getv function %tmp.277 :setColor;
-        symbol [ graphCatalog %tmp.280 863 16 28 ];
-        %tmp.280 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.282 863 29 38 ];
-        %tmp.282 = getv ? :showGraph;
-        %tmp.283 = agetv %tmp.280 %tmp.282;
-        %tmp.284 = "color";
-        %tmp.285 = agetv %tmp.283 %tmp.284;
-        symbol [ Graphics %tmp.286 864 16 24 ];
-        %tmp.286 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.287 864 25 42 ];
-        %tmp.287 = getv %tmp.286 :COLOR_TRANSPARENT;
-        invoke %tmp.277 %tmp.278(%tmp.285, %tmp.287);
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_start" "D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_stop" ]
+        %yVal.26 = local;
+        symbol [ yVal %yVal.26 859 18 22 ];
+        symbol [ dh %tmp.268 859 25 27 ];
+        %tmp.268 = getv ? :dh;
+        %tmp.269 = 2;
+        %tmp.270 = div %tmp.268 %tmp.269;
+        symbol [ graphVertOffset %tmp.272 859 34 49 ];
+        %tmp.272 = getv ? :graphVertOffset;
+        %tmp.273 = add %tmp.270 %tmp.272;
+        %tmp.274 = lgetv %totHeight.10;
+        symbol [ totHeight %tmp.274 859 52 61 ];
+        %tmp.275 = add %tmp.273 %tmp.274;
+        %tmp.276 = lgetv %height.24;
+        symbol [ height %tmp.276 859 64 70 ];
+        %tmp.277 = sub %tmp.275 %tmp.276;
+        lputv %yVal.26 %tmp.277;
+        symbol [ yVal %yVal.26 859 18 22 ];
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 861 14 ]
+        %tmp.278 = lgetv %dc;
+        symbol [ dc %tmp.278 861 14 16 ];
+        symbol [ setColor %tmp.279 861 17 25 ];
+        %tmp.279 = getv function %tmp.278 :setColor;
+        symbol [ graphCatalog %tmp.281 862 16 28 ];
+        %tmp.281 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.283 862 29 38 ];
+        %tmp.283 = getv ? :showGraph;
+        %tmp.284 = agetv %tmp.281 %tmp.283;
+        %tmp.285 = "colorDark";
+        %tmp.286 = agetv %tmp.284 %tmp.285;
+        symbol [ Graphics %tmp.287 863 16 24 ];
+        %tmp.287 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.288 863 25 42 ];
+        %tmp.288 = getv %tmp.287 :COLOR_TRANSPARENT;
+        invoke %tmp.278 %tmp.279(%tmp.286, %tmp.288);
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 866 14 ]
         try @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_beginTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_endTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_beginTry:
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_18_868_14_start:
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 867 16 ]
-        %tmp.288 = lgetv %dc;
-        symbol [ dc %tmp.288 867 16 18 ];
-        symbol [ fillRectangle %tmp.289 867 19 32 ];
-        %tmp.289 = getv function %tmp.288 :fillRectangle;
-        %tmp.290 = lgetv %xVal.25;
-        symbol [ xVal %tmp.290 867 33 37 ];
-        %tmp.291 = lgetv %yVal.26;
-        symbol [ yVal %tmp.291 867 39 43 ];
-        %tmp.292 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.292 867 45 54 ];
-        %tmp.293 = 2;
-        %tmp.294 = lgetv %binPixels.12;
-        symbol [ binPixels %tmp.294 867 60 69 ];
-        %tmp.295 = mul %tmp.293 %tmp.294;
-        invoke %tmp.288 %tmp.289(%tmp.290, %tmp.291, %tmp.292, %tmp.295);
+        %tmp.289 = lgetv %dc;
+        symbol [ dc %tmp.289 867 16 18 ];
+        symbol [ fillRectangle %tmp.290 867 19 32 ];
+        %tmp.290 = getv function %tmp.289 :fillRectangle;
+        %tmp.291 = lgetv %xVal.25;
+        symbol [ xVal %tmp.291 867 33 37 ];
+        %tmp.292 = lgetv %yVal.26;
+        symbol [ yVal %tmp.292 867 39 43 ];
+        %tmp.293 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.293 867 45 54 ];
+        %tmp.294 = lgetv %height.24;
+        symbol [ height %tmp.294 867 56 62 ];
+        invoke %tmp.289 %tmp.290(%tmp.291, %tmp.292, %tmp.293, %tmp.294);
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_18_868_14_stop:
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_endTry:
         jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally;
         goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_end;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_catch:
-        %tmp.296 = exception;
-        push %tmp.296;
+        %tmp.295 = exception;
+        push %tmp.295;
 [ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 868 16 ]
         [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_catch" "D__dev_Monkey_C_Essence_source_EssenceView_mc_868_16_868_28_end" ]
-        %ex.28 = local;
-        symbol [ ex %ex.28 868 23 25 ];
-        %tmp.297 = dup %tmp.296;
-        lputv %ex.28 %tmp.297;
-        symbol [ ex %ex.28 868 23 25 ];
+        %ex.27 = local;
+        symbol [ ex %ex.27 868 23 25 ];
+        %tmp.296 = dup %tmp.295;
+        lputv %ex.27 %tmp.296;
+        symbol [ ex %ex.27 868 23 25 ];
         jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally;
         pop;
         goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_end;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_868_16_868_28_end:
         try @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_868_16_868_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_868_16_868_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally;
         jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally;
-        throw %tmp.296;
+        throw %tmp.295;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_finally:
         jsrret;
 D__dev_Monkey_C_Essence_source_EssenceView_mc_866_14_868_28_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_47_869_12_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_844_12_869_12_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 871 12 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_871_12_873_12_if_stmt:
-        %tmp.298 = lgetv %graphBinMin.20;
-        symbol [ graphBinMin %tmp.298 871 16 27 ];
-        %tmp.299 = lgetv %graphMin.7;
-        symbol [ graphMin %tmp.299 871 30 38 ];
-        %tmp.300 = lt %tmp.298 %tmp.299;
-        bf %tmp.300 @D__dev_Monkey_C_Essence_source_EssenceView_mc_871_12_873_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_871_12_873_12_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_871_40_873_12_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 872 14 ]
-        %tmp.301 = lgetv %graphBinMin.20;
-        symbol [ graphBinMin %tmp.301 872 25 36 ];
-        lputv %graphMin.7 %tmp.301;
-        symbol [ graphMin %graphMin.7 872 14 22 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_871_40_873_12_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_871_12_873_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_871_12_873_12_if_end:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 874 12 ]
-D__dev_Monkey_C_Essence_source_EssenceView_mc_874_12_876_12_if_stmt:
-        %tmp.302 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.302 874 16 27 ];
-        %tmp.303 = lgetv %graphMax.8;
-        symbol [ graphMax %tmp.303 874 30 38 ];
-        %tmp.304 = gt %tmp.302 %tmp.303;
-        bf %tmp.304 @D__dev_Monkey_C_Essence_source_EssenceView_mc_874_12_876_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_874_12_876_12_if_true:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_874_40_876_12_start:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 875 14 ]
-        %tmp.305 = lgetv %graphBinMax.19;
-        symbol [ graphBinMax %tmp.305 875 25 36 ];
-        lputv %graphMax.8 %tmp.305;
-        symbol [ graphMax %graphMax.8 875 14 22 ];
-D__dev_Monkey_C_Essence_source_EssenceView_mc_874_40_876_12_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_874_12_876_12_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_874_12_876_12_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_61_877_10_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_843_10_877_10_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_806_23_878_8_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_806_8_878_8_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_806_8_878_8_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_40_879_6_stop:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_incr:
-[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 802 ]
-        %tmp.308 = lgetv %i.22;
-        symbol [ i %tmp.308 802 37 38 ];
-        %tmp.309 = add %tmp.308 1;
-        lputv %i.22 %tmp.309;
-        symbol [ i %i.22 802 37 38 ];
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_test;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_802_6_879_6_for_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_880_4_stop:
-        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_880_4_if_end;
-D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_880_4_if_end:
-D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_881_2_stop:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 869 14 ]
+        %tmp.297 = lgetv %dc;
+        symbol [ dc %tmp.297 869 14 16 ];
+        symbol [ setColor %tmp.298 869 17 25 ];
+        %tmp.298 = getv function %tmp.297 :setColor;
+        symbol [ graphCatalog %tmp.300 870 16 28 ];
+        %tmp.300 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.302 870 29 38 ];
+        %tmp.302 = getv ? :showGraph;
+        %tmp.303 = agetv %tmp.300 %tmp.302;
+        %tmp.304 = "color";
+        %tmp.305 = agetv %tmp.303 %tmp.304;
+        symbol [ Graphics %tmp.306 871 16 24 ];
+        %tmp.306 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.307 871 25 42 ];
+        %tmp.307 = getv %tmp.306 :COLOR_TRANSPARENT;
+        invoke %tmp.297 %tmp.298(%tmp.305, %tmp.307);
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 873 14 ]
+        try @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_beginTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_endTry @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_beginTry:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_18_875_14_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 874 16 ]
+        %tmp.308 = lgetv %dc;
+        symbol [ dc %tmp.308 874 16 18 ];
+        symbol [ fillRectangle %tmp.309 874 19 32 ];
+        %tmp.309 = getv function %tmp.308 :fillRectangle;
+        %tmp.310 = lgetv %xVal.25;
+        symbol [ xVal %tmp.310 874 33 37 ];
+        %tmp.311 = lgetv %yVal.26;
+        symbol [ yVal %tmp.311 874 39 43 ];
+        %tmp.312 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.312 874 45 54 ];
+        %tmp.313 = 2;
+        %tmp.314 = lgetv %binPixels.12;
+        symbol [ binPixels %tmp.314 874 60 69 ];
+        %tmp.315 = mul %tmp.313 %tmp.314;
+        invoke %tmp.308 %tmp.309(%tmp.310, %tmp.311, %tmp.312, %tmp.315);
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_18_875_14_stop:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_endTry:
+        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally;
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_catch:
+        %tmp.316 = exception;
+        push %tmp.316;
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 875 16 ]
+        [ "D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_catch" "D__dev_Monkey_C_Essence_source_EssenceView_mc_875_16_875_28_end" ]
+        %ex.28 = local;
+        symbol [ ex %ex.28 875 23 25 ];
+        %tmp.317 = dup %tmp.316;
+        lputv %ex.28 %tmp.317;
+        symbol [ ex %ex.28 875 23 25 ];
+        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally;
+        pop;
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_875_16_875_28_end:
+        try @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_catch @D__dev_Monkey_C_Essence_source_EssenceView_mc_875_16_875_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_875_16_875_28_end @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally;
+        jsr @D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally;
+        throw %tmp.316;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_finally:
+        jsrret;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_873_14_875_28_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_47_876_12_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_851_12_876_12_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 878 12 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_878_12_880_12_if_stmt:
+        %tmp.318 = lgetv %graphBinMin.20;
+        symbol [ graphBinMin %tmp.318 878 16 27 ];
+        %tmp.319 = lgetv %graphMin.7;
+        symbol [ graphMin %tmp.319 878 30 38 ];
+        %tmp.320 = lt %tmp.318 %tmp.319;
+        bf %tmp.320 @D__dev_Monkey_C_Essence_source_EssenceView_mc_878_12_880_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_878_12_880_12_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_878_40_880_12_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 879 14 ]
+        %tmp.321 = lgetv %graphBinMin.20;
+        symbol [ graphBinMin %tmp.321 879 25 36 ];
+        lputv %graphMin.7 %tmp.321;
+        symbol [ graphMin %graphMin.7 879 14 22 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_878_40_880_12_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_878_12_880_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_878_12_880_12_if_end:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 881 12 ]
+D__dev_Monkey_C_Essence_source_EssenceView_mc_881_12_883_12_if_stmt:
+        %tmp.322 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.322 881 16 27 ];
+        %tmp.323 = lgetv %graphMax.8;
+        symbol [ graphMax %tmp.323 881 30 38 ];
+        %tmp.324 = gt %tmp.322 %tmp.323;
+        bf %tmp.324 @D__dev_Monkey_C_Essence_source_EssenceView_mc_881_12_883_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_881_12_883_12_if_true:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_881_40_883_12_start:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 882 14 ]
+        %tmp.325 = lgetv %graphBinMax.19;
+        symbol [ graphBinMax %tmp.325 882 25 36 ];
+        lputv %graphMax.8 %tmp.325;
+        symbol [ graphMax %graphMax.8 882 14 22 ];
+D__dev_Monkey_C_Essence_source_EssenceView_mc_881_40_883_12_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_881_12_883_12_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_881_12_883_12_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_61_884_10_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_850_10_884_10_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_813_23_885_8_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_813_8_885_8_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_813_8_885_8_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_40_886_6_stop:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_incr:
+[ "D:\dev\Monkey C\Essence\source\EssenceView.mc" 809 ]
+        %tmp.328 = lgetv %i.22;
+        symbol [ i %tmp.328 809 37 38 ];
+        %tmp.329 = add %tmp.328 1;
+        lputv %i.22 %tmp.329;
+        symbol [ i %i.22 809 37 38 ];
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_test;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_809_6_886_6_for_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_766_24_887_4_stop:
+        goto @D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_887_4_if_end;
+D__dev_Monkey_C_Essence_source_EssenceView_mc_766_4_887_4_if_end:
+D__dev_Monkey_C_Essence_source_EssenceView_mc_746_25_888_2_stop:
     }
-    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 886; @symbol_functiondef = [onHide,886,11,17]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 893; @symbol_functiondef = [onHide,893,11,17]; ]
     function onHide() as Void {
     }
-    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 889; @symbol_functiondef = [onExitSleep,889,11,22]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 896; @symbol_functiondef = [onExitSleep,896,11,22]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 892; @symbol_functiondef = [onEnterSleep,892,11,23]; ]
+    [ @file = "D:\dev\Monkey C\Essence\source\EssenceView.mc"; @line = 899; @symbol_functiondef = [onEnterSleep,899,11,23]; ]
     function onEnterSleep() as Void {
     }
 }
