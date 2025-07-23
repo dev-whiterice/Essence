@@ -1,0 +1,773 @@
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Application,7,14,25]; @symbol_importdef<2> = [Storage,7,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Lang,8,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [WatchUi,9,14,21]; ]
+import Toybox.WatchUi;
+//! The app settings menu
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; @symbol_classdef = [EssenceSettingsMenu,12,6,25]; @symbol_extends<0> = [WatchUi,12,34,41]; @symbol_extends<1> = [Menu2,12,42,47]; ]
+class EssenceSettingsMenu extends WatchUi.Menu2 {
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
+    <init> {
+    }
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 14; @symbol_functiondef = [initialize,14,18,28]; ]
+    public
+    function initialize() as Void {
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 15 4 ]
+        symbol [ Menu2 %tmp.2 15 4 9 ];
+        %tmp.2 = getv ? :Menu2;
+        symbol [ initialize %tmp.3 15 10 20 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 1;
+        %tmp.6 = const :title;
+        symbol [ title %tmp.6 15 24 29 const ];
+        symbol [ Rez %tmp.8 15 33 36 ];
+        %tmp.8 = getv ? :Rez;
+        symbol [ Strings %tmp.9 15 37 44 ];
+        %tmp.9 = getv %tmp.8 :Strings;
+        symbol [ Settings %tmp.10 15 45 53 ];
+        %tmp.10 = getv %tmp.9 :Settings;
+        %tmp.11 = dup %tmp.4;
+        %tmp.12 = aputv %tmp.11 %tmp.6 %tmp.10;
+        invoke %tmp.2 %tmp.3(%tmp.12);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 16 4 ]
+        %tmp.13 = self;
+        symbol [ buildMenu %tmp.14 16 4 13 ];
+        %tmp.14 = getv function %tmp.13 :buildMenu;
+        invoke %tmp.13 %tmp.14();
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_14_31_17_2_stop:
+    }
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 19; @symbol_functiondef = [buildMenu,19,11,20]; ]
+    function buildMenu() {
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 20 4 ]
+        [ "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_start" "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop" ]
+        %value.1 = local;
+        symbol [ value %value.1 20 8 13 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 20 16 22 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ getProperty %tmp.4 20 25 36 ];
+        %tmp.4 = getv function %tmp.3 :getProperty;
+        %tmp.5 = "BatterySave";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        lputv %value.1 %tmp.6;
+        symbol [ value %value.1 20 8 13 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 21 4 ]
+        symbol [ Menu2 %tmp.8 21 4 9 ];
+        %tmp.8 = getv ? :Menu2;
+        symbol [ addItem %tmp.9 21 10 17 ];
+        %tmp.9 = getv function %tmp.8 :addItem;
+        symbol [ WatchUi %tmp.12 22 10 17 ];
+        %tmp.12 = getm $.Toybox.WatchUi;
+        symbol [ ToggleMenuItem %tmp.13 22 18 32 ];
+        %tmp.13 = getv function ? %tmp.12 :ToggleMenuItem;
+        symbol [ Rez %tmp.15 22 33 36 ];
+        %tmp.15 = getv ? :Rez;
+        symbol [ Strings %tmp.16 22 37 44 ];
+        %tmp.16 = getv %tmp.15 :Strings;
+        symbol [ BatterySave %tmp.17 22 45 56 ];
+        %tmp.17 = getv %tmp.16 :BatterySave;
+        %tmp.18 = null;
+        %tmp.19 = 1;
+        %tmp.20 = lgetv %value.1;
+        symbol [ value %tmp.20 22 67 72 ];
+        %tmp.21 = null;
+        %tmp.10 = newc %tmp.13 (%tmp.17, %tmp.18, %tmp.19, %tmp.20, %tmp.21);
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 25 4 ]
+        %tmp.22 = self;
+        symbol [ getApp %tmp.23 25 12 18 ];
+        %tmp.23 = getv function %tmp.22 :getApp;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        symbol [ getProperty %tmp.25 25 21 32 ];
+        %tmp.25 = getv function %tmp.24 :getProperty;
+        %tmp.26 = "DarkMode";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        lputv %value.1 %tmp.27;
+        symbol [ value %value.1 25 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 26 4 ]
+        symbol [ Menu2 %tmp.29 26 4 9 ];
+        %tmp.29 = getv ? :Menu2;
+        symbol [ addItem %tmp.30 26 10 17 ];
+        %tmp.30 = getv function %tmp.29 :addItem;
+        symbol [ WatchUi %tmp.33 27 10 17 ];
+        %tmp.33 = getm $.Toybox.WatchUi;
+        symbol [ ToggleMenuItem %tmp.34 27 18 32 ];
+        %tmp.34 = getv function ? %tmp.33 :ToggleMenuItem;
+        symbol [ Rez %tmp.36 27 33 36 ];
+        %tmp.36 = getv ? :Rez;
+        symbol [ Strings %tmp.37 27 37 44 ];
+        %tmp.37 = getv %tmp.36 :Strings;
+        symbol [ DarkMode %tmp.38 27 45 53 ];
+        %tmp.38 = getv %tmp.37 :DarkMode;
+        %tmp.39 = null;
+        %tmp.40 = 2;
+        %tmp.41 = lgetv %value.1;
+        symbol [ value %tmp.41 27 64 69 ];
+        %tmp.42 = null;
+        %tmp.31 = newc %tmp.34 (%tmp.38, %tmp.39, %tmp.40, %tmp.41, %tmp.42);
+        invoke %tmp.29 %tmp.30(%tmp.31);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 30 4 ]
+        %tmp.43 = self;
+        symbol [ getApp %tmp.44 30 12 18 ];
+        %tmp.44 = getv function %tmp.43 :getApp;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        symbol [ getProperty %tmp.46 30 21 32 ];
+        %tmp.46 = getv function %tmp.45 :getProperty;
+        %tmp.47 = "FieldTop";
+        %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
+        lputv %value.1 %tmp.48;
+        symbol [ value %value.1 30 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 31 4 ]
+        symbol [ Menu2 %tmp.50 31 4 9 ];
+        %tmp.50 = getv ? :Menu2;
+        symbol [ addItem %tmp.51 31 10 17 ];
+        %tmp.51 = getv function %tmp.50 :addItem;
+        symbol [ WatchUi %tmp.54 32 10 17 ];
+        %tmp.54 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.55 32 18 26 ];
+        %tmp.55 = getv function ? %tmp.54 :MenuItem;
+        symbol [ Rez %tmp.57 33 8 11 ];
+        %tmp.57 = getv ? :Rez;
+        symbol [ Strings %tmp.58 33 12 19 ];
+        %tmp.58 = getv %tmp.57 :Strings;
+        symbol [ FieldTop %tmp.59 33 20 28 ];
+        %tmp.59 = getv %tmp.58 :FieldTop;
+        symbol [ fieldCatalog %tmp.61 34 8 20 ];
+        %tmp.61 = getv ? :fieldCatalog;
+        %tmp.62 = lgetv %value.1;
+        symbol [ value %tmp.62 34 21 26 ];
+        %tmp.63 = agetv %tmp.61 %tmp.62;
+        %tmp.64 = "labelExt";
+        %tmp.65 = agetv %tmp.63 %tmp.64;
+        %tmp.66 = 3;
+        %tmp.67 = newd 0;
+        %tmp.52 = newc %tmp.55 (%tmp.59, %tmp.65, %tmp.66, %tmp.67);
+        invoke %tmp.50 %tmp.51(%tmp.52);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 39 4 ]
+        %tmp.68 = self;
+        symbol [ getApp %tmp.69 39 12 18 ];
+        %tmp.69 = getv function %tmp.68 :getApp;
+        %tmp.70 = invoke %tmp.68 %tmp.69();
+        symbol [ getProperty %tmp.71 39 21 32 ];
+        %tmp.71 = getv function %tmp.70 :getProperty;
+        %tmp.72 = "FieldUpperLeft";
+        %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
+        lputv %value.1 %tmp.73;
+        symbol [ value %value.1 39 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 40 4 ]
+        symbol [ Menu2 %tmp.75 40 4 9 ];
+        %tmp.75 = getv ? :Menu2;
+        symbol [ addItem %tmp.76 40 10 17 ];
+        %tmp.76 = getv function %tmp.75 :addItem;
+        symbol [ WatchUi %tmp.79 41 10 17 ];
+        %tmp.79 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.80 41 18 26 ];
+        %tmp.80 = getv function ? %tmp.79 :MenuItem;
+        symbol [ Rez %tmp.82 42 8 11 ];
+        %tmp.82 = getv ? :Rez;
+        symbol [ Strings %tmp.83 42 12 19 ];
+        %tmp.83 = getv %tmp.82 :Strings;
+        symbol [ FieldUpperLeft %tmp.84 42 20 34 ];
+        %tmp.84 = getv %tmp.83 :FieldUpperLeft;
+        symbol [ fieldCatalog %tmp.86 43 8 20 ];
+        %tmp.86 = getv ? :fieldCatalog;
+        %tmp.87 = lgetv %value.1;
+        symbol [ value %tmp.87 43 21 26 ];
+        %tmp.88 = agetv %tmp.86 %tmp.87;
+        %tmp.89 = "labelExt";
+        %tmp.90 = agetv %tmp.88 %tmp.89;
+        %tmp.91 = 4;
+        %tmp.92 = newd 0;
+        %tmp.77 = newc %tmp.80 (%tmp.84, %tmp.90, %tmp.91, %tmp.92);
+        invoke %tmp.75 %tmp.76(%tmp.77);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 48 4 ]
+        %tmp.93 = self;
+        symbol [ getApp %tmp.94 48 12 18 ];
+        %tmp.94 = getv function %tmp.93 :getApp;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        symbol [ getProperty %tmp.96 48 21 32 ];
+        %tmp.96 = getv function %tmp.95 :getProperty;
+        %tmp.97 = "FieldUpperCenter";
+        %tmp.98 = invoke %tmp.95 %tmp.96(%tmp.97);
+        lputv %value.1 %tmp.98;
+        symbol [ value %value.1 48 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 49 4 ]
+        symbol [ Menu2 %tmp.100 49 4 9 ];
+        %tmp.100 = getv ? :Menu2;
+        symbol [ addItem %tmp.101 49 10 17 ];
+        %tmp.101 = getv function %tmp.100 :addItem;
+        symbol [ WatchUi %tmp.104 50 10 17 ];
+        %tmp.104 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.105 50 18 26 ];
+        %tmp.105 = getv function ? %tmp.104 :MenuItem;
+        symbol [ Rez %tmp.107 51 8 11 ];
+        %tmp.107 = getv ? :Rez;
+        symbol [ Strings %tmp.108 51 12 19 ];
+        %tmp.108 = getv %tmp.107 :Strings;
+        symbol [ FieldUpperCenter %tmp.109 51 20 36 ];
+        %tmp.109 = getv %tmp.108 :FieldUpperCenter;
+        symbol [ fieldCatalog %tmp.111 52 8 20 ];
+        %tmp.111 = getv ? :fieldCatalog;
+        %tmp.112 = lgetv %value.1;
+        symbol [ value %tmp.112 52 21 26 ];
+        %tmp.113 = agetv %tmp.111 %tmp.112;
+        %tmp.114 = "labelExt";
+        %tmp.115 = agetv %tmp.113 %tmp.114;
+        %tmp.116 = 5;
+        %tmp.117 = newd 0;
+        %tmp.102 = newc %tmp.105 (%tmp.109, %tmp.115, %tmp.116, %tmp.117);
+        invoke %tmp.100 %tmp.101(%tmp.102);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 57 4 ]
+        %tmp.118 = self;
+        symbol [ getApp %tmp.119 57 12 18 ];
+        %tmp.119 = getv function %tmp.118 :getApp;
+        %tmp.120 = invoke %tmp.118 %tmp.119();
+        symbol [ getProperty %tmp.121 57 21 32 ];
+        %tmp.121 = getv function %tmp.120 :getProperty;
+        %tmp.122 = "FieldUpperRight";
+        %tmp.123 = invoke %tmp.120 %tmp.121(%tmp.122);
+        lputv %value.1 %tmp.123;
+        symbol [ value %value.1 57 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 58 4 ]
+        symbol [ Menu2 %tmp.125 58 4 9 ];
+        %tmp.125 = getv ? :Menu2;
+        symbol [ addItem %tmp.126 58 10 17 ];
+        %tmp.126 = getv function %tmp.125 :addItem;
+        symbol [ WatchUi %tmp.129 59 10 17 ];
+        %tmp.129 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.130 59 18 26 ];
+        %tmp.130 = getv function ? %tmp.129 :MenuItem;
+        symbol [ Rez %tmp.132 60 8 11 ];
+        %tmp.132 = getv ? :Rez;
+        symbol [ Strings %tmp.133 60 12 19 ];
+        %tmp.133 = getv %tmp.132 :Strings;
+        symbol [ FieldUpperRight %tmp.134 60 20 35 ];
+        %tmp.134 = getv %tmp.133 :FieldUpperRight;
+        symbol [ fieldCatalog %tmp.136 61 8 20 ];
+        %tmp.136 = getv ? :fieldCatalog;
+        %tmp.137 = lgetv %value.1;
+        symbol [ value %tmp.137 61 21 26 ];
+        %tmp.138 = agetv %tmp.136 %tmp.137;
+        %tmp.139 = "labelExt";
+        %tmp.140 = agetv %tmp.138 %tmp.139;
+        %tmp.141 = 6;
+        %tmp.142 = newd 0;
+        %tmp.127 = newc %tmp.130 (%tmp.134, %tmp.140, %tmp.141, %tmp.142);
+        invoke %tmp.125 %tmp.126(%tmp.127);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 66 4 ]
+        %tmp.143 = self;
+        symbol [ getApp %tmp.144 66 12 18 ];
+        %tmp.144 = getv function %tmp.143 :getApp;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        symbol [ getProperty %tmp.146 66 21 32 ];
+        %tmp.146 = getv function %tmp.145 :getProperty;
+        %tmp.147 = "FieldLowerLeft";
+        %tmp.148 = invoke %tmp.145 %tmp.146(%tmp.147);
+        lputv %value.1 %tmp.148;
+        symbol [ value %value.1 66 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 67 4 ]
+        symbol [ Menu2 %tmp.150 67 4 9 ];
+        %tmp.150 = getv ? :Menu2;
+        symbol [ addItem %tmp.151 67 10 17 ];
+        %tmp.151 = getv function %tmp.150 :addItem;
+        symbol [ WatchUi %tmp.154 68 10 17 ];
+        %tmp.154 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.155 68 18 26 ];
+        %tmp.155 = getv function ? %tmp.154 :MenuItem;
+        symbol [ Rez %tmp.157 69 8 11 ];
+        %tmp.157 = getv ? :Rez;
+        symbol [ Strings %tmp.158 69 12 19 ];
+        %tmp.158 = getv %tmp.157 :Strings;
+        symbol [ FieldLowerLeft %tmp.159 69 20 34 ];
+        %tmp.159 = getv %tmp.158 :FieldLowerLeft;
+        symbol [ fieldCatalog %tmp.161 70 8 20 ];
+        %tmp.161 = getv ? :fieldCatalog;
+        %tmp.162 = lgetv %value.1;
+        symbol [ value %tmp.162 70 21 26 ];
+        %tmp.163 = agetv %tmp.161 %tmp.162;
+        %tmp.164 = "labelExt";
+        %tmp.165 = agetv %tmp.163 %tmp.164;
+        %tmp.166 = 7;
+        %tmp.167 = newd 0;
+        %tmp.152 = newc %tmp.155 (%tmp.159, %tmp.165, %tmp.166, %tmp.167);
+        invoke %tmp.150 %tmp.151(%tmp.152);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 75 4 ]
+        %tmp.168 = self;
+        symbol [ getApp %tmp.169 75 12 18 ];
+        %tmp.169 = getv function %tmp.168 :getApp;
+        %tmp.170 = invoke %tmp.168 %tmp.169();
+        symbol [ getProperty %tmp.171 75 21 32 ];
+        %tmp.171 = getv function %tmp.170 :getProperty;
+        %tmp.172 = "FieldLowerCenter";
+        %tmp.173 = invoke %tmp.170 %tmp.171(%tmp.172);
+        lputv %value.1 %tmp.173;
+        symbol [ value %value.1 75 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 76 4 ]
+        symbol [ Menu2 %tmp.175 76 4 9 ];
+        %tmp.175 = getv ? :Menu2;
+        symbol [ addItem %tmp.176 76 10 17 ];
+        %tmp.176 = getv function %tmp.175 :addItem;
+        symbol [ WatchUi %tmp.179 77 10 17 ];
+        %tmp.179 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.180 77 18 26 ];
+        %tmp.180 = getv function ? %tmp.179 :MenuItem;
+        symbol [ Rez %tmp.182 78 8 11 ];
+        %tmp.182 = getv ? :Rez;
+        symbol [ Strings %tmp.183 78 12 19 ];
+        %tmp.183 = getv %tmp.182 :Strings;
+        symbol [ FieldLowerCenter %tmp.184 78 20 36 ];
+        %tmp.184 = getv %tmp.183 :FieldLowerCenter;
+        symbol [ fieldCatalog %tmp.186 79 8 20 ];
+        %tmp.186 = getv ? :fieldCatalog;
+        %tmp.187 = lgetv %value.1;
+        symbol [ value %tmp.187 79 21 26 ];
+        %tmp.188 = agetv %tmp.186 %tmp.187;
+        %tmp.189 = "labelExt";
+        %tmp.190 = agetv %tmp.188 %tmp.189;
+        %tmp.191 = 8;
+        %tmp.192 = newd 0;
+        %tmp.177 = newc %tmp.180 (%tmp.184, %tmp.190, %tmp.191, %tmp.192);
+        invoke %tmp.175 %tmp.176(%tmp.177);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 84 4 ]
+        %tmp.193 = self;
+        symbol [ getApp %tmp.194 84 12 18 ];
+        %tmp.194 = getv function %tmp.193 :getApp;
+        %tmp.195 = invoke %tmp.193 %tmp.194();
+        symbol [ getProperty %tmp.196 84 21 32 ];
+        %tmp.196 = getv function %tmp.195 :getProperty;
+        %tmp.197 = "FieldLowerRight";
+        %tmp.198 = invoke %tmp.195 %tmp.196(%tmp.197);
+        lputv %value.1 %tmp.198;
+        symbol [ value %value.1 84 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 85 4 ]
+        symbol [ Menu2 %tmp.200 85 4 9 ];
+        %tmp.200 = getv ? :Menu2;
+        symbol [ addItem %tmp.201 85 10 17 ];
+        %tmp.201 = getv function %tmp.200 :addItem;
+        symbol [ WatchUi %tmp.204 86 10 17 ];
+        %tmp.204 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.205 86 18 26 ];
+        %tmp.205 = getv function ? %tmp.204 :MenuItem;
+        symbol [ Rez %tmp.207 87 8 11 ];
+        %tmp.207 = getv ? :Rez;
+        symbol [ Strings %tmp.208 87 12 19 ];
+        %tmp.208 = getv %tmp.207 :Strings;
+        symbol [ FieldLowerRight %tmp.209 87 20 35 ];
+        %tmp.209 = getv %tmp.208 :FieldLowerRight;
+        symbol [ fieldCatalog %tmp.211 88 8 20 ];
+        %tmp.211 = getv ? :fieldCatalog;
+        %tmp.212 = lgetv %value.1;
+        symbol [ value %tmp.212 88 21 26 ];
+        %tmp.213 = agetv %tmp.211 %tmp.212;
+        %tmp.214 = "labelExt";
+        %tmp.215 = agetv %tmp.213 %tmp.214;
+        %tmp.216 = 9;
+        %tmp.217 = newd 0;
+        %tmp.202 = newc %tmp.205 (%tmp.209, %tmp.215, %tmp.216, %tmp.217);
+        invoke %tmp.200 %tmp.201(%tmp.202);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 93 4 ]
+        %tmp.218 = self;
+        symbol [ getApp %tmp.219 93 12 18 ];
+        %tmp.219 = getv function %tmp.218 :getApp;
+        %tmp.220 = invoke %tmp.218 %tmp.219();
+        symbol [ getProperty %tmp.221 93 21 32 ];
+        %tmp.221 = getv function %tmp.220 :getProperty;
+        %tmp.222 = "FieldBottom";
+        %tmp.223 = invoke %tmp.220 %tmp.221(%tmp.222);
+        lputv %value.1 %tmp.223;
+        symbol [ value %value.1 93 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 94 4 ]
+        symbol [ Menu2 %tmp.225 94 4 9 ];
+        %tmp.225 = getv ? :Menu2;
+        symbol [ addItem %tmp.226 94 10 17 ];
+        %tmp.226 = getv function %tmp.225 :addItem;
+        symbol [ WatchUi %tmp.229 95 10 17 ];
+        %tmp.229 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.230 95 18 26 ];
+        %tmp.230 = getv function ? %tmp.229 :MenuItem;
+        symbol [ Rez %tmp.232 96 8 11 ];
+        %tmp.232 = getv ? :Rez;
+        symbol [ Strings %tmp.233 96 12 19 ];
+        %tmp.233 = getv %tmp.232 :Strings;
+        symbol [ FieldBottom %tmp.234 96 20 31 ];
+        %tmp.234 = getv %tmp.233 :FieldBottom;
+        symbol [ fieldCatalog %tmp.236 97 8 20 ];
+        %tmp.236 = getv ? :fieldCatalog;
+        %tmp.237 = lgetv %value.1;
+        symbol [ value %tmp.237 97 21 26 ];
+        %tmp.238 = agetv %tmp.236 %tmp.237;
+        %tmp.239 = "labelExt";
+        %tmp.240 = agetv %tmp.238 %tmp.239;
+        %tmp.241 = 10;
+        %tmp.242 = newd 0;
+        %tmp.227 = newc %tmp.230 (%tmp.234, %tmp.240, %tmp.241, %tmp.242);
+        invoke %tmp.225 %tmp.226(%tmp.227);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 103 4 ]
+        %tmp.243 = self;
+        symbol [ getApp %tmp.244 103 12 18 ];
+        %tmp.244 = getv function %tmp.243 :getApp;
+        %tmp.245 = invoke %tmp.243 %tmp.244();
+        symbol [ getProperty %tmp.246 103 21 32 ];
+        %tmp.246 = getv function %tmp.245 :getProperty;
+        %tmp.247 = "ShowGraph";
+        %tmp.248 = invoke %tmp.245 %tmp.246(%tmp.247);
+        lputv %value.1 %tmp.248;
+        symbol [ value %value.1 103 4 9 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 104 4 ]
+        symbol [ Menu2 %tmp.250 104 4 9 ];
+        %tmp.250 = getv ? :Menu2;
+        symbol [ addItem %tmp.251 104 10 17 ];
+        %tmp.251 = getv function %tmp.250 :addItem;
+        symbol [ WatchUi %tmp.254 105 10 17 ];
+        %tmp.254 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.255 105 18 26 ];
+        %tmp.255 = getv function ? %tmp.254 :MenuItem;
+        symbol [ Rez %tmp.257 106 8 11 ];
+        %tmp.257 = getv ? :Rez;
+        symbol [ Strings %tmp.258 106 12 19 ];
+        %tmp.258 = getv %tmp.257 :Strings;
+        symbol [ ShowGraph %tmp.259 106 20 29 ];
+        %tmp.259 = getv %tmp.258 :ShowGraph;
+        symbol [ graphCatalog %tmp.261 107 8 20 ];
+        %tmp.261 = getv ? :graphCatalog;
+        %tmp.262 = lgetv %value.1;
+        symbol [ value %tmp.262 107 21 26 ];
+        %tmp.263 = agetv %tmp.261 %tmp.262;
+        %tmp.264 = "labelExt";
+        %tmp.265 = agetv %tmp.263 %tmp.264;
+        %tmp.266 = 11;
+        %tmp.267 = newd 0;
+        %tmp.252 = newc %tmp.255 (%tmp.259, %tmp.265, %tmp.266, %tmp.267);
+        invoke %tmp.250 %tmp.251(%tmp.252);
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_19_23_112_2_stop:
+    }
+}
+//! Input handler for the app settings menu
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; @symbol_classdef = [EssenceSettingsMenuDelegate,116,6,33]; @symbol_extends<0> = [WatchUi,116,42,49]; @symbol_extends<1> = [Menu2InputDelegate,116,50,68]; ]
+class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
+    <init> {
+    }
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 116; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 118; @symbol_functiondef = [initialize,118,18,28]; ]
+    public
+    function initialize() as Void {
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 119 4 ]
+        symbol [ Menu2InputDelegate %tmp.2 119 4 22 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 119 23 33 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_118_31_120_2_stop:
+    }
+    //! Handle a menu item being selected
+    //! @param menuItem The menu item selected
+    [ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 124; @symbol_functiondef = [onSelect,124,18,26]; @symbol_param<0> = [menuItem,124,27,35]; @symbol_param<0>_type<0> = [MenuItem,124,39,47]; ]
+    public
+    function onSelect(menuItem as MenuItem) as Void {
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 125 4 ]
+        [ "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_start" "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop" ]
+        %itemId.1 = local;
+        symbol [ itemId %itemId.1 125 8 14 ];
+        %tmp.1 = lgetv %menuItem;
+        symbol [ menuItem %tmp.1 125 17 25 ];
+        symbol [ getId %tmp.2 125 26 31 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %itemId.1 %tmp.3;
+        symbol [ itemId %itemId.1 125 8 14 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 126 4 ]
+        %tmp.4 = lgetv %itemId.1;
+        symbol [ itemId %tmp.4 126 13 19 ];
+        %tmp.5 = as %tmp.4 Number;
+        symbol [ Number %tmp.5 126 23 29 ];
+        lputv %itemId.1 %tmp.5;
+        symbol [ itemId %itemId.1 126 4 10 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 128 4 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_stmt:
+        %tmp.6 = lgetv %itemId.1;
+        symbol [ itemId %tmp.6 128 8 14 ];
+        %tmp.7 = 1;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 129 6 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_stmt:
+        %tmp.9 = lgetv %menuItem;
+        symbol [ menuItem %tmp.9 129 10 18 ];
+        symbol [ ToggleMenuItem %tmp.11 129 30 44 ];
+        %tmp.11 = getv ? :ToggleMenuItem;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 130 8 ]
+        %tmp.13 = self;
+        symbol [ getApp %tmp.14 130 8 14 ];
+        %tmp.14 = getv function %tmp.13 :getApp;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ setProperty %tmp.16 130 17 28 ];
+        %tmp.16 = getv function %tmp.15 :setProperty;
+        %tmp.17 = "BatterySave";
+        %tmp.18 = lgetv %menuItem;
+        symbol [ menuItem %tmp.18 130 44 52 ];
+        %tmp.19 = as %tmp.18 { (ToggleMenuItem) };
+        symbol [ isEnabled %tmp.20 130 53 62 ];
+        %tmp.20 = getv function %tmp.19 :isEnabled;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.21);
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_46_131_6_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_129_6_131_6_if_end:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_21_132_4_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_false:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 132 11 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_stmt:
+        %tmp.22 = lgetv %itemId.1;
+        symbol [ itemId %tmp.22 132 15 21 ];
+        %tmp.23 = 2;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 133 6 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_stmt:
+        %tmp.25 = lgetv %menuItem;
+        symbol [ menuItem %tmp.25 133 10 18 ];
+        symbol [ ToggleMenuItem %tmp.27 133 30 44 ];
+        %tmp.27 = getv ? :ToggleMenuItem;
+        %tmp.28 = isa %tmp.25 %tmp.27;
+        bf %tmp.28 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 134 8 ]
+        %tmp.29 = self;
+        symbol [ getApp %tmp.30 134 8 14 ];
+        %tmp.30 = getv function %tmp.29 :getApp;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        symbol [ setProperty %tmp.32 134 17 28 ];
+        %tmp.32 = getv function %tmp.31 :setProperty;
+        %tmp.33 = "DarkMode";
+        %tmp.34 = lgetv %menuItem;
+        symbol [ menuItem %tmp.34 134 41 49 ];
+        %tmp.35 = as %tmp.34 { (ToggleMenuItem) };
+        symbol [ isEnabled %tmp.36 134 50 59 ];
+        %tmp.36 = getv function %tmp.35 :isEnabled;
+        %tmp.37 = invoke %tmp.35 %tmp.36();
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.37);
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_46_135_6_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_133_6_135_6_if_end:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_28_136_4_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_false:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 136 11 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_stmt:
+        %tmp.38 = lgetv %itemId.1;
+        symbol [ itemId %tmp.38 136 15 21 ];
+        %tmp.39 = 10;
+        %tmp.40 = lte %tmp.38 %tmp.39;
+        bf %tmp.40 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 137 6 ]
+        %tmp.41 = lgetv %itemId.1;
+        symbol [ itemId %tmp.41 137 15 21 ];
+        %tmp.42 = 3;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        lputv %itemId.1 %tmp.43;
+        symbol [ itemId %itemId.1 137 6 12 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 139 6 ]
+        [ "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_start" "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop" ]
+        %value.2 = local;
+        symbol [ value %value.2 139 10 15 ];
+        %tmp.44 = self;
+        symbol [ getApp %tmp.45 139 18 24 ];
+        %tmp.45 = getv function %tmp.44 :getApp;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        symbol [ getProperty %tmp.47 139 27 38 ];
+        %tmp.47 = getv function %tmp.46 :getProperty;
+        symbol [ fieldLayout %tmp.49 139 39 50 ];
+        %tmp.49 = getv ? :fieldLayout;
+        %tmp.50 = lgetv %itemId.1;
+        symbol [ itemId %tmp.50 139 51 57 ];
+        %tmp.51 = agetv %tmp.49 %tmp.50;
+        %tmp.52 = "id";
+        %tmp.53 = agetv %tmp.51 %tmp.52;
+        %tmp.54 = invoke %tmp.46 %tmp.47(%tmp.53);
+        lputv %value.2 %tmp.54;
+        symbol [ value %value.2 139 10 15 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 141 6 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_stmt:
+        %tmp.55 = lgetv %value.2;
+        symbol [ value %tmp.55 141 10 15 ];
+        symbol [ fieldCatalog %tmp.57 141 18 30 ];
+        %tmp.57 = getv ? :fieldCatalog;
+        symbol [ size %tmp.58 141 31 35 ];
+        %tmp.58 = getv function %tmp.57 :size;
+        %tmp.59 = invoke %tmp.57 %tmp.58();
+        %tmp.60 = 1;
+        %tmp.61 = sub %tmp.59 %tmp.60;
+        %tmp.62 = lt %tmp.55 %tmp.61;
+        bf %tmp.62 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 142 8 ]
+        %tmp.63 = lgetv %value.2;
+        symbol [ value %tmp.63 142 16 21 ];
+        %tmp.64 = 1;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        lputv %value.2 %tmp.65;
+        symbol [ value %value.2 142 8 13 ];
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_43_143_6_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_else_false:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 144 8 ]
+        %tmp.66 = 0;
+        lputv %value.2 %tmp.66;
+        symbol [ value %value.2 144 8 13 ];
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_143_13_145_6_stop:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_141_6_145_6_if_end:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 147 6 ]
+        %tmp.67 = lgetv %menuItem;
+        symbol [ menuItem %tmp.67 147 6 14 ];
+        symbol [ setSubLabel %tmp.68 147 15 26 ];
+        %tmp.68 = getv function %tmp.67 :setSubLabel;
+        symbol [ fieldCatalog %tmp.70 147 27 39 ];
+        %tmp.70 = getv ? :fieldCatalog;
+        %tmp.71 = lgetv %value.2;
+        symbol [ value %tmp.71 147 40 45 ];
+        %tmp.72 = agetv %tmp.70 %tmp.71;
+        %tmp.73 = "labelExt";
+        %tmp.74 = agetv %tmp.72 %tmp.73;
+        invoke %tmp.67 %tmp.68(%tmp.74);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 148 6 ]
+        %tmp.75 = self;
+        symbol [ getApp %tmp.76 148 6 12 ];
+        %tmp.76 = getv function %tmp.75 :getApp;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        symbol [ setProperty %tmp.78 148 15 26 ];
+        %tmp.78 = getv function %tmp.77 :setProperty;
+        symbol [ fieldLayout %tmp.80 148 27 38 ];
+        %tmp.80 = getv ? :fieldLayout;
+        %tmp.81 = lgetv %itemId.1;
+        symbol [ itemId %tmp.81 148 39 45 ];
+        %tmp.82 = agetv %tmp.80 %tmp.81;
+        %tmp.83 = "id";
+        %tmp.84 = agetv %tmp.82 %tmp.83;
+        %tmp.85 = lgetv %value.2;
+        symbol [ value %tmp.85 148 54 59 ];
+        invoke %tmp.77 %tmp.78(%tmp.84, %tmp.85);
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_29_149_4_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_else_false:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 150 6 ]
+        %tmp.86 = lgetv %itemId.1;
+        symbol [ itemId %tmp.86 150 15 21 ];
+        %tmp.87 = 2;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        lputv %itemId.1 %tmp.88;
+        symbol [ itemId %itemId.1 150 6 12 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 151 6 ]
+        [ "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_start" "D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop" ]
+        %value.3 = local;
+        symbol [ value %value.3 151 10 15 ];
+        %tmp.89 = self;
+        symbol [ getApp %tmp.90 151 18 24 ];
+        %tmp.90 = getv function %tmp.89 :getApp;
+        %tmp.91 = invoke %tmp.89 %tmp.90();
+        symbol [ getProperty %tmp.92 151 27 38 ];
+        %tmp.92 = getv function %tmp.91 :getProperty;
+        %tmp.93 = "ShowGraph";
+        %tmp.94 = invoke %tmp.91 %tmp.92(%tmp.93);
+        lputv %value.3 %tmp.94;
+        symbol [ value %value.3 151 10 15 ];
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 153 6 ]
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_stmt:
+        %tmp.95 = lgetv %value.3;
+        symbol [ value %tmp.95 153 10 15 ];
+        symbol [ graphCatalog %tmp.97 153 18 30 ];
+        %tmp.97 = getv ? :graphCatalog;
+        symbol [ size %tmp.98 153 31 35 ];
+        %tmp.98 = getv function %tmp.97 :size;
+        %tmp.99 = invoke %tmp.97 %tmp.98();
+        %tmp.100 = 1;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        %tmp.102 = lt %tmp.95 %tmp.101;
+        bf %tmp.102 @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_true:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 154 8 ]
+        %tmp.103 = lgetv %value.3;
+        symbol [ value %tmp.103 154 16 21 ];
+        %tmp.104 = 1;
+        %tmp.105 = add %tmp.103 %tmp.104;
+        lputv %value.3 %tmp.105;
+        symbol [ value %value.3 154 8 13 ];
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_43_155_6_stop:
+        goto @D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_else_false:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_start:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 156 8 ]
+        %tmp.106 = 0;
+        lputv %value.3 %tmp.106;
+        symbol [ value %value.3 156 8 13 ];
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_155_13_157_6_stop:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_153_6_157_6_if_end:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 159 6 ]
+        %tmp.107 = lgetv %menuItem;
+        symbol [ menuItem %tmp.107 159 6 14 ];
+        symbol [ setSubLabel %tmp.108 159 15 26 ];
+        %tmp.108 = getv function %tmp.107 :setSubLabel;
+        symbol [ graphCatalog %tmp.110 159 27 39 ];
+        %tmp.110 = getv ? :graphCatalog;
+        %tmp.111 = lgetv %value.3;
+        symbol [ value %tmp.111 159 40 45 ];
+        %tmp.112 = agetv %tmp.110 %tmp.111;
+        %tmp.113 = "labelExt";
+        %tmp.114 = agetv %tmp.112 %tmp.113;
+        invoke %tmp.107 %tmp.108(%tmp.114);
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 160 6 ]
+        %tmp.115 = self;
+        symbol [ getApp %tmp.116 160 6 12 ];
+        %tmp.116 = getv function %tmp.115 :getApp;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        symbol [ setProperty %tmp.118 160 15 26 ];
+        %tmp.118 = getv function %tmp.117 :setProperty;
+        %tmp.119 = "ShowGraph";
+        %tmp.120 = lgetv %value.3;
+        symbol [ value %tmp.120 160 40 45 ];
+        invoke %tmp.117 %tmp.118(%tmp.119, %tmp.120);
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_149_11_161_4_stop:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_136_11_161_4_if_end:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_132_11_161_4_if_end:
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_128_4_161_4_if_end:
+[ "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc" 162 4 ]
+        %tmp.121 = true;
+        symbol [ redrawLayout ? 162 4 16 ];
+        putv self :redrawLayout %tmp.121;
+D__dev_projects_Monkey_C_Essence_source_EssenceSettingsMenu_mc_124_57_163_2_stop:
+    }
+}
+[ @file = "D:\dev\projects\Monkey C\Essence\source\EssenceSettingsMenu.mc"; @line = 7; ]
+<init> {
+}
