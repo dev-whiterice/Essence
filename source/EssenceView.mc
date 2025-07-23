@@ -355,8 +355,25 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   function getDate() {
-    var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-    return Lang.format("$1$, $2$", [now.day_of_week, now.day]).toLower();
+    // var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+    // return Lang.format("$1$, $2$", [now.day_of_week, now.day]).toLower();
+
+    var now=Time.now();
+    var clockTime = Gregorian.info(now, Time.FORMAT_SHORT);
+    var days=["","sun","mon","tue","wed","thu","fri","sat"];
+
+    var mySettings = System.getDeviceSettings();
+    var systemLanguage = mySettings.systemLanguage.toString();
+    System.print("systemLanguage --->" + systemLanguage);
+    if (systemLanguage == System.LANGUAGE_ITA){
+      days=["","dom","lun","mar","mer","gio","ven","sab"];
+    }
+    if (systemLanguage == System.LANGUAGE_SPA){
+      days=["","dom","lun","mar","mie","jue","vie","sab"];
+    }
+
+    now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM); 
+    return Lang.format("$1$, $2$", [days[clockTime.day_of_week], now.day]).toLower();
   }
 
   function getNotifications() {

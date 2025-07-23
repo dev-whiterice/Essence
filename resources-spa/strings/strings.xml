@@ -1,0 +1,63 @@
+<strings>
+    <string id="AppName">Essence</string>
+
+    <string id="FieldTop">Campo superior</string>
+    <string id="FieldUpperLeft">Campo sup. izquierdo</string>
+    <string id="FieldUpperCenter">Campo sup. central</string>
+    <string id="FieldUpperRight">Campo sup. derecho</string>
+    <string id="FieldLowerLeft">Campo inf. izquierdo</string>
+    <string id="FieldLowerCenter">Campo inf. central</string>
+    <string id="FieldLowerRight">Campo inf. derecho</string>
+    <string id="FieldBottom">Campo inferior</string>
+
+    <string id="ShowGraph">Mostrar gráfico</string>
+
+    <string id="Empty"></string>
+    <string id="Weather">tiempo</string>
+    <string id="Calendar">cal</string>
+    <string id="Notifications">msj</string>
+    <string id="SunEvent">sol</string>    
+    <string id="SunEventRise">aman.</string> 
+    <string id="SunEventSet">atard.</string>      
+    <string id="Altimeter">alt</string>
+    <string id="HeartRate">fc</string>
+    <string id="Barometer">baro</string>
+    <string id="Battery">bat</string>
+    <string id="Stress">estres</string>
+    <string id="BodyBattery">b.bat</string>
+    <string id="Steps">pasos</string>
+    <string id="Floors">pisos</string>
+    <string id="BatteryDays">dias bat</string>
+    <string id="SolarIntensity">solar</string>
+    <string id="Calories">cal</string>
+    <string id="Temperature">temp</string>
+
+    <string id="BatterySave">Ahorro de batería</string>
+
+    <string id="EmptyExt">Vacío</string>
+    <string id="WeatherExt">Tiempo</string>
+    <string id="CalendarExt">Calendario</string>
+    <string id="NotificationsExt">Notificaciones</string>
+    <string id="SunEventExt">Evento solar</string>    
+    <string id="AltimeterExt">Altímetro</string>
+    <string id="HeartRateExt">Frecuencia cardíaca</string>
+    <string id="BarometerExt">Barómetro</string>
+    <string id="BatteryExt">Batería</string>
+    <string id="StressExt">Estrés</string>
+    <string id="BodyBatteryExt">Body Battery</string>
+    <string id="StepsExt">Pasos</string>
+    <string id="FloorsExt">Pisos subidos</string>
+    <string id="BatteryDaysExt">Días de batería</string>
+    <string id="SolarIntensityExt">Intensidad solar</string>
+    <string id="CaloriesExt">Calorías</string>
+    <string id="TemperatureExt">Temperatura</string>
+
+    <string id="ShowGraphfieldCatalog">Mostrar campo de datos</string>
+    <string id="ShowGraphHeartRate">Mostrar gráfico de FC</string>
+    <string id="ShowGraphPressure">Mostrar gráfico de presión</string>
+    <string id="ShowGraphAltimeter">Mostrar gráfico de altitud</string>
+
+    <string id="Settings">Ajustes</string>
+    <string id="DarkMode">Modo oscuro</string>
+
+</strings>
