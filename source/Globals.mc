@@ -7,6 +7,7 @@ public var boundingBoxes = [];
 var redrawLayout = false;
 var batterySave = false;
 var showGraph = 0;
+var graphSize = 0;
 var darkMode = true;
 
 public function checkBoundingBoxes(points) {

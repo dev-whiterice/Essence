@@ -25,6 +25,7 @@ class EssenceView extends WatchUi.WatchFace {
     defineBoundingBoxes(dc);
     batterySave = getApp().getProperty("BatterySave");
     showGraph = getApp().getProperty("ShowGraph");
+    graphSize = getApp().getProperty("GraphSize");
     darkMode = getApp().getProperty("DarkMode");
 
     if (dh == 454) {
@@ -57,7 +58,14 @@ class EssenceView extends WatchUi.WatchFace {
   function drawLabels(dc) {
     var view;
     for (var i = 0; i < fieldLayout.size(); i = i + 1) {
-      if (i == 5 && showGraph > 0) {
+      if (i == 5 && showGraph > 0 && graphSize == 0) {
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
+        view.setText("");
+      } else if (
+        (i == 4 || i == 5 || i == 6) &&
+        showGraph > 0 &&
+        graphSize == 1
+      ) {
         view = View.findDrawableById(fieldLayout[i]["id"] + "Label") as Text;
         view.setText("");
       } else {
@@ -213,7 +221,14 @@ class EssenceView extends WatchUi.WatchFace {
     var view;
     var fun;
     for (var i = 0; i < fieldLayout.size(); i = i + 1) {
-      if (i == 5 && showGraph > 0) {
+      if (i == 5 && showGraph > 0 && graphSize == 0) {
+        view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
+        view.setText("");
+      } else if (
+        (i == 4 || i == 5 || i == 6) &&
+        showGraph > 0 &&
+        graphSize == 1
+      ) {
         view = View.findDrawableById(fieldLayout[i]["id"] + "Data") as Text;
         view.setText("");
       } else {
@@ -766,7 +781,6 @@ class EssenceView extends WatchUi.WatchFace {
       return;
     }
 
-    var heartNow = 0;
     var curMin = 0;
     var curMax = 0;
     var maxSecs = 14400;
@@ -814,6 +828,9 @@ class EssenceView extends WatchUi.WatchFace {
 
       var totHeight = 30;
       var totWidth = 70;
+      if (graphSize == 1) {
+        totWidth = 180;
+      }
       totWidth = totWidth * graphWidthFactor;
       var binPixels = 1;
 

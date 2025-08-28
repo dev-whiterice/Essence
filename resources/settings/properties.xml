@@ -12,6 +12,7 @@
     <property id="FieldBottom" type="number">8</property>
 
     <property id="ShowGraph" type="number">1</property>
+    <property id="GraphSize" type="number">0</property>
     <property id="DarkMode" type="boolean">true</property>
 
 </properties>

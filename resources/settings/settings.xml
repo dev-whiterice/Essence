@@ -195,5 +195,12 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.GraphSize" title="@Strings.GraphSize">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.GraphSizeSmall</listEntry>
+            <listEntry value="1">@Strings.GraphSizeLarge</listEntry>
+        </settingConfig>
+    </setting>
+
 
 </settings>

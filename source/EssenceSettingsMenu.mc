@@ -109,6 +109,18 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
         {}
       )
     );
+
+    value = getApp().getProperty("GraphSize");
+    var graphSize = "";
+    if (value == 0) {
+      graphSize = WatchUi.loadResource(Rez.Strings.GraphSizeSmall);
+    } else {
+      graphSize = WatchUi.loadResource(Rez.Strings.GraphSizeLarge);
+    }
+
+    Menu2.addItem(
+      new WatchUi.MenuItem(Rez.Strings.GraphSize, graphSize, 12, {})
+    );
   }
 }
 
@@ -146,7 +158,7 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
 
       menuItem.setSubLabel(fieldCatalog[value]["labelExt"]);
       getApp().setProperty(fieldLayout[itemId]["id"], value);
-    } else {
+    } else if (itemId == 11) {
       itemId = itemId - 2;
       var value = getApp().getProperty("ShowGraph");
 
@@ -158,6 +170,19 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
 
       menuItem.setSubLabel(graphCatalog[value]["labelExt"]);
       getApp().setProperty("ShowGraph", value);
+    } else if (itemId == 12) {
+      itemId = itemId - 2;
+      var value = getApp().getProperty("GraphSize");
+
+      if (value == 0) {
+        value = 1;
+        menuItem.setSubLabel(WatchUi.loadResource(Rez.Strings.GraphSizeLarge));
+      } else {
+        value = 0;
+        menuItem.setSubLabel(WatchUi.loadResource(Rez.Strings.GraphSizeSmall));
+      }
+
+      getApp().setProperty("GraphSize", value);
     }
     redrawLayout = true;
   }

@@ -11,6 +11,7 @@
     <string id="FieldBottom">Campo inferior</string>
 
     <string id="ShowGraph">Mostrar gráfico</string>
+    <string id="GraphSize">Tamaño del gráfico</string>
 
     <string id="Empty"></string>
     <string id="Weather">tiempo</string>
@@ -56,6 +57,9 @@
     <string id="ShowGraphHeartRate">Mostrar gráfico de FC</string>
     <string id="ShowGraphPressure">Mostrar gráfico de presión</string>
     <string id="ShowGraphAltimeter">Mostrar gráfico de altitud</string>
+
+    <string id="GraphSizeSmall">Pequeño</string>
+    <string id="GraphSizeLarge">Grande</string>
 
     <string id="Settings">Ajustes</string>
     <string id="DarkMode">Modo oscuro</string>

@@ -11,6 +11,7 @@
     <string id="FieldBottom">Bottom field</string>
 
     <string id="ShowGraph">Show Graph</string>
+    <string id="GraphSize">Graph Size</string>
 
     <string id="Empty"></string>
     <string id="Weather">weather</string>
@@ -57,6 +58,9 @@
     <string id="ShowGraphHeartRate">Show HR Graph</string>
     <string id="ShowGraphPressure">Show Pressure Graph</string>
     <string id="ShowGraphAltimeter">Show Elevation Graph</string>
+
+    <string id="GraphSizeSmall">Small</string>
+    <string id="GraphSizeLarge">Large</string>
 
     <string id="Settings">Settings</string>
     <string id="DarkMode">Dark Mode</string>
