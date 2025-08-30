@@ -22,11 +22,15 @@ class EssenceView extends WatchUi.WatchFace {
   function onLayout(dc as Dc) as Void {
     dw = dc.getWidth();
     dh = dc.getHeight();
-    defineBoundingBoxes(dc);
     batterySave = getApp().getProperty("BatterySave");
     showGraph = getApp().getProperty("ShowGraph");
     graphSize = getApp().getProperty("GraphSize");
+    if (graphSize == null) {
+      graphSize = 0;
+    }
     darkMode = getApp().getProperty("DarkMode");
+
+    defineBoundingBoxes(dc);
 
     if (dh == 454) {
       graphVertOffset = 128;
@@ -128,6 +132,21 @@ class EssenceView extends WatchUi.WatchFace {
       [dw / 3 + dw / 3, dh / 1.5],
       [dw, dh / 1.5 + dh / 6],
     ];
+
+    if (graphSize == 1) {
+      bboxLowerLeft = [
+        [0, 0],
+        [0, 0],
+      ];
+      bboxLowerCenter = [
+        [0, dh / 1.5],
+        [dw, dh / 1.5 + dh / 6],
+      ];
+      bboxLowerRight = [
+        [0, 0],
+        [0, 0],
+      ];
+    }
 
     var bboxLower = [
       [dw / 3, dh - dh / 6],
