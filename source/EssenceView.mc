@@ -669,6 +669,7 @@ class EssenceView extends WatchUi.WatchFace {
     if (data == null) {
       return "--";
     }
+
     // return Lang.format("$1$", [data]);
     return data.toString();
   }
