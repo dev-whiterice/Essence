@@ -670,7 +670,9 @@ class EssenceView extends WatchUi.WatchFace {
       return "--";
     }
 
-    // return Lang.format("$1$", [data]);
+    data = data.toNumber();
+
+    //return Lang.format("$1$", [data]);
     return data.toString();
   }
 
