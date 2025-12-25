@@ -658,10 +658,6 @@ class EssenceView extends WatchUi.WatchFace {
       );
       if (comp.value != null) {
         data = comp.value;
-        if (data instanceof Toybox.Lang.Float) {
-          data *= 1000;
-          data = data.toNumber();
-        }
       }
     }
     if (data == null || data == "--") {
@@ -672,6 +668,11 @@ class EssenceView extends WatchUi.WatchFace {
 
     if (data == null) {
       return "--";
+    }
+
+    if (data instanceof Toybox.Lang.Float) {
+      data *= 1000;
+      data = data.toNumber();
     }
 
     //return Lang.format("$1$", [data]);
