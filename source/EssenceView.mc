@@ -827,10 +827,6 @@ class EssenceView extends WatchUi.WatchFace {
       if (sampleData == null) {
         return;
       }
-
-      if (sampleData == null) {
-        return;
-      }
       if (graphMin == null) {
         return;
       }
@@ -916,30 +912,46 @@ class EssenceView extends WatchUi.WatchFace {
           // only plot bar if we have valid values
           if (graphBinMax > 0 && graphBinMax >= graphBinMin) {
             if (curMax > 0 && curMax > curMin) {
-              var heartBinMid = (graphBinMax + graphBinMin) / 2;
-              var height =
-                ((heartBinMid - curMin * graphCatalog[showGraph]["scale"]) /
-                  (curMax - curMin * graphCatalog[showGraph]["scale"])) *
-                totHeight;
-
-              var xVal = (dw - totWidth) / 2 + totWidth - i * binPixels - 2;
-              var yVal = dh / 2 + graphVertOffset + totHeight - height;
-
               dc.setColor(
                 graphCatalog[showGraph]["colorDark"],
                 Graphics.COLOR_TRANSPARENT
               );
 
               try {
-                dc.fillRectangle(xVal, yVal, binPixels, height);
+                dc.fillRectangle(
+                  (dw - totWidth) / 2 + totWidth - i * binPixels - 2,
+                  dh / 2 +
+                    graphVertOffset +
+                    totHeight -
+                    (((graphBinMax + graphBinMin) / 2 -
+                      curMin * graphCatalog[showGraph]["scale"]) /
+                      (curMax - curMin * graphCatalog[showGraph]["scale"])) *
+                      totHeight,
+                  binPixels,
+                  (((graphBinMax + graphBinMin) / 2 -
+                    curMin * graphCatalog[showGraph]["scale"]) /
+                    (curMax - curMin * graphCatalog[showGraph]["scale"])) *
+                    totHeight
+                );
               } catch (ex) {}
               dc.setColor(
                 graphCatalog[showGraph]["color"],
                 Graphics.COLOR_TRANSPARENT
               );
-              try {
-                dc.fillRectangle(xVal, yVal, binPixels, 2 * binPixels);
-              } catch (ex) {}
+              // try {
+              //   dc.fillRectangle(
+              //     (dw - totWidth) / 2 + totWidth - i * binPixels - 2,
+              //     dh / 2 +
+              //       graphVertOffset +
+              //       totHeight -
+              //       (((graphBinMax + graphBinMin) / 2 -
+              //         curMin * graphCatalog[showGraph]["scale"]) /
+              //         (curMax - curMin * graphCatalog[showGraph]["scale"])) *
+              //         totHeight,
+              //     binPixels,
+              //     2 * binPixels
+              //   );
+              // } catch (ex) {}
             }
 
             if (graphBinMin < graphMin) {

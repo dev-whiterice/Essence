@@ -5048,7 +5048,7 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_766_33_802_2_stop
     }
     [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 804; @symbol_functiondef = [drawGraph,804,11,20]; @symbol_param<0> = [dc,804,21,23]; ]
     function drawGraph(dc) {
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 805 4 ]
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_4_807_4_if_stmt:
         symbol [ graphCatalog %tmp.2 805 8 20 ];
@@ -5069,28 +5069,28 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_53_807_4_stop
         goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_4_807_4_if_end;
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_4_807_4_if_end:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 809 4 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop" ]
         %curMin.1 = local;
         symbol [ curMin %curMin.1 809 8 14 ];
         %tmp.10 = 0;
         lputv %curMin.1 %tmp.10;
         symbol [ curMin %curMin.1 809 8 14 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 810 4 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop" ]
         %curMax.2 = local;
         symbol [ curMax %curMax.2 810 8 14 ];
         %tmp.11 = 0;
         lputv %curMax.2 %tmp.11;
         symbol [ curMax %curMax.2 810 8 14 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 811 4 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop" ]
         %maxSecs.3 = local;
         symbol [ maxSecs %maxSecs.3 811 8 15 ];
         %tmp.12 = 14400;
         lputv %maxSecs.3 %tmp.12;
         symbol [ maxSecs %maxSecs.3 811 8 15 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 813 4 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop" ]
         %getSensorHistory.4 = local;
         symbol [ getSensorHistory %getSensorHistory.4 813 8 24 ];
         symbol [ Lang %tmp.15 813 31 35 ];
@@ -5112,7 +5112,7 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_4_807_4_if_en
         lputv %getSensorHistory.4 %tmp.13;
         symbol [ getSensorHistory %getSensorHistory.4 813 8 24 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 818 4 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop" ]
         %sample.5 = local;
         symbol [ sample %sample.5 818 8 14 ];
         %tmp.27 = lgetv %getSensorHistory.4;
@@ -5138,16 +5138,16 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_805_4_807_4_if_en
         lputv %sample.5 %tmp.42;
         symbol [ sample %sample.5 818 8 14 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 823 4 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_954_4_if_stmt:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_966_4_if_stmt:
         %tmp.43 = lgetv %sample.5;
         symbol [ sample %tmp.43 823 8 14 ];
         %tmp.44 = null;
         %tmp.45 = ne %tmp.43 %tmp.44;
-        bf %tmp.45 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_954_4_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_954_4_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start:
+        bf %tmp.45 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_966_4_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_966_4_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 824 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphMin.6 = local;
         symbol [ graphMin %graphMin.6 824 10 18 ];
         %tmp.46 = lgetv %sample.5;
@@ -5159,7 +5159,7 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_star
         lputv %graphMin.6 %tmp.49;
         symbol [ graphMin %graphMin.6 824 10 18 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 825 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphMax.7 = local;
         symbol [ graphMax %graphMax.7 825 10 18 ];
         %tmp.50 = lgetv %sample.5;
@@ -5171,7 +5171,7 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_star
         lputv %graphMax.7 %tmp.53;
         symbol [ graphMax %graphMax.7 825 10 18 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 826 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %sampleData.8 = local;
         symbol [ sampleData %sampleData.8 826 10 20 ];
         %tmp.54 = lgetv %sample.5;
@@ -5196,823 +5196,766 @@ _Users_mattia_developer_projects_Essence_source_EssenceView_mc_827_30_829_6_star
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_827_30_829_6_stop:
         goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_827_6_829_6_if_end;
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_827_6_829_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 831 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_6_833_6_if_stmt:
-        %tmp.61 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.61 831 10 20 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 830 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_6_832_6_if_stmt:
+        %tmp.61 = lgetv %graphMin.6;
+        symbol [ graphMin %tmp.61 830 10 18 ];
         %tmp.62 = null;
         %tmp.63 = eq %tmp.61 %tmp.62;
-        bf %tmp.63 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_6_833_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_6_833_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_30_833_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 832 8 ]
+        bf %tmp.63 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_6_832_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_6_832_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_28_832_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 831 8 ]
         ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_30_833_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_6_833_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_831_6_833_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 834 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_6_836_6_if_stmt:
-        %tmp.64 = lgetv %graphMin.6;
-        symbol [ graphMin %tmp.64 834 10 18 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_28_832_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_6_832_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_830_6_832_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 833 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_6_835_6_if_stmt:
+        %tmp.64 = lgetv %graphMax.7;
+        symbol [ graphMax %tmp.64 833 10 18 ];
         %tmp.65 = null;
         %tmp.66 = eq %tmp.64 %tmp.65;
-        bf %tmp.66 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_6_836_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_6_836_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_28_836_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 835 8 ]
+        bf %tmp.66 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_6_835_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_6_835_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_28_835_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 834 8 ]
         ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_28_836_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_6_836_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_834_6_836_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 837 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_6_839_6_if_stmt:
-        %tmp.67 = lgetv %graphMax.7;
-        symbol [ graphMax %tmp.67 837 10 18 ];
-        %tmp.68 = null;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_28_835_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_6_835_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_833_6_835_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 836 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_6_838_6_if_stmt:
+        %tmp.67 = lgetv %sampleData.8;
+        symbol [ sampleData %tmp.67 836 10 20 ];
+        %tmp.68 = 0;
         %tmp.69 = eq %tmp.67 %tmp.68;
-        bf %tmp.69 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_6_839_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_6_839_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_28_839_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 838 8 ]
+        bf %tmp.69 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_6_838_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_6_838_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_27_838_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 837 8 ]
         ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_28_839_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_6_839_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_837_6_839_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 840 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_6_842_6_if_stmt:
-        %tmp.70 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.70 840 10 20 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_27_838_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_6_838_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_836_6_838_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 839 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_6_841_6_if_stmt:
+        %tmp.70 = lgetv %graphMin.6;
+        symbol [ graphMin %tmp.70 839 10 18 ];
         %tmp.71 = 0;
         %tmp.72 = eq %tmp.70 %tmp.71;
-        bf %tmp.72 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_6_842_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_6_842_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_27_842_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 841 8 ]
+        bf %tmp.72 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_6_841_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_6_841_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_25_841_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 840 8 ]
         ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_27_842_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_6_842_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_840_6_842_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 843 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_6_845_6_if_stmt:
-        %tmp.73 = lgetv %graphMin.6;
-        symbol [ graphMin %tmp.73 843 10 18 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_25_841_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_6_841_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_839_6_841_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 842 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_6_844_6_if_stmt:
+        %tmp.73 = lgetv %graphMax.7;
+        symbol [ graphMax %tmp.73 842 10 18 ];
         %tmp.74 = 0;
         %tmp.75 = eq %tmp.73 %tmp.74;
-        bf %tmp.75 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_6_845_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_6_845_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_25_845_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 844 8 ]
+        bf %tmp.75 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_6_844_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_6_844_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_25_844_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 843 8 ]
         ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_25_845_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_6_845_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_843_6_845_6_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_25_844_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_6_844_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_842_6_844_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 845 6 ]
+        %tmp.76 = lgetv %graphMin.6;
+        symbol [ graphMin %tmp.76 845 15 23 ];
+        lputv %curMin.1 %tmp.76;
+        symbol [ curMin %curMin.1 845 6 12 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 846 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_6_848_6_if_stmt:
-        %tmp.76 = lgetv %graphMax.7;
-        symbol [ graphMax %tmp.76 846 10 18 ];
-        %tmp.77 = 0;
-        %tmp.78 = eq %tmp.76 %tmp.77;
-        bf %tmp.78 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_6_848_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_6_848_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_25_848_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 847 8 ]
-        ret ?;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_25_848_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_6_848_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_846_6_848_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 849 6 ]
-        %tmp.79 = lgetv %graphMin.6;
-        symbol [ graphMin %tmp.79 849 15 23 ];
-        lputv %curMin.1 %tmp.79;
-        symbol [ curMin %curMin.1 849 6 12 ];
+        %tmp.77 = lgetv %graphMax.7;
+        symbol [ graphMax %tmp.77 846 15 23 ];
+        lputv %curMax.2 %tmp.77;
+        symbol [ curMax %curMax.2 846 6 12 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 847 6 ]
+        %tmp.78 = 1000;
+        lputv %graphMin.6 %tmp.78;
+        symbol [ graphMin %graphMin.6 847 6 14 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 848 6 ]
+        %tmp.79 = 0;
+        lputv %graphMax.7 %tmp.79;
+        symbol [ graphMax %graphMax.7 848 6 14 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 850 6 ]
-        %tmp.80 = lgetv %graphMax.7;
-        symbol [ graphMax %tmp.80 850 15 23 ];
-        lputv %curMax.2 %tmp.80;
-        symbol [ curMax %curMax.2 850 6 12 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 851 6 ]
-        %tmp.81 = 1000;
-        lputv %graphMin.6 %tmp.81;
-        symbol [ graphMin %graphMin.6 851 6 14 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 852 6 ]
-        %tmp.82 = 0;
-        lputv %graphMax.7 %tmp.82;
-        symbol [ graphMax %graphMax.7 852 6 14 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 854 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %totHeight.9 = local;
-        symbol [ totHeight %totHeight.9 854 10 19 ];
-        %tmp.83 = 30;
-        lputv %totHeight.9 %tmp.83;
-        symbol [ totHeight %totHeight.9 854 10 19 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 855 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ totHeight %totHeight.9 850 10 19 ];
+        %tmp.80 = 30;
+        lputv %totHeight.9 %tmp.80;
+        symbol [ totHeight %totHeight.9 850 10 19 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 851 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %totWidth.10 = local;
-        symbol [ totWidth %totWidth.10 855 10 18 ];
-        %tmp.84 = 70;
-        lputv %totWidth.10 %tmp.84;
-        symbol [ totWidth %totWidth.10 855 10 18 ];
+        symbol [ totWidth %totWidth.10 851 10 18 ];
+        %tmp.81 = 70;
+        lputv %totWidth.10 %tmp.81;
+        symbol [ totWidth %totWidth.10 851 10 18 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 852 6 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_6_854_6_if_stmt:
+        symbol [ graphSize %tmp.83 852 10 19 ];
+        %tmp.83 = getv ? :graphSize;
+        %tmp.84 = 1;
+        %tmp.85 = eq %tmp.83 %tmp.84;
+        bf %tmp.85 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_6_854_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_6_854_6_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_26_854_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 853 8 ]
+        %tmp.86 = 180;
+        lputv %totWidth.10 %tmp.86;
+        symbol [ totWidth %totWidth.10 853 8 16 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_26_854_6_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_6_854_6_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_852_6_854_6_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 855 6 ]
+        %tmp.87 = lgetv %totWidth.10;
+        symbol [ totWidth %tmp.87 855 17 25 ];
+        symbol [ graphWidthFactor %tmp.89 855 28 44 ];
+        %tmp.89 = getv ? :graphWidthFactor;
+        %tmp.90 = mul %tmp.87 %tmp.89;
+        lputv %totWidth.10 %tmp.90;
+        symbol [ totWidth %totWidth.10 855 6 14 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 856 6 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_6_858_6_if_stmt:
-        symbol [ graphSize %tmp.86 856 10 19 ];
-        %tmp.86 = getv ? :graphSize;
-        %tmp.87 = 1;
-        %tmp.88 = eq %tmp.86 %tmp.87;
-        bf %tmp.88 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_6_858_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_6_858_6_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_26_858_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 857 8 ]
-        %tmp.89 = 180;
-        lputv %totWidth.10 %tmp.89;
-        symbol [ totWidth %totWidth.10 857 8 16 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_26_858_6_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_6_858_6_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_856_6_858_6_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 859 6 ]
-        %tmp.90 = lgetv %totWidth.10;
-        symbol [ totWidth %tmp.90 859 17 25 ];
-        symbol [ graphWidthFactor %tmp.92 859 28 44 ];
-        %tmp.92 = getv ? :graphWidthFactor;
-        %tmp.93 = mul %tmp.90 %tmp.92;
-        lputv %totWidth.10 %tmp.93;
-        symbol [ totWidth %totWidth.10 859 6 14 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 860 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %binPixels.11 = local;
-        symbol [ binPixels %binPixels.11 860 10 19 ];
-        %tmp.94 = 1;
-        lputv %binPixels.11 %tmp.94;
-        symbol [ binPixels %binPixels.11 860 10 19 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 862 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ binPixels %binPixels.11 856 10 19 ];
+        %tmp.91 = 1;
+        lputv %binPixels.11 %tmp.91;
+        symbol [ binPixels %binPixels.11 856 10 19 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 858 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %totBins.12 = local;
-        symbol [ totBins %totBins.12 862 10 17 ];
-        symbol [ Math %tmp.96 862 20 24 ];
-        %tmp.96 = getv ? :Math;
-        symbol [ ceil %tmp.97 862 25 29 ];
-        %tmp.97 = getv function %tmp.96 :ceil;
-        %tmp.98 = lgetv %totWidth.10;
-        symbol [ totWidth %tmp.98 862 30 38 ];
-        %tmp.99 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.99 862 41 50 ];
-        %tmp.100 = div %tmp.98 %tmp.99;
-        %tmp.101 = invoke %tmp.96 %tmp.97(%tmp.100);
-        symbol [ toNumber %tmp.102 862 52 60 ];
-        %tmp.102 = getv function %tmp.101 :toNumber;
-        %tmp.103 = invoke %tmp.101 %tmp.102();
-        lputv %totBins.12 %tmp.103;
-        symbol [ totBins %totBins.12 862 10 17 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 863 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ totBins %totBins.12 858 10 17 ];
+        symbol [ Math %tmp.93 858 20 24 ];
+        %tmp.93 = getv ? :Math;
+        symbol [ ceil %tmp.94 858 25 29 ];
+        %tmp.94 = getv function %tmp.93 :ceil;
+        %tmp.95 = lgetv %totWidth.10;
+        symbol [ totWidth %tmp.95 858 30 38 ];
+        %tmp.96 = lgetv %binPixels.11;
+        symbol [ binPixels %tmp.96 858 41 50 ];
+        %tmp.97 = div %tmp.95 %tmp.96;
+        %tmp.98 = invoke %tmp.93 %tmp.94(%tmp.97);
+        symbol [ toNumber %tmp.99 858 52 60 ];
+        %tmp.99 = getv function %tmp.98 :toNumber;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        lputv %totBins.12 %tmp.100;
+        symbol [ totBins %totBins.12 858 10 17 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 859 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %binWidthSecs.13 = local;
-        symbol [ binWidthSecs %binWidthSecs.13 863 10 22 ];
-        symbol [ Math %tmp.105 863 25 29 ];
-        %tmp.105 = getv ? :Math;
-        symbol [ floor %tmp.106 863 30 35 ];
-        %tmp.106 = getv function %tmp.105 :floor;
-        %tmp.107 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.107 864 9 18 ];
-        %tmp.108 = lgetv %maxSecs.3;
-        symbol [ maxSecs %tmp.108 864 21 28 ];
-        %tmp.109 = mul %tmp.107 %tmp.108;
-        %tmp.110 = lgetv %totWidth.10;
-        symbol [ totWidth %tmp.110 864 32 40 ];
-        %tmp.111 = div %tmp.109 %tmp.110;
-        %tmp.112 = invoke %tmp.105 %tmp.106(%tmp.111);
-        symbol [ toNumber %tmp.113 865 8 16 ];
-        %tmp.113 = getv function %tmp.112 :toNumber;
-        %tmp.114 = invoke %tmp.112 %tmp.113();
-        lputv %binWidthSecs.13 %tmp.114;
-        symbol [ binWidthSecs %binWidthSecs.13 863 10 22 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 867 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ binWidthSecs %binWidthSecs.13 859 10 22 ];
+        symbol [ Math %tmp.102 859 25 29 ];
+        %tmp.102 = getv ? :Math;
+        symbol [ floor %tmp.103 859 30 35 ];
+        %tmp.103 = getv function %tmp.102 :floor;
+        %tmp.104 = lgetv %binPixels.11;
+        symbol [ binPixels %tmp.104 860 9 18 ];
+        %tmp.105 = lgetv %maxSecs.3;
+        symbol [ maxSecs %tmp.105 860 21 28 ];
+        %tmp.106 = mul %tmp.104 %tmp.105;
+        %tmp.107 = lgetv %totWidth.10;
+        symbol [ totWidth %tmp.107 860 32 40 ];
+        %tmp.108 = div %tmp.106 %tmp.107;
+        %tmp.109 = invoke %tmp.102 %tmp.103(%tmp.108);
+        symbol [ toNumber %tmp.110 861 8 16 ];
+        %tmp.110 = getv function %tmp.109 :toNumber;
+        %tmp.111 = invoke %tmp.109 %tmp.110();
+        lputv %binWidthSecs.13 %tmp.111;
+        symbol [ binWidthSecs %binWidthSecs.13 859 10 22 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 863 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphSecs.14 = local;
-        symbol [ graphSecs %graphSecs.14 867 10 19 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 868 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ graphSecs %graphSecs.14 863 10 19 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 864 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphValue.15 = local;
-        symbol [ graphValue %graphValue.15 868 10 20 ];
-        %tmp.115 = 0;
-        lputv %graphValue.15 %tmp.115;
-        symbol [ graphValue %graphValue.15 868 10 20 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 869 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ graphValue %graphValue.15 864 10 20 ];
+        %tmp.112 = 0;
+        lputv %graphValue.15 %tmp.112;
+        symbol [ graphValue %graphValue.15 864 10 20 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 865 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %secsBin.16 = local;
-        symbol [ secsBin %secsBin.16 869 10 17 ];
-        %tmp.116 = 0;
-        lputv %secsBin.16 %tmp.116;
-        symbol [ secsBin %secsBin.16 869 10 17 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 870 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ secsBin %secsBin.16 865 10 17 ];
+        %tmp.113 = 0;
+        lputv %secsBin.16 %tmp.113;
+        symbol [ secsBin %secsBin.16 865 10 17 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 866 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %lastGraphSecs.17 = local;
-        symbol [ lastGraphSecs %lastGraphSecs.17 870 10 23 ];
-        %tmp.117 = lgetv %sample.5;
-        symbol [ sample %tmp.117 870 26 32 ];
-        %tmp.118 = as %tmp.117 { (!Null) };
-        symbol [ getNewestSampleTime %tmp.119 870 33 52 ];
-        %tmp.119 = getv function %tmp.118 :getNewestSampleTime;
-        %tmp.120 = invoke %tmp.118 %tmp.119();
-        symbol [ value %tmp.121 870 55 60 ];
-        %tmp.121 = getv function %tmp.120 :value;
-        %tmp.122 = invoke %tmp.120 %tmp.121();
-        lputv %lastGraphSecs.17 %tmp.122;
-        symbol [ lastGraphSecs %lastGraphSecs.17 870 10 23 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 871 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ lastGraphSecs %lastGraphSecs.17 866 10 23 ];
+        %tmp.114 = lgetv %sample.5;
+        symbol [ sample %tmp.114 866 26 32 ];
+        %tmp.115 = as %tmp.114 { (!Null) };
+        symbol [ getNewestSampleTime %tmp.116 866 33 52 ];
+        %tmp.116 = getv function %tmp.115 :getNewestSampleTime;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        symbol [ value %tmp.118 866 55 60 ];
+        %tmp.118 = getv function %tmp.117 :value;
+        %tmp.119 = invoke %tmp.117 %tmp.118();
+        lputv %lastGraphSecs.17 %tmp.119;
+        symbol [ lastGraphSecs %lastGraphSecs.17 866 10 23 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 867 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphBinMax.18 = local;
-        symbol [ graphBinMax %graphBinMax.18 871 10 21 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 872 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ graphBinMax %graphBinMax.18 867 10 21 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 868 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %graphBinMin.19 = local;
-        symbol [ graphBinMin %graphBinMin.19 872 10 21 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 874 6 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop" ]
+        symbol [ graphBinMin %graphBinMin.19 868 10 21 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 870 6 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop" ]
         %finished.20 = local;
-        symbol [ finished %finished.20 874 10 18 ];
-        %tmp.123 = false;
-        lputv %finished.20 %tmp.123;
-        symbol [ finished %finished.20 874 10 18 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 876 6 ]
-        for @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_test @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_incr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_init:
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_begin" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_end" ]
+        symbol [ finished %finished.20 870 10 18 ];
+        %tmp.120 = false;
+        lputv %finished.20 %tmp.120;
+        symbol [ finished %finished.20 870 10 18 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 872 6 ]
+        for @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_test @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_incr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_init:
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_begin" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_end" ]
         %i.21 = local;
-        symbol [ i %i.21 876 15 16 ];
-        %tmp.124 = 0;
-        lputv %i.21 %tmp.124;
-        symbol [ i %i.21 876 15 16 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_test:
-        %tmp.125 = lgetv %i.21;
-        symbol [ i %tmp.125 876 22 23 ];
-        %tmp.126 = lgetv %totBins.12;
-        symbol [ totBins %tmp.126 876 26 33 ];
-        %tmp.127 = lt %tmp.125 %tmp.126;
-        bf %tmp.127 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_begin:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_40_953_6_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 877 8 ]
-        %tmp.128 = 0;
-        lputv %graphBinMax.18 %tmp.128;
-        symbol [ graphBinMax %graphBinMax.18 877 8 19 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 878 8 ]
-        %tmp.129 = 0;
-        lputv %graphBinMin.19 %tmp.129;
-        symbol [ graphBinMin %graphBinMin.19 878 8 19 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 880 8 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_8_952_8_if_stmt:
-        %tmp.130 = lgetv %finished.20;
-        symbol [ finished %tmp.130 880 13 21 ];
-        %tmp.131 = not %tmp.130;
-        bf %tmp.131 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_8_952_8_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_8_952_8_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_23_952_8_start:
+        symbol [ i %i.21 872 15 16 ];
+        %tmp.121 = 0;
+        lputv %i.21 %tmp.121;
+        symbol [ i %i.21 872 15 16 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_test:
+        %tmp.122 = lgetv %i.21;
+        symbol [ i %tmp.122 872 22 23 ];
+        %tmp.123 = lgetv %totBins.12;
+        symbol [ totBins %tmp.123 872 26 33 ];
+        %tmp.124 = lt %tmp.122 %tmp.123;
+        bf %tmp.124 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_begin:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_40_965_6_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 873 8 ]
+        %tmp.125 = 0;
+        lputv %graphBinMax.18 %tmp.125;
+        symbol [ graphBinMax %graphBinMax.18 873 8 19 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 874 8 ]
+        %tmp.126 = 0;
+        lputv %graphBinMin.19 %tmp.126;
+        symbol [ graphBinMin %graphBinMin.19 874 8 19 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 876 8 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_8_964_8_if_stmt:
+        %tmp.127 = lgetv %finished.20;
+        symbol [ finished %tmp.127 876 13 21 ];
+        %tmp.128 = not %tmp.127;
+        bf %tmp.128 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_8_964_8_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_8_964_8_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_23_964_8_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 877 10 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_stmt:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_14_877_43_begin:
+        %tmp.129 = lgetv %secsBin.16;
+        symbol [ secsBin %tmp.129 877 14 21 ];
+        %tmp.130 = 0;
+        %tmp.131 = gt %tmp.129 %tmp.130;
+        bf %tmp.131 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_29_877_43_true:
+        %tmp.132 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.132 877 29 39 ];
+        %tmp.133 = null;
+        %tmp.134 = ne %tmp.132 %tmp.133;
+        push %tmp.134;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_29_877_43_end:
+        %tmp.135 = phi [%tmp.131 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_14_877_43_begin] [%tmp.134 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_29_877_43_true] [%tmp.135 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_29_877_43_end];
+        bf %tmp.135 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_49_880_10_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 878 12 ]
+        %tmp.136 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.136 878 26 36 ];
+        %tmp.137 = as %tmp.136 { (!Null) };
+        lputv %graphBinMax.18 %tmp.137;
+        symbol [ graphBinMax %graphBinMax.18 878 12 23 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 879 12 ]
+        %tmp.138 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.138 879 26 36 ];
+        %tmp.139 = as %tmp.138 { (!Null) };
+        lputv %graphBinMin.19 %tmp.139;
+        symbol [ graphBinMin %graphBinMin.19 879 12 23 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_49_880_10_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_877_10_880_10_if_end:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 881 10 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_stmt:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_14_881_43_begin:
-        %tmp.132 = lgetv %secsBin.16;
-        symbol [ secsBin %tmp.132 881 14 21 ];
-        %tmp.133 = 0;
-        %tmp.134 = gt %tmp.132 %tmp.133;
-        bf %tmp.134 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_29_881_43_true:
-        %tmp.135 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.135 881 29 39 ];
-        %tmp.136 = null;
-        %tmp.137 = ne %tmp.135 %tmp.136;
-        push %tmp.137;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_29_881_43_end:
-        %tmp.138 = phi [%tmp.134 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_14_881_43_begin] [%tmp.137 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_29_881_43_true] [%tmp.138 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_29_881_43_end];
-        bf %tmp.138 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_49_884_10_start:
+        while @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_test @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_test:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_17_881_40_begin:
+        %tmp.140 = lgetv %finished.20;
+        symbol [ finished %tmp.140 881 18 26 ];
+        %tmp.141 = not %tmp.140;
+        %tmp.142 = dup %tmp.141;
+        bf %tmp.142 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_30_881_40_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_30_881_40_true:
+        %tmp.143 = lgetv %secsBin.16;
+        symbol [ secsBin %tmp.143 881 30 37 ];
+        %tmp.144 = lgetv %binWidthSecs.13;
+        symbol [ binWidthSecs %tmp.144 881 40 52 ];
+        %tmp.145 = lt %tmp.143 %tmp.144;
+        %tmp.146 = and %tmp.141 %tmp.145;
+        push %tmp.146;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_30_881_40_end:
+        %tmp.147 = phi [%tmp.142 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_17_881_40_begin] [%tmp.146 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_30_881_40_true] [%tmp.147 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_30_881_40_end];
+        bf %tmp.147 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_begin:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_54_906_10_start:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 882 12 ]
-        %tmp.139 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.139 882 26 36 ];
-        %tmp.140 = as %tmp.139 { (!Null) };
-        lputv %graphBinMax.18 %tmp.140;
-        symbol [ graphBinMax %graphBinMax.18 882 12 23 ];
+        %tmp.148 = lgetv %sample.5;
+        symbol [ sample %tmp.148 882 25 31 ];
+        %tmp.149 = as %tmp.148 { (!Null) };
+        symbol [ next %tmp.150 882 32 36 ];
+        %tmp.150 = getv function %tmp.149 :next;
+        %tmp.151 = invoke %tmp.149 %tmp.150();
+        lputv %sampleData.8 %tmp.151;
+        symbol [ sampleData %sampleData.8 882 12 22 ];
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 883 12 ]
-        %tmp.141 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.141 883 26 36 ];
-        %tmp.142 = as %tmp.141 { (!Null) };
-        lputv %graphBinMin.19 %tmp.142;
-        symbol [ graphBinMin %graphBinMin.19 883 12 23 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_49_884_10_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_884_10_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 885 10 ]
-        while @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_test @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_test:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_17_885_40_begin:
-        %tmp.143 = lgetv %finished.20;
-        symbol [ finished %tmp.143 885 18 26 ];
-        %tmp.144 = not %tmp.143;
-        %tmp.145 = dup %tmp.144;
-        bf %tmp.145 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_30_885_40_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_30_885_40_true:
-        %tmp.146 = lgetv %secsBin.16;
-        symbol [ secsBin %tmp.146 885 30 37 ];
-        %tmp.147 = lgetv %binWidthSecs.13;
-        symbol [ binWidthSecs %tmp.147 885 40 52 ];
-        %tmp.148 = lt %tmp.146 %tmp.147;
-        %tmp.149 = and %tmp.144 %tmp.148;
-        push %tmp.149;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_30_885_40_end:
-        %tmp.150 = phi [%tmp.145 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_17_885_40_begin] [%tmp.149 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_30_885_40_true] [%tmp.150 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_30_885_40_end];
-        bf %tmp.150 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_begin:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_54_910_10_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 886 12 ]
-        %tmp.151 = lgetv %sample.5;
-        symbol [ sample %tmp.151 886 25 31 ];
-        %tmp.152 = as %tmp.151 { (!Null) };
-        symbol [ next %tmp.153 886 32 36 ];
-        %tmp.153 = getv function %tmp.152 :next;
-        %tmp.154 = invoke %tmp.152 %tmp.153();
-        lputv %sampleData.8 %tmp.154;
-        symbol [ sampleData %sampleData.8 886 12 22 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 887 12 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_stmt:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_stmt:
+        %tmp.152 = lgetv %sampleData.8;
+        symbol [ sampleData %tmp.152 883 16 26 ];
+        %tmp.153 = null;
+        %tmp.154 = ne %tmp.152 %tmp.153;
+        bf %tmp.154 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_else_false;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_36_903_12_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 884 14 ]
         %tmp.155 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.155 887 16 26 ];
-        %tmp.156 = null;
-        %tmp.157 = ne %tmp.155 %tmp.156;
-        bf %tmp.157 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_else_false;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_36_907_12_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 888 14 ]
-        %tmp.158 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.158 888 27 37 ];
-        %tmp.159 = as %tmp.158 { (!Null) };
-        symbol [ data %tmp.160 888 38 42 ];
-        %tmp.160 = getv %tmp.159 :data;
-        lputv %graphValue.15 %tmp.160;
-        symbol [ graphValue %graphValue.15 888 14 24 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 890 14 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_14_903_14_if_stmt:
-        %tmp.161 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.161 890 18 28 ];
-        %tmp.162 = null;
-        %tmp.163 = ne %tmp.161 %tmp.162;
-        bf %tmp.163 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_14_903_14_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_14_903_14_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_38_903_14_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 891 16 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_stmt:
-        %tmp.164 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.164 891 20 31 ];
-        %tmp.165 = 0;
-        %tmp.166 = eq %tmp.164 %tmp.165;
-        bf %tmp.166 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_else_false;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_38_894_16_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 892 18 ]
-        %tmp.167 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.167 892 32 42 ];
-        %tmp.168 = as %tmp.167 { (!Null) };
-        lputv %graphBinMax.18 %tmp.168;
-        symbol [ graphBinMax %graphBinMax.18 892 18 29 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 893 18 ]
-        %tmp.169 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.169 893 32 42 ];
-        %tmp.170 = as %tmp.169 { (!Null) };
-        lputv %graphBinMin.19 %tmp.170;
-        symbol [ graphBinMin %graphBinMin.19 893 18 29 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_38_894_16_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_else_false:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_894_23_902_16_start:
+        symbol [ sampleData %tmp.155 884 27 37 ];
+        %tmp.156 = as %tmp.155 { (!Null) };
+        symbol [ data %tmp.157 884 38 42 ];
+        %tmp.157 = getv %tmp.156 :data;
+        lputv %graphValue.15 %tmp.157;
+        symbol [ graphValue %graphValue.15 884 14 24 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 886 14 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_14_899_14_if_stmt:
+        %tmp.158 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.158 886 18 28 ];
+        %tmp.159 = null;
+        %tmp.160 = ne %tmp.158 %tmp.159;
+        bf %tmp.160 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_14_899_14_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_14_899_14_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_38_899_14_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 887 16 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_stmt:
+        %tmp.161 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.161 887 20 31 ];
+        %tmp.162 = 0;
+        %tmp.163 = eq %tmp.161 %tmp.162;
+        bf %tmp.163 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_else_false;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_38_890_16_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 888 18 ]
+        %tmp.164 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.164 888 32 42 ];
+        %tmp.165 = as %tmp.164 { (!Null) };
+        lputv %graphBinMax.18 %tmp.165;
+        symbol [ graphBinMax %graphBinMax.18 888 18 29 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 889 18 ]
+        %tmp.166 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.166 889 32 42 ];
+        %tmp.167 = as %tmp.166 { (!Null) };
+        lputv %graphBinMin.19 %tmp.167;
+        symbol [ graphBinMin %graphBinMin.19 889 18 29 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_38_890_16_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_else_false:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_23_898_16_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 891 18 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_18_893_18_if_stmt:
+        %tmp.168 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.168 891 22 32 ];
+        %tmp.169 = as %tmp.168 { (!Null) };
+        %tmp.170 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.170 891 35 46 ];
+        %tmp.171 = gt %tmp.169 %tmp.170;
+        bf %tmp.171 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_18_893_18_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_18_893_18_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_48_893_18_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 892 20 ]
+        %tmp.172 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.172 892 34 44 ];
+        %tmp.173 = as %tmp.172 { (!Null) };
+        lputv %graphBinMax.18 %tmp.173;
+        symbol [ graphBinMax %graphBinMax.18 892 20 31 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_48_893_18_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_18_893_18_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_18_893_18_if_end:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 895 18 ]
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_stmt:
-        %tmp.171 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.171 895 22 32 ];
-        %tmp.172 = as %tmp.171 { (!Null) };
-        %tmp.173 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.173 895 35 46 ];
-        %tmp.174 = gt %tmp.172 %tmp.173;
-        bf %tmp.174 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_end;
+        %tmp.174 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.174 895 22 32 ];
+        %tmp.175 = as %tmp.174 { (!Null) };
+        %tmp.176 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.176 895 35 46 ];
+        %tmp.177 = lt %tmp.175 %tmp.176;
+        bf %tmp.177 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_end;
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_true:
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_48_897_18_start:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 896 20 ]
-        %tmp.175 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.175 896 34 44 ];
-        %tmp.176 = as %tmp.175 { (!Null) };
-        lputv %graphBinMax.18 %tmp.176;
-        symbol [ graphBinMax %graphBinMax.18 896 20 31 ];
+        %tmp.178 = lgetv %graphValue.15;
+        symbol [ graphValue %tmp.178 896 34 44 ];
+        %tmp.179 = as %tmp.178 { (!Null) };
+        lputv %graphBinMin.19 %tmp.179;
+        symbol [ graphBinMin %graphBinMin.19 896 20 31 ];
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_48_897_18_stop:
         goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_end;
 _Users_mattia_developer_projects_Essence_source_EssenceView_mc_895_18_897_18_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 899 18 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_18_901_18_if_stmt:
-        %tmp.177 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.177 899 22 32 ];
-        %tmp.178 = as %tmp.177 { (!Null) };
-        %tmp.179 = lgetv %graphBinMin.19;
-        symbol [ graphBinMin %tmp.179 899 35 46 ];
-        %tmp.180 = lt %tmp.178 %tmp.179;
-        bf %tmp.180 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_18_901_18_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_18_901_18_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_48_901_18_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 900 20 ]
-        %tmp.181 = lgetv %graphValue.15;
-        symbol [ graphValue %tmp.181 900 34 44 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_23_898_16_stop:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_16_898_16_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_38_899_14_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_14_899_14_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_886_14_899_14_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 900 14 ]
+        %tmp.180 = lgetv %lastGraphSecs.17;
+        symbol [ lastGraphSecs %tmp.180 900 26 39 ];
+        %tmp.181 = lgetv %sampleData.8;
+        symbol [ sampleData %tmp.181 900 42 52 ];
         %tmp.182 = as %tmp.181 { (!Null) };
-        lputv %graphBinMin.19 %tmp.182;
-        symbol [ graphBinMin %graphBinMin.19 900 20 31 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_48_901_18_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_18_901_18_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_899_18_901_18_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_894_23_902_16_stop:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_891_16_902_16_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_38_903_14_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_14_903_14_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_890_14_903_14_if_end:
+        symbol [ when %tmp.183 900 53 57 ];
+        %tmp.183 = getv %tmp.182 :when;
+        symbol [ value %tmp.184 900 58 63 ];
+        %tmp.184 = getv function %tmp.183 :value;
+        %tmp.185 = invoke %tmp.183 %tmp.184();
+        %tmp.186 = sub %tmp.180 %tmp.185;
+        lputv %graphSecs.14 %tmp.186;
+        symbol [ graphSecs %graphSecs.14 900 14 23 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 901 14 ]
+        %tmp.187 = lgetv %sampleData.8;
+        symbol [ sampleData %tmp.187 901 30 40 ];
+        %tmp.188 = as %tmp.187 { (!Null) };
+        symbol [ when %tmp.189 901 41 45 ];
+        %tmp.189 = getv %tmp.188 :when;
+        symbol [ value %tmp.190 901 46 51 ];
+        %tmp.190 = getv function %tmp.189 :value;
+        %tmp.191 = invoke %tmp.189 %tmp.190();
+        lputv %lastGraphSecs.17 %tmp.191;
+        symbol [ lastGraphSecs %lastGraphSecs.17 901 14 27 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 902 14 ]
+        %tmp.192 = lgetv %secsBin.16;
+        symbol [ secsBin %tmp.192 902 14 21 ];
+        %tmp.193 = lgetv %graphSecs.14;
+        symbol [ graphSecs %tmp.193 902 25 34 ];
+        %tmp.194 = add %tmp.192 %tmp.193;
+        lputv %secsBin.16 %tmp.194;
+        symbol [ secsBin %secsBin.16 902 14 21 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_36_903_12_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_else_false:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_903_19_905_12_start:
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 904 14 ]
-        %tmp.183 = lgetv %lastGraphSecs.17;
-        symbol [ lastGraphSecs %tmp.183 904 26 39 ];
-        %tmp.184 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.184 904 42 52 ];
-        %tmp.185 = as %tmp.184 { (!Null) };
-        symbol [ when %tmp.186 904 53 57 ];
-        %tmp.186 = getv %tmp.185 :when;
-        symbol [ value %tmp.187 904 58 63 ];
-        %tmp.187 = getv function %tmp.186 :value;
-        %tmp.188 = invoke %tmp.186 %tmp.187();
-        %tmp.189 = sub %tmp.183 %tmp.188;
-        lputv %graphSecs.14 %tmp.189;
-        symbol [ graphSecs %graphSecs.14 904 14 23 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 905 14 ]
-        %tmp.190 = lgetv %sampleData.8;
-        symbol [ sampleData %tmp.190 905 30 40 ];
-        %tmp.191 = as %tmp.190 { (!Null) };
-        symbol [ when %tmp.192 905 41 45 ];
-        %tmp.192 = getv %tmp.191 :when;
-        symbol [ value %tmp.193 905 46 51 ];
-        %tmp.193 = getv function %tmp.192 :value;
-        %tmp.194 = invoke %tmp.192 %tmp.193();
-        lputv %lastGraphSecs.17 %tmp.194;
-        symbol [ lastGraphSecs %lastGraphSecs.17 905 14 27 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 906 14 ]
-        %tmp.195 = lgetv %secsBin.16;
-        symbol [ secsBin %tmp.195 906 14 21 ];
-        %tmp.196 = lgetv %graphSecs.14;
-        symbol [ graphSecs %tmp.196 906 25 34 ];
-        %tmp.197 = add %tmp.195 %tmp.196;
-        lputv %secsBin.16 %tmp.197;
-        symbol [ secsBin %secsBin.16 906 14 21 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_36_907_12_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_else_false:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_907_19_909_12_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 908 14 ]
-        %tmp.198 = true;
-        lputv %finished.20 %tmp.198;
-        symbol [ finished %finished.20 908 14 22 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_907_19_909_12_stop:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_887_12_909_12_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_54_910_10_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_test;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_885_10_910_10_while_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 912 10 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_10_914_10_if_stmt:
+        %tmp.195 = true;
+        lputv %finished.20 %tmp.195;
+        symbol [ finished %finished.20 904 14 22 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_903_19_905_12_stop:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_883_12_905_12_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_54_906_10_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_test;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_881_10_906_10_while_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 908 10 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_10_910_10_if_stmt:
+        %tmp.196 = lgetv %secsBin.16;
+        symbol [ secsBin %tmp.196 908 14 21 ];
+        %tmp.197 = lgetv %binWidthSecs.13;
+        symbol [ binWidthSecs %tmp.197 908 25 37 ];
+        %tmp.198 = gte %tmp.196 %tmp.197;
+        bf %tmp.198 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_10_910_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_10_910_10_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_39_910_10_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 909 12 ]
         %tmp.199 = lgetv %secsBin.16;
-        symbol [ secsBin %tmp.199 912 14 21 ];
+        symbol [ secsBin %tmp.199 909 12 19 ];
         %tmp.200 = lgetv %binWidthSecs.13;
-        symbol [ binWidthSecs %tmp.200 912 25 37 ];
-        %tmp.201 = gte %tmp.199 %tmp.200;
-        bf %tmp.201 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_10_914_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_10_914_10_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_39_914_10_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 913 12 ]
-        %tmp.202 = lgetv %secsBin.16;
-        symbol [ secsBin %tmp.202 913 12 19 ];
-        %tmp.203 = lgetv %binWidthSecs.13;
-        symbol [ binWidthSecs %tmp.203 913 23 35 ];
-        %tmp.204 = sub %tmp.202 %tmp.203;
-        lputv %secsBin.16 %tmp.204;
-        symbol [ secsBin %secsBin.16 913 12 19 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_39_914_10_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_10_914_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_912_10_914_10_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 917 10 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_stmt:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_14_917_48_begin:
+        symbol [ binWidthSecs %tmp.200 909 23 35 ];
+        %tmp.201 = sub %tmp.199 %tmp.200;
+        lputv %secsBin.16 %tmp.201;
+        symbol [ secsBin %secsBin.16 909 12 19 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_39_910_10_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_10_910_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_908_10_910_10_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 913 10 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_stmt:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_14_913_48_begin:
+        %tmp.202 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.202 913 14 25 ];
+        %tmp.203 = 0;
+        %tmp.204 = gt %tmp.202 %tmp.203;
+        bf %tmp.204 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_33_913_48_true:
         %tmp.205 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.205 917 14 25 ];
-        %tmp.206 = 0;
-        %tmp.207 = gt %tmp.205 %tmp.206;
-        bf %tmp.207 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_33_917_48_true:
-        %tmp.208 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.208 917 33 44 ];
-        %tmp.209 = lgetv %graphBinMin.19;
-        symbol [ graphBinMin %tmp.209 917 48 59 ];
-        %tmp.210 = gte %tmp.208 %tmp.209;
-        push %tmp.210;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_33_917_48_end:
-        %tmp.211 = phi [%tmp.207 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_14_917_48_begin] [%tmp.210 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_33_917_48_true] [%tmp.211 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_33_917_48_end];
-        bf %tmp.211 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_61_951_10_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 918 12 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_stmt:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_16_918_39_begin:
+        symbol [ graphBinMax %tmp.205 913 33 44 ];
+        %tmp.206 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.206 913 48 59 ];
+        %tmp.207 = gte %tmp.205 %tmp.206;
+        push %tmp.207;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_33_913_48_end:
+        %tmp.208 = phi [%tmp.204 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_14_913_48_begin] [%tmp.207 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_33_913_48_true] [%tmp.208 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_33_913_48_end];
+        bf %tmp.208 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_61_963_10_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 914 12 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_stmt:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_16_914_39_begin:
+        %tmp.209 = lgetv %curMax.2;
+        symbol [ curMax %tmp.209 914 16 22 ];
+        %tmp.210 = 0;
+        %tmp.211 = gt %tmp.209 %tmp.210;
+        bf %tmp.211 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_30_914_39_true:
         %tmp.212 = lgetv %curMax.2;
-        symbol [ curMax %tmp.212 918 16 22 ];
-        %tmp.213 = 0;
+        symbol [ curMax %tmp.212 914 30 36 ];
+        %tmp.213 = lgetv %curMin.1;
+        symbol [ curMin %tmp.213 914 39 45 ];
         %tmp.214 = gt %tmp.212 %tmp.213;
-        bf %tmp.214 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_30_918_39_true:
-        %tmp.215 = lgetv %curMax.2;
-        symbol [ curMax %tmp.215 918 30 36 ];
-        %tmp.216 = lgetv %curMin.1;
-        symbol [ curMin %tmp.216 918 39 45 ];
-        %tmp.217 = gt %tmp.215 %tmp.216;
-        push %tmp.217;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_30_918_39_end:
-        %tmp.218 = phi [%tmp.214 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_16_918_39_begin] [%tmp.217 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_30_918_39_true] [%tmp.218 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_30_918_39_end];
-        bf %tmp.218 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 919 14 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_stop" ]
-        %heartBinMid.22 = local;
-        symbol [ heartBinMid %heartBinMid.22 919 18 29 ];
-        %tmp.219 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.219 919 33 44 ];
-        %tmp.220 = lgetv %graphBinMin.19;
-        symbol [ graphBinMin %tmp.220 919 47 58 ];
-        %tmp.221 = add %tmp.219 %tmp.220;
-        %tmp.222 = 2;
-        %tmp.223 = div %tmp.221 %tmp.222;
-        lputv %heartBinMid.22 %tmp.223;
-        symbol [ heartBinMid %heartBinMid.22 919 18 29 ];
+        push %tmp.214;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_30_914_39_end:
+        %tmp.215 = phi [%tmp.211 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_16_914_39_begin] [%tmp.214 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_30_914_39_true] [%tmp.215 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_30_914_39_end];
+        bf %tmp.215 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_47_955_12_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 915 14 ]
+        %tmp.216 = lgetv %dc;
+        symbol [ dc %tmp.216 915 14 16 ];
+        symbol [ setColor %tmp.217 915 17 25 ];
+        %tmp.217 = getv function %tmp.216 :setColor;
+        symbol [ graphCatalog %tmp.219 916 16 28 ];
+        %tmp.219 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.221 916 29 38 ];
+        %tmp.221 = getv ? :showGraph;
+        %tmp.222 = agetv %tmp.219 %tmp.221;
+        %tmp.223 = "colorDark";
+        %tmp.224 = agetv %tmp.222 %tmp.223;
+        symbol [ Graphics %tmp.225 917 16 24 ];
+        %tmp.225 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.226 917 25 42 ];
+        %tmp.226 = getv %tmp.225 :COLOR_TRANSPARENT;
+        invoke %tmp.216 %tmp.217(%tmp.224, %tmp.226);
 [ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 920 14 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_stop" ]
-        %height.23 = local;
-        symbol [ height %height.23 920 18 24 ];
-        %tmp.224 = lgetv %heartBinMid.22;
-        symbol [ heartBinMid %tmp.224 921 18 29 ];
-        %tmp.225 = lgetv %curMin.1;
-        symbol [ curMin %tmp.225 921 32 38 ];
-        symbol [ graphCatalog %tmp.227 921 41 53 ];
-        %tmp.227 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.229 921 54 63 ];
-        %tmp.229 = getv ? :showGraph;
-        %tmp.230 = agetv %tmp.227 %tmp.229;
-        %tmp.231 = "scale";
-        %tmp.232 = agetv %tmp.230 %tmp.231;
-        %tmp.233 = mul %tmp.225 %tmp.232;
-        %tmp.234 = sub %tmp.224 %tmp.233;
-        %tmp.235 = lgetv %curMax.2;
-        symbol [ curMax %tmp.235 922 19 25 ];
-        %tmp.236 = lgetv %curMin.1;
-        symbol [ curMin %tmp.236 922 28 34 ];
-        symbol [ graphCatalog %tmp.238 922 37 49 ];
-        %tmp.238 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.240 922 50 59 ];
-        %tmp.240 = getv ? :showGraph;
-        %tmp.241 = agetv %tmp.238 %tmp.240;
-        %tmp.242 = "scale";
-        %tmp.243 = agetv %tmp.241 %tmp.242;
-        %tmp.244 = mul %tmp.236 %tmp.243;
-        %tmp.245 = sub %tmp.235 %tmp.244;
-        %tmp.246 = div %tmp.234 %tmp.245;
-        %tmp.247 = lgetv %totHeight.9;
-        symbol [ totHeight %tmp.247 923 16 25 ];
-        %tmp.248 = mul %tmp.246 %tmp.247;
-        lputv %height.23 %tmp.248;
-        symbol [ height %height.23 920 18 24 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 925 14 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_stop" ]
-        %xVal.24 = local;
-        symbol [ xVal %xVal.24 925 18 22 ];
-        symbol [ dw %tmp.250 925 26 28 ];
-        %tmp.250 = getv ? :dw;
-        %tmp.251 = lgetv %totWidth.10;
-        symbol [ totWidth %tmp.251 925 31 39 ];
-        %tmp.252 = sub %tmp.250 %tmp.251;
-        %tmp.253 = 2;
-        %tmp.254 = div %tmp.252 %tmp.253;
-        %tmp.255 = lgetv %totWidth.10;
-        symbol [ totWidth %tmp.255 925 47 55 ];
-        %tmp.256 = add %tmp.254 %tmp.255;
-        %tmp.257 = lgetv %i.21;
-        symbol [ i %tmp.257 925 58 59 ];
-        %tmp.258 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.258 925 62 71 ];
-        %tmp.259 = mul %tmp.257 %tmp.258;
-        %tmp.260 = sub %tmp.256 %tmp.259;
-        %tmp.261 = 2;
-        %tmp.262 = sub %tmp.260 %tmp.261;
-        lputv %xVal.24 %tmp.262;
-        symbol [ xVal %xVal.24 925 18 22 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 926 14 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_start" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_stop" ]
-        %yVal.25 = local;
-        symbol [ yVal %yVal.25 926 18 22 ];
-        symbol [ dh %tmp.264 926 25 27 ];
-        %tmp.264 = getv ? :dh;
-        %tmp.265 = 2;
-        %tmp.266 = div %tmp.264 %tmp.265;
-        symbol [ graphVertOffset %tmp.268 926 34 49 ];
-        %tmp.268 = getv ? :graphVertOffset;
-        %tmp.269 = add %tmp.266 %tmp.268;
-        %tmp.270 = lgetv %totHeight.9;
-        symbol [ totHeight %tmp.270 926 52 61 ];
-        %tmp.271 = add %tmp.269 %tmp.270;
-        %tmp.272 = lgetv %height.23;
-        symbol [ height %tmp.272 926 64 70 ];
-        %tmp.273 = sub %tmp.271 %tmp.272;
-        lputv %yVal.25 %tmp.273;
-        symbol [ yVal %yVal.25 926 18 22 ];
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 928 14 ]
-        %tmp.274 = lgetv %dc;
-        symbol [ dc %tmp.274 928 14 16 ];
-        symbol [ setColor %tmp.275 928 17 25 ];
-        %tmp.275 = getv function %tmp.274 :setColor;
-        symbol [ graphCatalog %tmp.277 929 16 28 ];
-        %tmp.277 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.279 929 29 38 ];
-        %tmp.279 = getv ? :showGraph;
-        %tmp.280 = agetv %tmp.277 %tmp.279;
-        %tmp.281 = "colorDark";
-        %tmp.282 = agetv %tmp.280 %tmp.281;
-        symbol [ Graphics %tmp.283 930 16 24 ];
-        %tmp.283 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.284 930 25 42 ];
-        %tmp.284 = getv %tmp.283 :COLOR_TRANSPARENT;
-        invoke %tmp.274 %tmp.275(%tmp.282, %tmp.284);
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 933 14 ]
-        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_beginTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_endTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_beginTry:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_18_935_14_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 934 16 ]
-        %tmp.285 = lgetv %dc;
-        symbol [ dc %tmp.285 934 16 18 ];
-        symbol [ fillRectangle %tmp.286 934 19 32 ];
-        %tmp.286 = getv function %tmp.285 :fillRectangle;
-        %tmp.287 = lgetv %xVal.24;
-        symbol [ xVal %tmp.287 934 33 37 ];
-        %tmp.288 = lgetv %yVal.25;
-        symbol [ yVal %tmp.288 934 39 43 ];
-        %tmp.289 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.289 934 45 54 ];
-        %tmp.290 = lgetv %height.23;
-        symbol [ height %tmp.290 934 56 62 ];
-        invoke %tmp.285 %tmp.286(%tmp.287, %tmp.288, %tmp.289, %tmp.290);
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_18_935_14_stop:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_endTry:
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally;
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_catch:
-        %tmp.291 = exception;
-        push %tmp.291;
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 935 16 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_catch" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_935_16_935_28_end" ]
-        %ex.26 = local;
-        symbol [ ex %ex.26 935 23 25 ];
-        %tmp.292 = dup %tmp.291;
-        lputv %ex.26 %tmp.292;
-        symbol [ ex %ex.26 935 23 25 ];
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally;
-        pop;
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_935_16_935_28_end:
-        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_935_16_935_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_935_16_935_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally;
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally;
-        throw %tmp.291;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_finally:
-        jsrret;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_933_14_935_28_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 936 14 ]
-        %tmp.293 = lgetv %dc;
-        symbol [ dc %tmp.293 936 14 16 ];
-        symbol [ setColor %tmp.294 936 17 25 ];
-        %tmp.294 = getv function %tmp.293 :setColor;
-        symbol [ graphCatalog %tmp.296 937 16 28 ];
-        %tmp.296 = getv ? :graphCatalog;
-        symbol [ showGraph %tmp.298 937 29 38 ];
-        %tmp.298 = getv ? :showGraph;
-        %tmp.299 = agetv %tmp.296 %tmp.298;
-        %tmp.300 = "color";
-        %tmp.301 = agetv %tmp.299 %tmp.300;
-        symbol [ Graphics %tmp.302 938 16 24 ];
-        %tmp.302 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.303 938 25 42 ];
-        %tmp.303 = getv %tmp.302 :COLOR_TRANSPARENT;
-        invoke %tmp.293 %tmp.294(%tmp.301, %tmp.303);
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 940 14 ]
-        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_beginTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_endTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_beginTry:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_18_942_14_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 941 16 ]
-        %tmp.304 = lgetv %dc;
-        symbol [ dc %tmp.304 941 16 18 ];
-        symbol [ fillRectangle %tmp.305 941 19 32 ];
-        %tmp.305 = getv function %tmp.304 :fillRectangle;
-        %tmp.306 = lgetv %xVal.24;
-        symbol [ xVal %tmp.306 941 33 37 ];
-        %tmp.307 = lgetv %yVal.25;
-        symbol [ yVal %tmp.307 941 39 43 ];
-        %tmp.308 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.308 941 45 54 ];
-        %tmp.309 = 2;
-        %tmp.310 = lgetv %binPixels.11;
-        symbol [ binPixels %tmp.310 941 60 69 ];
+        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_beginTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_endTry @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_beginTry:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_18_936_14_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 921 16 ]
+        %tmp.227 = lgetv %dc;
+        symbol [ dc %tmp.227 921 16 18 ];
+        symbol [ fillRectangle %tmp.228 921 19 32 ];
+        %tmp.228 = getv function %tmp.227 :fillRectangle;
+        symbol [ dw %tmp.230 922 19 21 ];
+        %tmp.230 = getv ? :dw;
+        %tmp.231 = lgetv %totWidth.10;
+        symbol [ totWidth %tmp.231 922 24 32 ];
+        %tmp.232 = sub %tmp.230 %tmp.231;
+        %tmp.233 = 2;
+        %tmp.234 = div %tmp.232 %tmp.233;
+        %tmp.235 = lgetv %totWidth.10;
+        symbol [ totWidth %tmp.235 922 40 48 ];
+        %tmp.236 = add %tmp.234 %tmp.235;
+        %tmp.237 = lgetv %i.21;
+        symbol [ i %tmp.237 922 51 52 ];
+        %tmp.238 = lgetv %binPixels.11;
+        symbol [ binPixels %tmp.238 922 55 64 ];
+        %tmp.239 = mul %tmp.237 %tmp.238;
+        %tmp.240 = sub %tmp.236 %tmp.239;
+        %tmp.241 = 2;
+        %tmp.242 = sub %tmp.240 %tmp.241;
+        symbol [ dh %tmp.244 923 18 20 ];
+        %tmp.244 = getv ? :dh;
+        %tmp.245 = 2;
+        %tmp.246 = div %tmp.244 %tmp.245;
+        symbol [ graphVertOffset %tmp.248 924 20 35 ];
+        %tmp.248 = getv ? :graphVertOffset;
+        %tmp.249 = add %tmp.246 %tmp.248;
+        %tmp.250 = lgetv %totHeight.9;
+        symbol [ totHeight %tmp.250 925 20 29 ];
+        %tmp.251 = add %tmp.249 %tmp.250;
+        %tmp.252 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.252 926 23 34 ];
+        %tmp.253 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.253 926 37 48 ];
+        %tmp.254 = add %tmp.252 %tmp.253;
+        %tmp.255 = 2;
+        %tmp.256 = div %tmp.254 %tmp.255;
+        %tmp.257 = lgetv %curMin.1;
+        symbol [ curMin %tmp.257 927 22 28 ];
+        symbol [ graphCatalog %tmp.259 927 31 43 ];
+        %tmp.259 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.261 927 44 53 ];
+        %tmp.261 = getv ? :showGraph;
+        %tmp.262 = agetv %tmp.259 %tmp.261;
+        %tmp.263 = "scale";
+        %tmp.264 = agetv %tmp.262 %tmp.263;
+        %tmp.265 = mul %tmp.257 %tmp.264;
+        %tmp.266 = sub %tmp.256 %tmp.265;
+        %tmp.267 = lgetv %curMax.2;
+        symbol [ curMax %tmp.267 928 23 29 ];
+        %tmp.268 = lgetv %curMin.1;
+        symbol [ curMin %tmp.268 928 32 38 ];
+        symbol [ graphCatalog %tmp.270 928 41 53 ];
+        %tmp.270 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.272 928 54 63 ];
+        %tmp.272 = getv ? :showGraph;
+        %tmp.273 = agetv %tmp.270 %tmp.272;
+        %tmp.274 = "scale";
+        %tmp.275 = agetv %tmp.273 %tmp.274;
+        %tmp.276 = mul %tmp.268 %tmp.275;
+        %tmp.277 = sub %tmp.267 %tmp.276;
+        %tmp.278 = div %tmp.266 %tmp.277;
+        %tmp.279 = lgetv %totHeight.9;
+        symbol [ totHeight %tmp.279 929 22 31 ];
+        %tmp.280 = mul %tmp.278 %tmp.279;
+        %tmp.281 = sub %tmp.251 %tmp.280;
+        %tmp.282 = lgetv %binPixels.11;
+        symbol [ binPixels %tmp.282 930 18 27 ];
+        %tmp.283 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.283 931 21 32 ];
+        %tmp.284 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.284 931 35 46 ];
+        %tmp.285 = add %tmp.283 %tmp.284;
+        %tmp.286 = 2;
+        %tmp.287 = div %tmp.285 %tmp.286;
+        %tmp.288 = lgetv %curMin.1;
+        symbol [ curMin %tmp.288 932 20 26 ];
+        symbol [ graphCatalog %tmp.290 932 29 41 ];
+        %tmp.290 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.292 932 42 51 ];
+        %tmp.292 = getv ? :showGraph;
+        %tmp.293 = agetv %tmp.290 %tmp.292;
+        %tmp.294 = "scale";
+        %tmp.295 = agetv %tmp.293 %tmp.294;
+        %tmp.296 = mul %tmp.288 %tmp.295;
+        %tmp.297 = sub %tmp.287 %tmp.296;
+        %tmp.298 = lgetv %curMax.2;
+        symbol [ curMax %tmp.298 933 21 27 ];
+        %tmp.299 = lgetv %curMin.1;
+        symbol [ curMin %tmp.299 933 30 36 ];
+        symbol [ graphCatalog %tmp.301 933 39 51 ];
+        %tmp.301 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.303 933 52 61 ];
+        %tmp.303 = getv ? :showGraph;
+        %tmp.304 = agetv %tmp.301 %tmp.303;
+        %tmp.305 = "scale";
+        %tmp.306 = agetv %tmp.304 %tmp.305;
+        %tmp.307 = mul %tmp.299 %tmp.306;
+        %tmp.308 = sub %tmp.298 %tmp.307;
+        %tmp.309 = div %tmp.297 %tmp.308;
+        %tmp.310 = lgetv %totHeight.9;
+        symbol [ totHeight %tmp.310 934 20 29 ];
         %tmp.311 = mul %tmp.309 %tmp.310;
-        invoke %tmp.304 %tmp.305(%tmp.306, %tmp.307, %tmp.308, %tmp.311);
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_18_942_14_stop:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_endTry:
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally;
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_catch:
+        invoke %tmp.227 %tmp.228(%tmp.242, %tmp.281, %tmp.282, %tmp.311);
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_18_936_14_stop:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_endTry:
+        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally;
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_catch:
         %tmp.312 = exception;
         push %tmp.312;
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 942 16 ]
-        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_catch" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_942_16_942_28_end" ]
-        %ex.27 = local;
-        symbol [ ex %ex.27 942 23 25 ];
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 936 16 ]
+        [ "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_catch" "_Users_mattia_developer_projects_Essence_source_EssenceView_mc_936_16_936_28_end" ]
+        %ex.22 = local;
+        symbol [ ex %ex.22 936 23 25 ];
         %tmp.313 = dup %tmp.312;
-        lputv %ex.27 %tmp.313;
-        symbol [ ex %ex.27 942 23 25 ];
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally;
+        lputv %ex.22 %tmp.313;
+        symbol [ ex %ex.22 936 23 25 ];
+        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally;
         pop;
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_942_16_942_28_end:
-        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_942_16_942_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_942_16_942_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally;
-        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally;
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_936_16_936_28_end:
+        try @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_catch @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_936_16_936_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_936_16_936_28_end @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally;
+        jsr @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally;
         throw %tmp.312;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_finally:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_finally:
         jsrret;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_940_14_942_28_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_47_943_12_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_918_12_943_12_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 945 12 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_12_947_12_if_stmt:
-        %tmp.314 = lgetv %graphBinMin.19;
-        symbol [ graphBinMin %tmp.314 945 16 27 ];
-        %tmp.315 = lgetv %graphMin.6;
-        symbol [ graphMin %tmp.315 945 30 38 ];
-        %tmp.316 = lt %tmp.314 %tmp.315;
-        bf %tmp.316 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_12_947_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_12_947_12_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_40_947_12_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 946 14 ]
-        %tmp.317 = lgetv %graphBinMin.19;
-        symbol [ graphBinMin %tmp.317 946 25 36 ];
-        lputv %graphMin.6 %tmp.317;
-        symbol [ graphMin %graphMin.6 946 14 22 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_40_947_12_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_12_947_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_945_12_947_12_if_end:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 948 12 ]
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_12_950_12_if_stmt:
-        %tmp.318 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.318 948 16 27 ];
-        %tmp.319 = lgetv %graphMax.7;
-        symbol [ graphMax %tmp.319 948 30 38 ];
-        %tmp.320 = gt %tmp.318 %tmp.319;
-        bf %tmp.320 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_12_950_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_12_950_12_if_true:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_40_950_12_start:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 949 14 ]
-        %tmp.321 = lgetv %graphBinMax.18;
-        symbol [ graphBinMax %tmp.321 949 25 36 ];
-        lputv %graphMax.7 %tmp.321;
-        symbol [ graphMax %graphMax.7 949 14 22 ];
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_40_950_12_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_12_950_12_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_948_12_950_12_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_61_951_10_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_917_10_951_10_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_23_952_8_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_8_952_8_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_880_8_952_8_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_40_953_6_stop:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_incr:
-[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 876 ]
-        %tmp.324 = lgetv %i.21;
-        symbol [ i %tmp.324 876 37 38 ];
-        %tmp.325 = add %tmp.324 1;
-        lputv %i.21 %tmp.325;
-        symbol [ i %i.21 876 37 38 ];
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_test;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_6_953_6_for_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_954_4_stop:
-        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_954_4_if_end;
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_954_4_if_end:
-_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_955_2_stop:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_920_14_936_28_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 937 14 ]
+        %tmp.314 = lgetv %dc;
+        symbol [ dc %tmp.314 937 14 16 ];
+        symbol [ setColor %tmp.315 937 17 25 ];
+        %tmp.315 = getv function %tmp.314 :setColor;
+        symbol [ graphCatalog %tmp.317 938 16 28 ];
+        %tmp.317 = getv ? :graphCatalog;
+        symbol [ showGraph %tmp.319 938 29 38 ];
+        %tmp.319 = getv ? :showGraph;
+        %tmp.320 = agetv %tmp.317 %tmp.319;
+        %tmp.321 = "color";
+        %tmp.322 = agetv %tmp.320 %tmp.321;
+        symbol [ Graphics %tmp.323 939 16 24 ];
+        %tmp.323 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.324 939 25 42 ];
+        %tmp.324 = getv %tmp.323 :COLOR_TRANSPARENT;
+        invoke %tmp.314 %tmp.315(%tmp.322, %tmp.324);
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_47_955_12_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_914_12_955_12_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 957 12 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_12_959_12_if_stmt:
+        %tmp.325 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.325 957 16 27 ];
+        %tmp.326 = lgetv %graphMin.6;
+        symbol [ graphMin %tmp.326 957 30 38 ];
+        %tmp.327 = lt %tmp.325 %tmp.326;
+        bf %tmp.327 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_12_959_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_12_959_12_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_40_959_12_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 958 14 ]
+        %tmp.328 = lgetv %graphBinMin.19;
+        symbol [ graphBinMin %tmp.328 958 25 36 ];
+        lputv %graphMin.6 %tmp.328;
+        symbol [ graphMin %graphMin.6 958 14 22 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_40_959_12_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_12_959_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_957_12_959_12_if_end:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 960 12 ]
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_12_962_12_if_stmt:
+        %tmp.329 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.329 960 16 27 ];
+        %tmp.330 = lgetv %graphMax.7;
+        symbol [ graphMax %tmp.330 960 30 38 ];
+        %tmp.331 = gt %tmp.329 %tmp.330;
+        bf %tmp.331 @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_12_962_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_12_962_12_if_true:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_40_962_12_start:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 961 14 ]
+        %tmp.332 = lgetv %graphBinMax.18;
+        symbol [ graphBinMax %tmp.332 961 25 36 ];
+        lputv %graphMax.7 %tmp.332;
+        symbol [ graphMax %graphMax.7 961 14 22 ];
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_40_962_12_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_12_962_12_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_960_12_962_12_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_61_963_10_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_913_10_963_10_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_23_964_8_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_8_964_8_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_876_8_964_8_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_40_965_6_stop:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_incr:
+[ "/Users/mattia/developer/projects/Essence/source/EssenceView.mc" 872 ]
+        %tmp.335 = lgetv %i.21;
+        symbol [ i %tmp.335 872 37 38 ];
+        %tmp.336 = add %tmp.335 1;
+        lputv %i.21 %tmp.336;
+        symbol [ i %i.21 872 37 38 ];
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_test;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_872_6_965_6_for_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_24_966_4_stop:
+        goto @_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_966_4_if_end;
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_823_4_966_4_if_end:
+_Users_mattia_developer_projects_Essence_source_EssenceView_mc_804_25_967_2_stop:
     }
-    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 960; @symbol_functiondef = [onHide,960,11,17]; ]
+    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 972; @symbol_functiondef = [onHide,972,11,17]; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 963; @symbol_functiondef = [onExitSleep,963,11,22]; ]
+    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 975; @symbol_functiondef = [onExitSleep,975,11,22]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 966; @symbol_functiondef = [onEnterSleep,966,11,23]; ]
+    [ @file = "/Users/mattia/developer/projects/Essence/source/EssenceView.mc"; @line = 978; @symbol_functiondef = [onEnterSleep,978,11,23]; ]
     function onEnterSleep() as Void {
     }
 }
