@@ -99,14 +99,14 @@ public function boxContains(points, boxMinXY, boxMaxXY) {
 // used before the first settings write.
 // --------------------------------------------------------------------------
 var fieldLayout = [
-  { "id" => "FieldTop",         "data" => 0 },
-  { "id" => "FieldUpperLeft",   "data" => 1 },
+  { "id" => "FieldTop", "data" => 0 },
+  { "id" => "FieldUpperLeft", "data" => 1 },
   { "id" => "FieldUpperCenter", "data" => 2 },
-  { "id" => "FieldUpperRight",  "data" => 3 },
-  { "id" => "FieldLowerLeft",   "data" => 4 },
+  { "id" => "FieldUpperRight", "data" => 3 },
+  { "id" => "FieldLowerLeft", "data" => 4 },
   { "id" => "FieldLowerCenter", "data" => 5 },
-  { "id" => "FieldLowerRight",  "data" => 6 },
-  { "id" => "FieldBottom",      "data" => 7 },
+  { "id" => "FieldLowerRight", "data" => 6 },
+  { "id" => "FieldBottom", "data" => 7 },
 ];
 
 // --------------------------------------------------------------------------
@@ -123,39 +123,141 @@ var fieldLayout = [
 // --------------------------------------------------------------------------
 var fieldCatalog = [
   // 0
-  { "id" => "Empty",         "label" => Rez.Strings.Empty,         "labelExt" => Rez.Strings.EmptyExt,         "getter" => :getEmpty,         "complicationId" => null },
+  {
+    "id" => "Empty",
+    "label" => Rez.Strings.Empty,
+    "labelExt" => Rez.Strings.EmptyExt,
+    "getter" => :getEmpty,
+    "complicationId" => null,
+  },
   // 1
-  { "id" => "Weather",       "label" => Rez.Strings.Weather,       "labelExt" => Rez.Strings.WeatherExt,       "getter" => :getWeather,       "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_WEATHER   },
+  {
+    "id" => "Weather",
+    "label" => Rez.Strings.Weather,
+    "labelExt" => Rez.Strings.WeatherExt,
+    "getter" => :getWeather,
+    "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_WEATHER,
+  },
   // 2
-  { "id" => "Calendar",      "label" => Rez.Strings.Calendar,      "labelExt" => Rez.Strings.CalendarExt,      "getter" => :getCalendar,      "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS    },
+  {
+    "id" => "Calendar",
+    "label" => Rez.Strings.Calendar,
+    "labelExt" => Rez.Strings.CalendarExt,
+    "getter" => :getCalendar,
+    "complicationId" => Complications.COMPLICATION_TYPE_CALENDAR_EVENTS,
+  },
   // 3
-  { "id" => "Notifications", "label" => Rez.Strings.Notifications, "labelExt" => Rez.Strings.NotificationsExt, "getter" => :getNotifications, "complicationId" => Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT },
+  {
+    "id" => "Notifications",
+    "label" => Rez.Strings.Notifications,
+    "labelExt" => Rez.Strings.NotificationsExt,
+    "getter" => :getNotifications,
+    "complicationId" => Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT,
+  },
   // 4 — special: getter returns { "label", "value" } dict, not a plain string
-  { "id" => "SunEvent",      "label" => Rez.Strings.SunEvent,      "labelExt" => Rez.Strings.SunEventExt,      "getter" => :getSunEvent,      "complicationId" => Complications.COMPLICATION_TYPE_SUNRISE            },
+  {
+    "id" => "SunEvent",
+    "label" => Rez.Strings.SunEvent,
+    "labelExt" => Rez.Strings.SunEventExt,
+    "getter" => :getSunEvent,
+    "complicationId" => Complications.COMPLICATION_TYPE_SUNRISE,
+  },
   // 5
-  { "id" => "Altimeter",     "label" => Rez.Strings.Altimeter,     "labelExt" => Rez.Strings.AltimeterExt,     "getter" => :getAltimeter,     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE           },
+  {
+    "id" => "Altimeter",
+    "label" => Rez.Strings.Altimeter,
+    "labelExt" => Rez.Strings.AltimeterExt,
+    "getter" => :getAltimeter,
+    "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
+  },
   // 6
-  { "id" => "HeartRate",     "label" => Rez.Strings.HeartRate,     "labelExt" => Rez.Strings.HeartRateExt,     "getter" => :getHeartRate,     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE         },
+  {
+    "id" => "HeartRate",
+    "label" => Rez.Strings.HeartRate,
+    "labelExt" => Rez.Strings.HeartRateExt,
+    "getter" => :getHeartRate,
+    "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
+  },
   // 7
-  { "id" => "Barometer",     "label" => Rez.Strings.Barometer,     "labelExt" => Rez.Strings.BarometerExt,     "getter" => :getBarometer,     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE },
+  {
+    "id" => "Barometer",
+    "label" => Rez.Strings.Barometer,
+    "labelExt" => Rez.Strings.BarometerExt,
+    "getter" => :getBarometer,
+    "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
+  },
   // 8
-  { "id" => "Battery",       "label" => Rez.Strings.Battery,       "labelExt" => Rez.Strings.BatteryExt,       "getter" => :getBattery,       "complicationId" => Complications.COMPLICATION_TYPE_BATTERY            },
+  {
+    "id" => "Battery",
+    "label" => Rez.Strings.Battery,
+    "labelExt" => Rez.Strings.BatteryExt,
+    "getter" => :getBattery,
+    "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
+  },
   // 9
-  { "id" => "Stress",        "label" => Rez.Strings.Stress,        "labelExt" => Rez.Strings.StressExt,        "getter" => :getStress,        "complicationId" => Complications.COMPLICATION_TYPE_STRESS             },
+  {
+    "id" => "Stress",
+    "label" => Rez.Strings.Stress,
+    "labelExt" => Rez.Strings.StressExt,
+    "getter" => :getStress,
+    "complicationId" => Complications.COMPLICATION_TYPE_STRESS,
+  },
   // 10
-  { "id" => "BodyBattery",   "label" => Rez.Strings.BodyBattery,   "labelExt" => Rez.Strings.BodyBatteryExt,   "getter" => :getBodyBattery,   "complicationId" => Complications.COMPLICATION_TYPE_BODY_BATTERY       },
+  {
+    "id" => "BodyBattery",
+    "label" => Rez.Strings.BodyBattery,
+    "labelExt" => Rez.Strings.BodyBatteryExt,
+    "getter" => :getBodyBattery,
+    "complicationId" => Complications.COMPLICATION_TYPE_BODY_BATTERY,
+  },
   // 11
-  { "id" => "Steps",         "label" => Rez.Strings.Steps,         "labelExt" => Rez.Strings.StepsExt,         "getter" => :getSteps,         "complicationId" => Complications.COMPLICATION_TYPE_STEPS              },
+  {
+    "id" => "Steps",
+    "label" => Rez.Strings.Steps,
+    "labelExt" => Rez.Strings.StepsExt,
+    "getter" => :getSteps,
+    "complicationId" => Complications.COMPLICATION_TYPE_STEPS,
+  },
   // 12
-  { "id" => "Floors",        "label" => Rez.Strings.Floors,        "labelExt" => Rez.Strings.FloorsExt,        "getter" => :getFloors,        "complicationId" => Complications.COMPLICATION_TYPE_FLOORS_CLIMBED     },
+  {
+    "id" => "Floors",
+    "label" => Rez.Strings.Floors,
+    "labelExt" => Rez.Strings.FloorsExt,
+    "getter" => :getFloors,
+    "complicationId" => Complications.COMPLICATION_TYPE_FLOORS_CLIMBED,
+  },
   // 13
-  { "id" => "BatteryDays",   "label" => Rez.Strings.BatteryDays,   "labelExt" => Rez.Strings.BatteryDaysExt,   "getter" => :getBatteryDays,   "complicationId" => Complications.COMPLICATION_TYPE_BATTERY            },
+  {
+    "id" => "BatteryDays",
+    "label" => Rez.Strings.BatteryDays,
+    "labelExt" => Rez.Strings.BatteryDaysExt,
+    "getter" => :getBatteryDays,
+    "complicationId" => Complications.COMPLICATION_TYPE_BATTERY,
+  },
   // 14
-  { "id" => "SolarIntensity","label" => Rez.Strings.SolarIntensity,"labelExt" => Rez.Strings.SolarIntensityExt,"getter" => :getSolarIntensity,"complicationId" => Complications.COMPLICATION_TYPE_SOLAR_INPUT        },
+  {
+    "id" => "SolarIntensity",
+    "label" => Rez.Strings.SolarIntensity,
+    "labelExt" => Rez.Strings.SolarIntensityExt,
+    "getter" => :getSolarIntensity,
+    "complicationId" => Complications.COMPLICATION_TYPE_SOLAR_INPUT,
+  },
   // 15
-  { "id" => "Calories",      "label" => Rez.Strings.Calories,      "labelExt" => Rez.Strings.CaloriesExt,      "getter" => :getCalories,      "complicationId" => Complications.COMPLICATION_TYPE_CALORIES           },
+  {
+    "id" => "Calories",
+    "label" => Rez.Strings.Calories,
+    "labelExt" => Rez.Strings.CaloriesExt,
+    "getter" => :getCalories,
+    "complicationId" => Complications.COMPLICATION_TYPE_CALORIES,
+  },
   // 16
-  { "id" => "Temperature",   "label" => Rez.Strings.Temperature,   "labelExt" => Rez.Strings.TemperatureExt,   "getter" => :getTemperature,   "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE},
+  {
+    "id" => "Temperature",
+    "label" => Rez.Strings.Temperature,
+    "labelExt" => Rez.Strings.TemperatureExt,
+    "getter" => :getTemperature,
+    "complicationId" => Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE,
+  },
 ];
 
 // --------------------------------------------------------------------------
@@ -181,51 +283,51 @@ var fieldCatalog = [
 var graphCatalog = [
   // 0 — sentinel: no graph active
   {
-    "id"           => "fieldCatalog",
-    "label"        => null,
-    "labelExt"     => Rez.Strings.ShowGraphfieldCatalog,
-    "getter"       => :getEmpty,
-    "iterator"     => null,
+    "id" => "fieldCatalog",
+    "label" => null,
+    "labelExt" => Rez.Strings.ShowGraphfieldCatalog,
+    "getter" => :getEmpty,
+    "iterator" => null,
     "complicationId" => null,
-    "color"        => null,
-    "colorDark"    => null,
-    "scale"        => 0.9,
+    "color" => null,
+    "colorDark" => null,
+    "scale" => 0.9,
   },
   // 1 — Heart rate (bpm)
   {
-    "id"           => "HeartRate",
-    "label"        => Rez.Strings.HeartRate,
-    "labelExt"     => Rez.Strings.ShowGraphHeartRate,
-    "getter"       => :getHeartRate,
-    "iterator"     => :getHeartRateHistory,
+    "id" => "HeartRate",
+    "label" => Rez.Strings.HeartRate,
+    "labelExt" => Rez.Strings.ShowGraphHeartRate,
+    "getter" => :getHeartRate,
+    "iterator" => :getHeartRateHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
-    "color"        => Graphics.COLOR_RED,
-    "colorDark"    => Graphics.COLOR_DK_RED,
-    "scale"        => 0.9,
+    "color" => Graphics.COLOR_RED,
+    "colorDark" => Graphics.COLOR_DK_RED,
+    "scale" => 0.9,
   },
   // 2 — Sea-level pressure (hPa); scale near 1.0 because the range is narrow
   {
-    "id"           => "Barometer",
-    "label"        => Rez.Strings.Barometer,
-    "labelExt"     => Rez.Strings.ShowGraphPressure,
-    "getter"       => :getBarometer,
-    "iterator"     => :getPressureHistory,
+    "id" => "Barometer",
+    "label" => Rez.Strings.Barometer,
+    "labelExt" => Rez.Strings.ShowGraphPressure,
+    "getter" => :getBarometer,
+    "iterator" => :getPressureHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
-    "color"        => Graphics.COLOR_BLUE,
-    "colorDark"    => Graphics.COLOR_DK_BLUE,
-    "scale"        => 0.99,
+    "color" => Graphics.COLOR_BLUE,
+    "colorDark" => Graphics.COLOR_DK_BLUE,
+    "scale" => 0.99,
   },
   // 3 — Elevation (metres)
   {
-    "id"           => "Altimeter",
-    "label"        => Rez.Strings.Altimeter,
-    "labelExt"     => Rez.Strings.ShowGraphAltimeter,
-    "getter"       => :getAltimeter,
-    "iterator"     => :getElevationHistory,
+    "id" => "Altimeter",
+    "label" => Rez.Strings.Altimeter,
+    "labelExt" => Rez.Strings.ShowGraphAltimeter,
+    "getter" => :getAltimeter,
+    "iterator" => :getElevationHistory,
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
-    "color"        => Graphics.COLOR_DK_GREEN,
-    "colorDark"    => Graphics.COLOR_GREEN,
-    "scale"        => 0.9,
+    "color" => Graphics.COLOR_DK_GREEN,
+    "colorDark" => Graphics.COLOR_GREEN,
+    "scale" => 0.9,
   },
 ];
 
@@ -240,4 +342,24 @@ function loadLayout() {
   for (var i = 0; i < fieldLayout.size(); i = i + 1) {
     fieldLayout[i]["data"] = getApp().getProperty(fieldLayout[i]["id"]);
   }
+}
+
+function stringReplace(str, oldString, newString) {
+  var result = str;
+
+  while (true) {
+    var index = result.find(oldString);
+
+    if (index != null) {
+      var index2 = index + oldString.length();
+      result =
+        result.substring(0, index) +
+        newString +
+        result.substring(index2, result.length());
+    } else {
+      return result;
+    }
+  }
+
+  return null;
 }
