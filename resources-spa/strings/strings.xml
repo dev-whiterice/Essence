@@ -63,5 +63,6 @@
 
     <string id="Settings">Ajustes</string>
     <string id="DarkMode">Modo oscuro</string>
+    <string id="UseMilitaryFormat">Formato militar</string>
 
 </strings>

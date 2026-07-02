@@ -58,7 +58,7 @@ can be independently configured to show one of the following data types:
 | Battery | Battery percentage |
 | Stress | Stress level (0–100) |
 | Body Battery | Body Battery level (0–100) |
-| Steps | Step count (displayed as `10k`, `11k`… above 9 999) |
+| Steps | Step count (abbreviated with one decimal above 9 999, e.g. `11.5k`) |
 | Floors | Floors climbed today |
 | Battery Days | Estimated days of charge remaining |
 | Solar Intensity | Solar charging intensity (solar models only) |
@@ -96,6 +96,7 @@ Accessible via long-press on the watch face or through the Garmin Connect app.
 | Field Top … Field Bottom | Selects the data type for each of the 8 field zones |
 | Show Graph | Selects the graph type (or disables the graph) |
 | Graph Size | Small (single field) or Large (full lower row) |
+| Military Time | On 24-hour devices, drops the colon and zero-pads the hour (e.g. `0930`) |
 
 Tapping a field zone on the watch face launches the associated Garmin complication app directly.
 

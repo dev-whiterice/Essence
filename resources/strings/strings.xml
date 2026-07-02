@@ -64,5 +64,6 @@
 
     <string id="Settings">Settings</string>
     <string id="DarkMode">Dark Mode</string>
+    <string id="UseMilitaryFormat">Military Time</string>
 
 </strings>

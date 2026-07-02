@@ -456,8 +456,11 @@ class EssenceView extends WatchUi.WatchFace {
     ];
 
     // Large-graph mode: collapse the side lower zones; widen the center zone
-    // to span the entire graph touch area for complication tap-through
-    if (graphSize == 1) {
+    // to span the entire graph touch area for complication tap-through.
+    // Gated on showGraph too — with no graph active the three lower fields
+    // are still drawn individually (see drawLabels/drawData), so their tap
+    // zones must stay separate even when GraphSize is set to Large.
+    if (showGraph > 0 && graphSize == 1) {
       bboxLowerLeft = [
         [0, 0],
         [0, 0],
@@ -577,7 +580,7 @@ class EssenceView extends WatchUi.WatchFace {
     };
 
     if (!(Toybox has :Position)) {
-      return "--";
+      return fallback;
     }
 
     var positionInfo = Toybox.Position.getInfo();
@@ -859,14 +862,12 @@ class EssenceView extends WatchUi.WatchFace {
     if (data == null) {
       return "--";
     }
-    // if (data instanceof Toybox.Lang.Float) {
-    //   data = (data * 1000).toNumber();
-    // }
-    // if (data >= 10000) {
-    //   return (data / 10000).toNumber().toString() + "k";
-    // }
 
-    data = stringReplace(data.toString(), ".", "");
+    if (data instanceof Toybox.Lang.Float) {
+      data = (data * 1000).toNumber();
+    }
+
+    data = data.toString();
     if (data.length() > 4) {
       data = data.substring(0, 2) + '.' + data.substring(2, 3) + 'k';
     }

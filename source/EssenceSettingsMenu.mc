@@ -9,6 +9,7 @@
 //              offset: fieldLayout index = itemId - 3
 //   11       — ShowGraph selector
 //   12       — GraphSize toggle
+//   13       — UseMilitaryFormat toggle
 // ============================================================================
 
 import Toybox.Application.Storage;
@@ -84,6 +85,11 @@ class EssenceSettingsMenu extends WatchUi.Menu2 {
     Menu2.addItem(
       new WatchUi.MenuItem(Rez.Strings.GraphSize, graphSizeLabel, 12, {})
     );
+
+    value = getApp().getProperty("UseMilitaryFormat");
+    Menu2.addItem(
+      new WatchUi.ToggleMenuItem(Rez.Strings.UseMilitaryFormat, null, 13, value, null)
+    );
   }
 }
 
@@ -131,7 +137,6 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
       getApp().setProperty(fieldLayout[fieldIndex]["id"], value);
 
     } else if (itemId == 11) {
-      itemId = itemId - 2;  // unused after this point — kept for parity with original
       var value = getApp().getProperty("ShowGraph");
 
       if (value < graphCatalog.size() - 1) {
@@ -144,7 +149,6 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
       getApp().setProperty("ShowGraph", value);
 
     } else if (itemId == 12) {
-      itemId = itemId - 2;  // unused after this point — kept for parity with original
       var value = getApp().getProperty("GraphSize");
 
       if (value == 0) {
@@ -156,6 +160,12 @@ class EssenceSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
       }
 
       getApp().setProperty("GraphSize", value);
+
+    } else if (itemId == 13) {
+      // UseMilitaryFormat toggle — write the new boolean state directly
+      if (menuItem instanceof ToggleMenuItem) {
+        getApp().setProperty("UseMilitaryFormat", menuItem.isEnabled());
+      }
     }
 
     // Signal the view to rebuild on the next frame
