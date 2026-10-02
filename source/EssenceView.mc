@@ -291,9 +291,11 @@ class EssenceView extends WatchUi.WatchFace {
     var timeFormat = "$1$:$2$";
 
     if (!System.getDeviceSettings().is24Hour) {
-      // 12-hour mode: fold PM hours down without zero-padding
+      // 12-hour mode: fold PM hours down without zero-padding; midnight is 12
       if (hours > 12) {
         hours = hours - 12;
+      } else if (hours == 0) {
+        hours = 12;
       }
     } else if (getApp().getProperty("UseMilitaryFormat")) {
       // Military format: no colon separator, hours always zero-padded
@@ -326,10 +328,9 @@ class EssenceView extends WatchUi.WatchFace {
       icons += "R";
     }
 
-    if (icons.length() > 0) {
-      var view = View.findDrawableById("FieldIcons") as Text;
-      view.setText(icons);
-    }
+    // Always set, even when empty, so icons clear when a flag turns off
+    var view = View.findDrawableById("FieldIcons") as Text;
+    view.setText(icons);
   }
 
   // Move the minimal-layout drawables by a small per-minute offset from their
@@ -634,6 +635,27 @@ class EssenceView extends WatchUi.WatchFace {
   //   3. SensorHistory API  (on-device historic samples)
   // --------------------------------------------------------------------------
 
+  // Current value of a system complication, or null when unavailable.
+  // getComplication() throws ComplicationNotFoundException when the device
+  // firmware does not provide the requested type.
+  function getComplicationValue(type) {
+    if (Toybox has :Complications) {
+      try {
+        return Complications.getComplication(new Complications.Id(type)).value;
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  }
+
+  // Newest sample of a SensorHistory iterator, or null when there is no data
+  // (e.g. right after a device reset).
+  function getNewestSample(iterator) {
+    var sample = iterator != null ? iterator.next() : null;
+    return sample != null ? sample.data : null;
+  }
+
   function getEmpty() {
     return "";
   }
@@ -642,7 +664,11 @@ class EssenceView extends WatchUi.WatchFace {
   function getWeather() {
     if (Toybox has :Weather) {
       var data = Toybox.Weather.getCurrentConditions();
-      if (data == null) {
+      if (
+        data == null ||
+        data.lowTemperature == null ||
+        data.highTemperature == null
+      ) {
         return "--";
       }
       return (
@@ -656,15 +682,10 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Next calendar event label from the Complications API
   function getCalendar() {
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_CALENDAR_EVENTS)
-      );
-      if (comp.value != null) {
-        return comp.value;
-      }
-    }
-    return "--";
+    var data = getComplicationValue(
+      Complications.COMPLICATION_TYPE_CALENDAR_EVENTS
+    );
+    return data != null ? data : "--";
   }
 
   // Next sunrise or sunset time, with a dynamic label showing which is next.
@@ -743,15 +764,7 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Battery percentage. Fallback: Complications → SystemStats.
   function getBattery() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_BATTERY)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_BATTERY);
     if (data == null && Toybox has :System) {
       if (Toybox.System.getSystemStats() has :battery) {
         data = Toybox.System.getSystemStats().battery;
@@ -788,99 +801,45 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Altitude in metres, rounded. Fallback: Complications → Activity → SensorHistory.
   function getAltimeter() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_ALTITUDE)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_ALTITUDE);
     if (data == null && Toybox has :Activity) {
       if (Toybox.Activity.getActivityInfo() has :altitude) {
         data = Toybox.Activity.getActivityInfo().altitude;
       }
     }
     if (data == null) {
-      var iterator = Toybox.SensorHistory.getElevationHistory({});
-      var sample = iterator.next();
-      if (sample.data != null) {
-        data = sample.data;
-      } else {
-        return "--";
-      }
+      data = getNewestSample(Toybox.SensorHistory.getElevationHistory({}));
     }
     return data != null ? (data + 0.5).toNumber().toString() : "--";
   }
 
   // Ambient temperature in °C, rounded. Fallback: Complications → SensorHistory.
   function getTemperature() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(
-          Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE
-        )
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(
+      Complications.COMPLICATION_TYPE_CURRENT_TEMPERATURE
+    );
     if (data == null) {
-      var iterator = Toybox.SensorHistory.getTemperatureHistory({});
-      var sample = iterator.next();
-      if (sample.data != null) {
-        data = sample.data;
-      } else {
-        return "--";
-      }
+      data = getNewestSample(Toybox.SensorHistory.getTemperatureHistory({}));
     }
     return data != null ? (data + 0.5).toNumber().toString() : "--";
   }
 
   // Body Battery level 0-100. Fallback: Complications → SensorHistory.
   function getBodyBattery() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_BODY_BATTERY)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(
+      Complications.COMPLICATION_TYPE_BODY_BATTERY
+    );
     if (data == null) {
-      var iterator = Toybox.SensorHistory.getBodyBatteryHistory({});
-      var sample = iterator.next();
-      if (sample.data != null) {
-        data = sample.data;
-      } else {
-        return "--";
-      }
+      data = getNewestSample(Toybox.SensorHistory.getBodyBatteryHistory({}));
     }
     return data != null ? (data + 0.5).toNumber().toString() : "--";
   }
 
   // Stress level 0-100. Fallback: Complications → SensorHistory.
   function getStress() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_STRESS)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_STRESS);
     if (data == null) {
-      var iterator = Toybox.SensorHistory.getStressHistory({});
-      var sample = iterator.next();
-      if (sample.data != null) {
-        data = sample.data;
-      } else {
-        return "--";
-      }
+      data = getNewestSample(Toybox.SensorHistory.getStressHistory({}));
     }
     return data != null ? (data + 0.5).toNumber().toString() : "--";
   }
@@ -888,15 +847,7 @@ class EssenceView extends WatchUi.WatchFace {
   // Heart rate in bpm. Fallback: Complications → Activity → SensorHistory.
   // The SensorHistory path filters out INVALID_HR_SAMPLE sentinel values.
   function getHeartRate() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_HEART_RATE)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_HEART_RATE);
     if (data == null && Toybox has :Activity) {
       if (Toybox.Activity.getActivityInfo() has :currentHeartRate) {
         data = Toybox.Activity.getActivityInfo().currentHeartRate;
@@ -904,15 +855,9 @@ class EssenceView extends WatchUi.WatchFace {
     }
     if (data == null && Toybox has :SensorHistory) {
       if (Toybox.SensorHistory has :getHeartRateHistory) {
-        var iterator = Toybox.SensorHistory.getHeartRateHistory({});
-        var sample = iterator.next();
-        if (
-          sample.data != null &&
-          sample.data != Toybox.ActivityMonitor.INVALID_HR_SAMPLE
-        ) {
-          data = sample.data;
-        } else {
-          return "--";
+        data = getNewestSample(Toybox.SensorHistory.getHeartRateHistory({}));
+        if (data == Toybox.ActivityMonitor.INVALID_HR_SAMPLE) {
+          data = null;
         }
       }
     }
@@ -921,15 +866,7 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Active calories burned. Fallback: Complications → Activity.
   function getCalories() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_CALORIES)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_CALORIES);
     if (data == null && Toybox has :Activity) {
       if (Toybox.Activity.getActivityInfo() has :calories) {
         data = Toybox.Activity.getActivityInfo().calories;
@@ -942,15 +879,7 @@ class EssenceView extends WatchUi.WatchFace {
   // Note: some Complications implementations return steps as a Float
   // (e.g. 8.5 meaning 8500 steps); we convert that back to an integer.
   function getSteps() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_STEPS)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(Complications.COMPLICATION_TYPE_STEPS);
     if (data == null || data == "--") {
       if (Toybox has :Activity) {
         data = Toybox.Activity.ActivityMonitor.getInfo().steps;
@@ -964,25 +893,25 @@ class EssenceView extends WatchUi.WatchFace {
       data = (data * 1000).toNumber();
     }
 
-    data = data.toString();
-    if (data.length() > 4) {
-      data = data.substring(0, 2) + '.' + data.substring(2, 3) + 'k';
+    // 5 digits keep one decimal ("12.3k"), 6+ digits drop it ("123k")
+    if (!(data instanceof Toybox.Lang.Number)) {
+      return data.toString();
+    } else if (data >= 100000) {
+      return (data / 1000).toString() + "k";
+    } else if (data >= 10000) {
+      return (
+        (data / 1000).toString() + "." + ((data / 100) % 10).toString() + "k"
+      );
     }
 
-    return data;
+    return data.toString();
   }
 
   // Floors climbed today. Fallback: Complications → ActivityMonitor.
   function getFloors() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_FLOORS_CLIMBED)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(
+      Complications.COMPLICATION_TYPE_FLOORS_CLIMBED
+    );
     if (data == null || data == "--") {
       if (Toybox has :Activity) {
         data = Toybox.Activity.ActivityMonitor.getInfo().floorsClimbed;
@@ -994,15 +923,9 @@ class EssenceView extends WatchUi.WatchFace {
   // Sea-level pressure in hPa, rounded. Fallback: Complications → Activity → SensorHistory.
   // The raw API value is in Pascals; divide by 100 to convert to hPa.
   function getBarometer() {
-    var data = null;
-    if (Toybox has :Complications) {
-      var comp = Complications.getComplication(
-        new Complications.Id(Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE)
-      );
-      if (comp.value != null) {
-        data = comp.value;
-      }
-    }
+    var data = getComplicationValue(
+      Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE
+    );
     if (data == null && Toybox has :Activity) {
       if (Toybox.Activity.getActivityInfo() has :meanSeaLevelPressure) {
         data = Toybox.Activity.getActivityInfo().meanSeaLevelPressure;
@@ -1010,13 +933,7 @@ class EssenceView extends WatchUi.WatchFace {
     }
     if (data == null && Toybox has :SensorHistory) {
       if (Toybox.SensorHistory has :getPressureHistory) {
-        var iterator = Toybox.SensorHistory.getPressureHistory({});
-        var sample = iterator.next();
-        if (sample != null) {
-          data = sample.data;
-        } else {
-          return "--";
-        }
+        data = getNewestSample(Toybox.SensorHistory.getPressureHistory({}));
       }
     }
     if (data == null) {

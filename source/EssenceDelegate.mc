@@ -30,9 +30,11 @@ class EssenceDelegate extends Ui.WatchFaceDelegate {
       var complicationId = checkBoundingBoxes(co_ords);
 
       if (complicationId) {
-        var thisComplication = new Complications.Id(complicationId);
-        if (thisComplication) {
-          Complications.exitTo(thisComplication);
+        // exitTo() throws InvalidValueException when no app provides it
+        try {
+          Complications.exitTo(new Complications.Id(complicationId));
+        } catch (e) {
+          return false;
         }
         return true;
       }
