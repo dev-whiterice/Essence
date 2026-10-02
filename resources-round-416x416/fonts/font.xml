@@ -1,0 +1,6 @@
+    <fonts>
+    	<font id="LabelFont416" antialias="true" filename="square29.fnt"/>
+    	<font id="DataFont416" antialias="true" filename="square44.fnt"/>
+    	<font id="TimeFont416" antialias="true" filename="square191.fnt"/>
+		<font id="IconFont416" antialias="true" filename="icons29.fnt"/>
+    </fonts>

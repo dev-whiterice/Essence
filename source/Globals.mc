@@ -21,12 +21,14 @@ public var bboxes = [];
 // Each entry: { "id", "bounds" => [[xMin,yMin],[xMax,yMax]], "value", "complicationId" }
 public var boundingBoxes = [];
 
-// Set to true by onSettingsChanged() to request a full layout rebuild on the
-// next onUpdate() call. Avoids rebuilding mid-render from the settings thread.
+// Set to true by onSettingsChanged(), the settings menu, and AMOLED sleep
+// enter/exit to request a full layout rebuild on the next onUpdate() call.
+// Avoids rebuilding mid-render from the settings thread.
 var redrawLayout = false;
 
-// Mirror of the "BatterySave" user property — read in onLayout, used in
-// onUpdate and onPress to skip all non-essential drawing and input handling.
+// Mirror of the "BatterySave" user property — read in onLayout (together with
+// AMOLED sleep it selects the minimal layout) and used in onPress to skip
+// input handling.
 var batterySave = false;
 
 // Index into graphCatalog[] for the currently active graph type.

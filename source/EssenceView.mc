@@ -20,12 +20,40 @@ class EssenceView extends WatchUi.WatchFace {
   var dh = 0;
 
   // Graph layout parameters — adjusted per screen resolution in onLayout.
-  // Defaults target the standard 390×390 round display.
+  // Defaults target the 280×280 round display (default resources/ folder).
   var graphWidthFactor = 1;
   var graphVertOffset = 69;
 
   // Background drawable — allocated once at init to avoid per-frame allocation
   var bGrondFillerWhite;
+
+  // True on screens with burn-in protection (AMOLED), read once at init
+  var requiresBurnIn = false;
+
+  // True while an AMOLED device is in low-power (always-on) mode.
+  // Set in onEnterSleep/onExitSleep; forces the dark BatterySave layout.
+  var amoledSleep = false;
+
+  // True when the minimal BatterySave layout is active (user setting or
+  // AMOLED sleep) — skips data fields and graph.
+  var minimalLayout = false;
+
+  // Pixel-shift offsets [dx, dy] cycled once per minute during AMOLED sleep,
+  // so the same pixels are not kept lit continuously (burn-in prevention)
+  var burnInOffsets = [
+    [0, 0],
+    [2, 2],
+    [4, 0],
+    [2, -2],
+    [0, -4],
+    [-2, -2],
+    [-4, 0],
+    [-2, 2],
+  ];
+
+  // Drawables shifted during AMOLED sleep and their layout base positions [x, y]
+  var shiftedViews = [];
+  var shiftedBase = [];
 
   // --------------------------------------------------------------------------
   // Lifecycle
@@ -34,11 +62,16 @@ class EssenceView extends WatchUi.WatchFace {
   function initialize() {
     WatchFace.initialize();
     bGrondFillerWhite = new Rez.Drawables.bGrondFillerWhite();
+
+    var settings = System.getDeviceSettings();
+    if (settings has :requiresBurnInProtection) {
+      requiresBurnIn = settings.requiresBurnInProtection;
+    }
   }
 
   // Called once on first show, and again whenever `redrawLayout` is set true
-  // (e.g. after a settings change). Reads all user properties and rebuilds
-  // the layout from scratch.
+  // (after a settings change, or on AMOLED sleep enter/exit). Reads all user
+  // properties and rebuilds the layout from scratch.
   function onLayout(dc as Dc) as Void {
     dw = dc.getWidth();
     dh = dc.getHeight();
@@ -54,10 +87,17 @@ class EssenceView extends WatchUi.WatchFace {
       graphSize = 0;
     }
 
-    // Per-resolution graph tuning
-    if (dh == 454) {
+    // Per-resolution graph tuning (416 and 466 are scaled from 454, keeping
+    // the graph baseline at ~85% of the display height)
+    if (dh == 466) {
+      graphVertOffset = 132;
+      graphWidthFactor = 1.54;
+    } else if (dh == 454) {
       graphVertOffset = 128;
       graphWidthFactor = 1.5;
+    } else if (dh == 416) {
+      graphVertOffset = 115;
+      graphWidthFactor = 1.37;
     } else if (dh == 260) {
       graphVertOffset = 61;
       graphWidthFactor = 0.9;
@@ -67,7 +107,11 @@ class EssenceView extends WatchUi.WatchFace {
     // which touch zones are active (large graph collapses three zones)
     defineBoundingBoxes(dc);
 
-    if (!batterySave) {
+    minimalLayout = batterySave || amoledSleep;
+    shiftedViews = [];
+    shiftedBase = [];
+
+    if (!minimalLayout) {
       // Full layout: choose dark or light theme
       setLayout(
         darkMode ? Rez.Layouts.WatchFace(dc) : Rez.Layouts.WatchFaceLight(dc)
@@ -75,12 +119,30 @@ class EssenceView extends WatchUi.WatchFace {
       loadLayout(); // read field assignments from properties into fieldLayout[]
       drawLabels(dc); // populate static label text views
     } else {
-      // Battery-save layout: minimal display, no data fields or graph
+      // Battery-save layout: minimal display, no data fields or graph.
+      // During AMOLED sleep the dark variant is forced: a white background
+      // would trip the burn-in protector and blank the screen.
       setLayout(
-        darkMode
+        darkMode || amoledSleep
           ? Rez.Layouts.BatterySave(dc)
           : Rez.Layouts.BatterySaveLight(dc)
       );
+
+      if (amoledSleep) {
+        // Dim the time: in white it lights up to ~18% of the screen, above
+        // the burn-in protector's 10% luminance limit
+        (View.findDrawableById("FieldTime") as Text).setColor(
+          Graphics.COLOR_DK_GRAY
+        );
+
+        // Remember base positions of the drawables to pixel-shift in sleep
+        var ids = ["FieldTime", "FieldDate", "FieldIcons"];
+        for (var i = 0; i < ids.size(); i = i + 1) {
+          var view = View.findDrawableById(ids[i]);
+          shiftedViews.add(view);
+          shiftedBase.add([view.locX, view.locY]);
+        }
+      }
     }
   }
 
@@ -99,7 +161,7 @@ class EssenceView extends WatchUi.WatchFace {
       redrawLayout = false;
     }
 
-    if (!batterySave) {
+    if (!minimalLayout) {
       drawData(dc); // populate complication / sensor data text views
     }
 
@@ -107,10 +169,14 @@ class EssenceView extends WatchUi.WatchFace {
     drawTime(dc);
     drawIcons(dc);
 
+    if (amoledSleep) {
+      applyBurnInShift();
+    }
+
     View.onUpdate(dc); // flush layout drawables to the display
 
     // Graph is painted on top of the flushed layout via raw DC primitives
-    if (!batterySave && showGraph > 0) {
+    if (!minimalLayout && showGraph > 0) {
       drawGraph(dc);
     }
 
@@ -118,8 +184,26 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   function onHide() as Void {}
-  function onExitSleep() as Void {}
-  function onEnterSleep() as Void {}
+
+  // AMOLED only: switch back to the full layout when leaving low-power mode.
+  // MIP screens keep the full layout in sleep, so nothing changes there.
+  function onExitSleep() as Void {
+    if (amoledSleep) {
+      amoledSleep = false;
+      redrawLayout = true;
+      WatchUi.requestUpdate();
+    }
+  }
+
+  // AMOLED only: switch to the minimal BatterySave layout in low-power mode
+  // to stay within the burn-in protector's luminance limit.
+  function onEnterSleep() as Void {
+    if (requiresBurnIn) {
+      amoledSleep = true;
+      redrawLayout = true;
+      WatchUi.requestUpdate();
+    }
+  }
 
   // --------------------------------------------------------------------------
   // Drawing helpers
@@ -245,6 +329,19 @@ class EssenceView extends WatchUi.WatchFace {
     if (icons.length() > 0) {
       var view = View.findDrawableById("FieldIcons") as Text;
       view.setText(icons);
+    }
+  }
+
+  // Move the minimal-layout drawables by a small per-minute offset from their
+  // base positions, so no pixel stays lit in the same spot during sleep.
+  function applyBurnInShift() {
+    var offset =
+      burnInOffsets[System.getClockTime().min % burnInOffsets.size()];
+    for (var i = 0; i < shiftedViews.size(); i = i + 1) {
+      shiftedViews[i].setLocation(
+        shiftedBase[i][0] + offset[0],
+        shiftedBase[i][1] + offset[1]
+      );
     }
   }
 

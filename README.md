@@ -23,20 +23,36 @@ It supports up to 8 configurable data fields and an optional sensor history grap
 
 ### Supported devices
 
-| Device | Resolution |
-|---|---|
-| Approach S70 47mm | 454×454 |
-| Descent Mk3 51mm | 454×454 |
-| Enduro 3 | 454×454 |
-| epix Pro 51mm | 454×454 |
-| fēnix 7 / 7 Pro / 7 Pro (no WiFi) | 260×260 |
-| fēnix 7X / 7X Pro / 7X Pro (no WiFi) | 390×390 |
-| fēnix 8 47mm | 454×454 |
-| fēnix 8 Solar 47mm / 51mm | 454×454 |
-| Forerunner 255 / 255M | 260×260 |
-| Forerunner 955 | 390×390 |
-| Forerunner 965 | 454×454 |
-| Venu 3 | 454×454 |
+| Device | Resolution | Display |
+|---|---|---|
+| Approach S70 47mm | 454×454 | AMOLED |
+| Descent Mk3 51mm | 454×454 | AMOLED |
+| Enduro 3 | 280×280 | MIP |
+| epix Pro 51mm | 454×454 | AMOLED |
+| fēnix 7 / 7 Pro / 7 Pro (no WiFi) | 260×260 | MIP |
+| fēnix 7X / 7X Pro / 7X Pro (no WiFi) | 280×280 | MIP |
+| fēnix 8 47mm | 454×454 | AMOLED |
+| fēnix 8 Solar 47mm | 260×260 | MIP |
+| fēnix 8 Solar 51mm | 280×280 | MIP |
+| fēnix 9 43mm / 9 Pro 43mm | 416×416 | AMOLED |
+| fēnix 9 47mm / 9 Pro 47mm | 454×454 | AMOLED |
+| fēnix 9 Pro 51mm | 466×466 | AMOLED |
+| fēnix 9 Pro Solar 47mm | 260×260 | MIP |
+| fēnix 9 Pro Solar 51mm | 280×280 | MIP |
+| Forerunner 255 / 255M | 260×260 | MIP |
+| Forerunner 955 | 260×260 | MIP |
+| Forerunner 965 | 454×454 | AMOLED |
+| Venu 3 | 454×454 | AMOLED |
+
+### AMOLED always-on
+
+On AMOLED devices, when the watch enters low-power (always-on) mode the face
+automatically switches to the minimal Battery Save layout (time, date and
+status icons on a black background, even in light mode, with the time
+dimmed to dark grey) to comply with
+Garmin's burn-in protection rules. These elements are shifted by a few pixels
+every minute so the same pixels are not kept lit. The full layout returns as
+soon as the watch wakes up. MIP devices are unaffected.
 
 ---
 
