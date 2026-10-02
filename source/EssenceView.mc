@@ -30,6 +30,11 @@ class EssenceView extends WatchUi.WatchFace {
   // True on screens with burn-in protection (AMOLED), read once at init
   var requiresBurnIn = false;
 
+  // Off-white used instead of pure white for dark-theme text on AMOLED:
+  // ~21% less emitted light (less OLED wear and power) for a ~9% drop in
+  // perceived lightness
+  const AMOLED_WHITE = 0xe6e6e6;
+
   // True while an AMOLED device is in low-power (always-on) mode.
   // Set in onEnterSleep/onExitSleep; forces the dark BatterySave layout.
   var amoledSleep = false;
@@ -143,6 +148,12 @@ class EssenceView extends WatchUi.WatchFace {
           shiftedBase.add([view.locX, view.locY]);
         }
       }
+    }
+
+    // Sleep already recolours the time above, and the light theme has no
+    // white text
+    if (requiresBurnIn && darkMode && !amoledSleep) {
+      applyAmoledWhite();
     }
   }
 
@@ -343,6 +354,22 @@ class EssenceView extends WatchUi.WatchFace {
         shiftedBase[i][0] + offset[0],
         shiftedBase[i][1] + offset[1]
       );
+    }
+  }
+
+  // Recolour the dark-theme text drawables (white by default, as they have no
+  // colour in layout.xml) to AMOLED_WHITE. Drawables missing from the active
+  // layout (data fields in BatterySave) are skipped.
+  function applyAmoledWhite() {
+    var ids = ["FieldTime", "FieldGraphData"];
+    for (var i = 0; i < fieldLayout.size(); i = i + 1) {
+      ids.add(fieldLayout[i]["id"] + "Data");
+    }
+    for (var i = 0; i < ids.size(); i = i + 1) {
+      var view = View.findDrawableById(ids[i]);
+      if (view != null) {
+        (view as Text).setColor(AMOLED_WHITE);
+      }
     }
   }
 
