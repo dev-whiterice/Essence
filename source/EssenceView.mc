@@ -35,6 +35,10 @@ class EssenceView extends WatchUi.WatchFace {
   // perceived lightness
   const AMOLED_WHITE = 0xe6e6e6;
 
+  // Graphics.COLOR_BLUE (0x00AAFF) scaled by the same 90% as AMOLED_WHITE,
+  // keeping the hue
+  const AMOLED_BLUE = 0x0099e6;
+
   // True while an AMOLED device is in low-power (always-on) mode.
   // Set in onEnterSleep/onExitSleep; forces the dark BatterySave layout.
   var amoledSleep = false;
@@ -150,10 +154,10 @@ class EssenceView extends WatchUi.WatchFace {
       }
     }
 
-    // Sleep already recolours the time above, and the light theme has no
-    // white text
-    if (requiresBurnIn && darkMode && !amoledSleep) {
-      applyAmoledWhite();
+    // Soften the dark-theme white and blue text (sleep always uses the dark
+    // variant). The light theme is left alone: its background is white anyway
+    if (requiresBurnIn && (darkMode || amoledSleep)) {
+      applyAmoledColors();
     }
   }
 
@@ -357,18 +361,29 @@ class EssenceView extends WatchUi.WatchFace {
     }
   }
 
-  // Recolour the dark-theme text drawables (white by default, as they have no
-  // colour in layout.xml) to AMOLED_WHITE. Drawables missing from the active
-  // layout (data fields in BatterySave) are skipped.
-  function applyAmoledWhite() {
+  // Recolour the dark-theme blue text to AMOLED_BLUE and the white text
+  // (white by default, as it has no colour in layout.xml) to AMOLED_WHITE.
+  // In sleep only the blue is changed: onLayout already dims the time.
+  function applyAmoledColors() {
+    recolorDrawables(["FieldDate", "FieldIcons"], AMOLED_BLUE);
+    if (amoledSleep) {
+      return;
+    }
+
     var ids = ["FieldTime", "FieldGraphData"];
     for (var i = 0; i < fieldLayout.size(); i = i + 1) {
       ids.add(fieldLayout[i]["id"] + "Data");
     }
+    recolorDrawables(ids, AMOLED_WHITE);
+  }
+
+  // Drawables missing from the active layout (data fields in BatterySave)
+  // are skipped
+  function recolorDrawables(ids as Array<String>, color as Number) {
     for (var i = 0; i < ids.size(); i = i + 1) {
       var view = View.findDrawableById(ids[i]);
       if (view != null) {
-        (view as Text).setColor(AMOLED_WHITE);
+        (view as Text).setColor(color);
       }
     }
   }
