@@ -39,6 +39,11 @@ class EssenceView extends WatchUi.WatchFace {
   // keeping the hue
   const AMOLED_BLUE = 0x0099e6;
 
+  // AMOLED_BLUE darkened (same hue) for the sleep layout, so the date and
+  // icons stay slightly dimmer than the COLOR_DK_GRAY time (~0.9x its
+  // luminance); AMOLED_BLUE there would be ~3x brighter than the time
+  const AMOLED_SLEEP_BLUE = 0x005580;
+
   // True while an AMOLED device is in low-power (always-on) mode.
   // Set in onEnterSleep/onExitSleep; selects sleepLayout in onUpdate.
   var amoledSleep = false;
@@ -438,10 +443,14 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Recolour the dark-theme blue text to AMOLED_BLUE and the white text
   // (white by default, as it has no colour in layout.xml) to AMOLED_WHITE.
-  // In the sleep layout only the blue is changed: buildSleepLayout already
-  // dims the time. Acts on the layout currently set.
+  // In the sleep layout the blue becomes AMOLED_SLEEP_BLUE and the white is
+  // left alone: buildSleepLayout already dims the time. Acts on the layout
+  // currently set.
   function applyAmoledColors(forSleep as Boolean) {
-    recolorDrawables(["FieldDate", "FieldIcons"], AMOLED_BLUE);
+    recolorDrawables(
+      ["FieldDate", "FieldIcons"],
+      forSleep ? AMOLED_SLEEP_BLUE : AMOLED_BLUE
+    );
     if (forSleep) {
       return;
     }
