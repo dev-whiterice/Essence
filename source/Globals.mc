@@ -21,9 +21,10 @@ public var bboxes = [];
 // Each entry: { "id", "bounds" => [[xMin,yMin],[xMax,yMax]], "value", "complicationId" }
 public var boundingBoxes = [];
 
-// Set to true by onSettingsChanged(), the settings menu, and AMOLED sleep
-// enter/exit to request a full layout rebuild on the next onUpdate() call.
-// Avoids rebuilding mid-render from the settings thread.
+// Set to true by onSettingsChanged() and the settings menu to request a full
+// layout rebuild on the next onUpdate() call. Avoids rebuilding mid-render
+// from the settings thread. AMOLED sleep enter/exit does not use it: it only
+// swaps the prebuilt layouts (EssenceView.selectLayout).
 var redrawLayout = false;
 
 // Mirror of the "BatterySave" user property — read in onLayout (together with

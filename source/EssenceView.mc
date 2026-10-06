@@ -40,12 +40,41 @@ class EssenceView extends WatchUi.WatchFace {
   const AMOLED_BLUE = 0x0099e6;
 
   // True while an AMOLED device is in low-power (always-on) mode.
-  // Set in onEnterSleep/onExitSleep; forces the dark BatterySave layout.
+  // Set in onEnterSleep/onExitSleep; selects sleepLayout in onUpdate.
   var amoledSleep = false;
 
   // True when the minimal BatterySave layout is active (user setting or
   // AMOLED sleep) — skips data fields and graph.
   var minimalLayout = false;
+
+  // Both layouts are built once in onLayout and then swapped by selectLayout()
+  // on sleep enter/exit, so waking up costs a setLayout() call instead of a
+  // full rebuild (properties, labels, bounding boxes).
+  // awakeLayout follows the user settings (full or BatterySave, light or dark);
+  // sleepLayout is the dark minimal layout used in AMOLED sleep (null on MIP).
+  var awakeLayout = null;
+  var sleepLayout = null;
+  var sleepLayoutActive = false;
+
+  // Graph geometry — derived in onLayout from the resolution and graph size.
+  // The graph is made of 1-pixel-wide time bins, newest at the right edge.
+  const GRAPH_PERIOD = 14400; // seconds of history shown (4 hours)
+  const GRAPH_HEIGHT = 30;
+  var graphBins = 0;
+  var graphBinSecs = 0;
+  var graphXBase = 0; // x of the newest (rightmost) bin
+  var graphYBase = 0; // baseline y of the bars
+
+  // Graph cache: one bar height per bin (newest first), rebuilt by
+  // computeGraph() at most once a minute and drawn every frame by drawGraph().
+  // null means "must be computed" (first frame, or after a settings change).
+  var graphBars = null;
+  var graphMinute = -1; // Time.now() in minutes when graphBars was computed
+
+  // Set on wake: the first frame draws the cached graph and the refresh is
+  // deferred to the next frame (one second later), keeping the wake-up frame
+  // cheap. The cache is at most a few bins behind, which is not noticeable.
+  var deferGraphRefresh = false;
 
   // Pixel-shift offsets [dx, dy] cycled once per minute during AMOLED sleep,
   // so the same pixels are not kept lit continuously (burn-in prevention)
@@ -79,8 +108,9 @@ class EssenceView extends WatchUi.WatchFace {
   }
 
   // Called once on first show, and again whenever `redrawLayout` is set true
-  // (after a settings change, or on AMOLED sleep enter/exit). Reads all user
-  // properties and rebuilds the layout from scratch.
+  // (after a settings change). Reads all user properties and rebuilds both
+  // layouts from scratch. Sleep enter/exit does not come through here: it only
+  // swaps the prebuilt layouts (see selectLayout).
   function onLayout(dc as Dc) as Void {
     dw = dc.getWidth();
     dh = dc.getHeight();
@@ -112,53 +142,88 @@ class EssenceView extends WatchUi.WatchFace {
       graphWidthFactor = 0.9;
     }
 
+    var graphWidth = (graphSize == 1 ? 180 : 70) * graphWidthFactor;
+    graphBins = Math.ceil(graphWidth).toNumber();
+    graphBinSecs = Math.floor(GRAPH_PERIOD / graphWidth).toNumber();
+    graphXBase = (dw - graphWidth) / 2 + graphWidth - 2;
+    graphYBase = dh / 2 + graphVertOffset + GRAPH_HEIGHT;
+
+    // Graph type or size may have changed
+    graphBars = null;
+
     // Bounding boxes must be recalculated here because graphSize affects
     // which touch zones are active (large graph collapses three zones)
     defineBoundingBoxes(dc);
 
-    minimalLayout = batterySave || amoledSleep;
-    shiftedViews = [];
-    shiftedBase = [];
+    // Each builder configures its drawables through findDrawableById, which
+    // only sees the layout currently set — so they run one after the other
+    // and selectLayout() picks the one to show at the end
+    sleepLayout = requiresBurnIn ? buildSleepLayout(dc) : null;
+    awakeLayout = buildAwakeLayout(dc);
+    selectLayout();
+  }
 
-    if (!minimalLayout) {
+  // Build the layout shown outside AMOLED sleep, as chosen by the user
+  // settings, and fill its static text (labels).
+  function buildAwakeLayout(dc as Dc) as Array<Drawable> {
+    var layout;
+    if (!batterySave) {
       // Full layout: choose dark or light theme
-      setLayout(
-        darkMode ? Rez.Layouts.WatchFace(dc) : Rez.Layouts.WatchFaceLight(dc)
-      );
+      layout = darkMode
+        ? Rez.Layouts.WatchFace(dc)
+        : Rez.Layouts.WatchFaceLight(dc);
+      setLayout(layout);
       loadLayout(); // read field assignments from properties into fieldLayout[]
       drawLabels(dc); // populate static label text views
     } else {
-      // Battery-save layout: minimal display, no data fields or graph.
-      // During AMOLED sleep the dark variant is forced: a white background
-      // would trip the burn-in protector and blank the screen.
-      setLayout(
-        darkMode || amoledSleep
-          ? Rez.Layouts.BatterySave(dc)
-          : Rez.Layouts.BatterySaveLight(dc)
-      );
-
-      if (amoledSleep) {
-        // Dim the time: in white it lights up to ~18% of the screen, above
-        // the burn-in protector's 10% luminance limit
-        (View.findDrawableById("FieldTime") as Text).setColor(
-          Graphics.COLOR_DK_GRAY
-        );
-
-        // Remember base positions of the drawables to pixel-shift in sleep
-        var ids = ["FieldTime", "FieldDate", "FieldIcons"];
-        for (var i = 0; i < ids.size(); i = i + 1) {
-          var view = View.findDrawableById(ids[i]);
-          shiftedViews.add(view);
-          shiftedBase.add([view.locX, view.locY]);
-        }
-      }
+      // Battery-save layout: minimal display, no data fields or graph
+      layout = darkMode
+        ? Rez.Layouts.BatterySave(dc)
+        : Rez.Layouts.BatterySaveLight(dc);
+      setLayout(layout);
     }
 
-    // Soften the dark-theme white and blue text (sleep always uses the dark
-    // variant). The light theme is left alone: its background is white anyway
-    if (requiresBurnIn && (darkMode || amoledSleep)) {
-      applyAmoledColors();
+    // Soften the dark-theme white and blue text. The light theme is left
+    // alone: its background is white anyway
+    if (requiresBurnIn && darkMode) {
+      applyAmoledColors(false);
     }
+    return layout;
+  }
+
+  // Build the minimal layout shown during AMOLED sleep. The dark variant is
+  // forced regardless of the theme: a white background would trip the
+  // burn-in protector and blank the screen.
+  function buildSleepLayout(dc as Dc) as Array<Drawable> {
+    var layout = Rez.Layouts.BatterySave(dc);
+    setLayout(layout);
+
+    // Dim the time: in white it lights up to ~18% of the screen, above the
+    // burn-in protector's 10% luminance limit
+    (View.findDrawableById("FieldTime") as Text).setColor(
+      Graphics.COLOR_DK_GRAY
+    );
+
+    // Remember base positions of the drawables to pixel-shift in sleep
+    shiftedViews = [];
+    shiftedBase = [];
+    var ids = ["FieldTime", "FieldDate", "FieldIcons"];
+    for (var i = 0; i < ids.size(); i = i + 1) {
+      var view = View.findDrawableById(ids[i]);
+      shiftedViews.add(view);
+      shiftedBase.add([view.locX, view.locY]);
+    }
+
+    applyAmoledColors(true);
+    return layout;
+  }
+
+  // Show the prebuilt layout matching the current sleep state. Cheap: the
+  // drawables keep their text and colours across swaps.
+  function selectLayout() as Void {
+    sleepLayoutActive = amoledSleep;
+    setLayout(amoledSleep ? sleepLayout : awakeLayout);
+    minimalLayout = batterySave || amoledSleep;
   }
 
   function onShow() as Void {}
@@ -170,10 +235,13 @@ class EssenceView extends WatchUi.WatchFace {
   // the display, so the graph (drawn with raw DC calls) must come AFTER to
   // avoid being overwritten by the layout flush.
   function onUpdate(dc as Dc) as Void {
-    // Rebuild layout if flagged by onSettingsChanged()
+    // Rebuild layouts if flagged by onSettingsChanged(); otherwise just swap
+    // to the prebuilt layout if the sleep state changed since the last frame
     if (redrawLayout) {
       onLayout(dc);
       redrawLayout = false;
+    } else if (sleepLayoutActive != amoledSleep) {
+      selectLayout();
     }
 
     if (!minimalLayout) {
@@ -192,30 +260,35 @@ class EssenceView extends WatchUi.WatchFace {
 
     // Graph is painted on top of the flushed layout via raw DC primitives
     if (!minimalLayout && showGraph > 0) {
+      updateGraphCache();
       drawGraph(dc);
     }
+    deferGraphRefresh = false;
 
     // drawBoundingBoxes(dc);  // uncomment to debug tap zones
   }
 
   function onHide() as Void {}
 
-  // AMOLED only: switch back to the full layout when leaving low-power mode.
+  // Defer the graph refresh to keep the wake-up frame cheap (see
+  // deferGraphRefresh). On AMOLED, also switch back to the awake layout:
   // MIP screens keep the full layout in sleep, so nothing changes there.
+  // The layout swap itself happens in the next onUpdate (see selectLayout).
   function onExitSleep() as Void {
+    deferGraphRefresh = true;
     if (amoledSleep) {
       amoledSleep = false;
-      redrawLayout = true;
       WatchUi.requestUpdate();
     }
   }
 
-  // AMOLED only: switch to the minimal BatterySave layout in low-power mode
-  // to stay within the burn-in protector's luminance limit.
+  // AMOLED only: switch to the minimal sleep layout in low-power mode to stay
+  // within the burn-in protector's luminance limit. With always-on disabled
+  // the screen is off and no frame may be drawn at all, in which case the
+  // awake layout simply stays active and waking up costs nothing.
   function onEnterSleep() as Void {
     if (requiresBurnIn) {
       amoledSleep = true;
-      redrawLayout = true;
       WatchUi.requestUpdate();
     }
   }
@@ -363,10 +436,11 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Recolour the dark-theme blue text to AMOLED_BLUE and the white text
   // (white by default, as it has no colour in layout.xml) to AMOLED_WHITE.
-  // In sleep only the blue is changed: onLayout already dims the time.
-  function applyAmoledColors() {
+  // In the sleep layout only the blue is changed: buildSleepLayout already
+  // dims the time. Acts on the layout currently set.
+  function applyAmoledColors(forSleep as Boolean) {
     recolorDrawables(["FieldDate", "FieldIcons"], AMOLED_BLUE);
-    if (amoledSleep) {
+    if (forSleep) {
       return;
     }
 
@@ -388,46 +462,79 @@ class EssenceView extends WatchUi.WatchFace {
     }
   }
 
-  // Draw the sensor history bar chart using raw DC primitives.
+  // Refresh the graph cache when it is missing, or once a minute — except on
+  // the first frame after waking up, which draws the cached bars as they are
+  // (see deferGraphRefresh). Sensor history is sampled at most about once a
+  // minute, so refreshing more often would redraw the same bars.
+  function updateGraphCache() as Void {
+    var minute = Time.now().value() / 60;
+    if (graphBars != null && (minute == graphMinute || deferGraphRefresh)) {
+      return;
+    }
+    graphBars = computeGraph();
+    graphMinute = minute;
+  }
+
+  // Draw the cached sensor history bar chart using raw DC primitives.
+  function drawGraph(dc) {
+    if (graphBars == null) {
+      return;
+    }
+
+    // Set bar colour once — it is constant for the entire graph render
+    dc.setColor(
+      graphCatalog[showGraph]["colorDark"],
+      Graphics.COLOR_TRANSPARENT
+    );
+
+    for (var i = 0; i < graphBars.size(); ++i) {
+      var barHeight = graphBars[i];
+      var x = graphXBase - i;
+      var y = graphYBase - barHeight;
+
+      // Explicit bounds guard — replaces a try/catch in the hot path
+      if (barHeight > 0 && y >= 0 && x >= 0 && x < dw) {
+        dc.fillRectangle(x, y, 1, barHeight);
+      }
+    }
+  }
+
+  // Compute the bar heights of the sensor history chart, one per bin, newest
+  // first. Returns an empty array when there is nothing to draw.
   //
-  // Strategy: fetch up to `maxSecs` of sensor history, bucket the samples
-  // into 1-pixel-wide time bins (newest = rightmost), then draw a bar for
-  // each bin whose height is proportional to the normalised average value.
+  // Strategy: fetch GRAPH_PERIOD seconds of sensor history and bucket the
+  // samples into 1-pixel-wide time bins (newest = rightmost); each bin's bar
+  // height is proportional to the normalised average value.
   //
   // Normalisation formula:
   //   norm = (midpoint - curMin * scale) / (curMax - curMin * scale)
   // The `scale` factor (< 1.0) compresses the effective floor so that
   // low values still produce a visible bar rather than collapsing to zero.
   //
-  // Performance design (all hot-path costs moved outside the loop):
-  //   - catalog fields cached before loop  → no per-bin dict lookups
-  //   - scaledMin / denom pre-computed     → no per-bin float multiplications
-  //   - xBase / yBase pre-computed         → no per-bin coordinate arithmetic
-  //   - dc.setColor() called once          → colour is constant for all bins
-  //   - norm and barHeight computed once   → were duplicated in original code
-  //   - explicit bounds guard              → replaces try/catch in hot path
-  function drawGraph(dc) {
+  // This walks every sample in the period, which makes it the most expensive
+  // routine of the face: it is only called through updateGraphCache().
+  function computeGraph() as Array<Numeric> {
+    var bars = [] as Array<Numeric>;
+
     // Cache the entire catalog entry to avoid repeated dict lookups per bin
     var catalog = graphCatalog[showGraph];
     if (catalog["iterator"] == null) {
-      return; // this graph type has no history data source
+      return bars; // this graph type has no history data source
     }
 
     // --- Fetch sensor history ------------------------------------------------
-
-    var maxSecs = 14400; // 4 hours of data
 
     var getSensorHistory = new Lang.Method(
       Toybox.SensorHistory,
       catalog["iterator"]
     );
     var sample = getSensorHistory.invoke({
-      :period => maxSecs,
+      :period => GRAPH_PERIOD,
       :order => SensorHistory.ORDER_NEWEST_FIRST,
     });
 
     if (sample == null) {
-      return;
+      return bars;
     }
 
     var curMin = sample.getMin();
@@ -436,36 +543,18 @@ class EssenceView extends WatchUi.WatchFace {
 
     // Guard: no data, or degenerate range (division by zero in normalisation)
     if (sampleData == null || curMin == null || curMax == null) {
-      return;
+      return bars;
     }
     if (curMin == 0 || curMax == 0 || curMax <= curMin) {
-      return;
+      return bars;
     }
-
-    // --- Pre-compute layout constants ----------------------------------------
-
-    var totWidth = (graphSize == 1 ? 180 : 70) * graphWidthFactor;
-    var totHeight = 30;
-    var binPixels = 1; // each time-bucket is 1 pixel wide
-
-    var totBins = Math.ceil(totWidth / binPixels).toNumber();
-    var binWidthSecs = Math.floor((binPixels * maxSecs) / totWidth).toNumber();
 
     // Normalisation constants — computed once, reused every iteration
     var scale = catalog["scale"];
     var scaledMin = curMin * scale;
     var denom = curMax - scaledMin;
 
-    // Pixel offsets invariant across all bins
-    // xBase: right edge of the graph; bins are plotted right-to-left (newest first)
-    // yBase: bottom baseline of the graph area
-    var xBase = (dw - totWidth) / 2 + totWidth - 2;
-    var yBase = dh / 2 + graphVertOffset + totHeight;
-
-    // Set bar colour once — it is constant for the entire graph render
-    dc.setColor(catalog["colorDark"], Graphics.COLOR_TRANSPARENT);
-
-    // --- Render loop ---------------------------------------------------------
+    // --- Bucketing loop ------------------------------------------------------
 
     var graphValue = 0; // last known sample value (carried across bin boundaries)
     var secsBin = 0; // accumulated seconds placed in the current bin
@@ -475,13 +564,9 @@ class EssenceView extends WatchUi.WatchFace {
     var graphSecs;
     var finished = false;
 
-    for (var i = 0; i < totBins; ++i) {
+    for (var i = 0; i < graphBins && !finished; ++i) {
       graphBinMax = 0;
       graphBinMin = 0;
-
-      if (finished) {
-        continue; // iterator exhausted; leave remaining bins empty
-      }
 
       // If there is leftover time from the previous bin, seed this bin
       // with the last known value so there are no visual gaps
@@ -490,8 +575,8 @@ class EssenceView extends WatchUi.WatchFace {
         graphBinMin = graphValue;
       }
 
-      // Consume samples until this bin has accumulated binWidthSecs of data
-      while (!finished && secsBin < binWidthSecs) {
+      // Consume samples until this bin has accumulated graphBinSecs of data
+      while (!finished && secsBin < graphBinSecs) {
         sampleData = sample.next();
         if (sampleData == null) {
           finished = true;
@@ -520,25 +605,20 @@ class EssenceView extends WatchUi.WatchFace {
       }
 
       // Carry the remainder into the next bin
-      if (secsBin >= binWidthSecs) {
-        secsBin -= binWidthSecs;
+      if (secsBin >= graphBinSecs) {
+        secsBin -= graphBinSecs;
       }
 
-      // Draw the bar only if this bin has at least one valid reading
+      // Bar only if this bin has at least one valid reading: normalise the
+      // midpoint of [binMin, binMax] to [0..1] and scale to pixels
+      var barHeight = 0;
       if (graphBinMax > 0 && graphBinMax >= graphBinMin) {
-        // Normalise the midpoint of [binMin, binMax] to [0..1], scale to pixels.
-        // Computed once per bin — was duplicated twice in the original code.
         var norm = ((graphBinMax + graphBinMin) / 2 - scaledMin) / denom;
-        var barHeight = norm * totHeight;
-        var x = xBase - i * binPixels;
-        var y = yBase - barHeight;
-
-        // Explicit bounds guard — replaces the original try/catch in the hot path
-        if (barHeight > 0 && y >= 0 && x >= 0 && x < dw) {
-          dc.fillRectangle(x, y, binPixels, barHeight);
-        }
+        barHeight = norm * GRAPH_HEIGHT;
       }
+      bars.add(barHeight);
     }
+    return bars;
   }
 
   // --------------------------------------------------------------------------
