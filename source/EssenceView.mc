@@ -73,7 +73,9 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Set on wake: the first frame draws the cached graph and the refresh is
   // deferred to the next frame (one second later), keeping the wake-up frame
-  // cheap. The cache is at most a few bins behind, which is not noticeable.
+  // cheap. The cache is as old as the last awake frame, so after a long
+  // screen-off the bars visibly shift left when the refresh lands (one bin
+  // spans ~50-230 s depending on resolution and graph size).
   var deferGraphRefresh = false;
 
   // Pixel-shift offsets [dx, dy] cycled once per minute during AMOLED sleep,
@@ -464,8 +466,8 @@ class EssenceView extends WatchUi.WatchFace {
 
   // Refresh the graph cache when it is missing, or once a minute — except on
   // the first frame after waking up, which draws the cached bars as they are
-  // (see deferGraphRefresh). Sensor history is sampled at most about once a
-  // minute, so refreshing more often would redraw the same bars.
+  // (see deferGraphRefresh). Bins span at least ~50 s, so a once-a-minute
+  // refresh keeps the chart at most about one bin behind.
   function updateGraphCache() as Void {
     var minute = Time.now().value() / 60;
     if (graphBars != null && (minute == graphMinute || deferGraphRefresh)) {
