@@ -1,0 +1,85 @@
+===== ENGLISH =====
+
+Essence - a clean, battery-friendly digital watch face.
+
+Easy to read at a glance, light on battery, and fully configurable right from your watch: no phone needed.
+
+My apps are free and will stay that way, but if you appreciate my work, let me know with a small contribution.
+Enjoying the app? Buy me a coffee to fuel those late-night coding sessions!
+
+https://www.paypal.com/paypalme/devlessismore
+
+CONFIGURE EVERYTHING FROM THE WATCH
+Long-press the watch face to open the settings menu and change every option directly on your wrist. You can also use the Garmin Connect app if you prefer.
+
+FEATURES
+- Up to 8 data fields, each one independently configurable
+- 17 data types: weather, calendar, notifications, sunrise/sunset, altitude, heart rate, barometer, battery, battery days, stress, Body Battery, steps, floors, calories, solar intensity, temperature
+- Optional 4-hour sensor history graph: heart rate, barometer or altitude, in small or large size
+- Tap any field to open the related Garmin app or complication
+- Dark and light themes
+- Battery Save mode: time and date only
+- Status icons: Bluetooth, Do Not Disturb, alarm
+- 24-hour military time option
+- AMOLED always-on mode with burn-in protection
+- Fast wake-up and low power consumption
+- Optimized for every supported screen size
+- Languages: English, Italian, Spanish
+
+
+===== ITALIANO =====
+
+Essence - un quadrante digitale pulito e attento alla batteria.
+
+Facile da leggere a colpo d'occhio, leggero sui consumi e completamente configurabile direttamente dall'orologio: nessun telefono necessario.
+
+Le mie app sono gratuite e rimarranno tali, ma se apprezzi il mio lavoro fammelo sapere con un contributo.
+Enjoying the app? Buy me a coffee to fuel those late-night coding sessions!
+
+https://www.paypal.com/paypalme/devlessismore
+
+CONFIGURA TUTTO DALL'OROLOGIO
+Tieni premuto sul quadrante per aprire il menu delle impostazioni e modificare ogni opzione direttamente dal polso. Se preferisci, puoi usare anche l'app Garmin Connect.
+
+FUNZIONALITÀ
+- Fino a 8 campi dati, ognuno configurabile in modo indipendente
+- 17 tipi di dato: meteo, calendario, notifiche, alba/tramonto, altitudine, frequenza cardiaca, barometro, batteria, giorni di batteria, stress, Body Battery, passi, piani, calorie, intensità solare, temperatura
+- Grafico opzionale della cronologia dei sensori delle ultime 4 ore: frequenza cardiaca, barometro o altitudine, in formato piccolo o grande
+- Tocca un campo per aprire l'app o la complicazione Garmin collegata
+- Tema scuro e chiaro
+- Modalità Risparmio batteria: solo ora e data
+- Icone di stato: Bluetooth, Non disturbare, sveglia
+- Opzione formato orario militare a 24 ore
+- Modalità always-on AMOLED con protezione dal burn-in
+- Riattivazione rapida e consumi ridotti
+- Ottimizzato per tutte le dimensioni di schermo supportate
+- Lingue: inglese, italiano, spagnolo
+
+
+===== ESPAÑOL =====
+
+Essence - una esfera digital limpia y que cuida la batería.
+
+Fácil de leer de un vistazo, ligera en consumo y totalmente configurable directamente desde el reloj: sin necesidad de teléfono.
+
+Mis apps son gratuitas y seguirán siéndolo, pero si valoras mi trabajo, házmelo saber con una contribución.
+Enjoying the app? Buy me a coffee to fuel those late-night coding sessions!
+
+https://www.paypal.com/paypalme/devlessismore
+
+CONFIGURA TODO DESDE EL RELOJ
+Mantén pulsada la esfera para abrir el menú de ajustes y cambiar cada opción directamente en tu muñeca. Si lo prefieres, también puedes usar la app Garmin Connect.
+
+FUNCIONES
+- Hasta 8 campos de datos, cada uno configurable de forma independiente
+- 17 tipos de dato: tiempo, calendario, notificaciones, amanecer/atardecer, altitud, frecuencia cardiaca, barómetro, batería, días de batería, estrés, Body Battery, pasos, pisos, calorías, intensidad solar, temperatura
+- Gráfico opcional del historial de sensores de las últimas 4 horas: frecuencia cardiaca, barómetro o altitud, en tamaño pequeño o grande
+- Toca un campo para abrir la app o complicación de Garmin asociada
+- Temas oscuro y claro
+- Modo Ahorro de batería: solo hora y fecha
+- Iconos de estado: Bluetooth, No molestar, alarma
+- Opción de formato horario militar de 24 horas
+- Modo always-on AMOLED con protección contra burn-in
+- Activación rápida y bajo consumo
+- Optimizado para todos los tamaños de pantalla compatibles
+- Idiomas: inglés, italiano, español
