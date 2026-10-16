@@ -65,6 +65,7 @@ class EssenceView extends WatchUi.WatchFace {
   // The graph is made of 1-pixel-wide time bins, newest at the right edge.
   const GRAPH_PERIOD = 14400; // seconds of history shown (4 hours)
   const GRAPH_HEIGHT = 30;
+  const GRAPH_FLOOR = 2; // bar height of the lowest reading, keeps it visible
   var graphBins = 0;
   var graphBinSecs = 0;
   var graphXBase = 0; // x of the newest (rightmost) bin
@@ -517,10 +518,11 @@ class EssenceView extends WatchUi.WatchFace {
   // samples into 1-pixel-wide time bins (newest = rightmost); each bin's bar
   // height is proportional to the normalised average value.
   //
-  // Normalisation formula:
-  //   norm = (midpoint - curMin * scale) / (curMax - curMin * scale)
-  // The `scale` factor (< 1.0) compresses the effective floor so that
-  // low values still produce a visible bar rather than collapsing to zero.
+  // Scaling: the bars are autoscaled on the range of the period, so the
+  // lowest reading maps to GRAPH_FLOOR pixels and the highest to GRAPH_HEIGHT.
+  // When the range is narrower than the catalog's `minSpan`, the span is
+  // widened to `minSpan` around the centre of the range, so sensor noise on a
+  // steady value renders as a flat line instead of being amplified.
   //
   // This walks every sample in the period, which makes it the most expensive
   // routine of the face: it is only called through updateGraphCache().
@@ -552,22 +554,23 @@ class EssenceView extends WatchUi.WatchFace {
     var curMax = sample.getMax();
     var sampleData = sample.next(); // prime the iterator with the first sample
 
-    // Guard: no data, or degenerate range (division by zero in normalisation)
+    // Guard: no data
     if (sampleData == null || curMin == null || curMax == null) {
       return bars;
     }
-    if (curMin == 0 || curMax == 0 || curMax <= curMin) {
-      return bars;
-    }
 
-    // Normalisation constants — computed once, reused every iteration
-    var scale = catalog["scale"];
-    var scaledMin = curMin * scale;
-    var denom = curMax - scaledMin;
+    // Scaling constants — computed once, reused every iteration
+    var span = (curMax - curMin).toFloat();
+    var lo = curMin.toFloat();
+    if (span < catalog["minSpan"]) {
+      span = catalog["minSpan"].toFloat();
+      lo = (curMax + curMin) / 2.0 - span / 2;
+    }
+    var pxPerUnit = (GRAPH_HEIGHT - GRAPH_FLOOR) / span;
 
     // --- Bucketing loop ------------------------------------------------------
 
-    var graphValue = 0; // last known sample value (carried across bin boundaries)
+    var graphValue = null; // last known sample value (carried across bin boundaries)
     var secsBin = 0; // accumulated seconds placed in the current bin
     var lastGraphSecs = sample.getNewestSampleTime().value();
     var graphBinMax;
@@ -576,8 +579,8 @@ class EssenceView extends WatchUi.WatchFace {
     var finished = false;
 
     for (var i = 0; i < graphBins && !finished; ++i) {
-      graphBinMax = 0;
-      graphBinMin = 0;
+      graphBinMax = null; // null = no valid reading in this bin yet
+      graphBinMin = null;
 
       // If there is leftover time from the previous bin, seed this bin
       // with the last known value so there are no visual gaps
@@ -596,7 +599,7 @@ class EssenceView extends WatchUi.WatchFace {
 
         graphValue = sampleData.data;
         if (graphValue != null) {
-          if (graphBinMax == 0) {
+          if (graphBinMax == null) {
             // First valid value in this bin — initialise min and max
             graphBinMax = graphValue;
             graphBinMin = graphValue;
@@ -620,12 +623,12 @@ class EssenceView extends WatchUi.WatchFace {
         secsBin -= graphBinSecs;
       }
 
-      // Bar only if this bin has at least one valid reading: normalise the
-      // midpoint of [binMin, binMax] to [0..1] and scale to pixels
+      // Bar only if this bin has at least one valid reading: map the
+      // midpoint of [binMin, binMax] to [GRAPH_FLOOR..GRAPH_HEIGHT] pixels
       var barHeight = 0;
-      if (graphBinMax > 0 && graphBinMax >= graphBinMin) {
-        var norm = ((graphBinMax + graphBinMin) / 2 - scaledMin) / denom;
-        barHeight = norm * GRAPH_HEIGHT;
+      if (graphBinMax != null) {
+        barHeight =
+          GRAPH_FLOOR + ((graphBinMax + graphBinMin) / 2.0 - lo) * pxPerUnit;
       }
       bars.add(barHeight);
     }

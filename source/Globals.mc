@@ -279,9 +279,9 @@ var fieldCatalog = [
 //   "complicationId" — Complications type for tap-through from the graph zone
 //   "color"        — lighter bar colour (currently reserved / commented out)
 //   "colorDark"    — bar fill colour used by drawGraph()
-//   "scale"        — floor-compression factor for the normalisation formula;
-//                    values < 1.0 raise the effective baseline so low readings
-//                    still render as a visible bar rather than collapsing to zero
+//   "minSpan"      — narrowest value range the graph is scaled on, in the
+//                    SensorHistory unit; keeps sensor noise on a steady value
+//                    from filling the whole graph height
 // --------------------------------------------------------------------------
 var graphCatalog = [
   // 0 — sentinel: no graph active
@@ -294,7 +294,7 @@ var graphCatalog = [
     "complicationId" => null,
     "color" => null,
     "colorDark" => null,
-    "scale" => 0.9,
+    "minSpan" => 1,
   },
   // 1 — Heart rate (bpm)
   {
@@ -306,9 +306,9 @@ var graphCatalog = [
     "complicationId" => Complications.COMPLICATION_TYPE_HEART_RATE,
     "color" => Graphics.COLOR_RED,
     "colorDark" => Graphics.COLOR_DK_RED,
-    "scale" => 0.9,
+    "minSpan" => 20, // bpm
   },
-  // 2 — Sea-level pressure (hPa); scale near 1.0 because the range is narrow
+  // 2 — Barometric pressure (SensorHistory reports station pressure in Pa)
   {
     "id" => "Barometer",
     "label" => Rez.Strings.Barometer,
@@ -318,7 +318,7 @@ var graphCatalog = [
     "complicationId" => Complications.COMPLICATION_TYPE_SEA_LEVEL_PRESSURE,
     "color" => Graphics.COLOR_BLUE,
     "colorDark" => Graphics.COLOR_DK_BLUE,
-    "scale" => 0.99,
+    "minSpan" => 200, // Pa (2 hPa)
   },
   // 3 — Elevation (metres)
   {
@@ -330,7 +330,7 @@ var graphCatalog = [
     "complicationId" => Complications.COMPLICATION_TYPE_ALTITUDE,
     "color" => Graphics.COLOR_DK_GREEN,
     "colorDark" => Graphics.COLOR_GREEN,
-    "scale" => 0.9,
+    "minSpan" => 30, // m
   },
 ];
 
