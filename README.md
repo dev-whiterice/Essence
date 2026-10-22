@@ -26,12 +26,23 @@ It supports up to 8 configurable data fields and an optional sensor history grap
 | Device | Resolution | Display |
 |---|---|---|
 | Approach S70 47mm | 454×454 | AMOLED |
+| Approach S72 43mm | 416×416 | AMOLED |
+| Approach S72 47mm | 454×454 | AMOLED |
+| D2 Air X10 | 416×416 | AMOLED |
+| D2 Air X15 | 454×454 | AMOLED |
+| D2 Mach 1 | 416×416 | AMOLED |
+| D2 Mach 2 | 454×454 | AMOLED |
+| D2 Mach 2 Pro | 454×454 | AMOLED |
 | Descent Mk3 51mm | 454×454 | AMOLED |
-| Enduro 3 | 280×280 | MIP |
+| Enduro 3 / Enduro 4 | 280×280 | MIP |
+| epix (Gen 2) / quatix 7 Sapphire | 416×416 | AMOLED |
+| epix Pro 47mm / quatix 7 Pro | 416×416 | AMOLED |
 | epix Pro 51mm | 454×454 | AMOLED |
 | fēnix 7 / 7 Pro / 7 Pro (no WiFi) | 260×260 | MIP |
 | fēnix 7X / 7X Pro / 7X Pro (no WiFi) | 280×280 | MIP |
+| fēnix 8 43mm | 416×416 | AMOLED |
 | fēnix 8 47mm | 454×454 | AMOLED |
+| fēnix 8 Pro 47mm / 51mm / MicroLED | 454×454 | AMOLED |
 | fēnix 8 Solar 47mm | 260×260 | MIP |
 | fēnix 8 Solar 51mm | 280×280 | MIP |
 | fēnix 9 43mm / 9 Pro 43mm | 416×416 | AMOLED |
@@ -39,10 +50,18 @@ It supports up to 8 configurable data fields and an optional sensor history grap
 | fēnix 9 Pro 51mm | 466×466 | AMOLED |
 | fēnix 9 Pro Solar 47mm | 260×260 | MIP |
 | fēnix 9 Pro Solar 51mm | 280×280 | MIP |
+| fēnix E | 416×416 | AMOLED |
 | Forerunner 255 / 255M | 260×260 | MIP |
+| Forerunner 265 | 416×416 | AMOLED |
+| Forerunner 570 47mm | 454×454 | AMOLED |
 | Forerunner 955 | 260×260 | MIP |
 | Forerunner 965 | 454×454 | AMOLED |
+| Forerunner 970 | 454×454 | AMOLED |
+| MARQ (Gen 3) | 454×454 | AMOLED |
+| quatix 8 Pro 47mm / 51mm | 454×454 | AMOLED |
+| Venu 2 / 2 Plus | 416×416 | AMOLED |
 | Venu 3 | 454×454 | AMOLED |
+| Venu 4 45mm | 454×454 | AMOLED |
 
 ### AMOLED always-on
 
